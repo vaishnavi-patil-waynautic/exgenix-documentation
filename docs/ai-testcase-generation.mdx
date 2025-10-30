@@ -1,0 +1,259 @@
+---
+sidebar_position: 5
+---
+
+
+
+# AI-Powered Test Case Generation
+
+## Overview
+
+Exgenix offers comprehensive AI-driven test case generation for FIX protocol APIs, custom binary APIs (OUCH, Enhanced Trading Interface, etc.), and business requirement documents, enabling complete test coverage with minimal manual efforts.
+
+---
+
+## Part 1: Generating Test Cases from FIX Specification
+
+### Step 1: Access Auto Generate Test Cases
+
+- Navigate to the sidebar in Exenix
+- Click on "Auto Generate Test Cases" option
+
+![Sidebar - Auto Generate Test Cases](../static/img/aigeneration.png)
+
+---
+
+### Step 2: Upload FIX Specification Document
+
+- Select "Document Upload" option
+- Upload your FIX specification document (supports various formats)
+- _[Add screenshot of document upload interface]_
+
+---
+
+### Step 3: Define Additional Requirements (AI Prompt)
+
+The Additional Requirements section functions as an AI prompt where you can specify:
+- Target API for test case generation
+- Desired test data format
+- Example prompt: *"Write test cases in FIX field=value format for New Order Single API"*
+- _[Add screenshot of Additional Requirements section with example prompt]_
+
+**Supported Output Formats:**
+- FIX tag=value format
+- Proprietary binary formats (OUCH, Enhanced Trading Interface, etc.)
+
+---
+
+### Step 4: Set Category and Generate
+
+- Set the category to "FIX API BRD" to link requirements with the uploaded FIX specification
+- Click "Generate Test Cases" button
+- The AI engine analyzes your requirements and the FIX specification (this may take a few minutes)
+- _[Add screenshot of category selection and Generate button]_
+
+---
+
+### Step 5: Review Generated Test Cases
+
+Once generation is complete, test cases are automatically organized into three categories:
+
+**Positive Test Cases**
+- Valid flows with complete required test data
+- All necessary fields and values to simulate successful scenarios
+- _[Add screenshot of positive test cases section]_
+
+**Negative Test Cases**
+- Scenarios for missing tags
+- Invalid tag values
+- Permission violations
+- Constraint violations
+- _[Add screenshot of negative test cases section]_
+
+**Edge Cases**
+- Boundary value testing
+- Unusual sequencing scenarios
+- Other nuanced conditions
+- Details include which fields and values should be changed
+- _[Add screenshot of edge cases section]_
+
+---
+
+### Step 6: Export to Excel
+
+- Click "Export" to download the full test suite as an Excel file
+- Convert exported data into data sheets format
+- _[Add screenshot of export option and Excel output]_
+
+---
+
+### Step 7: Import into API Configuration
+
+- Import the data sheets directly into your existing API configuration
+- The API configuration is also auto-generated from the same API document
+- _[Add screenshot of import process]_
+
+---
+
+## Part 2: Test Configuration and Execution
+
+### Step 8: Design Test Configuration
+
+- Navigate to "Test Configuration" module
+- Design your APIs and their execution sequence
+- Example: Configure New Order Single API to run in three loops:
+  - Loop 1: Positive cases
+  - Loop 2: Negative cases
+  - Loop 3: Edge cases
+- Each API can be tested in isolation for all possible permutations and combinations
+- _[Add screenshot of test configuration with loop setup]_
+
+---
+
+### Step 9: Execute Test Suite
+
+- Navigate to the "Execution" module
+- Click "Run" to execute the configured test suite
+- Upon completion, you're automatically redirected to the Reports section
+- _[Add screenshot of execution module]_
+
+---
+
+### Step 10: Review Test Reports
+
+The Reports module displays results mirroring your scenario sequence:
+
+**Report Features:**
+- Captured FIX messages for each iteration
+- Actual vs. Expected field values comparison
+- Pass/Fail status for each test
+- Step-level details from specification
+- Human-readable format for easy analysis
+- Supports review of hundreds of data combinations simultaneously
+- _[Add screenshot of reports with pass/fail details]_
+- _[Add screenshot showing FIX message details]_
+
+---
+
+## Part 3: Generating Test Cases from Business Documents
+
+### Step 11: Upload Business Requirement Documents
+
+Xenix extends AI capabilities beyond API specifications to business documents:
+- Upload Business Requirement Documents (BRD)
+- Upload Impact Assessment Reports
+- Upload any requirement document including images or workflows
+- _[Add screenshot of business document upload interface]_
+
+---
+
+### Step 12: Provide Intelligent Prompts
+
+- Enter domain-specific prompts based on your requirements
+- Example: *"Generate test cases for unpaid identifier based on the provided document"*
+- The AI uses both document content and its domain expertise
+- _[Add screenshot of prompt section with example]_
+
+---
+
+### Step 13: AI Analysis and Test Case Generation
+
+The AI engine:
+- Analyzes document content instantly
+- Extracts testable requirements
+- Maps requirements to test scenarios:
+  - Positive scenarios
+  - Negative scenarios
+  - Boundary condition scenarios
+- Generates complete structured test cases within seconds
+- _[Add screenshot of AI processing/analysis]_
+
+---
+
+### Step 14: Review Generated Test Cases from BRD
+
+Each generated test case includes:
+- Detailed test inputs
+- Expected outcomes
+- Test data specifications
+- Ensures comprehensive coverage with no missed scenarios
+- _[Add screenshot of BRD-generated test cases]_
+
+---
+
+## Quality Validation and Accuracy
+
+### Step 15: Validate Test Case Accuracy
+
+Xenix ensures test case quality through:
+
+**Permutation and Combination Analysis**
+- Mathematical algorithm-based generation
+- Line-by-line breakdown of requirements
+- Mapping requirements to specific test cases
+
+**Domain Expert Validation**
+- Compare AI-generated test cases with manually created expert test cases
+- Verify test case descriptions match expert standards
+- Verify test steps align with domain expertise
+- _[Add screenshot showing comparison between AI and expert test cases]_
+- _[Add screenshot with highlighted matching test case]_
+
+---
+
+## Key Benefits
+
+- **Complete Coverage:** From low-level binary APIs to high-level business documents
+- **Automated Accuracy:** Mathematically validated permutation-based test generation
+- **Speed:** Hundreds of test scenarios generated in minutes
+- **Domain Intelligence:** AI models tuned for trading and financial domains
+- **Focus on Quality:** Automation handles complexity, allowing teams to focus on quality assurance
+
+## LoadRunner Introduction – Video Tutorial
+
+Watch the video tutorial here:
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/9mz6d544tSY?si=K-AiOfnNUIB9sYOnthis"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
+
+## Demo Video
+
+You can watch this demo video below:
+
+<div class="video-card">
+  <div class="video-card__frame">
+    <video width="100%" height="315" controls>
+      <source src="/videos/aigeneration1min.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-card__details">
+    <div class="video-card__title">AI Generation Demo</div>
+    <div class="video-card__duration">1:00</div>
+  </div>
+</div>
+
+## Demo Video3
+
+<div class="card-video">
+  <div class="card-frame">
+    <video width="100%" height="315" controls>
+      <source src="/videos/aigeneration1min.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="card-details">
+    <span class="card-title">AI Generation Demo</span>
+    <span class="card-duration">1:00</span>
+  </div>
+</div>
+
+
+
