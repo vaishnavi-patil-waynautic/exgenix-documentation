@@ -264,7 +264,7 @@ const config: Config = {
       title: 'Exgenix',
       logo: {
         alt: 'Exgenix Logo',
-        src: 'img/logo.svg',
+        src: 'img/exgenix.png',
       },
       items: [
         {
@@ -286,6 +286,7 @@ const config: Config = {
         },
       ],
     },
+    hideTableOfContents: true,
     footer: {
       style: 'dark',
       links: [

@@ -1,0 +1,169 @@
+.galleryContainer {
+  position: sticky;
+  top: 100px;
+  background: var(--ifm-background-surface-color);
+  padding: 1rem;
+  border-left: 1px solid var(--ifm-toc-border-color);
+  max-width: 240px;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-heading-color);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.step {
+  text-align: center;
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.step p {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  color: var(--ifm-text-color);
+}
+
+/* Lightbox overlay */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.fullImage {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+
+/* Hide default TOC */
+.theme-doc-toc-desktop {
+  display: none !important;
+}
+
+/* MAIN CONTENT AREA */
+.docItemCol {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 260px 0 40px !important; /* right for gallery, small left margin */
+  box-sizing: border-box;
+}
+
+/* STEP GALLERY FIXED ON RIGHT */
+.step-gallery-container {
+  position: fixed;
+  top: 70px; /* slightly below navbar */
+  right: 30px;
+  width: 220px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  z-index: 11;
+  overflow: visible; /* removes scrollbar */
+  background: transparent;
+  padding-bottom: 1rem;
+}
+
+/* STEP TITLE */
+.step-gallery-container h4 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* THUMBNAILS */
+.step-gallery-container img {
+  width: 100%;
+  border-radius: 6px;
+  cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step-gallery-container img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.step-gallery-container p {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+/* OVERLAY WHEN IMAGE EXPANDS */
+.image-viewer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding-top: 60px; /* push image below navbar */
+}
+
+/* EXPANDED IMAGE */
+.image-viewer-overlay img {
+  max-width: 80vw;
+  max-height: 75vh; /* smaller so it’s never hidden */
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  object-fit: contain;
+}
+
+/* CLOSE BUTTON */
+.image-viewer-close {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 2001;
+  border-radius: 6px;
+  padding: 4px 12px;
+  transition: background 0.2s ease;
+}
+
+.image-viewer-close:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* SUBTLE HINT THAT IMAGES ARE CLICKABLE */
+.step-gallery-container img::after {
+  content: "Click to expand";
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.3rem;
+}

@@ -119,7 +119,7 @@ To add charts and graphs to your Exgenix documentation:
 3. **Include images** in your documentation for better understanding
 
 Example:
-![API Performance Chart](/img/docusaurus.png)
+![API Performance Chart](/img/exgenix.png)
 
 *Figure 1: Sample API performance visualization - showing response times and throughput metrics.*
 

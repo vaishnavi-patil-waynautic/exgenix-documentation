@@ -4,29 +4,197 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* ---------------------------------------------
+   React Native Style Docusaurus Theme
+---------------------------------------------- */
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Primary palette */
+  --ifm-color-primary: #2F67F6;
+  --ifm-color-primary-dark: #2758D4;
+  --ifm-color-primary-darker: #224EC0;
+  --ifm-color-primary-darkest: #1B3E9A;
+  --ifm-color-primary-light: #4A7FF8;
+  --ifm-color-primary-lighter: #6C98FA;
+  --ifm-color-primary-lightest: #A8C3FD;
+
+  /* Layout & background */
+  --ifm-background-color: #FFFFFF;
+  --ifm-background-surface-color: #fcfafa;
+  --ifm-toc-border-color: #E5E7EB;
+  --ifm-navbar-background-color: #FFFFFF;
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --ifm-heading-color: #0F172A;
+  --ifm-text-color: #1E293B;
+  --ifm-sidebar-background-color: #F9FAFB;
+
+  /* Rounded & spacing */
+  --ifm-global-radius: 10px;
+  --ifm-navbar-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+  --ifm-spacing-horizontal: 1.25rem;
+  --ifm-spacing-vertical: 1.25rem;
+
+  /* Code highlight */
+  --docusaurus-highlighted-code-line-bg: rgba(47, 103, 246, 0.08);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #7BA9FF;
+  --ifm-background-color: #111827;
+  --ifm-background-surface-color: #1E293B;
+  --ifm-navbar-background-color: #111827;
+  --ifm-text-color: #E2E8F0;
+  --ifm-heading-color: #F1F5F9;
+  --ifm-toc-border-color: #334155;
+  --docusaurus-highlighted-code-line-bg: rgba(123, 169, 255, 0.2);
+  --ifm-sidebar-background-color: #111827;
+}
+
+/* ---------------------------------------------
+   Global Layout & Typography
+---------------------------------------------- */
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+html,
+body {
+  background-color: var(--ifm-background-surface-color);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: var(--ifm-text-color);
+}
+
+/* ---------------------------------------------
+   Navbar
+---------------------------------------------- */
+
+.navbar {
+  box-shadow: var(--ifm-navbar-shadow);
+  background-color: var(--ifm-navbar-background-color);
+  backdrop-filter: blur(10px);
+  color: var(--ifm-text-color);
+}
+
+/* ---------------------------------------------
+   Sidebar (Left Navigation)
+---------------------------------------------- */
+
+.theme-doc-sidebar-container {
+  width: 260px !important;
+  background: var(--ifm-sidebar-background-color);
+  border-right: 1px solid #E5E7EB;
+  padding-top: 1rem;
+}
+
+.menu__link {
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 500;
+  color: var(--ifm-text-color) !important;
+}
+
+.menu__link--active {
+  background-color: rgba(47, 103, 246, 0.15) !important;
+  color: #2F67F6 !important;
+  font-weight: 600;
+}
+
+.menu__list-item-collapsible {
+  font-weight: 600;
+  color: var(--ifm-heading-color) !important;
+}
+
+/* Dark mode overrides */
+[data-theme='dark'] .menu__link {
+  color: var(--ifm-text-color) !important;
+}
+
+[data-theme='dark'] .menu__list-item-collapsible {
+  color: var(--ifm-heading-color) !important;
+}
+
+[data-theme='dark'] .menu__link--active {
+  background-color: rgba(47, 103, 246, 0.25) !important;
+  color: #7BA9FF !important;
+}
+
+/* ---------------------------------------------
+   Compact & Consistent Layout
+---------------------------------------------- */
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: var(--ifm-background-surface-color);
+  width: 100%;
+  padding: 0 !important;
+}
+
+.theme-doc-main {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Limit doc content width for readability */
+.docItemCol {
+  max-width: 760px !important;
+  margin: 0 auto !important;
+  flex: 1 1 auto !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+/* Right Table of Contents */
+.theme-doc-toc-desktop {
+  min-width: 200px !important;
+  max-width: 220px !important;
+  margin-left: 0.5rem !important;
+  padding-left: 0.75rem !important;
+  border-left: 1px solid var(--ifm-toc-border-color);
+}
+
+/* Markdown Content */
+.theme-doc-markdown {
+  max-width: 760px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+/* Tighten spacing between sections */
+.theme-doc-markdown h1,
+.theme-doc-markdown h2,
+.theme-doc-markdown h3 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  font-weight: 700;
+  color: var(--ifm-heading-color);
+}
+
+.theme-doc-markdown p {
+  margin-bottom: 0.75rem !important;
+  line-height: 1.6;
+}
+
+/* Breadcrumbs closer to title */
+.breadcrumbs {
+  margin-bottom: 0.5rem !important;
+}
+
+/* ---------------------------------------------
+   Code & Cards
+---------------------------------------------- */
+
+.prism-code {
+  border-radius: 0.75rem;
+  padding: 1rem;
 }
 
 .card-video {
@@ -34,8 +202,8 @@
   border-radius: 18px;
   box-shadow: 0 2px 12px rgba(0,0,0,.08);
   padding: 20px;
-  max-width: 500px;
-  margin: 2rem 0 2rem 0.5rem;  /* 0.5rem left margin, adjust as needed */
+  max-width: 600px;
+  margin: 2rem 0 2rem 0.5rem;
 }
 
 .card-frame {
@@ -43,20 +211,138 @@
   overflow: hidden;
   background: #1a1a1a;
 }
+
 .card-details {
   display: flex;
   justify-content: space-between;
   align-items: end;
   padding-top: 12px;
 }
+
 .card-title {
   font-size: 1.07rem;
   font-weight: 700;
 }
+
 .card-duration {
   font-size: 1rem;
   color: #888;
   background: #f5f5f5;
   padding: 2px 8px;
   border-radius: 8px;
+}
+
+
+/* --- Hide Docusaurus default right TOC --- */
+/* Hide default right-side TOC */
+.theme-doc-toc-desktop {
+  display: none !important;
+}
+
+/* Main content column — tighter and properly aligned */
+.docItemCol {
+  max-width: 860px !important;
+  margin: 0 auto !important;
+  padding-right: 280px !important; /* make space for gallery */
+  box-sizing: border-box;
+}
+
+/* Fix Step Gallery on right side */
+.step-gallery-container {
+  position: fixed;
+  top: 80px; /* below navbar */
+  right: 40px;
+  width: 220px;
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+  background: transparent;
+  z-index: 10;
+  scrollbar-width: thin;
+}
+
+/* Step thumbnails */
+.step-gallery-container img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step-gallery-container img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Step titles */
+.step-gallery-container p {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+/* Fullscreen viewer (for image expansion) */
+.image-viewer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Expanded image */
+.image-viewer-overlay img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Close button */
+.image-viewer-close {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2001;
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+
+.image-viewer-close:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
+
+/* ---------------------------------------------
+   Responsive Layout Fix
+---------------------------------------------- */
+
+@media screen and (max-width: 996px) {
+  .theme-doc-sidebar-container {
+    width: 100% !important;
+    border-right: none;
+  }
+
+  .theme-doc-toc-desktop {
+    display: none;
+  }
+
+  .docItemCol {
+    padding: 1rem !important;
+  }
+
+  .theme-doc-main {
+    flex-direction: column;
+    gap: 0;
+  }
 }
