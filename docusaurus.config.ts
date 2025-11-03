@@ -212,8 +212,10 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: undefined, 
+
         },
         blog: {
           showReadingTime: true,
@@ -233,26 +235,44 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-      } satisfies Preset.Options,
+  },
     ],
   ],
 
-  themes: [
-    [
-      require.resolve('@easyops-cn/docusaurus-search-local'),
-      {
-        hashed: true,
-        language: ['en'],
-        indexDocs: true,
-        indexBlog: true,
-        indexPages: false,
-        docsRouteBasePath: ['docs'],
-        blogRouteBasePath: ['blog'],
-        searchResultLimits: 8,
-        searchBarShortcutHint: true,
-      },
-    ],
+  plugins: [
+  [
+    require.resolve('@cmfcmf/docusaurus-search-local'),
+    {
+      indexDocs: true,
+      indexBlog: true,
+      indexPages: true,
+      language: 'en',
+    },
   ],
+],
+
+scripts: [
+  '/js/imageExpand.js'
+],
+
+
+
+  // themes: [
+  //   [
+  //     require.resolve('@easyops-cn/docusaurus-search-local'),
+  //     {
+  //       hashed: true,
+  //       language: ['en'],
+  //       indexDocs: true,
+  //       indexBlog: true,
+  //       indexPages: false,
+  //       docsRouteBasePath: ['docs'],
+  //       blogRouteBasePath: ['blog'],
+  //       searchResultLimits: 8,
+  //       searchBarShortcutHint: true,
+  //     },
+  //   ],
+  // ],
 
   themeConfig: {
     // Replace with your project's social card

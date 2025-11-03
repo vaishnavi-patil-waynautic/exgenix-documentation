@@ -69,3 +69,48 @@ export default function StepGallery({ steps }) {
     </>
   );
 }
+
+
+// import React, { useState } from 'react';
+// import styles from './StepGallery.module.css';
+
+// export default function StepGallery({ steps }) {
+//   const [expandedImage, setExpandedImage] = useState(null);
+
+//   return (
+//     <div className={styles['step-gallery-container']}>
+//       <h4>Steps Overview</h4>
+//       {steps.map((step, index) => (
+//         <div key={index}>
+//           <img
+//             src={step.image}
+//             alt={step.title}
+//             onClick={() => setExpandedImage(step.image)}
+//             title="Click to expand"
+//           />
+//           <p>{step.title}</p>
+//         </div>
+//       ))}
+
+//       {expandedImage && (
+//         <div
+//           className="image-viewer-overlay"
+//           onClick={() => setExpandedImage(null)}
+//         >
+//           <button
+//             className="image-viewer-close"
+//             onClick={(e) => {
+//               e.stopPropagation();
+//               setExpandedImage(null);
+//             }}
+//             aria-label="Close"
+//           >
+//             ×
+//           </button>
+//           <img src={expandedImage} alt="Expanded view" />
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+

@@ -1,11 +1,10 @@
 .galleryContainer {
   position: sticky;
   top: 100px;
-  /* background: var(--ifm-background-surface-color); */
-  background-color: red;
+  background: var(--ifm-background-surface-color);
   padding: 1rem;
   border-left: 1px solid var(--ifm-toc-border-color);
-  max-width: 240px;
+  max-width: 300px;
   height: calc(100vh - 120px);
   overflow-y: auto;
 }
@@ -62,7 +61,6 @@
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-
 /* Hide default TOC */
 .theme-doc-toc-desktop {
   display: none !important;
@@ -72,35 +70,18 @@
 .docItemCol {
   max-width: none !important;
   margin: 0 !important;
-  padding: 0 260px 0 40px !important; /* right for gallery, small left margin */
+  padding: 0 260px 0 40px !important;
   box-sizing: border-box;
 }
 
-/* STEP GALLERY FIXED ON RIGHT */
-/* .step-gallery-container {
-  position: fixed;
-  top: 70px;
-  right: 20px;
-  width: 220px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
-  z-index: 11;
-  overflow: visible;
-  background: transparent;
-  padding-bottom: 1rem;
-  max-width: 100vw;
-} */
-
 /* ===== Step Gallery Container ===== */
 .step-gallery-container {
-  position: relative;
+  position: fixed;
   top: 100px;
   right: 20px;
   width: 240px;
   max-height: 70vh;
+  /* height: auto;  */
   overflow-y: auto;
   z-index: 100; /* below overlay but above doc content */
   background: rgba(255, 255, 255, 0.65);
@@ -108,15 +89,13 @@
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   padding: 12px;
-  /* scrollbar-width: none; Firefox */
+  scrollbar-width: none;
 }
 
-/* Hide scrollbar in Webkit browsers */
-/* .step-gallery-container::-webkit-scrollbar { */
-  /* display: none; */
-/* } */
+.step-gallery-container::-webkit-scrollbar {
+  display: none;
+}
 
-/* Step items */
 .step-gallery-container img {
   width: 100%;
   border-radius: 8px;
@@ -124,86 +103,21 @@
   margin-bottom: 10px;
   transition: transform 0.2s ease;
 }
+
 .step-gallery-container img:hover {
   transform: scale(1.03);
 }
 
-
-
-/* STEP TITLE */
 .step-gallery-container h4 {
   text-align: center;
   margin-bottom: 0.5rem;
 }
-
-/* THUMBNAILS */
-/* .step-gallery-container img {
-  width: 100%;
-  border-radius: 6px;
-  cursor: zoom-in;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-} */
-
-/* .step-gallery-container img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-} */
 
 .step-gallery-container p {
   text-align: center;
   font-size: 0.85rem;
   margin-top: 0.4rem;
 }
-
-/* ---- FIXED OVERLAY ABOVE NAVBAR ---- */
-/* .image-viewer-overlay {
-  position: fixed;
-  /* top: 30px; */
-  /* left: 0;
-  width: 100vw;
-  /* height: 100vh; 
-  height: auto;
-  background: rgba(0, 0, 0, 0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999; /* Always above navbar 
-  overflow: hidden;
-} */
-
-/* EXPANDED IMAGE - always centered & visible */
-/* .image-viewer-overlay img {
-  max-width: 90vw; */
-  /* max-height: 85vh; */
-  /* max-height: auto;
-  border-radius: 10px;
-  object-fit: contain;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
-} */
-
-/* CLOSE BUTTON - visible and clickable */
-/*.image-viewer-close {
-  position: fixed;
-  top: 20px;
-  right: 30px;
-  background: rgba(255, 255, 255, 0.2);
-  border: none;
-  color: #fff;
-  font-size: 1.8rem;
-  cursor: pointer;
-  z-index: 10000; /* above overlay */
-  /*border-radius: 8px;
-  padding: 4px 12px;
-  transition: background 0.2s ease;
-}
-.image-viewer-close:hover {
-  background: rgba(255, 255, 255, 0.4);
-}
-
-.image-viewer-overlay {
-    margin-top: 400px;
-} */
-
 
 /* SUBTLE HINT THAT IMAGES ARE CLICKABLE */
 .step-gallery-container img::after {
