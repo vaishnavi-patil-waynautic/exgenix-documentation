@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhelp_site=globalThis.webpackChunkhelp_site||[]).push([[903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/exgenix-documentation/blog","blogTitle":"Blog","authorsListPath":"/exgenix-documentation/blog/authors"}')}}]);
