@@ -21,3 +21,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.heroBanner {
+  background-color: #1e4dd8;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.features {
+  padding: 3rem 0;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+

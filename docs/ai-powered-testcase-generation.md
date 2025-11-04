@@ -1,9 +1,11 @@
 ---
-title: ⚡ AI-Powered Test Case Generation
+title: AI-Powered Test Case Generation
 sidebar_position: 4
 ---
 
 # ⚡ AI-Powered Test Case Generation
+
+---
 
 **Exgenix** empowers teams with **AI-driven, one-click test case generation** across **technical** and **business** layers — ensuring **complete QA coverage** for exchange, trading, and financial workflows.  
 

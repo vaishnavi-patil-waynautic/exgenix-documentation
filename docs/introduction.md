@@ -3,7 +3,9 @@ title: Exgenix — AI-Powered QA Governance for Capital Market Ecosystems
 sidebar_position: 1
 ---
 
-# Exgenix: AI-Powered QA Governance for Capital Market Ecosystems
+# 🤖 Exgenix: AI-Powered QA Governance for Capital Market Ecosystems
+
+---
 
 ## 1. Executive Overview
 
@@ -19,9 +21,8 @@ Unlike conventional automation tools, **Exgenix** extends beyond API automation 
 
 ## 2. The Complete QA Transformation Vision
 
-### Exchange Layer
 
-| Layer | AI-Powered QA Coverage with Exgenix |
+| Exchange Layer | AI-Powered QA Coverage with Exgenix |
 |-------|--------------------------------------|
 | **Gateway / Trading APIs** | Auto-generation of FIX / ETI / Custom Binary API test cases, regression automation, and market event replay. |
 | **Matching Engine** | End-to-end order life cycle validation (New, Replace, Cancel, Trade) with 100% audit traceability. |
@@ -80,13 +81,47 @@ and the **AI QA Agent** will generate instant insights.
 
 ## 5. Core Modules
 
-| Module | Description |
-|---------|-------------|
-| **1. API Configuration** | Define and manage FIX / ETI / Custom Binary / Custom APIs with reusable templates. Configure endpoints, authentication, and headers. Organize APIs into collections. Link parameter files for dynamic testing. |
-| **2. Test Data Configuration** | Centralized control of reusable and dynamic datasets. Create or auto-generate test data. Map datasets to APIs. Maintain consistency across runs. |
-| **3. Test Configuration** | Design realistic workflows with complete flexibility. Sequence APIs for test flows. Add loops, waits, and dependencies. Reuse configurations across suites. |
-| **4. Execution** | Seamless test execution and real-time monitoring. Run single or batch suites. Execute across multiple environments. Track progress live. |
-| **5. Reports** | Comprehensive QA visibility and governance. Request/response traceability. Coverage and defect metrics. |
+### ⚙️ API Configuration
+Define and manage FIX / ETI / Custom Binary API, ETI, or custom APIs with reusable templates.
+
+-  Configure endpoints, authentication, and headers  
+-  Organize APIs into collections  
+-  Link parameter files for dynamic testing  
+
+---
+
+### 🧮 Test Data Configuration
+Centralized control of reusable and dynamic datasets.
+
+-  Create or auto-generate test data  
+-  Map datasets to APIs  
+-  Maintain consistency across runs  
+
+---
+
+### 🧰 Test Configuration
+Design realistic workflows with complete flexibility.
+
+-  Sequence APIs for test flows  
+-  Add loops, waits, and dependencies  
+-  Reuse configurations across suites  
+
+---
+
+### 🚀 Execution
+Seamless test execution and real-time monitoring.
+
+-  Run single or batch suites  
+-  Execute across multiple environments  
+-  Track progress live  
+
+---
+
+### 📈 Reports
+Comprehensive QA visibility and governance.
+
+-  Request/response traceability  
+-  Coverage and defect metrics  
 
 ---
 

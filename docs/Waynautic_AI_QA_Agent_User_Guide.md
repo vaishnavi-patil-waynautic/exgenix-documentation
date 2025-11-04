@@ -5,6 +5,8 @@ sidebar_position: 5
 
 # 🚀 Waynautic AI QA Agent – User Guide
 
+---
+
 > **An intelligent QA automation module integrated within Exgenix — designed for stock exchanges and financial institutions.**
 
 ---

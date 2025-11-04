@@ -289,12 +289,7 @@ scripts: [
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/exgenix/docs',
-          label: 'GitHub',
-          position: 'right',
-        },
+        {to: '/videos', label: 'Videos', position: 'left'},
         {
           href: 'https://exgenix.com',
           label: 'Exgenix Platform',
@@ -311,7 +306,7 @@ scripts: [
           items: [
             {
               label: 'Getting Started',
-              to: '/docs/intro',
+              to: '/docs/introduction',
             },
             {
               label: 'API Testing Guide',

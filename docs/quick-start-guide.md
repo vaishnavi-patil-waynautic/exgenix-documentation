@@ -3,7 +3,9 @@ title: Exgenix Quick Start Guide (Trial Access)
 sidebar_position: 2
 ---
 
-# Exgenix Quick Start Guide (Trial Access)
+# 🚀 Exgenix Quick Start Guide (Trial Access)
+
+---
 
 Welcome to the **Exgenix + AI QA Agent** ecosystem!  
 This Quick Start Guide provides your **access details**, **project references**, and **navigation steps** to help you start exploring the product immediately.
@@ -61,6 +63,5 @@ This Quick Start Guide provides your **access details**, **project references**,
 - 🎥 **Exgenix Demo 2** — *(Attach video link)*  
 - 🤖 **AI QA Agent Walkthrough** — *(Attach video link)*  
 
-📎 *(Optional: Embed screenshots or short GIFs showing navigation steps.)*
 
 
