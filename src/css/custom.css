@@ -895,4 +895,36 @@ article {
   }
 }
 
+/* Hide only the '#' anchor link that appears on hover */
+a.anchor[href^="#"],
+a.hash-link[href^="#"],
+a.header-anchor[href^="#"] {
+  text-decoration: none !important;
+  color: inherit !important;
+  pointer-events: none !important;
+}
+
+/* Specifically target the '#' character (the pseudo-element or inline text) */
+a.anchor::before,
+a.hash-link::before,
+a.header-anchor::before {
+  display: none !important;
+  content: '' !important;
+}
+
+/* Hide any direct SVG icon Docusaurus adds for the anchor */
+a.anchor svg,
+a.hash-link svg,
+a.header-anchor svg {
+  display: none !important;
+}
+
+/* Force titles to remain visible */
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+  color: var(--ifm-heading-color, inherit) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
 

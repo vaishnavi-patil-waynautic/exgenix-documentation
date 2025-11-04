@@ -12,18 +12,18 @@ sidebar_position: 5
 ---
 
 ## 🧭 Table of Contents
-1. [Overview](#overview)
-2. [Module Structure](#module-structure)
-3. [Requirement Synchronization](#requirement-synchronization)
-4. [AI Test Case Generation](#ai-test-case-generation)
-5. [Test Case Review and Customization](#test-case-review-and-customization)
-6. [Requirement & Test Case Mapping](#requirement--test-case-mapping)
-7. [Defect Traceability and Impact Analysis](#defect-traceability-and-impact-analysis)
-8. [Intelligent Chat Interface](#intelligent-chat-interface)
+1. [Overview](#-overview)
+2. [Module Structure](#-module-structure)
+3. [Requirement Synchronization](#-requirement-synchronization)
+4. [AI Test Case Generation](#-ai-test-case-generation)
+5. [Test Case Review and Customization](#-test-case-review-and-customization)
+6. [Requirement & Test Case Mapping](#-requirement--test-case-mapping)
+7. [Defect Traceability and Impact Analysis](#-defect-traceability-and-impact-analysis)
+8. [Intelligent Chat Interface](#-intelligent-chat-interface)
 9. [Advanced Features](#advanced-features)
-10. [Best Practices](#best-practices)
-11. [Troubleshooting](#troubleshooting)
-12. [Summary](#summary)
+10. [Best Practices](#-best-practices)
+11. [Troubleshooting](#-troubleshooting)
+12. [Summary](#-summary)
 
 ---
 
@@ -179,7 +179,7 @@ This conversational interface ensures real-time situational awareness for projec
 
 ---
 
-## ⚙️ Advanced Features
+## ⚙️ Advanced Features {#advanced-features}
 
 | Feature | Description |
 |----------|-------------|
