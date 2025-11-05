@@ -1,13 +1,14 @@
 ---
 title: API Configuration Module - User Guide
-sidebar_position: 4
+sidebar_position: 3
+hide_table_of_contents: true
 ---
 
-# 🧩 API Configuration Module - User Guide
+# API Configuration Module - User Guide
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 - [Overview](#overview)
 - [Module Structure](#module-structure)
 - [Collections](#collections)
@@ -20,7 +21,7 @@ sidebar_position: 4
 
 ---
 
-## 🧭 Overview {#overview}
+## Overview {#overview}
 The API Configuration module is the foundation of Exgenix's test automation framework. It enables you to define, configure, and manage **FIX / ETI / Custom Binary API** protocol-based API configurations for your test scenarios. This module supports various connection types and message formats, allowing you to model complex financial messaging systems with precision.
 
 ### **Key Benefits**
@@ -32,7 +33,7 @@ The API Configuration module is the foundation of Exgenix's test automation fram
 
 ---
 
-## 🏗️ Module Structure {#module-structure}
+## Module Structure {#module-structure}
 The API Configuration module follows a three-tier hierarchical structure:
 
 
@@ -238,7 +239,7 @@ Use dynamic functions to generate values at runtime. Functions must start with t
 
 ---
 
- **⚙️ Result During Execution**
+ **Result During Execution**
 
 **ClOrdID generates:** ORD1001, ORD1002, ORD1003...  
 **OrderQty generates:** random quantities between 100–1000  
@@ -247,14 +248,14 @@ Use dynamic functions to generate values at runtime. Functions must start with t
 
 ---
 
- **🔁 Iteration Strategy**
+ **Iteration Strategy**
 
 When a test case executes multiple times, you can control how data is consumed:
 
 - **Use Same Row:** Every iteration uses data from the same row *(useful for retry scenarios)*  
 - **Use Next Row:** Each iteration advances to the next row *(useful for varied test scenarios)*  
 
-> 🧩 This setting is configured at the **test case level** during execution setup.
+> This setting is configured at the **test case level** during execution setup.
 
 
 ---
@@ -282,7 +283,7 @@ When a test case executes multiple times, you can control how data is consumed:
 - All existing rows are replaced with imported data
 
 
-**📘 Use Cases**
+**Use Cases**
 
 - Bulk data entry from external sources  
 - Migrating data from other test tools  
@@ -300,7 +301,7 @@ When a test case executes multiple times, you can control how data is consumed:
 
 ---
 
- **⚙️ Completing API Configuration**
+ **Completing API Configuration**
 
 After configuring your datasheets:
 
@@ -310,7 +311,7 @@ After configuring your datasheets:
 
 ---
 
-## 🧩 Managing API Configurations
+## Managing API Configurations
 
  **Editing Existing Configurations**
 

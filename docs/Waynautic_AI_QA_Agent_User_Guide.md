@@ -1,9 +1,10 @@
 ---
 title: Waynautic AI QA Agent – User Guide
 sidebar_position: 5
+hide_table_of_contents: true
 ---
 
-# 🚀 Waynautic AI QA Agent – User Guide
+#  Waynautic AI QA Agent – User Guide
 
 ---
 
@@ -11,7 +12,7 @@ sidebar_position: 5
 
 ---
 
-## 🧭 Table of Contents
+##  Table of Contents
 1. [Overview](#-overview)
 2. [Module Structure](#-module-structure)
 3. [Requirement Synchronization](#-requirement-synchronization)
@@ -27,22 +28,22 @@ sidebar_position: 5
 
 ---
 
-## 🧩 Overview
+##  Overview
 
 The **Waynautic AI QA Agent** is an intelligent quality assurance automation module integrated within **Exgenix**, designed specifically for stock exchanges and financial institutions.  
 It streamlines the end-to-end QA lifecycle — from requirement ingestion to test case generation, execution mapping, and defect traceability — using AI models fine-tuned for trading workflows.
 
-### ✨ Key Benefits
-- 🔗 Seamless integration with requirement management tools like Jira  
-- ⚙️ One-click AI-driven test case generation  
-- 🔍 End-to-end traceability from requirements to test cases and defects  
-- 🧠 Continuous learning and accuracy improvement through feedback  
-- 💬 Real-time insights and analytics via an intelligent chat interface  
-- 📊 Enhanced QA governance and release readiness visibility  
+###  Key Benefits
+-  Seamless integration with requirement management tools like Jira  
+-  One-click AI-driven test case generation  
+-  End-to-end traceability from requirements to test cases and defects  
+-  Continuous learning and accuracy improvement through feedback  
+-  Real-time insights and analytics via an intelligent chat interface  
+-  Enhanced QA governance and release readiness visibility  
 
 ---
 
-## 🧱 Module Structure
+##  Module Structure
 
 The Waynautic AI QA Agent follows a structured hierarchy for managing QA assets across the exchange lifecycle:
 
@@ -58,17 +59,17 @@ Requirements
 
 ---
 
-## 🔄 Requirement Synchronization
+##  Requirement Synchronization
 
-### 💡 What It Does
+###  What It Does
 The module allows direct synchronization between requirement management tools (e.g., Jira) and the Waynautic AI QA Agent.
 
-### ⚙️ Key Capabilities
+###  Key Capabilities
 - Browse all linked requirements via your connected account  
 - Import requirements instantly — no manual copy-paste or data loss  
 - Maintain version control and change history  
 
-### 🪜 Steps to Sync Requirements
+###  Steps to Sync Requirements
 1. Navigate to **Waynautic QA Agent**  
 2. Click **Sync Requirements**  
 3. Choose your connected account (e.g., Jira, ServiceNow)  
@@ -79,37 +80,37 @@ The imported requirements are now ready for AI test case generation.
 
 ---
 
-## 🤖 AI Test Case Generation
+##  AI Test Case Generation
 
-### 🔍 Overview
+###  Overview
 Once requirements are imported, the AI QA Agent automatically generates test cases tuned for exchange workflows like trading, surveillance, and clearing.
 
-### 🪜 Steps
+###  Steps
 1. Click **Generate Test Cases**  
 2. Select one or more requirements  
 3. Let the AI model process and create test cases  
 4. Review auto-generated test cases instantly  
 
-### 🧠 Generated Test Case Structure
+###  Generated Test Case Structure
 Each AI-generated test case includes:
 - **Description** – Purpose and validation scope  
 - **Step-by-step flow** – Execution logic aligned with exchange processes  
 - **Test data** – Predefined or dynamically generated inputs  
 
-### 🎯 Benefits
+###  Benefits
 - ⚡ Instant creation of detailed test cases  
 - 🎓 Domain-specific accuracy tuned to exchange protocols  
 - 🕒 Reduction in manual test design effort  
 
 ---
 
-## 🧾 Test Case Review and Customization
+##  Test Case Review and Customization
 
-### 🔍 Review Process
+###  Review Process
 - QA teams can review, accept, or reject each test case individually or in bulk  
 - Each decision trains the AI model to continuously enhance accuracy  
 
-### ✏️ Editing Capabilities
+###  Editing Capabilities
 - Modify or add test steps manually  
 - Combine manual and automated flows  
 - Adjust test data for specific edge cases  
@@ -119,19 +120,19 @@ This ensures test cases remain transparent, editable, and aligned with domain ex
 
 ---
 
-## 🔗 Requirement & Test Case Mapping
+##  Requirement & Test Case Mapping
 
-### 🧭 Mapping Overview
+###  Mapping Overview
 The AI QA Agent supports both:
 - **One-to-one mapping:** A single requirement linked to one test case  
 - **One-to-many mapping:** A requirement spawning multiple related test cases  
 
-### 🔍 Traceability Features
+###  Traceability Features
 - Full traceability between requirements → test cases → execution results  
 - Auto-updates when requirements change — new tests are generated or obsolete ones retired  
 - Ensures continuous alignment between requirements and QA coverage  
 
-#### 🧱 Example Mapping Hierarchy
+####  Example Mapping Hierarchy
 Requirement: "Detect unusual trading patterns"  
 ├── Test Case 1: Validate alert trigger for abnormal volume  
 ├── Test Case 2: Verify alert suppression for legitimate high-volume trades  
@@ -139,32 +140,32 @@ Requirement: "Detect unusual trading patterns"
 
 ---
 
-## 🐞 Defect Traceability and Impact Analysis
+##  Defect Traceability and Impact Analysis
 
-### 🔗 Defect Linking
+###  Defect Linking
 Every defect raised during execution can be:
 - Linked to one or more test cases  
 - Automatically traced back to originating requirements  
 
-### 📊 Impact Analysis
+###  Impact Analysis
 - Visualize coverage gaps across modules  
 - Track defects by requirement, release, or component  
 - Link historical defects with release notes and change requests  
 - Analyze impact across the QA lifecycle  
 
-### 🎯 Benefits
-- ✅ End-to-end visibility of defect origins  
-- 🔍 Streamlined root cause analysis  
-- 📈 Data-driven release decision-making  
+###  Benefits
+-  End-to-end visibility of defect origins  
+-  Streamlined root cause analysis  
+-  Data-driven release decision-making  
 
 ---
 
-## 💬 Intelligent Chat Interface
+##  Intelligent Chat Interface
 
-### 🧠 Overview
+###  Overview
 The integrated AI Chat Interface acts as a real-time QA assistant for all stakeholders.
 
-### 🗣️ Capabilities
+###  Capabilities
 Users can query the system in natural language:
 - “Show failed regressions linked to my changes.”  
 - “Are all failure paths in the payment gateway covered?”  
@@ -172,14 +173,14 @@ Users can query the system in natural language:
 
 The AI interprets queries, analyzes QA data, and returns relevant insights with supporting metrics.
 
-#### 💡 Example Output
+####  Example Output
 > “There are unresolved defects and incomplete test cases in the Payment Gateway module. Recommendation: Do not proceed with go-live.”
 
 This conversational interface ensures real-time situational awareness for project managers, QA leads, and developers.
 
 ---
 
-## ⚙️ Advanced Features {#advanced-features}
+##  Advanced Features {#advanced-features}
 
 | Feature | Description |
 |----------|-------------|
@@ -190,31 +191,31 @@ This conversational interface ensures real-time situational awareness for projec
 
 ---
 
-## 🧠 Best Practices
+##  Best Practices
 
-### 🧾 For Requirements
+###  For Requirements
 - Maintain clear, atomic requirement statements  
 - Group by functional area (e.g., Surveillance, Risk, Matching Engine)  
 - Keep requirement names concise and descriptive  
 
-### 🧪 For Test Cases
+###  For Test Cases
 - Review generated test cases before approval  
 - Customize critical scenarios with domain insights  
 - Reuse validated test cases across releases  
 
-### 🐞 For Defects
+###  For Defects
 - Ensure all defects are linked to at least one test case  
 - Add contextual notes (release, module, severity)  
 - Review recurring defect patterns for AI learning  
 
-### 💡 General Tips
-- 🔁 Use requirement sync frequently to capture latest changes  
-- 📊 Export mapping reports weekly for QA governance reviews  
-- 💬 Use chat interface for instant QA summaries  
+###  General Tips
+-  Use requirement sync frequently to capture latest changes  
+-  Export mapping reports weekly for QA governance reviews  
+-  Use chat interface for instant QA summaries  
 
 ---
 
-## 🧰 Troubleshooting
+##  Troubleshooting
 
 | Problem | Possible Cause | Solution |
 |----------|----------------|-----------|
@@ -225,14 +226,14 @@ This conversational interface ensures real-time situational awareness for projec
 
 ---
 
-## 🏁 Summary
+##  Summary
 
 The **Waynautic AI QA Agent** delivers intelligent, automated QA lifecycle management purpose-built for stock exchange environments.  
 By combining requirement synchronization, AI-driven test design, traceability, and conversational insights, it ensures total coverage and governance across all functional areas.
 
-### 🔑 Key Takeaways
-- 🔗 Connect requirements directly from Jira with zero manual effort  
-- 🤖 Instantly generate domain-specific test cases using AI  
-- 📋 Maintain one-to-one traceability between requirements, tests, and defects  
-- 💬 Gain instant QA insights through the chat interface  
-- 🧠 Continuously improve coverage and accuracy via AI learning  
+###  Key Takeaways
+-  Connect requirements directly from Jira with zero manual effort  
+-  Instantly generate domain-specific test cases using AI  
+-  Maintain one-to-one traceability between requirements, tests, and defects  
+-  Gain instant QA insights through the chat interface  
+-  Continuously improve coverage and accuracy via AI learning  

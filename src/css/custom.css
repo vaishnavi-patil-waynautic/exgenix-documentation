@@ -928,3 +928,88 @@ a.header-anchor svg {
 
 
 
+
+
+
+/* ===============================
+   FONT, EMOJI, AND PADDING FIXES
+   =============================== */
+
+/* Reduce overall font size */
+html, body {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+/* Headings smaller and tighter */
+.theme-doc-markdown h1 {
+  font-size: 1.8rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.theme-doc-markdown h2 {
+  font-size: 1.4rem !important;
+  margin-bottom: 0.4rem !important;
+}
+.theme-doc-markdown h3 {
+  font-size: 1.2rem !important;
+  margin-bottom: 0.3rem !important;
+}
+
+/* Remove emojis before headings */
+.theme-doc-markdown h1::before,
+.theme-doc-markdown h2::before,
+.theme-doc-markdown h3::before {
+  content: "" !important;
+}
+
+/* Optional: Remove any emoji directly in text (unicode emoji range) */
+.theme-doc-markdown * {
+  font-family: 'Inter', sans-serif;
+}
+.theme-doc-markdown :is(h1, h2, h3, p)::before {
+  content: none !important;
+}
+
+/* Remove extra padding around main content */
+/* .docItemCol_VOVn,
+.generatedIndexPage_vN6x {
+  padding: 0 4rem !important; /* reduced from 10rem 
+} */
+
+/* Reduce section spacing */
+/* .theme-doc-markdown section,
+.theme-doc-markdown article {
+  margin: 0 !important;
+  padding: 0 !important;
+} */
+
+/* Remove padding around container */
+.docMainContainer_TBSr,
+.docMainContainer_TBSr .container {
+  padding: 0 0.7rem !important;
+  margin: 0 !important;
+}
+
+/* Adjust breadcrumb spacing */
+/* .breadcrumbs {
+  margin: 0 0 0.5rem 0 !important;
+  padding: 0 !important;
+} */
+
+/* Adjust sidebar padding too */
+/* .theme-doc-sidebar-container {
+  padding: 0.5rem !important;
+} */
+
+/* Add spacing above copyright text */
+.footer__bottom {
+  margin-top: 1.5rem !important; /* adjust as needed: 1rem–2rem works well */
+}
+
+.footer__copyright {
+  margin-top: 1rem !important;
+  padding-top: 0.5rem !important;
+  border-top: 1px solid #e0e0e0; /* optional clean divider line */
+  font-size: 0.9rem !important;
+  opacity: 0.85;
+}

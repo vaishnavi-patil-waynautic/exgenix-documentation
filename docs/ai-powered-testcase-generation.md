@@ -1,9 +1,10 @@
 ---
 title: AI-Powered Test Case Generation
 sidebar_position: 4
+hide_table_of_contents: true
 ---
 
-# ⚡ AI-Powered Test Case Generation
+# AI-Powered Test Case Generation
 
 ---
 
@@ -13,11 +14,11 @@ The AI engine intelligently classifies every generated test case into **Positive
 
 ---
 
-## 🧩 Category 1: From FIX / ETI / Custom Binary API Definitions & Requirement Documents
+## Category 1: From FIX / ETI / Custom Binary API Definitions & Requirement Documents
 
 Automatically generate test cases directly from **API specifications** such as **FIX**, **ETI**, or **Custom Binary API (Enhanced Trading Interface)** files.
 
-### ⚙️ Steps
+### Steps
 
 1. **Upload API Document**  
    Import `.txt`, `.csv`, or `.pdf` definitions for FIX, ETI, or Binary APIs.  
@@ -29,7 +30,7 @@ Automatically generate test cases directly from **API specifications** such as *
 4. **Generate Test Cases**  
    The AI parses each tag, rule, and dependency to produce comprehensive test cases.
 
-### 🧾 Example Output
+### Example Output
 
 | **Type** | **Example Description** |
 |-----------|--------------------------|
@@ -41,11 +42,11 @@ Automatically generate test cases directly from **API specifications** such as *
 
 ---
 
-## 📘 Category 2: From Business Requirement Documents (BRD) & Impact Assessment Reports
+## Category 2: From Business Requirement Documents (BRD) & Impact Assessment Reports
 
 AI models can extract **functional** and **business-level** test cases directly from **BRDs**, **FSDs**, and **Impact Assessment Reports** — ensuring every workflow is covered.
 
-### ⚙️ Steps
+### Steps
 
 1. **Upload Document(s)**  
    Supports `.pdf`, `.docx`, `.txt`, and scanned input formats.  
@@ -57,7 +58,7 @@ AI models can extract **functional** and **business-level** test cases directly 
 4. **Generate Test Cases**  
    Each logical business step is converted into a fully structured QA test case.
 
-### 🧾 Example Output
+### Example Output
 
 | **Type** | **Example Description** |
 |-----------|--------------------------|
@@ -69,11 +70,11 @@ AI models can extract **functional** and **business-level** test cases directly 
 
 ---
 
-## 🧠 Category 3: From User Stories Integrated via ADO or Jira
+## Category 3: From User Stories Integrated via ADO or Jira
 
 Seamlessly connect **Azure DevOps (ADO)** or **Jira** to auto-generate test cases from **user stories**, **epics**, and **acceptance criteria**.
 
-### ⚙️ Steps
+### Steps
 
 1. **Connect to ADO / Jira**  
    Authenticate and access your requirement repositories.  
@@ -84,7 +85,7 @@ Seamlessly connect **Azure DevOps (ADO)** or **Jira** to auto-generate test case
 4. **Review and Map**  
    Link generated test cases back to stories for **traceability**.
 
-### 🧾 Example Output
+### Example Output
 
 | **Type** | **Example Description** |
 |-----------|--------------------------|
@@ -96,9 +97,9 @@ Seamlessly connect **Azure DevOps (ADO)** or **Jira** to auto-generate test case
 
 ---
 
-## 🌟 Key Highlights
+## Key Highlights
 
-| 💡 Feature | 🚀 Description |
+|  Feature |  Description |
 |-------------|----------------|
 | **Unified Coverage** | Generate test cases from APIs, BRDs, and user stories within one platform |
 | **Lifecycle Integration** | Auto-sync with **Jira / ADO** for continuous alignment |
@@ -113,5 +114,4 @@ Seamlessly connect **Azure DevOps (ADO)** or **Jira** to auto-generate test case
 
 ---
 
-> © 2025 **Exgenix Technologies**  
-> *Empowering intelligent QA for the world’s financial systems.*
+

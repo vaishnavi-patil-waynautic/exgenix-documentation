@@ -61,7 +61,7 @@ function HomepageHeader() {
           ⚡ Exgenix
         </Heading>
         <p className="hero__subtitle">
-          AI-Powered QA Governance for Capital Market Ecosystems
+          AI-Powered QA Governance for Stock Exchange Ecosystems
         </p>
         <div className={styles.buttons}>
           <Link
@@ -81,30 +81,41 @@ function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
+          {/* Feature 1 */}
           <div className="col col--4">
             <div className="text--center">
-              <h3>🤖 AI-Driven Automation</h3>
+              <h3>🏛️ QA Governance Engine for Stock Exchanges</h3>
               <p>
-                Automatically generate, execute, and validate FIX / ETI / Binary
-                API tests — no manual scripting required.
+                <em>“From APIs to Clearing — One Governance View.”</em><br />
+                Exgenix unifies QA across Gateway, Matching Engine, Risk, Clearing, 
+                and Surveillance — ensuring full traceability, coverage, and compliance. 
+                It transforms testing into true quality governance for trading ecosystems.
               </p>
             </div>
           </div>
+
+          {/* Feature 2 */}
           <div className="col col--4">
             <div className="text--center">
-              <h3>📊 Real-Time QA Insights</h3>
+              <h3>🧩 True No-Code Automation for Complex Trading Protocols</h3>
               <p>
-                Monitor coverage, track validation metrics, and gain instant
-                transparency into your testing lifecycle.
+                <em>“Empower QA teams to automate without coding.”</em><br />
+                Exgenix offers a no-code interface to automate FIX, ETI, and proprietary 
+                APIs — enabling QA and domain teams to simulate, execute, and validate 
+                complex trading workflows without scripts or code.
               </p>
             </div>
           </div>
+
+          {/* Feature 3 */}
           <div className="col col--4">
             <div className="text--center">
-              <h3>🔗 Seamless Integrations</h3>
+              <h3>🧠 AI-Powered Test Case Generation & Governance</h3>
               <p>
-                Connect with Jira, Jenkins, and exchange simulators for
-                end-to-end automation and reporting.
+                <em>“AI that thinks like a QA lead — not a script.”</em><br />
+                Exgenix’s AI engine auto-generates test cases from JIRA, BRDs, or API specs — 
+                ensuring impact-aware updates and seamless integration with JIRA, CI/CD, 
+                and governance pipelines.
               </p>
             </div>
           </div>
@@ -113,6 +124,7 @@ function HomepageFeatures() {
     </section>
   );
 }
+
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();

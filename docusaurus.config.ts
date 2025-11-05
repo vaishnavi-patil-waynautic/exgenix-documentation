@@ -310,11 +310,11 @@ scripts: [
             },
             {
               label: 'API Testing Guide',
-              to: '/docs/sample-template',
+              to: '/',
             },
             {
               label: 'Performance Testing',
-              to: '/docs/tutorial-extras/manage-docs-versions',
+              to: '/',
             },
           ],
         },
@@ -323,15 +323,18 @@ scripts: [
           items: [
             {
               label: 'GitHub Discussions',
-              href: 'https://github.com/exgenix/docs/discussions',
+              // href: 'https://github.com/exgenix/docs/discussions',
+              to: '/',
             },
             {
               label: 'Discord',
-              href: 'https://discord.gg/exgenix',
+              // href: 'https://discord.gg/exgenix',
+              to: '/',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/exgenix',
+              // href: 'https://twitter.com/exgenix',
+              to: '/',
             },
           ],
         },
@@ -339,21 +342,18 @@ scripts: [
           title: 'Company',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Videos',
+              to: '/videos',
             },
             {
               label: 'Exgenix Platform',
               href: 'https://exgenix.com',
             },
-            {
-              label: 'Support',
-              href: 'https://support.exgenix.com',
-            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Exgenix. Built with Docusaurus.`,
+      copyright: '© 2025 Exgenix Technologies.<br/>Empowering intelligent QA for the world’s financial systems.',
+
     },
     prism: {
       theme: prismThemes.github,

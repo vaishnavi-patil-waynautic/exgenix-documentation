@@ -1,9 +1,10 @@
 ---
 title: Exgenix Quick Start Guide (Trial Access)
 sidebar_position: 2
+hide_table_of_contents: true
 ---
 
-# 🚀 Exgenix Quick Start Guide (Trial Access)
+#  Exgenix Quick Start Guide (Trial Access)
 
 ---
 
@@ -55,9 +56,9 @@ This Quick Start Guide provides your **access details**, **project references**,
 
 ## 4. Recommended First Steps
 
-✅ **Step 1:** Login to all platforms using the credentials above.  
-✅ **Step 2:** Review the project in **Jira/ADO** — identify linked test cases and user stories.  
-✅ **Step 3:** Explore the following resources or sample test scenarios:
+- **Step 1:** Login to all platforms using the credentials above.  
+- **Step 2:** Review the project in **Jira/ADO** — identify linked test cases and user stories.  
+- **Step 3:** Explore the following resources or sample test scenarios:
 
 - 🎥 **Exgenix Demo 1** — *(Attach video link)*  
 - 🎥 **Exgenix Demo 2** — *(Attach video link)*  

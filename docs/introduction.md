@@ -1,9 +1,10 @@
 ---
-title: Exgenix — AI-Powered QA Governance for Capital Market Ecosystems
+title: Exgenix — AI-Powered QA Governance for Stock Exchange Ecosystems
 sidebar_position: 1
+hide_table_of_contents: true
 ---
 
-# 🤖 Exgenix: AI-Powered QA Governance for Capital Market Ecosystems
+# Exgenix: AI-Powered QA Governance for Stock Exchange Ecosystems
 
 ---
 
@@ -13,9 +14,9 @@ sidebar_position: 1
 
 Unlike conventional automation tools, **Exgenix** extends beyond API automation — it redefines the **entire QA lifecycle** by combining:
 
-- 🤖 **AI-powered test generation**  
-- 🔍 **Governance insights**  
-- 🔗 **Traceability across every layer — from Gateway to Clearing**
+-  **AI-powered test generation**  
+-  **Governance insights**  
+-  **Traceability across every layer — from Gateway to Clearing**
 
 ---
 
@@ -36,7 +37,7 @@ Unlike conventional automation tools, **Exgenix** extends beyond API automation 
 
 ## 3. Core Capabilities
 
-### 🔗 AI Test Case Generation
+###  AI Test Case Generation
 - Generate **positive**, **negative**, and **boundary** test cases from:
   - FIX / ETI / Custom Binary API definitions
   - BRD and Impact Assessment Documents
@@ -45,7 +46,7 @@ Unlike conventional automation tools, **Exgenix** extends beyond API automation 
 
 ---
 
-### ⚙️ AI QA Governance Module *(Prototype Stage)*
+###  AI QA Governance Module *(Prototype Stage)*
 
 - End-to-end visibility across **requirements → test cases → executions → defects**  
 - AI-driven **traceability graph** and **coverage heat maps**  
@@ -59,7 +60,7 @@ and the **AI QA Agent** will generate instant insights.
 
 ---
 
-### 📊 AI QA Agent (Governance & Insight Engine)
+###  AI QA Agent (Governance & Insight Engine)
 
 - Conversational interface: **“Ask Me Anything” for QA insights**
 - Integration with **Jira / Azure DevOps** for automated linkage
@@ -75,13 +76,13 @@ and the **AI QA Agent** will generate instant insights.
 - Maintain **data lineage** from trade inception to clearing confirmation  
 - Replay **real-world order traffic** to simulate end-to-end trade lifecycle  
 
-⚡ **Outcome:** Instant, production-like datasets — enabling **faster validation cycles** for dependent systems.
+ **Outcome:** Instant, production-like datasets — enabling **faster validation cycles** for dependent systems.
 
 ---
 
 ## 5. Core Modules
 
-### ⚙️ API Configuration
+###  API Configuration
 Define and manage FIX / ETI / Custom Binary API, ETI, or custom APIs with reusable templates.
 
 -  Configure endpoints, authentication, and headers  
@@ -90,7 +91,7 @@ Define and manage FIX / ETI / Custom Binary API, ETI, or custom APIs with reusab
 
 ---
 
-### 🧮 Test Data Configuration
+###  Test Data Configuration
 Centralized control of reusable and dynamic datasets.
 
 -  Create or auto-generate test data  
@@ -99,7 +100,7 @@ Centralized control of reusable and dynamic datasets.
 
 ---
 
-### 🧰 Test Configuration
+###  Test Configuration
 Design realistic workflows with complete flexibility.
 
 -  Sequence APIs for test flows  
@@ -108,7 +109,7 @@ Design realistic workflows with complete flexibility.
 
 ---
 
-### 🚀 Execution
+###  Execution
 Seamless test execution and real-time monitoring.
 
 -  Run single or batch suites  
@@ -117,7 +118,7 @@ Seamless test execution and real-time monitoring.
 
 ---
 
-### 📈 Reports
+###  Reports
 Comprehensive QA visibility and governance.
 
 -  Request/response traceability  
@@ -127,12 +128,12 @@ Comprehensive QA visibility and governance.
 
 ## 6. Key Advantages
 
-- 🧩 **No-Code Testing:** Create and run complex tests easily  
-- 🤖 **AI-Driven:** Auto-generates test cases and scenarios  
-- 💼 **Domain-Focused:** Designed for trading, risk, and clearing APIs  
-- 🔗 **Integrated:** Works with Jira, Jenkins, and exchange simulators  
-- 🚀 **Scalable:** Supports enterprise-wide QA expansion  
-- 📊 **Insightful:** Built-in governance and reporting dashboards  
+-  **No-Code Testing:** Create and run complex tests easily  
+-  **AI-Driven:** Auto-generates test cases and scenarios  
+-  **Domain-Focused:** Designed for trading, risk, and clearing APIs  
+-  **Integrated:** Works with Jira, Jenkins, and exchange simulators  
+-  **Scalable:** Supports enterprise-wide QA expansion  
+-  **Insightful:** Built-in governance and reporting dashboards  
 
 ---
 
