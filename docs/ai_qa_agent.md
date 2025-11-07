@@ -1,6 +1,6 @@
 ---
 title: Waynautic AI QA Agent – User Guide
-sidebar_position: 5
+sidebar_position: 8
 hide_table_of_contents: true
 ---
 

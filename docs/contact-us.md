@@ -1,6 +1,6 @@
 ---
 title: Contact Us
-sidebar_position: 6
+sidebar_position: 10
 hide_table_of_contents: true
 ---
 

@@ -1,20 +1,6 @@
-/**
- * ==============================================
- * React Native Style Docusaurus Theme
- * Global Custom CSS (Optimized & Responsive)
- * ==============================================
- */
-
-/* -------------------------------
-   Font Import
--------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-/* -------------------------------
-   Light Mode Variables
--------------------------------- */
 :root {
-  /* Primary Palette */
   --ifm-color-primary: #2F67F6;
   --ifm-color-primary-dark: #2758D4;
   --ifm-color-primary-darker: #224EC0;
@@ -22,8 +8,6 @@
   --ifm-color-primary-light: #4A7FF8;
   --ifm-color-primary-lighter: #6C98FA;
   --ifm-color-primary-lightest: #A8C3FD;
-
-  /* Layout & Background */
   --ifm-background-color: #FFFFFF;
   --ifm-background-surface-color: #FCFAFA;
   --ifm-toc-border-color: #E5E7EB;
@@ -32,20 +16,13 @@
   --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --ifm-heading-color: #0F172A;
   --ifm-text-color: #1E293B;
-
-  /* Rounded Corners & Spacing */
   --ifm-global-radius: 10px;
   --ifm-navbar-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
   --ifm-spacing-horizontal: 1.25rem;
   --ifm-spacing-vertical: 1.25rem;
-
-  /* Code Highlight */
   --docusaurus-highlighted-code-line-bg: rgba(47, 103, 246, 0.08);
 }
 
-/* -------------------------------
-   Dark Mode
--------------------------------- */
 [data-theme='dark'] {
   --ifm-color-primary: #7BA9FF;
   --ifm-background-color: #111827;
@@ -58,9 +35,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(123, 169, 255, 0.2);
 }
 
-/* -------------------------------
-   Global Layout & Typography
--------------------------------- */
 * {
   transition: all 0.2s ease-in-out;
 }
@@ -69,13 +43,11 @@ html,
 body {
   background-color: var(--ifm-background-surface-color);
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
   color: var(--ifm-text-color);
+  font-size: 14px !important;
+  line-height: 1.5 !important;
 }
 
-/* -------------------------------
-   Navbar
--------------------------------- */
 .navbar {
   box-shadow: var(--ifm-navbar-shadow);
   background-color: var(--ifm-navbar-background-color);
@@ -83,9 +55,6 @@ body {
   color: var(--ifm-text-color);
 }
 
-/* -------------------------------
-   Sidebar
--------------------------------- */
 .menu__link {
   border-radius: 10px;
   padding: 8px 12px;
@@ -104,7 +73,6 @@ body {
   color: var(--ifm-heading-color) !important;
 }
 
-/* Dark Mode Sidebar Overrides */
 [data-theme='dark'] .menu__link {
   color: var(--ifm-text-color) !important;
 }
@@ -118,9 +86,6 @@ body {
   color: #7BA9FF !important;
 }
 
-/* -------------------------------
-   Main Layout
--------------------------------- */
 .main-wrapper {
   display: flex;
   justify-content: center;
@@ -136,19 +101,14 @@ body {
   padding: 1rem 0;
 }
 
-/* Content Width */
 .docItemCol,
 .theme-doc-markdown {
-  /* max-width: 950px; */
   width: 100%;
   margin: 0 auto !important;
   flex: 1 1 auto !important;
   padding: 0.5rem !important;
 }
 
-/* -------------------------------
-   Markdown Content Styling
--------------------------------- */
 .theme-doc-markdown h1,
 .theme-doc-markdown h2,
 .theme-doc-markdown h3 {
@@ -156,6 +116,35 @@ body {
   margin-bottom: 0.75rem !important;
   font-weight: 700;
   color: var(--ifm-heading-color);
+}
+
+.theme-doc-markdown h1 {
+  font-size: 1.8rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.theme-doc-markdown h2 {
+  font-size: 1.4rem !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.theme-doc-markdown h3 {
+  font-size: 1.2rem !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.theme-doc-markdown h1::before,
+.theme-doc-markdown h2::before,
+.theme-doc-markdown h3::before {
+  content: "" !important;
+}
+
+.theme-doc-markdown * {
+  font-family: 'Inter', sans-serif;
+}
+
+.theme-doc-markdown :is(h1, h2, h3, p)::before {
+  content: none !important;
 }
 
 .theme-doc-markdown p {
@@ -167,9 +156,6 @@ body {
   margin-bottom: 0.5rem !important;
 }
 
-/* -------------------------------
-   Code Blocks & Cards
--------------------------------- */
 .prism-code {
   border-radius: 0.75rem;
   padding: 1rem;
@@ -210,9 +196,6 @@ body {
   border-radius: 8px;
 }
 
-/* -------------------------------
-   Hide Right-hand TOC
--------------------------------- */
 .theme-doc-toc-desktop,
 .theme-doc-toc-mobile,
 .tableOfContents_bqdL,
@@ -226,29 +209,18 @@ body {
   margin: 0 !important;
 }
 
-/* Expand Main Content Full Width */
 .col.docItemCol_VOVn {
   flex: 1 1 100% !important;
   max-width: 100% !important;
-  /* padding: 0 50px !important; */
 }
 
-.col{
-    width: 100% !important;
+.col {
+  width: 100% !important;
 }
 
-/* Index Page Adjustments */
 .generatedIndexPage_vN6x {
   max-width: 100% !important;
   width: 100% !important;
-  /* padding: 0 2rem !important; */
-  /* margin: 0 auto !important; */
-}
-
-.docMainContainer_TBSr .container {
-  max-width: 100% !important;
-  /* padding: 0 150px !important; */
-  padding: 0 10rem !important;
 }
 
 .generatedIndexPage_vN6x .row {
@@ -261,47 +233,57 @@ body {
   max-width: 100% !important;
 }
 
-/* -------------------------------
-   Step Blocks
--------------------------------- */
 .step-block {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 2rem 0;
-  position: relative;
+  flex-wrap: wrap;
 }
 
 .step-text {
-  flex: 1.2;
+  flex: 1 1 60%;
+  min-width: 300px;
   line-height: 1.6;
-  font-size: 1rem;
-  color: var(--ifm-text-color);
 }
 
 .step-image {
-  flex: 0 0 240px;
+  flex: 1 1 35%;
+  min-width: 250px;
+  max-width: 400px;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .step-image img {
   width: 100%;
-  border-radius: 10px;
-  cursor: zoom-in;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .step-image img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
 
-/* -------------------------------
-   Image Overlay
--------------------------------- */
+.image-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.image-caption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
 .image-overlay,
 .image-viewer-overlay {
   position: fixed;
@@ -351,11 +333,6 @@ body {
   to { opacity: 1; }
 }
 
-/* -------------------------------
-   Responsive Adjustments
--------------------------------- */
-
-/* Tablet (≤1200px) */
 @media screen and (max-width: 1200px) {
   .generatedIndexPage_vN6x .col {
     flex: 1 1 48% !important;
@@ -363,7 +340,6 @@ body {
   }
 }
 
-/* Mobile (≤960px) */
 @media screen and (max-width: 960px) {
   .theme-doc-sidebar-container {
     width: 100% !important;
@@ -403,7 +379,6 @@ body {
   }
 }
 
-/* Small Mobile (≤600px) */
 @media screen and (max-width: 600px) {
   html, body {
     font-size: 15px;
@@ -427,87 +402,19 @@ body {
   }
 }
 
-/* ==========================================================
-   FIX: Prevent Main Content Overlapping Sidebar
-   Align main content like generatedIndexPage_vN6x layout
-========================================================== */
-
-/* Sidebar fixed width and layout consistency */
-/* .theme-doc-sidebar-container {
-  flex: 0 0 260px !important;
-  width: 460px !important;
-  background: var(--ifm-sidebar-background-color);
-  border-right: 1px solid var(--ifm-toc-border-color);
-  padding: 1rem 0.75rem !important;
-  position: sticky;
-  top: 60px; /* below navbar 
-  height: calc(100vh - 60px);
-  overflow-y: auto;
-  z-index: 50;
-} */
-
-/* Main area respects sidebar width */
-/* .theme-doc-main {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-left: 460px; /* match sidebar width
-  padding: 2rem;
-  box-sizing: border-box;
-} */
-
-/* Make the document content container consistent with generatedIndexPage_vN6x */
-/* .docItemContainer_Djhp {
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem;
-  background: var(--ifm-background-color);
-  box-sizing: border-box;
-} */
-
-/* Prevent sidebar overlap or overflow on smaller screens */
-/* @media (max-width: 996px) {
-  .theme-doc-sidebar-container {
-    position: relative;
-    width: 100% !important;
-    height: auto;
-    border-right: none;
-    margin-bottom: 1rem;
-  }
-
-  .theme-doc-main {
-    margin-left: 0;
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .docItemContainer_Djhp {
-    padding: 0 1rem;
-  }
-} */
-
-/* --- Make main doc content wide with only 10rem side padding --- */
-
-/* Remove default Docusaurus container constraints */
 .docMainContainer_TBSr .container {
   max-width: 100% !important;
   padding: 0 !important;
-  margin: 0 auto !important;
+  margin: 0 !important;
 }
 
-/* Stretch main content column to 100% width */
 .docItemCol_VOVn {
   flex: 1 1 100% !important;
   max-width: 100% !important;
-  padding: 0 10rem !important; /* ✅ your requested side padding */
+  padding: 0 10rem !important;
   box-sizing: border-box;
 }
 
-/* Remove right-hand TOC and spacing entirely */
 .col--3,
 .theme-doc-toc-desktop,
 .tableOfContents_bqdL {
@@ -517,7 +424,6 @@ body {
   margin: 0 !important;
 }
 
-/* Ensure row uses full width without leftover spacing */
 .row {
   display: flex;
   justify-content: center;
@@ -525,93 +431,24 @@ body {
   margin: 0 !important;
 }
 
-/* Keep article responsive and centered */
 article {
   width: 100% !important;
   max-width: 100% !important;
   margin: 0 auto !important;
 }
 
-/* For smaller screens, reduce padding for readability */
 @media (max-width: 1024px) {
   .docItemCol_VOVn {
     padding: 0 2rem !important;
   }
 }
 
-
-/* --- Full-width main doc content (no row or TOC spacing) --- */
-
-/* Remove Docusaurus container width limit */
 .docMainContainer_TBSr .container {
   max-width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
-/* Remove .row spacing entirely */
-.docMainContainer_TBSr .row {
-  display: block !important; /* prevents column layout */
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  gap: 0 !important;
-}
-
-/* Expand main content column to full width */
-.docItemCol_VOVn {
-  width: 100% !important;
-  max-width: 100% !important;
-  flex: none !important;
-  padding: 0 10rem !important; /* ✅ only desired padding */
-  box-sizing: border-box;
-}
-
-/* Hide the right TOC and its parent column */
-.col--3,
-.theme-doc-toc-desktop,
-.tableOfContents_bqdL {
-  display: none !important;
-  width: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Make sure article fills width */
-.docItemContainer_Djhp article {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 auto !important;
-}
-
-/* Responsive adjustment */
-@media (max-width: 1024px) {
-  .docItemCol_VOVn {
-    padding: 0 2rem !important;
-  }
-}
-
-
-/* --- Full-width doc layout (no grid columns, full-width content) --- */
-
-/* Remove container constraints */
-.docMainContainer_TBSr {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box;
-}
-
-/* Remove Docusaurus default inner container padding and width cap */
-.docMainContainer_TBSr .container {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Kill Docusaurus flex-based .row grid — full width, no gaps */
 .docMainContainer_TBSr .row {
   display: block !important;
   width: 100% !important;
@@ -620,16 +457,14 @@ article {
   gap: 0 !important;
 }
 
-/* ✅ Make main content column span full width of container */
-.col.docItemCol_VOVn {
+.docItemCol_VOVn {
   width: 100% !important;
   max-width: 100% !important;
   flex: none !important;
-  padding: 0 10rem !important; /* Your desired page padding */
+  padding: 0 10rem !important;
   box-sizing: border-box;
 }
 
-/* Remove right-side TOC completely */
 .col--3,
 .theme-doc-toc-desktop,
 .tableOfContents_bqdL {
@@ -639,23 +474,70 @@ article {
   padding: 0 !important;
 }
 
-/* Make sure article fills available width */
 .docItemContainer_Djhp article {
   width: 100% !important;
   max-width: 100% !important;
   margin: 0 auto !important;
 }
 
-/* Responsive fix: smaller padding on mobile */
+@media (max-width: 1024px) {
+  .docItemCol_VOVn {
+    padding: 0 2rem !important;
+  }
+}
+
+.docMainContainer_TBSr {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+.docMainContainer_TBSr .container {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.docMainContainer_TBSr .row {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+.col.docItemCol_VOVn {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: none !important;
+  padding: 0 10rem !important;
+  box-sizing: border-box;
+}
+
+.col--3,
+.theme-doc-toc-desktop,
+.tableOfContents_bqdL {
+  display: none !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.docItemContainer_Djhp article {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+}
+
 @media (max-width: 1024px) {
   .col.docItemCol_VOVn {
     padding: 0 2rem !important;
   }
 }
 
-/* --- Full-width doc layout (no grid columns, no extra spacing) --- */
-
-/* Remove default container constraints */
 .docMainContainer_TBSr {
   width: 100% !important;
   max-width: 100% !important;
@@ -664,7 +546,6 @@ article {
   box-sizing: border-box;
 }
 
-/* Inner container full width */
 .docMainContainer_TBSr .container {
   width: 100% !important;
   max-width: 100% !important;
@@ -672,7 +553,6 @@ article {
   padding: 0 !important;
 }
 
-/* Remove the default .row layout behavior */
 .docMainContainer_TBSr .row {
   display: block !important;
   width: 100% !important;
@@ -681,16 +561,14 @@ article {
   gap: 0 !important;
 }
 
-/* ✅ Main content column (regular doc pages) */
 .col.docItemCol_VOVn {
   width: 100% !important;
   max-width: 100% !important;
   flex: none !important;
-  padding: 0 10rem !important; /* uniform side padding */
+  padding: 0 10rem !important;
   box-sizing: border-box;
 }
 
-/* ✅ Generated Index Pages (like Getting Started, Tutorials, etc.) */
 .generatedIndexPage_vN6x {
   width: 100% !important;
   max-width: 100% !important;
@@ -699,7 +577,6 @@ article {
   box-sizing: border-box;
 }
 
-/* Remove right-side TOC completely */
 .col--3,
 .theme-doc-toc-desktop,
 .tableOfContents_bqdL {
@@ -709,7 +586,6 @@ article {
   padding: 0 !important;
 }
 
-/* Ensure article itself uses full width */
 .docItemContainer_Djhp article,
 .generatedIndexPage_vN6x article {
   width: 100% !important;
@@ -717,7 +593,6 @@ article {
   margin: 0 auto !important;
 }
 
-/* Responsive fix: smaller padding on mobile/tablet */
 @media (max-width: 1024px) {
   .col.docItemCol_VOVn,
   .generatedIndexPage_vN6x {
@@ -725,43 +600,35 @@ article {
   }
 }
 
-
-/* --- Fix spacing between cards on generated index pages --- */
 .generatedIndexPage_vN6x .row {
   display: flex !important;
   flex-wrap: wrap !important;
   justify-content: flex-start !important;
-  gap: 2rem !important; /* spacing between cards */
+  gap: 2rem !important;
   margin: 0 auto !important;
   width: 100% !important;
   max-width: 100% !important;
 }
 
-/* Each card should keep its normal responsive width */
 .generatedIndexPage_vN6x .docCardListItem_W1sv {
-  flex: 1 1 calc(50% - 2rem) !important; /* two cards per row with gap */
+  flex: 1 1 calc(50% - 2rem) !important;
   box-sizing: border-box;
 }
 
-
-.generatedIndexPage_vN6x header{
-    margin-top: 2rem;
+.generatedIndexPage_vN6x header {
+  margin-top: 2rem;
 }
 
-/* Responsive: single column on smaller screens */
 @media (max-width: 1024px) {
   .generatedIndexPage_vN6x .docCardListItem_W1sv {
     flex: 1 1 100% !important;
   }
 }
 
-
-
-/* Make the generated docs index page full width */
 .docMainContainer_TBSr {
   width: 100%;
   max-width: 100%;
-  padding: 0 10rem; /* Keep consistent side padding */
+  padding: 0 10rem;
   box-sizing: border-box;
 }
 
@@ -771,39 +638,33 @@ article {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* Adds breathing room between elements */
+  gap: 1.5rem;
 }
 
-/* Ensure cards inside are spaced nicely */
 .generatedIndexPage_vN6x .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem; /* Adds spacing between cards */
+  gap: 1.5rem;
 }
 
 .generatedIndexPage_vN6x .card {
-  flex: 1 1 calc(50% - 1.5rem); /* two cards per row with spacing */
+  flex: 1 1 calc(50% - 1.5rem);
   box-sizing: border-box;
 }
 
-
-
-/* Remove container restriction */
 .docMainContainer_TBSr > .container {
   max-width: 100% !important;
   padding: 0 !important;
 }
 
-/* Make the generated index page full width */
 .generatedIndexPage_vN6x {
   width: 100% !important;
   max-width: 100% !important;
   margin: 0 auto !important;
-  padding: 0 10rem !important; /* Adjust side padding as needed */
+  padding: 0 10rem !important;
   box-sizing: border-box;
 }
 
-/* Fix the inner row to use flex layout and add spacing between cards */
 .generatedIndexPage_vN6x .row {
   display: flex;
   flex-wrap: wrap;
@@ -812,14 +673,12 @@ article {
   margin: 0 !important;
 }
 
-/* Each doc card takes roughly half width with spacing */
 .generatedIndexPage_vN6x .col {
   flex: 1 1 calc(50% - 1.5rem);
   max-width: calc(50% - 1.5rem);
   box-sizing: border-box;
 }
 
-/* For small screens, make cards full width */
 @media (max-width: 768px) {
   .generatedIndexPage_vN6x {
     padding: 0 2rem !important;
@@ -829,61 +688,7 @@ article {
     flex: 1 1 100%;
     max-width: 100%;
   }
-}
 
-.step-block {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;
-}
-
-.step-text {
-  flex: 1 1 60%;
-  min-width: 300px;
-  line-height: 1.6;
-}
-
-.step-image {
-  flex: 1 1 35%;
-  min-width: 250px;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column; /* Stack title, image, and caption vertically */
-  align-items: center;
-  text-align: center;
-}
-
-.step-image img {
-  width: 100%;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.step-image img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
-}
-
-.image-title {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 0.5rem;
-}
-
-.image-caption {
-  font-size: 0.85rem;
-  color: #666;
-  margin-top: 0.5rem;
-  font-style: italic;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
   .step-block {
     flex-direction: column;
     align-items: center;
@@ -895,7 +700,6 @@ article {
   }
 }
 
-/* Hide only the '#' anchor link that appears on hover */
 a.anchor[href^="#"],
 a.hash-link[href^="#"],
 a.header-anchor[href^="#"] {
@@ -904,7 +708,6 @@ a.header-anchor[href^="#"] {
   pointer-events: none !important;
 }
 
-/* Specifically target the '#' character (the pseudo-element or inline text) */
 a.anchor::before,
 a.hash-link::before,
 a.header-anchor::before {
@@ -912,104 +715,32 @@ a.header-anchor::before {
   content: '' !important;
 }
 
-/* Hide any direct SVG icon Docusaurus adds for the anchor */
 a.anchor svg,
 a.hash-link svg,
 a.header-anchor svg {
   display: none !important;
 }
 
-/* Force titles to remain visible */
 .markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
   color: var(--ifm-heading-color, inherit) !important;
   opacity: 1 !important;
   visibility: visible !important;
 }
 
-
-
-
-
-
-/* ===============================
-   FONT, EMOJI, AND PADDING FIXES
-   =============================== */
-
-/* Reduce overall font size */
-html, body {
-  font-size: 14px !important;
-  line-height: 1.5 !important;
-}
-
-/* Headings smaller and tighter */
-.theme-doc-markdown h1 {
-  font-size: 1.8rem !important;
-  margin-bottom: 0.5rem !important;
-}
-.theme-doc-markdown h2 {
-  font-size: 1.4rem !important;
-  margin-bottom: 0.4rem !important;
-}
-.theme-doc-markdown h3 {
-  font-size: 1.2rem !important;
-  margin-bottom: 0.3rem !important;
-}
-
-/* Remove emojis before headings */
-.theme-doc-markdown h1::before,
-.theme-doc-markdown h2::before,
-.theme-doc-markdown h3::before {
-  content: "" !important;
-}
-
-/* Optional: Remove any emoji directly in text (unicode emoji range) */
-.theme-doc-markdown * {
-  font-family: 'Inter', sans-serif;
-}
-.theme-doc-markdown :is(h1, h2, h3, p)::before {
-  content: none !important;
-}
-
-/* Remove extra padding around main content */
-/* .docItemCol_VOVn,
-.generatedIndexPage_vN6x {
-  padding: 0 4rem !important; /* reduced from 10rem 
-} */
-
-/* Reduce section spacing */
-/* .theme-doc-markdown section,
-.theme-doc-markdown article {
-  margin: 0 !important;
-  padding: 0 !important;
-} */
-
-/* Remove padding around container */
 .docMainContainer_TBSr,
 .docMainContainer_TBSr .container {
   padding: 0 0.7rem !important;
   margin: 0 !important;
 }
 
-/* Adjust breadcrumb spacing */
-/* .breadcrumbs {
-  margin: 0 0 0.5rem 0 !important;
-  padding: 0 !important;
-} */
-
-/* Adjust sidebar padding too */
-/* .theme-doc-sidebar-container {
-  padding: 0.5rem !important;
-} */
-
-/* Add spacing above copyright text */
 .footer__bottom {
-  margin-top: 1.5rem !important; /* adjust as needed: 1rem–2rem works well */
+  margin-top: 1.5rem !important;
 }
 
 .footer__copyright {
   margin-top: 1rem !important;
   padding-top: 0.5rem !important;
-  border-top: 1px solid #e0e0e0; /* optional clean divider line */
+  border-top: 1px solid #e0e0e0;
   font-size: 0.9rem !important;
   opacity: 0.85;
 }
