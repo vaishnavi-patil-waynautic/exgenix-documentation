@@ -86,10 +86,13 @@ Each collection displays:
 ---
 
 ## API Configurations
-API Configuration consists of **three guided steps** that walk you through the complete setup process.
+
 
 <div class="step-block">
   <div class="step-text">
+
+  API Configuration consists of **three guided steps** that walk you through the complete setup process.
+
     ### Step 1: Basic Info
     
     Define the basic attributes of your API endpoint.
@@ -117,26 +120,30 @@ API Configuration consists of **three guided steps** that walk you through the c
 
 ---
 
-### Step 2: Configuration
+ ### Step 2: Configuration
+
 
 Define the FIX / ETI/Custom Binary API message structure using a detailed field specification table.
 
-**FIX / ETI/Custom Binary API Message Components**
-
-The configuration table includes the following columns:
-- Sr. No.
-- Tag
-- Field Name
-- Data Type
-- Size in Bytes
-- Field Offset
-- Identifier
-- Required (Yes/No)
-- Cardinality (1, 0..1, 1..n)
-- Reference Group
-
 <div class="step-block">
   <div class="step-text">
+
+        **FIX / ETI/Custom Binary API Message Components**
+
+        The configuration table includes the following columns:
+        - Sr. No.
+        - Tag
+        - Field Name
+        - Data Type
+        - Size in Bytes
+        - Field Offset
+        - Identifier
+        - Required (Yes/No)
+        - Cardinality (1, 0..1, 1..n)
+        - Reference Group
+
+
+
     **Manual Configuration**
     
     - Click **Add Row**
@@ -497,7 +504,7 @@ Some fields depend on values in other fields (e.g., OrderQty must be positive if
 
 ### Import Failures
 
-**Problem:** PDF import doesn't extract fields correctly  
+**Problem:** **PDF import doesn't extract fields correctly** 
 **Solutions:**
 - Verify page numbers are correct (use actual PDF page index)
 - Check table name matches exactly as in document (case-sensitive)
@@ -505,7 +512,7 @@ Some fields depend on values in other fields (e.g., OrderQty must be positive if
 - Try importing smaller page ranges
 - Adjust Max Continuation Pages setting
 
-**Problem:** Excel import fails with validation errors  
+**Problem:** **Excel import fails with validation errors**  
 **Solutions:**
 - Export current datasheet to see exact column names and structure
 - Ensure Excel file has no extra columns
@@ -516,7 +523,7 @@ Some fields depend on values in other fields (e.g., OrderQty must be positive if
 ---
 
 ### Function Errors
-**Problem:** Functions don't generate expected values  
+**Problem:** **Functions don't generate expected values**  
 **Solutions:**
 - Verify function syntax is correct (must start with =)
 - Check function parameters match expected types
@@ -527,7 +534,7 @@ Some fields depend on values in other fields (e.g., OrderQty must be positive if
 ---
 
 ### Performance Issues
-**Problem:** Large datasheets load slowly  
+**Problem:** **Large datasheets load slowly**  
 **Solutions:**
 - Limit datasheets to necessary rows only
 - Use static values instead of functions where possible

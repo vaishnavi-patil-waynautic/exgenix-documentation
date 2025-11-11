@@ -17,10 +17,26 @@ This Quick Start Guide provides your **access details**, **project references**,
 
 | Platform | Access Link | Username | Password | Notes |
 |-----------|--------------|-----------|-----------|-------|
-| **Exgenix Platform** | https://exgenix.waynautic.cloud | `<your_user>` | `<your_password>` | Preloaded with **Exchange QA Project** |
-| **AI QA Agent** | https://aiqaagent.waynautic.cloud | `<your_user>` | `<your_password>` | Linked to **Exgenix workspace** |
+| **Exgenix Platform** | https://exgenix.waynautic.cloud | `<your_user>` | `<your_password>` | Preloaded with **critical APIs and collections** |
+| **AI QA Agent** | https://aiqaagent.waynautic.cloud | `<your_user>` | `<your_password>` |Preloaded with Exchange QA Project |
 | **JIRA** | https://dbg-trial.atlassian.net | `<your_user>` | `<your_password>` | Integrated with **Exgenix test traceability** |
-| **Jira ADO** | https://dbg-trial.atlassian.net | `<your_user>` | `<your_password>` | Integrated with **Exgenix test traceability** |
+| **ADO** | https://dbg-trial.atlassian.net | `<your_user>` | `<your_password>` | Integrated with **Exgenix test traceability** |
+
+
+---
+
+## 2. Trial Project Details
+
+| Platform     | Project/Module Name | Description |
+|-------------|-------------------|-------------|
+| Exgenix     | API configuration | Covers end-to-end exchange workflow (Order Entry → Trade → Clearing) |
+| Exgenix     | Test configuration | Covers end-to-end exchange workflow (Order Entry → Trade → Clearing) |
+| Exgenix     | Execution          | Covers end-to-end exchange workflow (Order Entry → Trade → Clearing) |
+| AI QA Agent | Project_Trial      | Enables QA traceability and insights for different modules and features |
+| Jira        | Project_Trial      | Contains User Stories and Acceptance Criteria linked to Exgenix tests |
+| ADO         | Project_Trial      | Contains User Stories and Acceptance Criteria linked to Exgenix tests |
+
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -68,21 +84,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   </div>
 </div>
 
-
 ---
-
-## 2. Trial Project Details
-
-| Platform | Project Name | Description | Reference ID |
-|-----------|---------------|--------------|---------------|
-| **Exgenix** | `DBG_QA_TRIAL_01` | Covers end-to-end exchange workflow *(Order Entry → Trade → Clearing)* | `EXGDBG01` |
-| **AI QA Agent** | `DBG_AI_QA_ASSIST` | Enables QA traceability and insights via conversational queries | `AIAssistDBG` |
-| **Jira** | `DBG_EXCHANGE_TESTS` | Contains User Stories & Acceptance Criteria linked to Exgenix tests | `PROJ-DBG-EX` |
-| **ADO** | `DBG_EXCHANGE_TESTS` | Contains User Stories & Acceptance Criteria linked to Exgenix tests | `PROJ-DBG-EX` |
-
-
----
-
+<!-- 
 ## 3. Key References
 
 <div
@@ -142,17 +145,20 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   </div>
 </div>
 
----
+--- -->
 
-## 4. Recommended First Steps
+## 3. Recommended First Steps
 
-- **Step 1:** Login to all platforms using the credentials above.  
-- **Step 2:** Review the project in **Jira/ADO** — identify linked test cases and user stories.  
-- **Step 3:** Explore the following resources or sample test scenarios:
+- Login to all platforms using the credentials above.  
+- Review the project in **Jira/ADO** — identify linked test cases and user stories.  
+- Explore the following resources or sample test scenarios:
+    - **API Dedinition and Flow**
+    - **Trade**
+- 🤖 **AI QA Agent Walkthrough** — [AI QA Agent Video](/videos#qa_agent)
+    - Use case - New Feature Development
+    - Use case - Regulatory Change
+    - Use case - Release Decision
 
-- 🎥 **Exgenix Demo 1** — See: [AI Generation Video](/videos#gen)
-- 🎥 **Exgenix Demo 2** — *(Attach video link)*  
-- 🤖 **AI QA Agent Walkthrough** — [AI QA Agent Video](/videos#qa_agent) 
 
 
 

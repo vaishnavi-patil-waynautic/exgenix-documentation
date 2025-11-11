@@ -1,8 +1,12 @@
 ---
+id: scenario_1
 title: 'Scenario 1'
 sidebar_position: 2
 hide_table_of_contents: true
+sidebar_label: API Definition and Flow
+slug: /sample-test-scenario/scenario-1
 ---
+
 
 # Scenario 1: ETI API Definition to Automated Script
 
@@ -28,24 +32,27 @@ This scenario demonstrates how to convert an **ETI API specification** into a fu
 
 The workflow includes:
 - Importing API definitions from PDF
-- Creating datasheets for various test scenarios
-- Designing reusable Test Action Units
-- Building automated end-to-end test cases
-- Executing complete test suites and validating responses
+- Creating datasheets
+- Designing Test Cases
+- Executing complete end-to-end automated tests
 
-This demonstrates how quickly ETI trading workflows can be automated using Exgenix without manual data entry.
+This shows how quickly ETI trading workflows can be automated using Exgenix without manual data entry.
 
 ---
 
 ## Prerequisites
 
-Ensure the following before starting:
 
-| Requirement | Details |
-|------------|---------|
-| ETI API Specification | PDF format |
-| Exgenix Access | Login credentials |
-| Workspace | Example: **Exchange 1** |
+Before starting, ensure the following:
+
+- ETI API Specification Document (PDF format)
+
+
+- Access to Exgenix
+
+
+- Exchange 1 workspace selected
+
 
 ---
 
@@ -59,8 +66,7 @@ Ensure the following before starting:
     2. Select project (e.g., **Exchange 1**)
     3. Click **Automation** tab
     4. Choose **API Configuration** from left menu
-    
-    This is your starting point for defining all API configurations for the ETI protocol.
+  
   </div>
   <div class="step-image">
     <h4 class="image-title">Navigate to API Configuration</h4>
@@ -81,7 +87,7 @@ Ensure the following before starting:
        - **Description**: ETI protocol trading API configurations
     3. Click **Create**
     
-    **Result:** Collection **ETI_Trading_APIs** is now available for organizing your ETI-related API configurations.
+    **Result:** Collection **ETI_Trading_APIs** is now available.
   </div>
   <div class="step-image">
     <h4 class="image-title">Create API Collection</h4>
@@ -102,7 +108,6 @@ Ensure the following before starting:
     2. Click **+ Create API Config**
     3. A 3-step wizard opens to guide you through the configuration process
     
-    This wizard streamlines the entire API configuration process from basic information to datasheets.
   </div>
   <div class="step-image">
     <h4 class="image-title">API Configuration List</h4>
@@ -126,7 +131,7 @@ Ensure the following before starting:
     | **Unique ID** | `101251` |
     | **Description** | Submit new limit order for equity instruments using short layout format. Supports limit orders with standard execution instructions. |
     
-    Click **Next** to proceed to the configuration step.
+    Click **Next**.
   </div>
   <div class="step-image">
     <h4 class="image-title">Basic Info Configuration</h4>
@@ -149,7 +154,6 @@ Ensure the following before starting:
     3. Choose file → Select the PDF with ETI API definitions
     4. Click **Import**
     
-    The PDF import feature automatically extracts field definitions, eliminating hours of manual configuration work.
   </div>
   <div class="step-image">
     <h4 class="image-title">PDF Import Configuration</h4>
@@ -185,12 +189,6 @@ Ensure the following before starting:
 <div class="step-block">
   <div class="step-text">
     ### Extracted Fields - Complete View
-    
-    The complete field list shows all message components:
-    - Header fields (MsgSeqNum, SenderSubID)
-    - Order fields (ClOrdID, OrderQty, Price)
-    - Execution instructions (TimeInForce, ExecInst)
-    - Additional parameters
     
     Click **Save and Proceed** to move to the datasheet creation step.
   </div>
@@ -388,7 +386,6 @@ Ensure the following before starting:
     | **Table Name** | `New Order Response (Lean Order)` |
     | **Max Continuation Pages** | `3` |
     
-    The PDF import automatically extracts all response fields including order confirmation details, execution data, and status codes.
   </div>
   <div class="step-image">
     <h4 class="image-title">Import Response from PDF</h4>
@@ -401,7 +398,7 @@ Ensure the following before starting:
 
 <div class="step-block">
   <div class="step-text">
-    ### Step 3.3: Create Validation Datasheet
+    ### Step 3.3: Create Validation/Assertion Datasheet
     
     Create a datasheet to validate response fields:
     
@@ -414,11 +411,6 @@ Ensure the following before starting:
     - `ExecID: ${capture(exec_id)}`
     - `OrderStatus: 2`
     - `ExecType: 0`
-    
-    **Functions Explained:**
-    - `validate_or_capture`: Validates expected value or captures for later use
-    - `capture`: Stores response value for use in subsequent API calls
-    - Static values: Expected response values to validate against
     
     Click **Save Changes** to complete the response API configuration.
   </div>
@@ -467,17 +459,7 @@ Ensure the following before starting:
 
 <div class="step-block">
   <div class="step-text">
-    ### Login TAU Steps Configuration
-    
-    The complete Login Test Action Unit with all five steps configured:
-    - Each step has its corresponding API configuration
-    - Datasheets are mapped for each step
-    - Wait times are configured between steps
-    - Session management is set to maintain connection
-    
     Click **Create** to save the Test Action Unit.
-    
-    This TAU can now be reused across all test cases requiring authentication.
   </div>
   <div class="step-image">
     <h4 class="image-title">Login TAU Steps</h4>
@@ -554,7 +536,6 @@ Ensure the following before starting:
     | **Schedule** | `On Demand` |
     | **Parallel Execution** | `Disabled` |
     
-    The suite configuration allows for manual execution with sequential test case processing.
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Test Suite</h4>
@@ -589,21 +570,29 @@ Ensure the following before starting:
 
 Click **Execute Suite** → Execution starts immediately
 
-Monitor live progress including:
-- Test case execution status
-- Step-by-step progress
-- Real-time validation results
-- Request/response logs
+Monitor live progress 
 
 ### Step 6.4: View Results
 
-After execution finishes:
-- Automatically redirected to **Reports**
-- Review comprehensive execution logs
-- Examine request/response details
-- Verify all validations passed
-- Analyze captured variables
-- Check execution timeline
+
+<div class="step-block">
+  <div class="step-text">
+
+  After execution finishes:
+  - Automatically redirected to **Reports**
+  - Review comprehensive execution logs
+  - Examine request/response details
+  - Verify all validations passed
+  - Analyze captured variables
+  - Check execution timeline
+
+  </div>
+  <div class="step-image">
+    <h4 class="image-title">Execution Report</h4>
+    <img src="/exgenix-documentation/img/scenario_1/22.png" alt="Execution Report" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+</div>
 
 ---
 
@@ -624,28 +613,24 @@ After execution finishes:
 ## Key Learnings
 
 ### 1. PDF Import Efficiency
-**PDF import removes hours of manual work** by automatically extracting field definitions, data types, and message structures directly from specification documents.
+**PDF import removes hours of manual work** 
 
 ### 2. Base Row Inheritance
-**Base Row Inheritance reduces repetitive test data entry**. Child rows automatically inherit common values from the base row, allowing you to override only the fields that need to vary.
+**Base Row Inheritance reduces repetitive test data entry**
 
 ### 3. Dynamic Functions
-**Dynamic Functions generate runtime values automatically**, ensuring:
-- Unique identifiers for each test iteration
-- Realistic test data variation
-- Time-based values for audit trails
-- Random values for stress testing
+**Dynamic Functions generate runtime values automatically**
 
 ### 4. Capture Functions
-**Capture Functions enable dependent API chaining** by storing response values and using them in subsequent requests, creating true end-to-end workflows.
+**Capture Functions enable dependent API chaining** 
 
 ### 5. Rapid Automation
-**End-to-end automation can be completed in minutes** once the initial setup is done. The combination of PDF import, datasheets, Test Action Units, and test cases enables rapid test development.
+**End-to-end automation can be completed in minutes** 
 
 ### 6. Reusability
-**Test Action Units promote reusability**. Common flows like login can be created once and reused across all test cases, reducing maintenance effort.
+**Test Action Units promote reusability**.
 
 ### 7. Comprehensive Coverage
-**Multiple datasheets enable comprehensive testing** - positive, negative, and edge case scenarios can all be tested using the same API configuration with different datasheets.
+**Multiple datasheets enable comprehensive testing** 
 
 ---
