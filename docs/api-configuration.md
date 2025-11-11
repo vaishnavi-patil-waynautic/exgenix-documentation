@@ -71,7 +71,7 @@ Collections act as containers for similar or related API configurations, helping
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Collection</h4>
-    <img src="/img/api_config/create_collection.png" alt="Creating a new collection" />
+    <img src="/exgenix-documentation/img/api_config/1.png" alt="Creating a new collection" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -110,7 +110,7 @@ API Configuration consists of **three guided steps** that walk you through the c
   </div>
   <div class="step-image">
     <h4 class="image-title">Basic Info Configuration</h4>
-    <img src="/img/api_config/basic_info.png" alt="API Configuration Basic Info Step" />
+    <img src="/exgenix-documentation/img/api_config/2.png" alt="API Configuration Basic Info Step" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -145,7 +145,7 @@ The configuration table includes the following columns:
   </div>
   <div class="step-image">
     <h4 class="image-title">Manual Configuration Table</h4>
-    <img src="/img/api_config/manual_config.png" alt="Manual API Configuration Table" />
+    <img src="/exgenix-documentation/img/api_config/3.png" alt="Manual API Configuration Table" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -175,7 +175,7 @@ The configuration table includes the following columns:
   </div>
   <div class="step-image">
     <h4 class="image-title">Import from PDF</h4>
-    <img src="/img/api_config/import_pdf.png" alt="Import Configuration from PDF Specification" />
+    <img src="/exgenix-documentation/img/api_config/4.png" alt="Import Configuration from PDF Specification" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -192,6 +192,8 @@ Before proceeding, verify:
 
 ### Step 3: Datasheets
 Datasheets store the input values that will be used during test execution.
+
+- 🎥 **Datasheet Configuration** — See: [Datasheet Configuration](/videos#datasheet)
 
 ---
 
@@ -222,7 +224,7 @@ Datasheets are data tables linked to API configurations where:
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Datasheet</h4>
-    <img src="/img/api_config/create_datasheet.png" alt="Creating a new datasheet" />
+    <img src="/exgenix-documentation/img/api_config/5.png" alt="Creating a new datasheet" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -240,7 +242,7 @@ Datasheets are data tables linked to API configurations where:
   </div>
   <div class="step-image">
     <h4 class="image-title">Datasheet Structure</h4>
-    <img src="/img/api_config/datasheet_structure.png" alt="Datasheet structure with rows and columns" />
+    <img src="/exgenix-documentation/img/api_config/6.png" alt="Datasheet structure with rows and columns" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -347,7 +349,7 @@ When a test case executes multiple times, you can control how data is consumed:
   </div>
   <div class="step-image">
     <h4 class="image-title">Import/Export Datasheets</h4>
-    <img src="/img/api_config/import_export_datasheet.png" alt="Import and Export Excel datasheets" />
+    <img src="/exgenix-documentation/img/api_config/7.png" alt="Import and Export Excel datasheets" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

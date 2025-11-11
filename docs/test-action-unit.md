@@ -70,11 +70,11 @@ Each Test Action Unit consists of:
     
     1. Go to **Test Configuration** in left navigation
     2. Select **Test Action Unit**
-    3. Click **+ Create Test Action Unit**
+
   </div>
   <div class="step-image">
     <h4 class="image-title">Navigate to Test Action Units</h4>
-    <img src="/img/test_action_unit/navigate_tau.png" alt="Navigate to Test Action Unit section" />
+    <img src="/exgenix-documentation/img/test_action_unit/test_action_unit.png" alt="Navigate to Test Action Unit section" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -83,7 +83,52 @@ Each Test Action Unit consists of:
 
 <div class="step-block">
   <div class="step-text">
-    ### Step 2: Define Basic Information
+    ### Step 2: Create Test Action Unit Collection
+
+    Click on ** + Create Collection**
+    
+    Provide the following details:
+    
+    **Collection Type (Required)**
+    - Select **Test Action Units Collection**
+    
+    **Name (Required)**
+    - Provide a meaningful, consistent name 
+    
+    **Description**  
+    Include:
+    - Purpose
+    - Steps grouped inside
+    - Any prerequisites
+
+    Click **Create**
+  </div>
+  <div class="step-image">
+    <h4 class="image-title">Create Test Action Unit Collection</h4>
+    <img src="/exgenix-documentation/img/test_action_unit/create_collection.png" alt="Create Test Action Unit Collection" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+</div>
+
+---
+
+<div class="step-block">
+  <div class="step-text">
+    ### Step 3: Define Basic Information
+    
+    - Navigate to newly create collection
+    - Click on "View" to open it
+    - Click on "+ Create Test Action Unit"
+  </div>
+  <div class="step-image">
+    <h4 class="image-title">Test Action Unit Collection</h4>
+    <img src="/exgenix-documentation/img/test_action_unit/tau_collection.png" alt="Test Action Unit Collection" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+</div>
+
+<div class="step-block">
+  <div class="step-text">
     
     Provide the following details:
     
@@ -103,7 +148,7 @@ Each Test Action Unit consists of:
   </div>
   <div class="step-image">
     <h4 class="image-title">Define Basic Information</h4>
-    <img src="/img/test_action_unit/basic_info.png" alt="Test Action Unit Basic Information" />
+    <img src="/exgenix-documentation/img/test_action_unit/main_tab.png" alt="Test Action Unit Basic Information" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -112,35 +157,26 @@ Each Test Action Unit consists of:
 
 <div class="step-block">
   <div class="step-text">
-    ### Step 3: Add Test Steps
+    ### Step 4: Add Test Steps
     
     Click **+ Add Step** to include API configurations.
     
     #### API Selection
     You may select:
+
+    **Step Type** 
     - Socket Connection
     - TCP/IP Request
     - TCP/IP Response
     - Custom Data Type
     
-    #### Step Properties
+    **Select API**  
+    Select the API you want to add to the Test Action Unit
     
-    **Description**  
-    Short explanation of the step's purpose.
-    
-    **Wait Time (seconds)**  
-    Delay applied before or after execution.
-    
-    **Datasheet**  
-    Choose a datasheet containing field values for that step.
-    
-    **Row Pattern**
-    - **SAME_ROW**: Use same datasheet row for all iterations
-    - **NEXT_ROW**: Move to next row per iteration
   </div>
   <div class="step-image">
     <h4 class="image-title">Add Test Steps</h4>
-    <img src="/img/test_action_unit/add_steps.png" alt="Adding test steps to Test Action Unit" />
+    <img src="/exgenix-documentation/img/test_action_unit/add_step.png" alt="Adding test steps to Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -161,11 +197,6 @@ Each Test Action Unit consists of:
     
     Each step is configured with appropriate datasheets and validation rules.
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Login Test Action Unit Example</h4>
-    <img src="/img/test_action_unit/login_example.png" alt="Example of Login Test Action Unit" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -177,36 +208,10 @@ Each Test Action Unit consists of:
     Each step within the Test Action Unit displays:
     - Step number and sequence
     - API configuration name
-    - Associated collection
-    - Datasheet selection
-    - Row pattern (SAME_ROW/NEXT_ROW)
-    - Wait time configuration
-    - Edit and delete actions
   </div>
   <div class="step-image">
     <h4 class="image-title">Step Configuration View</h4>
-    <img src="/img/test_action_unit/step_config.png" alt="Test Action Unit step configuration" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
-</div>
-
----
-
-<div class="step-block">
-  <div class="step-text">
-    ### Multiple Steps in Action
-    
-    The Test Action Unit interface allows you to:
-    - View all steps in sequence
-    - Edit individual step configurations
-    - Reorder steps using drag-and-drop
-    - Add or remove steps as needed
-    - Configure wait times between steps
-    - Set datasheet mappings for each step
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Multiple Steps View</h4>
-    <img src="/img/test_action_unit/multiple_steps.png" alt="Multiple steps in Test Action Unit" />
+    <img src="/exgenix-documentation/img/test_action_unit/step_added.png" alt="Test Action Unit step configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -249,7 +254,7 @@ When adding a Test Action Unit inside a test case, you must configure the datash
   </div>
   <div class="step-image">
     <h4 class="image-title">Datasheet Configuration Modal</h4>
-    <img src="/img/test_action_unit/datasheet_config.png" alt="Configuring datasheets for Test Action Unit" />
+    <img src="/exgenix-documentation/img/test_action_unit/datasheet_config.png" alt="Configuring datasheets for Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -284,7 +289,7 @@ When adding a Test Action Unit inside a test case, you must configure the datash
   </div>
   <div class="step-image">
     <h4 class="image-title">Before Using Test Action Units</h4>
-    <img src="/img/test_action_unit/before_tau.png" alt="Test case before using Test Action Units" />
+    <img src="/exgenix-documentation/img/test_action_unit/before_tau.png" alt="Test case before using Test Action Units" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -308,7 +313,7 @@ When adding a Test Action Unit inside a test case, you must configure the datash
   </div>
   <div class="step-image">
     <h4 class="image-title">After Using Test Action Units</h4>
-    <img src="/img/test_action_unit/after_tau.png" alt="Test case after using Test Action Units" />
+    <img src="/exgenix-documentation/img/test_action_unit/after_tau.png" alt="Test case after using Test Action Units" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -390,11 +395,6 @@ Document:
     - Error handling
     
     The complete unit ensures reliable authentication flow that can be reused across all test cases requiring user login.
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Complete Login Flow</h4>
-    <img src="/img/test_action_unit/complete_example.png" alt="Complete Login Test Action Unit configuration" />
-    <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 

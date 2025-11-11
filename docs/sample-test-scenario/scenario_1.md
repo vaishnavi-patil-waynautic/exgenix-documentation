@@ -1,5 +1,5 @@
 ---
-title: 'Scenario 1: ETI API Definition to Automated Script'
+title: 'Scenario 1'
 sidebar_position: 2
 hide_table_of_contents: true
 ---

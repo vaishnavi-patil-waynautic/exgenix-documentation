@@ -8,6 +8,11 @@ hide_table_of_contents: true
 
 ---
 
+- 🎥 **AI testcase generation using BRD document** — See: [AI testcase generation using BRD document](/videos#brd)
+- 🎥 **AI testcase generation using FIX API definition** — See: [AI testcase generation using FIX API definition](/videos#fix)
+
+---
+
 **Exgenix** empowers teams with **AI-driven, one-click test case generation** across **technical** and **business** layers — ensuring **complete QA coverage** for exchange, trading, and financial workflows.  
 
 The AI engine intelligently classifies every generated test case into **Positive**, **Negative**, and **Boundary** categories for maximum precision.

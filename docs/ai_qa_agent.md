@@ -5,6 +5,12 @@ hide_table_of_contents: true
 ---
 # AI QA Agent - Governance & Insight Engine
 
+---
+
+- 🎥 **Waynautic AI QA Agent** — See: [Waynautic AI QA Agent](/videos#qa_agent)
+
+---
+
 ## Table of Contents
 - [Overview](#overview)
 - [Key Features Demonstrated](#key-features-demonstrated)

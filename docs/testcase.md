@@ -6,6 +6,12 @@ hide_table_of_contents: true
 
 # Test Case & Configuration Module – User Guide
 
+---
+
+- 🎥 **Test Case Configuration** — See: [Test Case Configuration](/videos#testcase)
+
+---
+
 ## Table of Contents
 - [Overview](#overview)
 - [Module Structure](#module-structure)
@@ -51,12 +57,6 @@ The Test Case & Configuration module follows a clear hierarchy:
 | **Steps** | Ordered actions within a test case (TAUs or individual APIs) |
 
   </div>
-
-  <div class="step-image">
-    <h4 class="image-title">Module Structure Hierarchy</h4>
-    <img src="/img/testcase/module-structure.png" alt="Test Case Module Structure" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -94,7 +94,7 @@ Each step can be either:
 
   <div class="step-image">
     <h4 class="image-title">Test Case Structure Example</h4>
-    <img src="/img/testcase/test-case-structure.png" alt="Example Test Case Structure" />
+    <img src="/exgenix-documentation/img/testcase/testcase.png" alt="Example Test Case Structure" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -112,12 +112,6 @@ The test case view provides a comprehensive overview of all configured steps, in
       <li>Error handling configuration</li>
     </ul>
 
-  </div>
-
-  <div class="step-image">
-    <h4 class="image-title">Test Case Overview</h4>
-    <img src="/img/testcase/test-case-overview.png" alt="Complete Test Case View" />
-    <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 
@@ -161,7 +155,7 @@ The test case view provides a comprehensive overview of all configured steps, in
 
   <div class="step-image">
     <h4 class="image-title">Test Case Basic Information</h4>
-    <img src="/img/testcase/basic-info.png" alt="Test Case Name and Description" />
+    <img src="/exgenix-documentation/img/testcase/main_tab.png" alt="Test Case Name and Description" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -174,12 +168,26 @@ You can add two step types:
 
 Reusable component containing multiple APIs configured together.
 
-**Configuration:**
+
+<div class="step-block">
+  <div class="step-text">
+  **Configuration:**
 1. Click **+ Add Step**
 2. Select **Type**: TEST ACTION UNIT
 3. Choose the Test Action Unit from dropdown
 4. Configure settings (see Step Settings)
 5. Click **Configure** to set datasheets for each API within the unit
+</div>
+
+
+  <div class="step-image">
+    <h4 class="image-title">Action Type Configuration</h4>
+    <img src="/exgenix-documentation/img/testcase/type.png" alt="Action Type Configuration" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+</div>
+
+
 
 #### Type 2: Individual API Configuration
 
@@ -247,7 +255,7 @@ For each step, configure the following:
 
   <div class="step-image">
     <h4 class="image-title">Session Configuration</h4>
-    <img src="/img/testcase/session-config.png" alt="Configure Session Identifier" />
+    <img src="/exgenix-documentation/img/testcase/session.png" alt="Configure Session Identifier" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -273,12 +281,6 @@ For each step, configure the following:
   </ul>
 </div>
 
-
-  <div class="step-image">
-    <h4 class="image-title">Wait Time Configuration</h4>
-    <img src="/img/testcase/wait-time.png" alt="Configure Step Wait Time" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ### Datasheet Selection
@@ -303,7 +305,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Datasheet Configuration Modal</h4>
-    <img src="/img/testcase/datasheet-config.png" alt="Configure Datasheets for Test Action Unit" />
+    <img src="/exgenix-documentation/img/testcase/datasheet_selection.png" alt="Configure Datasheets for Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -355,7 +357,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Pattern Configuration</h4>
-    <img src="/img/testcase/pattern-nextrow.png" alt="NEXT_ROW Pattern Example" />
+    <img src="/exgenix-documentation/img/testcase/pattern.png" alt="NEXT_ROW Pattern Example" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -378,12 +380,6 @@ Associate a datasheet with the step.
     <li>Start at Row 3: Skips first two rows, useful for specific test scenarios</li>
   </ul>
 </div>
-
-  <div class="step-image">
-    <h4 class="image-title">Row Number Configuration</h4>
-    <img src="/img/testcase/row-number.png" alt="Configure Starting Row Number" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ### On Error (Error Handling)
@@ -430,7 +426,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Error Handling Configuration</h4>
-    <img src="/img/testcase/error-handling.png" alt="Configure On Error Behavior" />
+    <img src="/exgenix-documentation/img/testcase/on_error.png" alt="Configure On Error Behavior" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -478,7 +474,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Loop Configuration</h4>
-    <img src="/img/testcase/loop-config.png" alt="Configure Loop for Repeated Execution" />
+    <img src="/exgenix-documentation/img/testcase/add_loop.png" alt="Configure Loop for Repeated Execution" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -502,11 +498,11 @@ Step 4 (Logout): session1
 
   </div>
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Single Session Pattern</h4>
-    <img src="/img/testcase/single-session.png" alt="Single Session Configuration" />
+    <img src="/exgenix-documentation/img/testcase/single-session.png" alt="Single Session Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 **Pattern 2: Multiple Sessions**
@@ -526,11 +522,11 @@ Step 4 (User B Order): session2
 
   </div>
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Multiple Sessions Pattern</h4>
-    <img src="/img/testcase/multiple-sessions.png" alt="Multiple Session Configuration" />
+    <img src="/exgenix-documentation/img/testcase/multiple-sessions.png" alt="Multiple Session Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 **Pattern 3: Session Per Iteration**
@@ -549,11 +545,11 @@ Iteration 3: session_${iteration_3}
 
   </div>
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Session Per Iteration Pattern</h4>
-    <img src="/img/testcase/session-per-iteration.png" alt="Session Per Iteration Configuration" />
+    <img src="/exgenix-documentation/img/testcase/session-per-iteration.png" alt="Session Per Iteration Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 ### Datasheet Row Configuration Strategies
@@ -575,11 +571,11 @@ Each step advances to the next row in its datasheet.
 
   </div>
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Incremental Row Strategy</h4>
-    <img src="/img/testcase/incremental-rows.png" alt="Incremental Row Usage Strategy" />
+    <img src="/exgenix-documentation/img/testcase/incremental-rows.png" alt="Incremental Row Usage Strategy" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 **Strategy 2: Consistent Row Usage**
@@ -599,11 +595,11 @@ All steps use the same row throughout execution.
 
   </div>
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Consistent Row Strategy</h4>
-    <img src="/img/testcase/consistent-rows.png" alt="Consistent Row Usage Strategy" />
+    <img src="/exgenix-documentation/img/testcase/consistent-rows.png" alt="Consistent Row Usage Strategy" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 **Strategy 3: Datasheet Synchronization**
@@ -623,11 +619,11 @@ Synchronize request-response pairs while advancing requests.
 
   </div>
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Datasheet Synchronization Strategy</h4>
-    <img src="/img/testcase/datasheet-sync.png" alt="Synchronized Datasheet Strategy" />
+    <img src="/exgenix-documentation/img/testcase/datasheet-sync.png" alt="Synchronized Datasheet Strategy" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 ---
@@ -665,11 +661,11 @@ Validates the complete order lifecycle:
 </div>
 
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Trade Flow - Step 1 (Login)</h4>
-    <img src="/img/testcase/trade-flow-step1.png" alt="Login TAU Configuration" />
+    <img src="/exgenix-documentation/img/testcase/trade-flow-step1.png" alt="Login TAU Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 <div class="step-block">
@@ -688,11 +684,11 @@ Validates the complete order lifecycle:
 </div>
 
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Trade Flow - Step 2 (New Order Request)</h4>
-    <img src="/img/testcase/trade-flow-step2.png" alt="New Order Request Configuration" />
+    <img src="/exgenix-documentation/img/testcase/trade-flow-step2.png" alt="New Order Request Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 <div class="step-block">
@@ -711,11 +707,11 @@ Validates the complete order lifecycle:
 </div>
 
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Trade Flow - Step 3 (New Order Response)</h4>
-    <img src="/img/testcase/trade-flow-step3.png" alt="New Order Response Configuration" />
+    <img src="/exgenix-documentation/img/testcase/trade-flow-step3.png" alt="New Order Response Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 <div class="step-block">
@@ -734,11 +730,11 @@ Validates the complete order lifecycle:
 </div>
 
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Trade Flow - Step 4 (Cancel Request)</h4>
-    <img src="/img/testcase/trade-flow-step4.png" alt="Cancel Order Request Configuration" />
+    <img src="/exgenix-documentation/img/testcase/trade-flow-step4.png" alt="Cancel Order Request Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 <div class="step-block">
@@ -757,11 +753,11 @@ Validates the complete order lifecycle:
 </div>
 
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Trade Flow - Step 5 (Cancel Response)</h4>
-    <img src="/img/testcase/trade-flow-step5.png" alt="Cancel Order Response Configuration" />
+    <img src="/exgenix-documentation/img/testcase/trade-flow-step5.png" alt="Cancel Order Response Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 <div class="step-block">
@@ -777,11 +773,11 @@ Validates the complete order lifecycle:
 </div>
 
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Trade Flow - Step 6 (Logout)</h4>
-    <img src="/img/testcase/trade-flow-step6.png" alt="Logout TAU Configuration" />
+    <img src="/exgenix-documentation/img/testcase/trade-flow-step6.png" alt="Logout TAU Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 ### Execution Flow Visualization
@@ -817,11 +813,11 @@ Validates the complete order lifecycle:
 </div>
 
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Complete Test Case Execution Flow</h4>
-    <img src="/img/testcase/execution-flow.png" alt="Trade Flow Execution Visualization" />
+    <img src="/exgenix-documentation/img/testcase/execution-flow.png" alt="Trade Flow Execution Visualization" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 <div class="step-block">
@@ -842,11 +838,11 @@ After execution, review the detailed results to ensure correctness:
 </div>
 
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Execution Results Overview</h4>
-    <img src="/img/testcase/execution-results.png" alt="Detailed Execution Results" />
+    <img src="/exgenix-documentation/img/testcase/execution-results.png" alt="Detailed Execution Results" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 ---
@@ -900,11 +896,11 @@ Test Case: Order_Management_Flow
 </div>
 
 
-  <div class="step-image">
+  <!-- <div class="step-image">
     <h4 class="image-title">Organized Test Case Structure</h4>
-    <img src="/img/testcase/organized-structure.png" alt="Well-Organized Test Case" />
+    <img src="/exgenix-documentation/img/testcase/organized-structure.png" alt="Well-Organized Test Case" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 ### Error Handling Strategy
@@ -1005,12 +1001,12 @@ Test Case: User_Authentication
 
 </div>
 
-
+<!-- 
   <div class="step-image">
     <h4 class="image-title">Authentication Test Case</h4>
-    <img src="/img/testcase/auth-testing.png" alt="Authentication Testing Scenario" />
+    <img src="/exgenix-documentation/img/testcase/auth-testing.png" alt="Authentication Testing Scenario" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 ### Order Lifecycle
@@ -1039,12 +1035,12 @@ Test Case: Order_Complete_Lifecycle
 
 </div>
 
-
+<!-- 
   <div class="step-image">
     <h4 class="image-title">Order Lifecycle Test Case</h4>
-    <img src="/img/testcase/order-lifecycle.png" alt="Order Lifecycle Scenario" />
+    <img src="/exgenix-documentation/img/testcase/order-lifecycle.png" alt="Order Lifecycle Scenario" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 ### Negative Testing
@@ -1070,12 +1066,12 @@ Test Case: Negative_Order_Scenarios
 
 </div>
 
-
+<!-- 
   <div class="step-image">
     <h4 class="image-title">Negative Testing Scenario</h4>
-    <img src="/img/testcase/negative-testing.png" alt="Negative Testing Configuration" />
+    <img src="/exgenix-documentation/img/testcase/negative-testing.png" alt="Negative Testing Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 ### Stress Testing
@@ -1103,12 +1099,12 @@ Test Case: Stress_Multiple_Orders
 </div>
 
 
-
+<!-- 
   <div class="step-image">
     <h4 class="image-title">Stress Testing Scenario</h4>
-    <img src="/img/testcase/stress-testing.png" alt="Stress Testing Configuration" />
+    <img src="/exgenix-documentation/img/testcase/stress-testing.png" alt="Stress Testing Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 ### Multi-User Scenario
@@ -1137,12 +1133,12 @@ Test Case: Multi_User_Trading
 
 </div>
 
-
+<!-- 
   <div class="step-image">
     <h4 class="image-title">Multi-User Testing Scenario</h4>
-    <img src="/img/testcase/multi-user.png" alt="Multi-User Test Configuration" />
+    <img src="/exgenix-documentation/img/testcase/multi-user.png" alt="Multi-User Test Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  </div> -->
 </div>
 
 ---

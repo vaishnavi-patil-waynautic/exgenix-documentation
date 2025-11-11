@@ -53,11 +53,6 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
     
     This three-tier structure provides logical organization and efficient execution management.
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Module Hierarchy</h4>
-    <img src="/img/test_execution/module_structure.png" alt="Test Execution Module Structure" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -88,11 +83,6 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
     
     Collections help you organize test suites logically, making it easier to manage large test repositories.
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Execution Collections View</h4>
-    <img src="/img/test_execution/collections_view.png" alt="Test Execution Collections" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -103,14 +93,13 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
     
     The collection creation dialog allows you to:
     - Enter a descriptive name
-    - Add a detailed description
-    - Define the purpose and scope
+    - Add a detailed description. Define the purpose and scope
     
     Choose meaningful names that reflect the test organization strategy.
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Collection</h4>
-    <img src="/img/test_execution/create_collection.png" alt="Create Test Execution Collection" />
+    <img src="/exgenix-documentation/img/test_suite_and_execution/1.png" alt="Create Test Execution Collection" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -133,11 +122,6 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
     
     **Description** (Optional but Recommended)
     - Document the suite's purpose, covered scenarios, and execution requirements
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Create Test Suite</h4>
-    <img src="/img/test_execution/create_suite_basic.png" alt="Test Suite Basic Information" />
-    <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 
@@ -170,7 +154,7 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
   </div>
   <div class="step-image">
     <h4 class="image-title">Parallel Execution Configuration</h4>
-    <img src="/img/test_execution/parallel_config.png" alt="Configure Parallel Execution" />
+    <img src="/exgenix-documentation/img/test_suite_and_execution/2.png" alt="Configure Parallel Execution" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -189,11 +173,7 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
     
     All settings can be modified later if requirements change.
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Suite Configuration Screen</h4>
-    <img src="/img/test_execution/suite_config_screen.png" alt="Complete Test Suite Configuration" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
+  
 </div>
 
 ---
@@ -209,19 +189,12 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
     - View test case details (name, collection, steps, execution status)
     - Select multiple test cases at once
     - See selection count before adding
-    - Preview test case descriptions
-    
-    The dialog displays:
-    - ☐ Checkbox for selection
-    - Name of the test case
-    - Collection it belongs to
-    - Number of steps
-    - Execute status indicator (✓)
+    - Preview test case descriptionstor (✓)
     - Description preview
   </div>
   <div class="step-image">
     <h4 class="image-title">Add Test Cases Dialog</h4>
-    <img src="/img/test_execution/add_test_cases.png" alt="Add Test Cases to Suite" />
+    <img src="/exgenix-documentation/img/test_suite_and_execution/3.png" alt="Add Test Cases to Suite" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -232,45 +205,11 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
   <div class="step-text">
     ### Selected Test Cases Display
     
-    After adding test cases, the suite displays:
-    - List of all selected test cases
-    - Execution order (can be rearranged)
-    - Test case details (collection, steps)
-    - Action buttons (edit, delete, reorder)
-    - Total count of test cases in the suite
-    
     You can:
     - Add more test cases
     - Remove individual test cases
     - Reorder test cases (for sequential execution)
     - Configure individual test case settings
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Selected Test Cases</h4>
-    <img src="/img/test_execution/selected_cases_list.png" alt="Selected Test Cases in Suite" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
-</div>
-
----
-
-<div class="step-block">
-  <div class="step-text">
-    ### Test Cases in Suite View
-    
-    The complete view shows all test cases added to the suite with:
-    - Sequential numbering
-    - Test case names
-    - Associated collections
-    - Step counts
-    - Management actions
-    
-    This view provides a comprehensive overview of all tests that will be executed when the suite runs.
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Test Cases in Suite</h4>
-    <img src="/img/test_execution/test_cases_in_suite.png" alt="Complete Test Cases View in Suite" />
-    <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 
@@ -296,17 +235,6 @@ After suite creation, the panel shows:
 - Current parallel execution status (Enabled/Disabled)
 - Configuration details
 
-<div class="step-block">
-  <div class="step-text">
-    The information panel provides quick access to essential suite metadata and execution settings. All values can be updated by editing the suite configuration.
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Suite Information Panel</h4>
-    <img src="/img/test_execution/suite_info_panel.png" alt="Test Suite Information Panel" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
-</div>
-
 ---
 
 ## Executing Test Suites
@@ -331,7 +259,7 @@ After suite creation, the panel shows:
   </div>
   <div class="step-image">
     <h4 class="image-title">Execute Suite</h4>
-    <img src="/img/test_execution/execute_suite.png" alt="Execute Test Suite" />
+    <img src="/exgenix-documentation/img/test_suite_and_execution/4.png" alt="Execute Test Suite" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -364,11 +292,6 @@ After suite creation, the panel shows:
     - Reports generated automatically
     - Automatic redirect to **Reports** module
     - Results stored for historical analysis
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Execution in Progress</h4>
-    <img src="/img/test_execution/execution_progress.png" alt="Test Suite Execution Progress" />
-    <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 
@@ -411,11 +334,6 @@ After suite creation, the panel shows:
     - **Abort**: Terminate execution immediately
     - **View Logs**: Access real-time execution logs
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Execution Monitoring</h4>
-    <img src="/img/test_execution/monitoring_view.png" alt="Real-time Execution Monitoring" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -434,7 +352,7 @@ After suite creation, the panel shows:
   </div>
   <div class="step-image">
     <h4 class="image-title">Reports Dashboard</h4>
-    <img src="/img/test_execution/reports_dashboard.png" alt="Test Execution Reports Dashboard" />
+    <img src="/exgenix-documentation/img/test_suite_and_execution/5.png" alt="Test Execution Reports Dashboard" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -456,7 +374,7 @@ After suite creation, the panel shows:
   </div>
   <div class="step-image">
     <h4 class="image-title">Reports List</h4>
-    <img src="/img/test_execution/reports_list.png" alt="List of Execution Reports" />
+    <img src="/exgenix-documentation/img/test_suite_and_execution/6.png" alt="List of Execution Reports" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -478,11 +396,6 @@ After suite creation, the panel shows:
     - Suite configuration details
     - Environment information
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Report Summary</h4>
-    <img src="/img/test_execution/report_summary.png" alt="Execution Report Summary" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -501,7 +414,7 @@ After suite creation, the panel shows:
   </div>
   <div class="step-image">
     <h4 class="image-title">Test Case Details</h4>
-    <img src="/img/test_execution/test_case_details.png" alt="Detailed Test Case Results" />
+    <img src="/exgenix-documentation/img/test_suite_and_execution/7.png" alt="Detailed Test Case Results" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -522,11 +435,6 @@ After suite creation, the panel shows:
     
     These logs are essential for debugging and compliance requirements.
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Request Logs</h4>
-    <img src="/img/test_execution/request_logs.png" alt="Request Message Logs" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -541,11 +449,6 @@ After suite creation, the panel shows:
     - Expected vs actual comparisons
     - Field-level discrepancies
     - Performance metrics
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Response Logs</h4>
-    <img src="/img/test_execution/response_logs.png" alt="Response Message Logs" />
-    <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 
@@ -562,11 +465,6 @@ After suite creation, the panel shows:
     - Business rule validation
     - Custom assertions
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Field-Level Details</h4>
-    <img src="/img/test_execution/field_level_logs.png" alt="Field-Level Log Details" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -582,11 +480,6 @@ After suite creation, the panel shows:
     - Waiting/idle times
     - Bottleneck identification
     - Resource utilization patterns
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Execution Timeline</h4>
-    <img src="/img/test_execution/execution_timeline.png" alt="Execution Timeline Visualization" />
-    <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 
@@ -611,11 +504,6 @@ After suite creation, the panel shows:
     - **JSON**: For integration with other tools
     - **HTML**: For web publishing
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Timeline Details</h4>
-    <img src="/img/test_execution/timeline_details.png" alt="Detailed Timeline View" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -639,11 +527,6 @@ When creating or editing a suite:
     - Days to run (weekdays, weekends, all)
     - Notification preferences
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Daily Schedule</h4>
-    <img src="/img/test_execution/daily_schedule.png" alt="Daily Execution Schedule" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -658,11 +541,6 @@ When creating or editing a suite:
     - Configure recurrence pattern
     - Set notification recipients
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Weekly Schedule</h4>
-    <img src="/img/test_execution/weekly_schedule.png" alt="Weekly Execution Schedule" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -676,11 +554,6 @@ When creating or editing a suite:
     - Choose execution time
     - Handle month-end scenarios
     - Set up recurring patterns
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Monthly Schedule</h4>
-    <img src="/img/test_execution/monthly_schedule.png" alt="Monthly Execution Schedule" />
-    <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 
@@ -728,11 +601,6 @@ Changes to test suites affect all future executions but do not impact historical
     
     The execution history provides valuable insights into test stability and trends over time.
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Execution History</h4>
-    <img src="/img/test_execution/execution_history.png" alt="Test Suite Execution History" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -759,11 +627,6 @@ Changes to test suites affect all future executions but do not impact historical
     - **Release Cycle**: Sprint, Release, Hotfix
     - **Environment**: Dev, QA, Staging, Production
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Suite Organization Strategy</h4>
-    <img src="/img/test_execution/organization_strategy.png" alt="Test Suite Organization Strategy" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
 </div>
 
 ---
@@ -788,11 +651,6 @@ Changes to test suites affect all future executions but do not impact historical
     - ✅ Load_Tests
     - ✅ Stress_Tests
     - ✅ Endurance_Tests
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Example Structure</h4>
-    <img src="/img/test_execution/example_structure.png" alt="Example Test Suite Structure" />
-    <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 
