@@ -12,7 +12,7 @@ const config: Config = {
     v4: true,
   },
 
-   url: 'https://vaishnavi-patil-waynautic.github.io',
+  url: 'https://vaishnavi-patil-waynautic.github.io',
   baseUrl: '/exgenix-documentation/',
   organizationName: 'vaishnavi-patil-waynautic',
   projectName: 'exgenix-documentation',
@@ -53,6 +53,7 @@ const config: Config = {
   },
     ],
   ],
+
 
   plugins: [
   [
