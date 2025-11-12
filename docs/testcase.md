@@ -299,6 +299,8 @@ For each step, configure the following:
 
 </div>
 
+---
+
 ### Datasheet Selection
 
 <div class="step-block">
@@ -337,6 +339,8 @@ Associate a datasheet with the step.
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+---
 
 ### Pattern (Datasheet Row Usage)
 
@@ -389,6 +393,7 @@ Associate a datasheet with the step.
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+---
 
 ### Row No. (Starting Row)
 
@@ -409,6 +414,7 @@ Associate a datasheet with the step.
   </ul>
 </div>
 </div>
+---
 
 ### On Error (Error Handling)
 
@@ -507,6 +513,8 @@ Associate a datasheet with the step.
   </div>
 </div>
 
+---
+
 ### Session Management Patterns
 
 **Pattern 1: Single Session for Entire Test**
@@ -579,6 +587,8 @@ Iteration 3: session_${iteration_3}
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
+
+---
 
 ### Datasheet Row Configuration Strategies
 
@@ -658,25 +668,28 @@ Synchronize request-response pairs while advancing requests.
 
 ## Example Test Case: Complete Trade Flow
 
-### Scenario Description
-
-Validates the complete order lifecycle:
-1. Authentication
-2. New order placement
-3. Order confirmation
-4. Cancellation request
-5. Cancellation confirmation
-6. Logout
-
 <div class="step-block">
   <div class="step-text">
 
-    <strong>Step 1: Login Test Action Unit</strong>
-    <strong>Step 2: New Order Request</strong>
-      <strong>Step 3: New Order Response</strong>
-      <strong>Step 4: Cancel Order Request</strong>
-      <strong>Step 5: Cancel Order Response</strong>
-      <strong>Step 6: Logout Test Action Unit</strong>
+
+    <strong>Step 1: Login Test Action Unit</strong><br />
+<strong>Step 2: New Order Request</strong><br />
+<strong>Step 3: New Order Response</strong><br />
+<strong>Step 4: Cancel Order Request</strong><br />
+<strong>Step 5: Cancel Order Response</strong><br />
+<strong>Step 6: Logout Test Action Unit</strong><br />
+
+<br />
+
+<strong>Expected Results:</strong>
+<ul>
+  <li>All steps pass successfully</li>
+  <li>Order is placed and cancelled correctly</li>
+  <li>Variables are captured and used accurately</li>
+  <li>Session is maintained throughout</li>
+  <li>Clean logout is completed</li>
+</ul>
+
 
    </div>
 
@@ -688,59 +701,11 @@ Validates the complete order lifecycle:
   </div>
 </div>
 
-
-<div class="step-block">
-  <div class="step-text">
-
-<strong>Expected Results:</strong>
-<ul>
-  <li>All steps pass successfully</li>
-  <li>Order is placed and cancelled correctly</li>
-  <li>Variables are captured and used accurately</li>
-  <li>Session is maintained throughout</li>
-  <li>Clean logout is completed</li>
-</ul>
-
-</div>
-
-
-  <!-- <div class="step-image">
-    <h4 class="image-title">Complete Test Case Execution Flow</h4>
-    <img src="/exgenix-documentation/img/testcase/execution-flow.png" alt="Trade Flow Execution Visualization" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
-</div>
-
-<div class="step-block">
-  <div class="step-text">
-
-<strong>Post-Execution Review</strong>
-
-After execution, review the detailed results to ensure correctness:
-
-<ul>
-  <li>Step-by-step execution status</li>
-  <li>Request and response payloads</li>
-  <li>Captured variable values</li>
-  <li>Validation results</li>
-  <li>Execution timing</li>
-</ul>
-
-</div>
-
-
-  <!-- <div class="step-image">
-    <h4 class="image-title">Execution Results Overview</h4>
-    <img src="/exgenix-documentation/img/testcase/execution-results.png" alt="Detailed Execution Results" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
-</div>
-
 ---
 
 ## Best Practices
 
-### Naming Conventions
+### 1. Naming Conventions
 
 Use descriptive, action-oriented names:
 
@@ -753,7 +718,9 @@ Use descriptive, action-oriented names:
 ❌ **Avoid:**
 - `Test1`, `MyTest`, `TestCase`, `Flow`
 
-### Step Organization
+---
+
+### 2. Step Organization
 
 <div class="step-block">
  <div class="step-text">
@@ -778,7 +745,9 @@ Use descriptive, action-oriented names:
   </div> -->
 </div>
 
-### Error Handling Strategy
+---
+
+### 3. Error Handling Strategy
 
 - **Abort** for critical path:
   - Authentication
@@ -795,11 +764,16 @@ Use descriptive, action-oriented names:
   - Temporary unavailability
   - External service calls
 
-### Datasheet Management
+
+---
+
+### 4. Datasheet Management
 
 - **Data Independence** – Each test case should have its own data
 - **Data Reusability** – Use base row inheritance; override minimally
 - **Data Clarity** – Use meaningful values; document expected outcomes
+
+---
 
 ### Session Design Patterns (Selection Guide)
 
@@ -821,12 +795,16 @@ Use descriptive, action-oriented names:
 2. Select a collection
 3. View all test cases within that collection
 
+
 **Display Information:**
 - Test case name
 - Description
 - Number of steps
 - Last execution status
 - Last modified date
+
+
+---
 
 ### Editing Test Cases
 
@@ -836,6 +814,8 @@ Use descriptive, action-oriented names:
 4. Update datasheets
 5. Click **Update** to save changes
 
+---
+
 ### Executing Test Cases
 
 **Option 1: Direct Execution**
@@ -843,6 +823,8 @@ Use descriptive, action-oriented names:
 
 **Option 2: Via Test Suite**
 - Add test case to a test suite → Execute the suite (sequential or parallel)
+
+---
 
 ### Cloning Test Cases
 
@@ -883,6 +865,7 @@ Test Case: User_Authentication
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
+---
 
 ### Order Lifecycle
 
@@ -918,6 +901,8 @@ Test Case: Order_Complete_Lifecycle
   </div> -->
 </div>
 
+---
+
 ### Negative Testing
 
 <div class="step-block">
@@ -948,6 +933,8 @@ Test Case: Negative_Order_Scenarios
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
+
+---
 
 ### Stress Testing
 
@@ -981,6 +968,8 @@ Test Case: Stress_Multiple_Orders
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
+
+---
 
 ### Multi-User Scenario
 
@@ -1019,19 +1008,19 @@ Test Case: Multi_User_Trading
 ---
 
 # Troubleshooting
-## Step Execution Skipped
+## 1. Step Execution Skipped
 Causes: Missing datasheet, previous step aborted, invalid session reference  
 Solutions: Select datasheet; check previous status; unify session names
 
-## Variable Not Found
+## 2. Variable Not Found
 Causes: Not captured; session mismatch; typo  
 Solutions: Verify capture syntax; ensure same session; check variable name/case
 
-## Datasheet Row Mismatch
+## 3. Datasheet Row Mismatch
 Causes: Wrong pattern; wrong starting row; insufficient rows  
 Solutions: Review pattern; adjust row; add rows
 
-## Test Action Unit Not Executing
+## 4. Test Action Unit Not Executing
 Causes: Missing TAU datasheet configuration; invalid configs; required fields empty  
 Solutions: Click Configure and set datasheets; test TAU independently; populate required data
 
