@@ -37,6 +37,17 @@ The AI engine automatically classifies all generated test cases into **Positive*
     2. **Provide AI Prompt (Optional)** – Add custom generation parameters like:
        - *"Generate FIX / ETI/Custom Binary API-format test cases for New Order Single with price band validation."*
     3. **Generate Test Cases** – AI parses each field, its rules, and dependencies to produce complete scenarios
+  
+  </div>
+  <div class="step-image">
+    <h4 class="image-title">AI Test Generation from API Definitions</h4>
+    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/1.png" alt="Generate test cases from FIX/ETI API definitions" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+</div>
+
+<div class="step-block">
+  <div class="step-text">
     
     ### Output Example:
     
@@ -47,8 +58,8 @@ The AI engine automatically classifies all generated test cases into **Positive*
     📎 *Output can be exported as Excel or imported directly into API configurations for execution.*
   </div>
   <div class="step-image">
-    <h4 class="image-title">AI Test Generation from API Definitions</h4>
-    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/1.png" alt="Generate test cases from FIX/ETI API definitions" />
+    <h4 class="image-title">Generated Testcases</h4>
+    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/generated_testcases.png" alt="Output Example" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -69,7 +80,17 @@ The AI engine automatically classifies all generated test cases into **Positive*
     3. **AI Analysis** – System interprets use cases, data dependencies, and workflows
     4. **Generate Test Cases** – AI converts each logical step into actionable QA test cases
     
-    ### Example Output:
+  </div>
+  <div class="step-image">
+    <h4 class="image-title">AI Test Generation from BRD</h4>
+    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/brd_extraction.png" alt="Generate test cases from Business Requirement Documents" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+</div>
+
+<div class="step-block">
+  <div class="step-text">
+        ### Example Output:
     
     - **Positive:** Standard user action or business flow
     - **Negative:** Constraint violation or invalid rule path
@@ -78,8 +99,8 @@ The AI engine automatically classifies all generated test cases into **Positive*
     📎 *Ensures test coverage from both system and business process perspectives.*
   </div>
   <div class="step-image">
-    <h4 class="image-title">AI Test Generation from BRD</h4>
-    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/2.png" alt="Generate test cases from Business Requirement Documents" />
+    <h4 class="image-title">Generated Testcases</h4>
+    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/generated_testcases_2.png" alt="Output Example" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -100,7 +121,6 @@ The AI engine automatically classifies all generated test cases into **Positive*
   </div>
 </div>
 
----
 
 <div class="step-block">
   <div class="step-text">
@@ -118,7 +138,6 @@ The AI engine automatically classifies all generated test cases into **Positive*
   </div>
 </div>
 
----
 
 <div class="step-block">
   <div class="step-text">
