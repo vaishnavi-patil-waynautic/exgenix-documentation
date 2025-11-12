@@ -30,7 +30,7 @@ hide_table_of_contents: true
 Test Action Units are reusable, modular components within Exgenix that encapsulate a sequence of related test steps into a single logical unit. They streamline test case design by grouping common operations that are reused across multiple workflows.
 
 ### Key Benefits
-- Organize reusable sequences such as Login, Logout, Order Validation, Market Data flows
+- Organize reusable sequences such as Login, Logout, Order Validation
 - Improve maintainability by updating logic in one place
 - Increase modularity and consistency across test suites
 - Enable faster test design through pre-built components

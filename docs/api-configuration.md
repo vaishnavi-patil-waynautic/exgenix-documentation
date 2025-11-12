@@ -170,7 +170,7 @@ Before proceeding, verify:
   </div>
   <div class="step-image">
     <h4 class="image-title">Imported Configuration</h4>
-    <img src="/exgenix-documentation/img/api_config/config_added.png" alt="Import Configuration from PDF Specification" />
+    <img src="/exgenix-documentation/img/api_config/configuration_page.png" alt="Import Configuration from PDF Specification" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
