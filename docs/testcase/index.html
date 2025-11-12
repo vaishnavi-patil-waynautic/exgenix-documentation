@@ -11,7 +11,7 @@
 
 
 <script src="/js/imageExpand.js"></script><link rel="stylesheet" href="/exgenix-documentation/assets/css/styles.c576806b.css">
-<script src="/exgenix-documentation/assets/js/runtime~main.052967d5.js" defer="defer"></script>
+<script src="/exgenix-documentation/assets/js/runtime~main.b406ce05.js" defer="defer"></script>
 <script src="/exgenix-documentation/assets/js/main.fad946e5.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -111,6 +111,7 @@
 <div class="step-block"><div class="step-text"><p>Specify the session identifier for this step.</p><p><strong>Session Types:</strong></p><table><thead><tr><th>Session Type</th><th>Description</th><th>Use Case</th></tr></thead><tbody><tr><td><strong>Continuous (Same Session)</strong></td><td>All steps use the same session</td><td>Standard workflow where all operations belong to one session</td></tr><tr><td><strong>Different Sessions</strong></td><td>Each iteration uses a new session</td><td>Session isolation or multi-user scenarios</td></tr></tbody></table><p><strong>Configuration Notes:</strong></p><ul><li>Enter a session identifier (e.g., <code>session1</code>, <code>session2</code>)</li><li>Steps with the same identifier share session context</li><li>Captured variables (session IDs, tokens) are shared within a session</li></ul></div><div class="step-image"><h4 class="image-title">Session Configuration</h4><img src="/exgenix-documentation/img/testcase/session.png" alt="Configure Session Identifier"><p class="image-caption">🖱️ Click to expand image</p></div></div>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="wait-time-seconds">Wait Time (seconds)<a href="#wait-time-seconds" class="hash-link" aria-label="Direct link to Wait Time (seconds)" title="Direct link to Wait Time (seconds)" translate="no">​</a></h4>
 <div class="step-block"><div class="step-text"><p>Delay before executing this step.</p><p><strong>Use Cases:</strong></p><ul><li><strong>0 seconds</strong> – Immediate execution</li><li><strong>1–5 seconds</strong> – Short processing delays</li><li><strong>5+ seconds</strong> – Asynchronous operations / market data updates</li></ul></div></div>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="datasheet-selection">Datasheet Selection<a href="#datasheet-selection" class="hash-link" aria-label="Direct link to Datasheet Selection" title="Direct link to Datasheet Selection" translate="no">​</a></h3>
 <div class="step-block"><div class="step-text"><p>Associate a datasheet with the step.</p><p><strong>For Individual API Steps:</strong></p><ol>
 <li class="">Open the datasheet dropdown</li>
@@ -123,16 +124,20 @@
 <li class="">Select a datasheet and row number for each API</li>
 <li class="">Save configuration</li>
 </ol></div><div class="step-image"><h4 class="image-title">Datasheet Configuration Modal</h4><img src="/exgenix-documentation/img/testcase/datasheet_selection.png" alt="Configure Datasheets for Test Action Unit"><p class="image-caption">🖱️ Click to expand image</p></div></div>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pattern-datasheet-row-usage">Pattern (Datasheet Row Usage)<a href="#pattern-datasheet-row-usage" class="hash-link" aria-label="Direct link to Pattern (Datasheet Row Usage)" title="Direct link to Pattern (Datasheet Row Usage)" translate="no">​</a></h3>
 <div class="step-block"><div class="step-text"><p>Controls how datasheet rows are consumed during execution.</p><table><thead><tr><th>Pattern</th><th>Behavior</th><th>Use Case</th></tr></thead><tbody><tr><td><strong>SAME_ROW</strong></td><td>Uses the same row for all iterations</td><td>Retry logic, idempotency testing, consistent data</td></tr><tr><td><strong>NEXT_ROW</strong></td><td>Advances to next row per iteration</td><td>Varied data, multi-scenario, load testing</td></tr></tbody></table><p><strong>Iteration Examples:</strong></p><p><strong>NEXT_ROW (3 iterations):</strong></p><ul><li>Iteration 1 → Row 1</li><li>Iteration 2 → Row 2</li><li>Iteration 3 → Row 3</li></ul><p><strong>SAME_ROW (3 iterations):</strong></p><ul><li>Iterations 1–3 → Row 1</li></ul></div><div class="step-image"><h4 class="image-title">Pattern Configuration</h4><img src="/exgenix-documentation/img/testcase/pattern.png" alt="NEXT_ROW Pattern Example"><p class="image-caption">🖱️ Click to expand image</p></div></div>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="row-no-starting-row">Row No. (Starting Row)<a href="#row-no-starting-row" class="hash-link" aria-label="Direct link to Row No. (Starting Row)" title="Direct link to Row No. (Starting Row)" translate="no">​</a></h3>
 <div class="step-block"><div class="step-text"><p>Specifies which row from the datasheet to start with.</p><p><strong>Usage:</strong></p><ul><li><strong>Row 1</strong> – Start at base row</li><li><strong>Row 2+</strong> – Skip to a specific row</li></ul><p><strong>Examples:</strong></p><ul><li>Start at Row 1: Uses base configuration</li><li>Start at Row 3: Skips first two rows, useful for specific test scenarios</li></ul></div></div>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="on-error-error-handling">On Error (Error Handling)<a href="#on-error-error-handling" class="hash-link" aria-label="Direct link to On Error (Error Handling)" title="Direct link to On Error (Error Handling)" translate="no">​</a></h3>
 <div class="step-block"><div class="step-text"><strong>On Error Behavior</strong><p>Defines what happens when a step fails.</p><table><thead><tr><th>Option</th><th>Behavior</th><th>Use Case</th></tr></thead><tbody><tr><td><strong>Continue</strong></td><td>Log error; proceed to next step</td><td>Non-critical steps</td></tr><tr><td><strong>Abort</strong></td><td>Stop execution immediately</td><td>Critical failures</td></tr><tr><td><strong>Retry</strong></td><td>Retry failed step (configurable)</td><td>Transient/network issues</td></tr></tbody></table><strong>Best Practices:</strong><ul><li>Use <strong>Abort</strong> for critical steps: Login, Authentication, Order Acceptance</li><li>Use <strong>Continue</strong> for optional operations: Notifications, Non-critical subscriptions</li><li>Use <strong>Retry</strong> for network-dependent operations: Connection establishment, External API calls</li></ul></div><div class="step-image"><h4 class="image-title">Error Handling Configuration</h4><img src="/exgenix-documentation/img/testcase/on_error.png" alt="Configure On Error Behavior"><p class="image-caption">🖱️ Click to expand image</p></div></div>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-features">Advanced Features<a href="#advanced-features" class="hash-link" aria-label="Direct link to Advanced Features" title="Direct link to Advanced Features" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="adding-loops">Adding Loops<a href="#adding-loops" class="hash-link" aria-label="Direct link to Adding Loops" title="Direct link to Adding Loops" translate="no">​</a></h3>
 <div class="step-block"><div class="step-text"><strong>Loop Steps</strong><p>Loops let you repeat a section of your test case multiple times.</p><strong>Configuration:</strong><ol><li>Click <strong>+ Add Loop</strong></li><li>A loop container is added with <strong>Loop Start</strong> and <strong>Loop End</strong></li><li>Add steps within the loop and configure properties</li></ol><strong>Loop Properties:</strong><ul><li><strong>Loop Pattern</strong> – NEXT_ROW / SAME_ROW</li><li><strong>Iterations</strong> – Fixed count or dynamic (e.g., datasheet size)</li></ul><strong>Example: Multiple Order Placement</strong><p><em>Loop Configuration:</em></p><ul><li>Pattern: NEXT_ROW</li><li>Iterations: 10</li></ul><p><em>Steps inside loop:</em></p><ol><li>New Order Request (Step 2)</li><li>New Order Response (Step 3)</li></ol><p><em>Result:</em> Places 10 different orders using rows 1-10 from the datasheet.</p></div><div class="step-image"><h4 class="image-title">Loop Configuration</h4><img src="/exgenix-documentation/img/testcase/add_loop.png" alt="Configure Loop for Repeated Execution"><p class="image-caption">🖱️ Click to expand image</p></div></div>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="session-management-patterns">Session Management Patterns<a href="#session-management-patterns" class="hash-link" aria-label="Direct link to Session Management Patterns" title="Direct link to Session Management Patterns" translate="no">​</a></h3>
 <p><strong>Pattern 1: Single Session for Entire Test</strong></p>
 <div class="step-block"><div class="step-text"><p>All steps use the same session identifier:</p><div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Step 1 (Login): session1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Step 2 (Order Request): session1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Step 3 (Order Response): session1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Step 4 (Logout): session1</span><br></span></code></pre></div></div><p><strong>Use Case:</strong> Standard workflow where all operations belong to one user session</p></div></div>
@@ -140,6 +145,7 @@
 <div class="step-block"><div class="step-text"><p>Different steps use different sessions:</p><div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Step 1 (User A Login): session1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Step 2 (User B Login): session2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Step 3 (User A Order): session1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Step 4 (User B Order): session2</span><br></span></code></pre></div></div><p><strong>Use Case:</strong> Multi-user scenarios, parallel user testing</p></div></div>
 <p><strong>Pattern 3: Session Per Iteration</strong></p>
 <div class="step-block"><div class="step-text"><p>Each iteration creates a new session:</p><div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Iteration 1: session_${iteration_1}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Iteration 2: session_${iteration_2}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Iteration 3: session_${iteration_3}</span><br></span></code></pre></div></div><p><strong>Use Case:</strong> Session lifecycle testing, load testing with isolated sessions</p></div></div>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="datasheet-row-configuration-strategies">Datasheet Row Configuration Strategies<a href="#datasheet-row-configuration-strategies" class="hash-link" aria-label="Direct link to Datasheet Row Configuration Strategies" title="Direct link to Datasheet Row Configuration Strategies" translate="no">​</a></h3>
 <p><strong>Strategy 1: Incremental Row Usage</strong></p>
 <div class="step-block"><div class="step-text"><div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Step 1: Row 1, Pattern: NEXT_ROW</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Step 2: Row 1, Pattern: NEXT_ROW</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Step 3: Row 1, Pattern: NEXT_ROW</span><br></span></code></pre></div></div><p>Each step advances to the next row in its datasheet.</p><p><strong>Use Case:</strong> Testing with varied data across steps</p></div></div>
@@ -149,22 +155,10 @@
 <div class="step-block"><div class="step-text"><div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Step 1: Row 1, Pattern: NEXT_ROW (Request)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Step 2: Row 1, Pattern: SAME_ROW (Response - validates request)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Step 3: Row 1, Pattern: NEXT_ROW (Next Request)</span><br></span></code></pre></div></div><p>Synchronize request-response pairs while advancing requests.</p><p><strong>Use Case:</strong> Request-response validation, maintaining data correlation</p></div></div>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-test-case-complete-trade-flow">Example Test Case: Complete Trade Flow<a href="#example-test-case-complete-trade-flow" class="hash-link" aria-label="Direct link to Example Test Case: Complete Trade Flow" title="Direct link to Example Test Case: Complete Trade Flow" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenario-description">Scenario Description<a href="#scenario-description" class="hash-link" aria-label="Direct link to Scenario Description" title="Direct link to Scenario Description" translate="no">​</a></h3>
-<p>Validates the complete order lifecycle:</p>
-<ol>
-<li class="">Authentication</li>
-<li class="">New order placement</li>
-<li class="">Order confirmation</li>
-<li class="">Cancellation request</li>
-<li class="">Cancellation confirmation</li>
-<li class="">Logout</li>
-</ol>
-<div class="step-block"><div class="step-text"><strong>Step 1: Login Test Action Unit</strong><strong>Step 2: New Order Request</strong><strong>Step 3: New Order Response</strong><strong>Step 4: Cancel Order Request</strong><strong>Step 5: Cancel Order Response</strong><strong>Step 6: Logout Test Action Unit</strong></div><div class="step-image"><h4 class="image-title">Trade Flow</h4><img src="/exgenix-documentation/img/testcase/trade_flow.png" alt="Trade Flow"><p class="image-caption">🖱️ Click to expand image</p></div></div>
-<div class="step-block"><div class="step-text"><strong>Expected Results:</strong><ul><li>All steps pass successfully</li><li>Order is placed and cancelled correctly</li><li>Variables are captured and used accurately</li><li>Session is maintained throughout</li><li>Clean logout is completed</li></ul></div></div>
-<div class="step-block"><div class="step-text"><strong>Post-Execution Review</strong><p>After execution, review the detailed results to ensure correctness:</p><ul><li>Step-by-step execution status</li><li>Request and response payloads</li><li>Captured variable values</li><li>Validation results</li><li>Execution timing</li></ul></div></div>
+<div class="step-block"><div class="step-text"><strong>Step 1: Login Test Action Unit</strong><br><strong>Step 2: New Order Request</strong><br><strong>Step 3: New Order Response</strong><br><strong>Step 4: Cancel Order Request</strong><br><strong>Step 5: Cancel Order Response</strong><br><strong>Step 6: Logout Test Action Unit</strong><br><br><strong>Expected Results:</strong><ul><li>All steps pass successfully</li><li>Order is placed and cancelled correctly</li><li>Variables are captured and used accurately</li><li>Session is maintained throughout</li><li>Clean logout is completed</li></ul></div><div class="step-image"><h4 class="image-title">Trade Flow</h4><img src="/exgenix-documentation/img/testcase/trade_flow.png" alt="Trade Flow"><p class="image-caption">🖱️ Click to expand image</p></div></div>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="naming-conventions">Naming Conventions<a href="#naming-conventions" class="hash-link" aria-label="Direct link to Naming Conventions" title="Direct link to Naming Conventions" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-naming-conventions">1. Naming Conventions<a href="#1-naming-conventions" class="hash-link" aria-label="Direct link to 1. Naming Conventions" title="Direct link to 1. Naming Conventions" translate="no">​</a></h3>
 <p>Use descriptive, action-oriented names:</p>
 <p>✅ <strong>Good Examples:</strong></p>
 <ul>
@@ -177,9 +171,11 @@
 <ul>
 <li class=""><code>Test1</code>, <code>MyTest</code>, <code>TestCase</code>, <code>Flow</code></li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-organization">Step Organization<a href="#step-organization" class="hash-link" aria-label="Direct link to Step Organization" title="Direct link to Step Organization" translate="no">​</a></h3>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-step-organization">2. Step Organization<a href="#2-step-organization" class="hash-link" aria-label="Direct link to 2. Step Organization" title="Direct link to 2. Step Organization" translate="no">​</a></h3>
 <div class="step-block"><div class="step-text"><strong>Logical Grouping:</strong><ol><li><strong>Setup</strong> (Login, connections)</li><li><strong>Preconditions</strong> (Data setup, subscriptions)</li><li><strong>Main Actions</strong> (Core test operations)</li><li><strong>Validations</strong> (Response checks)</li><li><strong>Cleanup</strong> (Logout, disconnections)</li></ol></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="error-handling-strategy">Error Handling Strategy<a href="#error-handling-strategy" class="hash-link" aria-label="Direct link to Error Handling Strategy" title="Direct link to Error Handling Strategy" translate="no">​</a></h3>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-error-handling-strategy">3. Error Handling Strategy<a href="#3-error-handling-strategy" class="hash-link" aria-label="Direct link to 3. Error Handling Strategy" title="Direct link to 3. Error Handling Strategy" translate="no">​</a></h3>
 <ul>
 <li class="">
 <p><strong>Abort</strong> for critical path:</p>
@@ -206,12 +202,14 @@
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="datasheet-management">Datasheet Management<a href="#datasheet-management" class="hash-link" aria-label="Direct link to Datasheet Management" title="Direct link to Datasheet Management" translate="no">​</a></h3>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-datasheet-management">4. Datasheet Management<a href="#4-datasheet-management" class="hash-link" aria-label="Direct link to 4. Datasheet Management" title="Direct link to 4. Datasheet Management" translate="no">​</a></h3>
 <ul>
 <li class=""><strong>Data Independence</strong> – Each test case should have its own data</li>
 <li class=""><strong>Data Reusability</strong> – Use base row inheritance; override minimally</li>
 <li class=""><strong>Data Clarity</strong> – Use meaningful values; document expected outcomes</li>
 </ul>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="session-design-patterns-selection-guide">Session Design Patterns (Selection Guide)<a href="#session-design-patterns-selection-guide" class="hash-link" aria-label="Direct link to Session Design Patterns (Selection Guide)" title="Direct link to Session Design Patterns (Selection Guide)" translate="no">​</a></h3>
 <table><thead><tr><th>Scenario</th><th>Session Type</th><th>Pattern</th><th>Rationale</th></tr></thead><tbody><tr><td>Single user workflow</td><td>Continuous</td><td>SAME_ROW</td><td>Stable, consistent context</td></tr><tr><td>Multi-user testing</td><td>Different per user</td><td>NEXT_ROW</td><td>Isolated sessions</td></tr><tr><td>Load testing</td><td>Different per iteration</td><td>NEXT_ROW</td><td>Simulate many users</td></tr><tr><td>Idempotency testing</td><td>Continuous</td><td>SAME_ROW</td><td>Same session/data</td></tr><tr><td>Session lifecycle</td><td>Different per iteration</td><td>SAME_ROW</td><td>Creation/destruction focus</td></tr></tbody></table>
 <hr>
@@ -230,6 +228,7 @@
 <li class="">Last execution status</li>
 <li class="">Last modified date</li>
 </ul>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="editing-test-cases">Editing Test Cases<a href="#editing-test-cases" class="hash-link" aria-label="Direct link to Editing Test Cases" title="Direct link to Editing Test Cases" translate="no">​</a></h3>
 <ol>
 <li class="">Click the test case name or <strong>Edit</strong> icon</li>
@@ -238,6 +237,7 @@
 <li class="">Update datasheets</li>
 <li class="">Click <strong>Update</strong> to save changes</li>
 </ol>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="executing-test-cases">Executing Test Cases<a href="#executing-test-cases" class="hash-link" aria-label="Direct link to Executing Test Cases" title="Direct link to Executing Test Cases" translate="no">​</a></h3>
 <p><strong>Option 1: Direct Execution</strong></p>
 <ul>
@@ -247,6 +247,7 @@
 <ul>
 <li class="">Add test case to a test suite → Execute the suite (sequential or parallel)</li>
 </ul>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cloning-test-cases">Cloning Test Cases<a href="#cloning-test-cases" class="hash-link" aria-label="Direct link to Cloning Test Cases" title="Direct link to Cloning Test Cases" translate="no">​</a></h3>
 <ol>
 <li class="">Open an existing test case</li>
@@ -262,6 +263,7 @@
 ├── Invalid Password Test
 ├── Locked Account Test
 └── Session Timeout Test</p></pre><strong>Configuration:</strong><ul><li>Pattern: NEXT_ROW (test different credentials)</li><li>On Error: Continue (test all scenarios)</li></ul></div></div>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="order-lifecycle">Order Lifecycle<a href="#order-lifecycle" class="hash-link" aria-label="Direct link to Order Lifecycle" title="Direct link to Order Lifecycle" translate="no">​</a></h3>
 <div class="step-block"><div class="step-text"><pre><p>Test Case: Order_Complete_Lifecycle
 ├── Login
@@ -272,6 +274,7 @@
 ├── Cancel Order
 ├── Validate Cancellation
 └── Logout</p></pre><strong>Configuration:</strong><ul><li>Session: session1 (continuous)</li><li>Pattern: SAME_ROW (same order throughout)</li><li>On Error: Abort (critical flow)</li></ul></div></div>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="negative-testing">Negative Testing<a href="#negative-testing" class="hash-link" aria-label="Direct link to Negative Testing" title="Direct link to Negative Testing" translate="no">​</a></h3>
 <div class="step-block"><div class="step-text"><pre><p>Test Case: Negative_Order_Scenarios
 ├── Invalid Price
@@ -279,6 +282,7 @@
 ├── Invalid Security ID
 ├── Duplicate Order ID
 └── Unauthorized User</p></pre><strong>Configuration:</strong><ul><li>Datasheet: DS_negative_nos</li><li>Pattern: NEXT_ROW (test each scenario)</li><li>On Error: Continue (collect all failures)</li></ul></div></div>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="stress-testing">Stress Testing<a href="#stress-testing" class="hash-link" aria-label="Direct link to Stress Testing" title="Direct link to Stress Testing" translate="no">​</a></h3>
 <div class="step-block"><div class="step-text"><pre><p>Test Case: Stress_Multiple_Orders
 ├── Login
@@ -286,6 +290,7 @@
 │   ├── Place Order (NEXT_ROW)
 │   └── Validate Response
 └── Logout</p></pre><strong>Configuration:</strong><ul><li>Loop: 100 iterations</li><li>Pattern: NEXT_ROW (unique orders)</li><li>Session: Different per iteration</li><li>Wait Time: 0 seconds (maximum throughput)</li></ul></div></div>
+<hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="multi-user-scenario">Multi-User Scenario<a href="#multi-user-scenario" class="hash-link" aria-label="Direct link to Multi-User Scenario" title="Direct link to Multi-User Scenario" translate="no">​</a></h3>
 <div class="step-block"><div class="step-text"><pre><p>Test Case: Multi_User_Trading
 ├── User A Login (session1)
@@ -298,16 +303,16 @@
 └── User B Logout (session2)</p></pre><strong>Configuration:</strong><ul><li>Sessions: session1 and session2</li><li>Pattern: NEXT_ROW (different users)</li><li>On Error: Abort (per session)</li></ul></div></div>
 <hr>
 <h1>Troubleshooting</h1>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-execution-skipped">Step Execution Skipped<a href="#step-execution-skipped" class="hash-link" aria-label="Direct link to Step Execution Skipped" title="Direct link to Step Execution Skipped" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-step-execution-skipped">1. Step Execution Skipped<a href="#1-step-execution-skipped" class="hash-link" aria-label="Direct link to 1. Step Execution Skipped" title="Direct link to 1. Step Execution Skipped" translate="no">​</a></h2>
 <p>Causes: Missing datasheet, previous step aborted, invalid session reference<br>
 <!-- -->Solutions: Select datasheet; check previous status; unify session names</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="variable-not-found">Variable Not Found<a href="#variable-not-found" class="hash-link" aria-label="Direct link to Variable Not Found" title="Direct link to Variable Not Found" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-variable-not-found">2. Variable Not Found<a href="#2-variable-not-found" class="hash-link" aria-label="Direct link to 2. Variable Not Found" title="Direct link to 2. Variable Not Found" translate="no">​</a></h2>
 <p>Causes: Not captured; session mismatch; typo<br>
 <!-- -->Solutions: Verify capture syntax; ensure same session; check variable name/case</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="datasheet-row-mismatch">Datasheet Row Mismatch<a href="#datasheet-row-mismatch" class="hash-link" aria-label="Direct link to Datasheet Row Mismatch" title="Direct link to Datasheet Row Mismatch" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-datasheet-row-mismatch">3. Datasheet Row Mismatch<a href="#3-datasheet-row-mismatch" class="hash-link" aria-label="Direct link to 3. Datasheet Row Mismatch" title="Direct link to 3. Datasheet Row Mismatch" translate="no">​</a></h2>
 <p>Causes: Wrong pattern; wrong starting row; insufficient rows<br>
 <!-- -->Solutions: Review pattern; adjust row; add rows</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="test-action-unit-not-executing">Test Action Unit Not Executing<a href="#test-action-unit-not-executing" class="hash-link" aria-label="Direct link to Test Action Unit Not Executing" title="Direct link to Test Action Unit Not Executing" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-test-action-unit-not-executing">4. Test Action Unit Not Executing<a href="#4-test-action-unit-not-executing" class="hash-link" aria-label="Direct link to 4. Test Action Unit Not Executing" title="Direct link to 4. Test Action Unit Not Executing" translate="no">​</a></h2>
 <p>Causes: Missing TAU datasheet configuration; invalid configs; required fields empty<br>
 <!-- -->Solutions: Click Configure and set datasheets; test TAU independently; populate required data</p>
 <hr>
