@@ -39,10 +39,10 @@ Waynautic's AI QA Agent integrates with Exgenix to transform QA governance for s
 
 ## Key Features Demonstrated
 
-## 1. Seamless JIRA Integration
-The AI QA Agent connects directly to JIRA, eliminating manual effort in requirement management:
+## 1. Seamless JIRA/ADO Integration
+The AI QA Agent connects directly to JIRA/ADO, eliminating manual effort in requirement management:
 
-- **Automatic Sync**: Requirements flow seamlessly from JIRA into the AI QA Agent with a single click
+- **Automatic Sync**: Requirements flow seamlessly from JIRA/ADO into the AI QA Agent with a single click
 - **Zero Data Loss**: No manual copy-paste operations required
 - **Real-World Example**: Surveillance use case monitoring unusual trading patterns demonstrated in the video
 - **Instant Access**: Requirements appear in the agent interface immediately after sync

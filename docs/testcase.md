@@ -132,6 +132,13 @@ The test case view provides a comprehensive overview of all configured steps, in
   </ol>
 
   </div>
+
+   <div class="step-image">
+    <h4 class="image-title">Navigate To Test Cases</h4>
+    <img src="/exgenix-documentation/img/testcase/testcase.png" alt="Navigate To Test Cases" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+
 </div>
 
 ---

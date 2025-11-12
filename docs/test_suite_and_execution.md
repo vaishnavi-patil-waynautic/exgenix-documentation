@@ -56,6 +56,12 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
     
     This three-tier structure provides logical organization and efficient execution management.
   </div>
+
+  <div class="step-image">
+    <h4 class="image-title">Test Execution</h4>
+    <img src="/exgenix-documentation/img/test_suite_and_execution/test_execution.png" alt="Test Execution" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
 </div>
 
 ---
@@ -100,12 +106,13 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
 
 <div class="step-block">
   <div class="step-text">
+
     ### Step 1: Navigate to Test Suites
     
     1. Go to **Execution → [Collection Name]**
     2. Click **+ Create Test Suite**
 
-    
+    ---
     ### Step 2: Configure Basic Information
     
     **Name** (Required)
@@ -114,10 +121,21 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
     **Description** (Optional but Recommended)
     - Document the suite's purpose, covered scenarios, and execution requirements
   </div>
+
+  <div class="step-image">
+    <h4 class="image-title">Test Collection View</h4>
+    <img src="/exgenix-documentation/img/test_suite_and_execution/test_collection.png" alt="Open Test Collection" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
 </div>
 
+---
 
-### Step 3: Configure Schedule
+### **Step 3: Configure Schedule**
+
+<div class="step-block">
+  <div class="step-text">
+    
 
 Suites can run **On Demand** or be **Scheduled**.
 
@@ -128,10 +146,9 @@ Suites can run **On Demand** or be **Scheduled**.
 
 For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, and recurrence.
 
+---
 
-<div class="step-block">
-  <div class="step-text">
-    ### Step 4: Configure Parallel Execution
+### Step 4: **Configure Parallel Execution**
     
     | Setting | Description | Benefits | Considerations |
     |---------|-------------|----------|----------------|
@@ -149,6 +166,7 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
 </div>
 
 
+---
 <div class="step-block">
   <div class="step-text">
     ### Step 5: Add Test Cases

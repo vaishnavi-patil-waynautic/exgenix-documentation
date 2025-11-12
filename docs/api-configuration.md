@@ -122,41 +122,6 @@ Each collection displays:
 
  ### Step 2: Configuration
 
-
-Define the FIX / ETI/Custom Binary API message structure using a detailed field specification table.
-
-<div class="step-block">
-  <div class="step-text">
-
-        **FIX / ETI/Custom Binary API Message Components**
-
-        The configuration table includes the following columns:
-        - Sr. No.
-        - Tag
-        - Field Name
-        - Data Type
-        - Size in Bytes
-        - Field Offset
-        - Identifier
-        - Required (Yes/No)
-        - Cardinality (1, 0..1, 1..n)
-        - Reference Group
-
-
-
-    **Manual Configuration**
-    
-    - Click **Add Row**
-    - Enter field details for each column
-    - Repeat for all required fields
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Manual Configuration Table</h4>
-    <img src="/exgenix-documentation/img/api_config/3.png" alt="Manual API Configuration Table" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
-</div>
-
 <div class="step-block">
   <div class="step-text">
     **Import from Specification Document**
@@ -174,11 +139,6 @@ Define the FIX / ETI/Custom Binary API message structure using a detailed field 
     4. Click **Import**  
     5. The table auto-populates with the configuration data.
     
-    **Benefits of PDF Import:**
-    - Eliminates manual entry errors
-    - Faster configuration setup
-    - Ensures consistency with FIX / ETI/Custom Binary API specifications
-    - Maintains standardization across configurations
   </div>
   <div class="step-image">
     <h4 class="image-title">Import from PDF</h4>
@@ -187,13 +147,34 @@ Define the FIX / ETI/Custom Binary API message structure using a detailed field 
   </div>
 </div>
 
+<div class="step-block">
+  <div class="step-text">
+
+  **Benefits of PDF Import:**
+    - Eliminates manual entry errors
+    - Faster configuration setup
+    - Ensures consistency with FIX / ETI/Custom Binary API specifications
+    - Maintains standardization across configurations
+    
 **Validate Configuration**
 
 Before proceeding, verify:
-- All required fields are present
-- Data types and sizes are correct
-- Cardinality rules are properly defined
-- Reference groups are configured appropriately
+
+<ul>
+  <li>All required fields are present</li>
+  <li>Data types and sizes are correct</li>
+  <li>Cardinality rules are properly defined</li>
+  <li>Reference groups are configured appropriately</li>
+</ul>
+
+  </div>
+  <div class="step-image">
+    <h4 class="image-title">Imported Configuration</h4>
+    <img src="/exgenix-documentation/img/api_config/config_added.png" alt="Import Configuration from PDF Specification" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+</div>
+
 
 ---
 

@@ -71,9 +71,18 @@ const sidebars: SidebarsConfig = {
     'quick-start-guide',
     'ai-powered-testcase-generation',
     'api-configuration',
+    'test-action-unit',
     'testcase',
     'test_suite_and_execution',
-    'test-action-unit',
+    {
+      type: 'category',
+      label: 'Sample Test Scenario',
+      link: { type: 'doc', id: 'sample_test_scenario' }, // parent doc
+      items: [
+      'sample-test-scenario/scenario_1',
+      'sample-test-scenario/scenario_2',
+      ],
+    },
     {
       type: 'category',
       label: 'AI QA Agent',
@@ -84,15 +93,7 @@ const sidebars: SidebarsConfig = {
       'ai-qa-agent/usecase3',
       ],
     },
-    {
-      type: 'category',
-      label: 'Sample Test Scenario',
-      link: { type: 'doc', id: 'sample_test_scenario' }, // parent doc
-      items: [
-      'sample-test-scenario/scenario_1',
-      'sample-test-scenario/scenario_2',
-      ],
-    },
+    
     
     
     'contact-us',

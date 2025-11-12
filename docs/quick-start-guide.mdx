@@ -18,7 +18,7 @@ This Quick Start Guide provides your **access details**, **project references**,
 | Platform | Access Link | Username | Password | Notes |
 |-----------|--------------|-----------|-----------|-------|
 | **Exgenix Platform** | https://exgenix.waynautic.cloud | `<your_user>` | `<your_password>` | Preloaded with **critical APIs and collections** |
-| **AI QA Agent** | https://aiqaagent.waynautic.cloud | `<your_user>` | `<your_password>` |Preloaded with Exchange QA Project |
+| **AI QA Agent** | https://aiqaagent.waynautic.cloud | `<your_user>` | `<your_password>` |Preloaded with **Exchange QA Project** |
 | **JIRA** | https://dbg-trial.atlassian.net | `<your_user>` | `<your_password>` | Integrated with **Exgenix test traceability** |
 | **ADO** | https://dbg-trial.atlassian.net | `<your_user>` | `<your_password>` | Integrated with **Exgenix test traceability** |
 
@@ -27,15 +27,55 @@ This Quick Start Guide provides your **access details**, **project references**,
 
 ## 2. Trial Project Details
 
-| Platform     | Project/Module Name | Description |
-|-------------|-------------------|-------------|
-| Exgenix     | API configuration | Covers end-to-end exchange workflow (Order Entry → Trade → Clearing) |
-| Exgenix     | Test configuration | Covers end-to-end exchange workflow (Order Entry → Trade → Clearing) |
-| Exgenix     | Execution          | Covers end-to-end exchange workflow (Order Entry → Trade → Clearing) |
-| AI QA Agent | Project_Trial      | Enables QA traceability and insights for different modules and features |
-| Jira        | Project_Trial      | Contains User Stories and Acceptance Criteria linked to Exgenix tests |
-| ADO         | Project_Trial      | Contains User Stories and Acceptance Criteria linked to Exgenix tests |
-
+<div style={{ width: "100%", margin: "20px 0" }}>
+  <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
+    <thead style={{ backgroundColor: "#f8f9fa" }}>
+      <tr>
+        <th style={{ padding: "10px", border: "1px solid #ddd" }}>Platform</th>
+        <th style={{ padding: "10px", border: "1px solid #ddd" }}>Project/Module Name</th>
+        <th style={{ padding: "10px", border: "1px solid #ddd", width: "auto" }}>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }} rowSpan="3">
+          Exgenix
+        </td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>API configuration</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }} rowSpan="3">
+          Covers end-to-end exchange workflow (Order Entry → Trade → Clearing)
+        </td>
+      </tr>
+      <tr>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Test configuration</td>
+      </tr>
+      <tr>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Execution</td>
+      </tr>
+      <tr>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>AI QA Agent</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Project_Trial</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>
+          Enables QA traceability and insights for different modules and features
+        </td>
+      </tr>
+      <tr>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Jira</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Project_Trial</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>
+          Contains User Stories and Acceptance Criteria linked to Exgenix tests
+        </td>
+      </tr>
+      <tr>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>ADO</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Project_Trial</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>
+          Contains User Stories and Acceptance Criteria linked to Exgenix tests
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -149,15 +189,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 3. Recommended First Steps
 
-- Login to all platforms using the credentials above.  
-- Review the project in **Jira/ADO** — identify linked test cases and user stories.  
-- Explore the following resources or sample test scenarios:
-    - **Scenario 1 :** [API Dedinition and Flow](./sample-test-scenario/scenario-1)
-    - **Scenario 2 :** [Trade](./sample-test-scenario/scenario-1)
-- 🤖 **AI QA Agent Walkthrough** — [AI QA Agent Video](/videos#qa_agent)
-    - Use case - [Exchange Adds New Order Type](./ai-qa-agent/usecase1)
-    - Use case - [New Compliance Rule Affects Risk Calculations](./ai-qa-agent/usecase2)
-    - Use case - [Project Manager Needs Go-Live Approval](./ai-qa-agent/usecase3)
+1. Login to all platforms using the credentials above.  
+2. Review the project in **Jira/ADO** — identify linked test cases and user stories.  
+3. Explore the following resources or sample test scenarios:
+    - **Scenario 1 :** [**Order placement**](./sample-test-scenario/scenario-1)
+    - **Scenario 2 :** [**Trade**](./sample-test-scenario/scenario-2)
+    - [**AI QA Agent Walkthrough**](./ai-qa-agent) | - 🎥[**AI QA Agent Video**](/videos#qa_agent)
+        - **Use case 1** - [**Exchange Adds New Order Type**](./ai-qa-agent/usecase1)
+        - **Use case 2** - [**New Compliance Rule Affects Risk Calculations**](./ai-qa-agent/usecase2)
+        - **Use case 3** - [**Project Manager Needs Go-Live Approval**](./ai-qa-agent/usecase3)
 
 
 

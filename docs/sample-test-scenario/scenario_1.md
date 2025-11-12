@@ -3,12 +3,12 @@ id: scenario_1
 title: 'Scenario 1'
 sidebar_position: 2
 hide_table_of_contents: true
-sidebar_label: API Definition and Flow
+sidebar_label: Order placement
 slug: /sample-test-scenario/scenario-1
 ---
 
 
-# Scenario 1: ETI API Definition to Automated Script
+# Scenario 1: Order placement
 
 ---
 
