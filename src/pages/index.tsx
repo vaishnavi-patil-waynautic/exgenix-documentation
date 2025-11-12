@@ -61,12 +61,12 @@ function HomepageHeader() {
           ⚡ Exgenix
         </Heading>
         <p className="hero__subtitle">
-          AI-Powered QA Governance for Stock Exchange Ecosystems
+          AI-Powered QA Governance for Stock Exchange Ecosystem
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/introduction"
+            to="/docs/exgenix"
           >
             🚀 Quick Start Guide
           </Link>

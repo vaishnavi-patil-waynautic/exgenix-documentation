@@ -59,10 +59,10 @@ This scenario simulates a real-world exchange workflow where a BUY order and a S
 
 Validate the end-to-end workflow to ensure:
 
-- Successful authentication  
+- Successful session authentication  
 - Consistent order placement for BUY and SELL
 - Proper trade confirmation for matched orders 
-- Handling of unsolicited trade messages from the exchange
+- Handling of **unsolicited trade messages** from the exchange
 - Accurate capture of trade identifiers  
 - Clean session termination 
 
@@ -97,15 +97,6 @@ Validate the end-to-end workflow to ensure:
   </div>
 </div>
 
-### API Configurations
-
-| API Name | Type | Unique ID |
-|-----------|------|-----------|
-| New Order Single (short layout) | Request | 10125 |
-| New Order Response (Lean Order) | Response | 10126 |
-| Cancel Order Single | Request | 10109 |
-| Cancel Order Response (Standard Order) | Response | 10110 |
-
 ---
 
 ## Phase 1: Plan the Test Flow
@@ -114,34 +105,36 @@ Validate the end-to-end workflow to ensure:
 
 
 ```
+```text
 ┌──────────────────────────────────────────────────────────────┐
-│                    Trade Flow Test Case                       │
+│                    Trade Flow Test Case                      │
 └──────────────────────────────────────────────────────────────┘
 
-1. [Login Tau]
+1. [Login Test Action Unit] 
    ├─ Establish Connection
    ├─ Create Session (Capture: session_id)
    └─ Authenticate User (Capture: auth_token)
 
-2. [New Order Request]
-   └─ Submit order: AAPL, BUY, 100 @ 150.50
+2. [New Order Single – BUY]
+   └─ Place BUY order: AAPL, 100 @ 150.50
 
-3. [New Order Response]
+3. [New Order Response – BUY]
    ├─ Validate: ACCEPTED
-   └─ Capture: order_id, exec_id
+   └─ Capture: buy_order_id, buy_exec_id
 
-4. [Cancel Order Request]
-   └─ Cancel using captured order_id
+4. [New Order Single – SELL]
+   └─ Place SELL order: AAPL, 100 @ 150.50
 
-5. [Cancel Order Response]
-   ├─ Validate: CANCELLED
-   └─ Capture: cancel_id
+5. [New Order Response – SELL]
+   ├─ Validate: ACCEPTED
+   └─ Capture: sell_order_id, sell_exec_id
 
 6. [Logout Tau]
    ├─ Terminate Session
    └─ Close Connection
 
-✓ Test Complete
+    ✓ Trade Cycle Complete
+
 ```
 
 ### Key Variables in Flow
@@ -233,14 +226,6 @@ Refer login sequence datasheet.
 
 ## 6. Phase 3: Create the Test Case
 
-### Step sequence:
-
-1. Login Test Action Unit
-2. New Order Single – BUY
-3. New Order Response – BUY
-4. New Order Single – SELL
-5. Immediate Execution response
-6. Tau logout sequence
 
 <div class="step-block">
   <div class="step-text">

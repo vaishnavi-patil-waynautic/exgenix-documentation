@@ -329,8 +329,8 @@ When a test case executes multiple times, you can control how data is consumed:
     ### Importing and Exporting Datasheets
     
     **Exporting Datasheets**
-    - Click **Export Excel** button
-    - The current datasheet structure and data are exported to an Excel file
+    1. Click **Export Excel** button
+    2. The current datasheet structure and data are exported to an Excel file
     
     **Use cases:**
     - Back up your test data
@@ -339,13 +339,13 @@ When a test case executes multiple times, you can control how data is consumed:
     - Create templates for similar configurations
     
     **Importing Datasheets**
-    - Click **Import Excel** button
-    - Select an Excel file from your computer
-    - Ensure your file meets these requirements:
+    1. Click **Import Excel** button
+    2. Select an Excel file from your computer
+    3. Ensure your file meets these requirements:
       - Same number of columns as the current datasheet
       - Matching column headers (FIX / ETI/Custom Binary API tag names must match exactly)
       - Compatible data types in each column
-    - Exgenix validates the file and imports the data
+    4. Exgenix validates the file and imports the data
     - All existing rows are replaced with imported data
     
     **Use Cases**
@@ -419,7 +419,7 @@ To create similar configurations quickly:
 ## Advanced Features
 
 ### Reference Groups
-Reference groups allow you to define repeating groups of fields within a message (e.g., NoOrders group in a mass order message).
+Reference groups allow you to define repeating groups of fields within a message. (e.g., NoOrders group in a mass order message )
 
 **Configuration steps:**
 1. Define the group count field (e.g., NoOrders=N)

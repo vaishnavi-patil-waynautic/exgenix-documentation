@@ -94,7 +94,7 @@ Each step can be either:
 
   <div class="step-image">
     <h4 class="image-title">Test Case Structure Example</h4>
-    <img src="/exgenix-documentation/img/testcase/testcase.png" alt="Example Test Case Structure" />
+    <img src="/exgenix-documentation/img/testcase/example.png" alt="Example Test Case Structure" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -134,6 +134,8 @@ The test case view provides a comprehensive overview of all configured steps, in
   </div>
 </div>
 
+---
+
 ### Step 2: Define Basic Information
 
 <div class="step-block">
@@ -159,6 +161,8 @@ The test case view provides a comprehensive overview of all configured steps, in
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+---
 
 ### Step 3: Add Test Steps
 
@@ -187,34 +191,46 @@ Reusable component containing multiple APIs configured together.
   </div>
 </div>
 
+---
 
 
-#### Type 2: Individual API Configuration
 
-Single API call as a test step.
+<div class="step-block">
+  <div class="step-text">
+      #### Type 2: Individual API Configuration
 
-**Configuration:**
-1. Click **+ Add Step**
-2. Select **Type**: TCP_IP_REQUEST or TCP_IP_RESPONSE
-3. Choose the API configuration from dropdown
-4. Configure settings (see Step Settings)
+      Single API call as a test step.
 
-### Step 4: Configure Step Settings
+      **Configuration:**
+      1. Click **+ Add Step**
+      2. Select **Type**: TCP_IP_REQUEST or TCP_IP_RESPONSE
+      3. Choose the API configuration from dropdown
+      4. Configure settings (see Step Settings)
+   </div>
 
-(See full details in **Step Settings** section below.)
+
+  <div class="step-image">
+    <h4 class="image-title">Action Type Configuration</h4>
+    <img src="/exgenix-documentation/img/testcase/add_step_normal.png" alt="Step Type Configuration" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+</div>
+
 
 ---
 
-## Step Settings
+### Step 4: Configure Step Settings
+
+#### Step Settings
 
 For each step, configure the following:
 
-### Description
+#### Description
 
 - Brief explanation of what this step does
 - Example: "Submit new order with limit price"
 
-### Session
+#### Session
 
 <div class="step-block">
   <div class="step-text">
@@ -260,7 +276,7 @@ For each step, configure the following:
   </div>
 </div>
 
-### Wait Time (seconds)
+#### Wait Time (seconds)
 
 <div class="step-block">
   <div class="step-text">
@@ -271,13 +287,6 @@ For each step, configure the following:
     <li><strong>0 seconds</strong> – Immediate execution</li>
     <li><strong>1–5 seconds</strong> – Short processing delays</li>
     <li><strong>5+ seconds</strong> – Asynchronous operations / market data updates</li>
-  </ul>
-
-  <p><strong>Examples:</strong></p>
-  <ul>
-    <li>Login: 0 seconds (immediate)</li>
-    <li>After order placement: 2 seconds (processing time)</li>
-    <li>Market data subscription: 5 seconds (data propagation)</li>
   </ul>
 </div>
 
@@ -294,6 +303,18 @@ Associate a datasheet with the step.
 1. Open the datasheet dropdown
 2. Select an available datasheet for that API
 3. Datasheet values populate fields at runtime
+
+  </div>
+
+  <div class="step-image">
+    <h4 class="image-title">Datasheet Configuration Modal</h4>
+    <img src="/exgenix-documentation/img/testcase/datasheet.png" alt="Configure Datasheets for Test Action Unit" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+</div>
+
+<div class="step-block">
+  <div class="step-text">
 
 **For Test Action Unit Steps:**
 1. Click **Configure**
@@ -643,163 +664,26 @@ Validates the complete order lifecycle:
 <div class="step-block">
   <div class="step-text">
 
-<strong>Step 1: Login Test Action Unit</strong>
-<ul>
-  <li><strong>Type:</strong> TEST ACTION UNIT</li>
-  <li><strong>Session:</strong> session1</li>
-  <li><strong>Pattern:</strong> SAME_ROW</li>
-  <li><strong>On Error:</strong> Abort</li>
-</ul>
+    <strong>Step 1: Login Test Action Unit</strong>
+    <strong>Step 2: New Order Request</strong>
+      <strong>Step 3: New Order Response</strong>
+      <strong>Step 4: Cancel Order Request</strong>
+      <strong>Step 5: Cancel Order Response</strong>
+      <strong>Step 6: Logout Test Action Unit</strong>
 
-<p><strong>Contains:</strong></p>
-<ul>
-  <li>Socket Connection</li>
-  <li>Session Logon</li>
-  <li>User Logon</li>
-</ul>
-
-</div>
+   </div>
 
 
-  <!-- <div class="step-image">
-    <h4 class="image-title">Trade Flow - Step 1 (Login)</h4>
-    <img src="/exgenix-documentation/img/testcase/trade-flow-step1.png" alt="Login TAU Configuration" />
+  <div class="step-image">
+    <h4 class="image-title">Trade Flow</h4>
+    <img src="/exgenix-documentation/img/testcase/trade_flow.png" alt="Trade Flow" />
     <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
+  </div>
 </div>
+
 
 <div class="step-block">
   <div class="step-text">
-  <strong>Step 2: New Order Request</strong>
-  <ul>
-    <li><strong>Type:</strong> TCP_IP_REQUEST</li>
-    <li><strong>API:</strong> New Order Single (short layout)</li>
-    <li><strong>Session:</strong> session1</li>
-    <li><strong>Datasheet:</strong> DS_NOS_01</li>
-    <li><strong>Pattern:</strong> NEXT_ROW</li>
-    <li><strong>Row:</strong> 1</li>
-    <li><strong>On Error:</strong> Abort</li>
-  </ul>
-  <p>Submits a new order with parameters from datasheet.</p>
-</div>
-
-
-  <!-- <div class="step-image">
-    <h4 class="image-title">Trade Flow - Step 2 (New Order Request)</h4>
-    <img src="/exgenix-documentation/img/testcase/trade-flow-step2.png" alt="New Order Request Configuration" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
-</div>
-
-<div class="step-block">
-  <div class="step-text">
-  <strong>Step 3: New Order Response</strong>
-  <ul>
-    <li><strong>Type:</strong> TCP_IP_RESPONSE</li>
-    <li><strong>API:</strong> New Order Response (Lean Order)</li>
-    <li><strong>Session:</strong> session1</li>
-    <li><strong>Datasheet:</strong> DS_NOR_01</li>
-    <li><strong>Pattern:</strong> NEXT_ROW</li>
-    <li><strong>Row:</strong> 1</li>
-    <li><strong>On Error:</strong> Abort</li>
-  </ul>
-  <p>Validates order acceptance and captures order_id for use in cancellation.</p>
-</div>
-
-
-  <!-- <div class="step-image">
-    <h4 class="image-title">Trade Flow - Step 3 (New Order Response)</h4>
-    <img src="/exgenix-documentation/img/testcase/trade-flow-step3.png" alt="New Order Response Configuration" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
-</div>
-
-<div class="step-block">
-  <div class="step-text">
-  <strong>Step 4: Cancel Order Request</strong>
-  <ul>
-    <li><strong>Type:</strong> TCP_IP_REQUEST</li>
-    <li><strong>API:</strong> Cancel Order Single</li>
-    <li><strong>Session:</strong> session1</li>
-    <li><strong>Datasheet:</strong> DS_COS_01</li>
-    <li><strong>Pattern:</strong> SAME_ROW</li>
-    <li><strong>Row:</strong> 1</li>
-    <li><strong>On Error:</strong> Abort</li>
-  </ul>
-  <p>Uses captured order_id from Step 3 to cancel the order.</p>
-</div>
-
-
-  <!-- <div class="step-image">
-    <h4 class="image-title">Trade Flow - Step 4 (Cancel Request)</h4>
-    <img src="/exgenix-documentation/img/testcase/trade-flow-step4.png" alt="Cancel Order Request Configuration" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
-</div>
-
-<div class="step-block">
-  <div class="step-text">
-  <strong>Step 5: Cancel Order Response</strong>
-  <ul>
-    <li><strong>Type:</strong> TCP_IP_RESPONSE</li>
-    <li><strong>API:</strong> Cancel Order Response (Standard Order)</li>
-    <li><strong>Session:</strong> session1</li>
-    <li><strong>Datasheet:</strong> DS_COR_01</li>
-    <li><strong>Pattern:</strong> NEXT_ROW</li>
-    <li><strong>Row:</strong> 1</li>
-    <li><strong>On Error:</strong> Abort</li>
-  </ul>
-  <p>Validates successful cancellation.</p>
-</div>
-
-
-  <!-- <div class="step-image">
-    <h4 class="image-title">Trade Flow - Step 5 (Cancel Response)</h4>
-    <img src="/exgenix-documentation/img/testcase/trade-flow-step5.png" alt="Cancel Order Response Configuration" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
-</div>
-
-<div class="step-block">
-  <div class="step-text">
-  <strong>Step 6: Logout Test Action Unit</strong>
-  <ul>
-    <li><strong>Type:</strong> TEST ACTION UNIT</li>
-    <li><strong>Session:</strong> session1</li>
-    <li><strong>Pattern:</strong> SAME_ROW</li>
-    <li><strong>On Error:</strong> Continue</li>
-  </ul>
-  <p>Cleanly terminates the session.</p>
-</div>
-
-
-  <!-- <div class="step-image">
-    <h4 class="image-title">Trade Flow - Step 6 (Logout)</h4>
-    <img src="/exgenix-documentation/img/testcase/trade-flow-step6.png" alt="Logout TAU Configuration" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
-</div>
-
-### Execution Flow Visualization
-
-<div class="step-block">
-  <div class="step-text">
-
-<strong>Complete Trade Flow</strong>
-
-<pre>
-1. Login Test Action Unit (Establish connection & authenticate)
-   ↓
-2. New Order Request (Submit order)
-   ↓
-3. New Order Response (Validate & capture order_id)
-   ↓
-4. Cancel Order Request (Cancel using order_id)
-   ↓
-5. Cancel Order Response (Validate cancellation)
-   ↓
-6. Logout Test Action Unit (Terminate session)
-</pre>
 
 <strong>Expected Results:</strong>
 <ul>
@@ -876,22 +760,6 @@ Use descriptive, action-oriented names:
     <li><strong>Validations</strong> (Response checks)</li>
     <li><strong>Cleanup</strong> (Logout, disconnections)</li>
 </ol>
-
-<strong>Example Structure:</strong>
-<pre>
-Test Case: Order_Management_Flow
-├── Setup
-│   └── Login TAU
-├── Main Actions
-│   ├── New Order Request
-│   ├── New Order Response
-│   ├── Modify Order Request
-│   └── Modify Order Response
-├── Validations
-│   └── Verify Order Status
-└── Cleanup
-    └── Logout TAU
-</pre>
 
 </div>
 
@@ -1143,128 +1011,42 @@ Test Case: Multi_User_Trading
 
 ---
 
-## Troubleshooting
+# Troubleshooting
+## Step Execution Skipped
+Causes: Missing datasheet, previous step aborted, invalid session reference  
+Solutions: Select datasheet; check previous status; unify session names
 
-### Step Execution Skipped
+## Variable Not Found
+Causes: Not captured; session mismatch; typo  
+Solutions: Verify capture syntax; ensure same session; check variable name/case
 
-**Causes:**
-- Missing datasheet
-- Previous step aborted
-- Invalid session reference
+## Datasheet Row Mismatch
+Causes: Wrong pattern; wrong starting row; insufficient rows  
+Solutions: Review pattern; adjust row; add rows
 
-**Solutions:**
-- Verify datasheet is selected for the step
-- Check previous step status and fix issues
-- Ensure session identifiers match across steps
-
-### Variable Not Found
-
-**Causes:**
-- Variable not captured in previous step
-- Session mismatch between capture and usage
-- Typo in variable name
-
-**Solutions:**
-- Verify capture syntax: `${capture(variable_name)}`
-- Ensure same session identifier for related steps
-- Check variable name and case sensitivity
-
-### Datasheet Row Mismatch
-
-**Causes:**
-- Wrong pattern selected (SAME_ROW vs NEXT_ROW)
-- Wrong starting row number
-- Insufficient rows in datasheet
-
-**Solutions:**
-- Review and adjust pattern based on test requirements
-- Verify starting row number is correct
-- Add more rows to datasheet if needed
-
-### Test Action Unit Not Executing
-
-**Causes:**
-- Missing TAU datasheet configuration
-- Invalid API configurations within TAU
-- Required fields empty in datasheets
-
-**Solutions:**
-- Click **Configure** and set datasheets for all APIs
-- Test TAU independently before adding to test case
-- Populate all required fields in datasheets
+## Test Action Unit Not Executing
+Causes: Missing TAU datasheet configuration; invalid configs; required fields empty  
+Solutions: Click Configure and set datasheets; test TAU independently; populate required data
 
 ---
 
 ## Summary
-
-The Test Case & Configuration module enables:
-
-✅ **Flexible Step Sequencing** – Mix Test Action Units and individual APIs  
-✅ **Advanced Session Management** – Single or multiple sessions  
-✅ **Intelligent Data Handling** – Control row consumption patterns  
-✅ **Timing Control** – Wait times for synchronization  
-✅ **Robust Error Handling** – Continue, Abort, or Retry  
-✅ **Loop Support** – Repeat steps with different data  
-
-### Key Takeaways
-
-1. **Design with Clear Objectives**
-   - Define what functionality you're testing
-   - Document expected outcomes
-   - Plan test data requirements
-
-2. **Use Test Action Units for Common Workflows**
-   - Login/Logout flows
-   - Repeated operations
-   - Standard protocol sequences
-
-3. **Configure Datasheets Carefully**
-   - Ensure all required fields have values
-   - Use dynamic functions for varied data
-   - Maintain base row for inheritance
-
-4. **Leverage Session Management**
-   - Use same session for continuous workflows
-   - Use different sessions for isolation
-   - Plan session lifecycle carefully
-
-5. **Apply Appropriate Error Handling**
-   - Abort for critical operations
-   - Continue for non-blocking steps
-   - Retry for transient failures
-
-6. **Document Test Intent**
-   - Write clear descriptions
-   - Comment complex logic
-   - Maintain traceability to requirements
-
-### Benefits of Proper Test Case Configuration
-
-| Benefit | Impact |
-|---------|--------|
-| **Reusability** | Create once, use multiple times |
-| **Maintainability** | Easy to update and modify |
-| **Scalability** | Handle simple to complex scenarios |
-| **Reliability** | Consistent, repeatable results |
-| **Speed** | Rapid test execution |
-| **Coverage** | Comprehensive validation |
+The Test Case & Configuration module enables:  
+✓ **Flexible Step Sequencing** – Mix Test Action Units and individual APIs  
+✓ **Advanced Session Management** – Single or multiple sessions  
+✓ **Intelligent Data Handling** – Control row consumption patterns  
+✓ **Timing Control** – Wait times for synchronization  
+✓ **Robust Error Handling** – Continue, Abort, or Retry  
+✓ **Loop Support** – Repeat steps with different data
 
 ---
 
-## Next Steps
+## Key Takeaways
+- Design test cases with clear objectives  
+- Use Test Action Units for common workflows  
+- Configure datasheets carefully for each step  
+- Leverage session management for complex scenarios  
+- Apply appropriate error handling per step  
+- Document test intent in descriptions  
 
-After mastering test case configuration:
-
-1. **Create Test Suites** – Group related test cases for organized execution
-2. **Schedule Executions** – Set up automated test runs
-3. **Analyze Reports** – Review execution results and metrics
-4. **Optimize Performance** – Fine-tune patterns and configurations
-5. **Expand Coverage** – Add more scenarios and edge cases
-
----
-
-**Mastering test case configuration enables you to validate complex business workflows with precision, efficiency, and maintainability.**
-
----
-
-**End of Test Case & Configuration Module Guide**
+Mastering test case configuration lets you validate complex business workflows with precision and maintainability.

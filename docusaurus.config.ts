@@ -91,7 +91,7 @@ scripts: [
         },
         {to: '/videos', label: 'Videos', position: 'left'},
         {
-          href: 'https://exgenix.com',
+          href: 'https://app.exgenix.waynautic.com/',
           label: 'Exgenix Platform',
           position: 'right',
         },
@@ -119,26 +119,6 @@ scripts: [
           ],
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'GitHub Discussions',
-              // href: 'https://github.com/exgenix/docs/discussions',
-              to: '/',
-            },
-            {
-              label: 'Discord',
-              // href: 'https://discord.gg/exgenix',
-              to: '/',
-            },
-            {
-              label: 'Twitter',
-              // href: 'https://twitter.com/exgenix',
-              to: '/',
-            },
-          ],
-        },
-        {
           title: 'Company',
           items: [
             {
@@ -151,7 +131,7 @@ scripts: [
             },
             {
               label: 'Exgenix Platform',
-              href: 'https://exgenix.com',
+              href: 'https://app.exgenix.waynautic.com/',
             },
           ],
         },

@@ -85,15 +85,15 @@ Each Test Action Unit consists of:
   <div class="step-text">
     ### Step 2: Create Test Action Unit Collection
 
-    Click on ** + Create Collection**
+    1. Click on **+ Create Collection**
     
-    Provide the following details:
+    2. Provide the following details:
     
     **Collection Type (Required)**
     - Select **Test Action Units Collection**
     
     **Name (Required)**
-    - Provide a meaningful, consistent name 
+    - Provide a meaningful, consistent name for your collection.
     
     **Description**  
     Include:
@@ -116,9 +116,9 @@ Each Test Action Unit consists of:
   <div class="step-text">
     ### Step 3: Define Basic Information
     
-    - Navigate to newly create collection
-    - Click on "View" to open it
-    - Click on "+ Create Test Action Unit"
+    1. Navigate to newly create collection
+    2. Click on "View" to open it
+    3. Click on "**+ Create Test Action Unit**"
   </div>
   <div class="step-image">
     <h4 class="image-title">Test Action Unit Collection</h4>
@@ -130,7 +130,7 @@ Each Test Action Unit consists of:
 <div class="step-block">
   <div class="step-text">
     
-    Provide the following details:
+    5. Provide the following details:
     
     **Action Type (Required)**
     - Select **API Test Action Unit**
@@ -159,9 +159,8 @@ Each Test Action Unit consists of:
   <div class="step-text">
     ### Step 4: Add Test Steps
     
-    Click **+ Add Step** to include API configurations.
-    
-    #### API Selection
+    Once the Test Action Unit is created, you can define its step type and associate it with an API. Click **+ Add Step** to include API configurations.
+
     You may select:
 
     **Step Type** 
@@ -172,6 +171,9 @@ Each Test Action Unit consists of:
     
     **Select API**  
     Select the API you want to add to the Test Action Unit
+
+    From the available list, select the API you want to include in this Test Action Unit.
+ This determines which message definition and validation rules are applied.
     
   </div>
   <div class="step-image">
@@ -195,7 +197,13 @@ Each Test Action Unit consists of:
     4. **User Logon Request**: Send user credentials
     5. **User Logon Response**: Validate user authentication
     
-    Each step is configured with appropriate datasheets and validation rules.
+Each step is configured with the appropriate data sheets and validation rules to ensure correct system behavior.
+  </div>
+
+  <div class="step-image">
+    <h4 class="image-title">Login Test Action Unit</h4>
+    <img src="/exgenix-documentation/img/test_action_unit/login_tau.png" alt="Login Test Action Unit" />
+    <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 
@@ -206,8 +214,8 @@ Each Test Action Unit consists of:
     ### Step Configuration Details
     
     Each step within the Test Action Unit displays:
-    - Step number and sequence
-    - API configuration name
+    - **Step Number & Sequence** – The order in which the step executes.
+    - **API Configuration Name** – The specific API or message type configured for that step.
   </div>
   <div class="step-image">
     <h4 class="image-title">Step Configuration View</h4>
@@ -254,7 +262,7 @@ When adding a Test Action Unit inside a test case, you must configure the datash
   </div>
   <div class="step-image">
     <h4 class="image-title">Datasheet Configuration Modal</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/datasheet_config.png" alt="Configuring datasheets for Test Action Unit" />
+    <img src="/exgenix-documentation/img/testcase/datasheet_selection.png" alt="Configuring datasheets for Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -382,24 +390,6 @@ Document:
 
 ---
 
-<div class="step-block">
-  <div class="step-text">
-    ## Example: Complete Login Test Action Unit
-    
-    A fully configured Login Test Action Unit demonstrates:
-    - Sequential step execution
-    - Datasheet mapping for each step
-    - Wait time configuration
-    - Response validation
-    - Variable capture
-    - Error handling
-    
-    The complete unit ensures reliable authentication flow that can be reused across all test cases requiring user login.
-  </div>
-</div>
-
----
-
 ## Managing Test Action Units
 
 ### Viewing Units
@@ -416,17 +406,12 @@ Each entry displays:
 ### Editing
 - Update name, description, steps, datasheets
 - Changes affect all test cases using it
-- Always review impact before modifying
 
 ### Deleting
 - Cannot delete if used in any test case
-- Remove references from test cases first
-- Confirm deletion when prompted
 
 ### Cloning
 - Useful for creating similar units quickly
-- Duplicate and modify as needed
-- Maintains all step configurations
 
 ---
 
@@ -436,7 +421,6 @@ Each entry displays:
 Achieved using:
 - Multiple units for different paths
 - Datasheets with conditional values
-- Variable-driven execution logic
 
 ### Error Handling
 Configured at test case level:
@@ -459,8 +443,6 @@ Configured at test case level:
 - Missing datasheets
 - Invalid API configs
 - Connection issues
-- Incorrect row patterns
-- Wait time configuration
 
 ### Variable Capture Issues
 
@@ -468,15 +450,12 @@ Configured at test case level:
 - Syntax errors
 - Validation rules
 - Datasheet mappings
-- Response field names
 
 ### Cannot Add Unit to Test Case
 
 **Resolve by:**
 - Re-saving the unit
 - Fixing validation errors
-- Checking for circular dependencies
-- Verifying all steps are valid
 
 ---
 
