@@ -11,7 +11,7 @@
 
 
 <script src="/js/imageExpand.js"></script><link rel="stylesheet" href="/exgenix-documentation/assets/css/styles.c576806b.css">
-<script src="/exgenix-documentation/assets/js/runtime~main.631692bc.js" defer="defer"></script>
+<script src="/exgenix-documentation/assets/js/runtime~main.ace29d1e.js" defer="defer"></script>
 <script src="/exgenix-documentation/assets/js/main.fad946e5.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -85,15 +85,25 @@
 <div class="step-block"><div class="step-text"><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-navigate-to-test-suites">Step 1: Navigate to Test Suites<a href="#step-1-navigate-to-test-suites" class="hash-link" aria-label="Direct link to Step 1: Navigate to Test Suites" title="Direct link to Step 1: Navigate to Test Suites" translate="no">​</a></h3><ol>
 <li class="">Go to <strong>Execution → [Collection Name]</strong></li>
 <li class="">Click <strong>+ Create Test Suite</strong></li>
-</ol><hr><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-configure-basic-information">Step 2: Configure Basic Information<a href="#step-2-configure-basic-information" class="hash-link" aria-label="Direct link to Step 2: Configure Basic Information" title="Direct link to Step 2: Configure Basic Information" translate="no">​</a></h3><p><strong>Name</strong> (Required)</p><ul>
+</ol></div><div class="step-image"><h4 class="image-title">Test Collection View</h4><img src="/exgenix-documentation/img/test_suite_and_execution/test_collection.png" alt="Open Test Collection"><p class="image-caption">🖱️ Click to expand image</p></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-configure-basic-information">Step 2: Configure Basic Information<a href="#step-2-configure-basic-information" class="hash-link" aria-label="Direct link to Step 2: Configure Basic Information" title="Direct link to Step 2: Configure Basic Information" translate="no">​</a></h3>
+<p><strong>Name</strong> (Required)</p>
+<ul>
 <li class="">Meaningful identifier for the suite (e.g., Test Suite Testing, Daily Smoke Tests)</li>
-</ul><p><strong>Description</strong> (Optional but Recommended)</p><ul>
+</ul>
+<p><strong>Description</strong> (Optional but Recommended)</p>
+<ul>
 <li class="">Document the suite&#x27;s purpose, covered scenarios, and execution requirements</li>
-</ul></div><div class="step-image"><h4 class="image-title">Test Collection View</h4><img src="/exgenix-documentation/img/test_suite_and_execution/test_collection.png" alt="Open Test Collection"><p class="image-caption">🖱️ Click to expand image</p></div></div>
+</ul>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-configure-schedule"><strong>Step 3: Configure Schedule</strong><a href="#step-3-configure-schedule" class="hash-link" aria-label="Direct link to step-3-configure-schedule" title="Direct link to step-3-configure-schedule" translate="no">​</a></h3>
-<div class="step-block"><div class="step-text"><p>Suites can run <strong>On Demand</strong> or be <strong>Scheduled</strong>.</p><table><thead><tr><th>Option</th><th>Description</th><th>Use Case</th></tr></thead><tbody><tr><td><strong>On Demand</strong></td><td>Manual execution only</td><td>Development, debugging, ad-hoc</td></tr><tr><td><strong>Scheduled</strong></td><td>Automated at specific times</td><td>Regression, nightly builds, continuous testing</td></tr></tbody></table><p>For <strong>Scheduled</strong> runs, set frequency (Daily/Weekly/Monthly), specific times, and recurrence.</p><hr><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-configure-parallel-execution">Step 4: <strong>Configure Parallel Execution</strong><a href="#step-4-configure-parallel-execution" class="hash-link" aria-label="Direct link to step-4-configure-parallel-execution" title="Direct link to step-4-configure-parallel-execution" translate="no">​</a></h3><table><thead><tr><th>Setting</th><th>Description</th><th>Benefits</th><th>Considerations</th></tr></thead><tbody><tr><td><strong>Enabled</strong></td><td>Cases run simultaneously</td><td>Faster runs</td><td>Needs resources; cases must be independent</td></tr><tr><td><strong>Disabled</strong></td><td>Cases run sequentially</td><td>Easier debugging, deterministic order</td><td>Longer total time</td></tr></tbody></table><p><strong>Enable</strong> when cases are independent and resources suffice.<br>
-<strong>Disable</strong> when cases depend on shared state/resources or order matters.</p></div><div class="step-image"><h4 class="image-title">Parallel Execution Configuration</h4><img src="/exgenix-documentation/img/test_suite_and_execution/2.png" alt="Configure Parallel Execution"><p class="image-caption">🖱️ Click to expand image</p></div></div>
+<div class="step-block"><div class="step-text"><p>Suites can run <strong>On Demand</strong> or be <strong>Scheduled</strong>.</p><table><thead><tr><th>Option</th><th>Description</th><th>Use Case</th></tr></thead><tbody><tr><td><strong>On Demand</strong></td><td>Manual execution only</td><td>Development, debugging, ad-hoc</td></tr><tr><td><strong>Scheduled</strong></td><td>Automated at specific times</td><td>Regression, nightly builds, continuous testing</td></tr></tbody></table><p>For <strong>Scheduled</strong> runs, set frequency (Daily/Weekly/Monthly), specific times, and recurrence.</p></div><div class="step-image"><h4 class="image-title">Parallel Execution Configuration</h4><img src="/exgenix-documentation/img/test_suite_and_execution/2.png" alt="Configure Parallel Execution"><p class="image-caption">🖱️ Click to expand image</p></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-configure-parallel-execution">Step 4: <strong>Configure Parallel Execution</strong><a href="#step-4-configure-parallel-execution" class="hash-link" aria-label="Direct link to step-4-configure-parallel-execution" title="Direct link to step-4-configure-parallel-execution" translate="no">​</a></h3>
+<table><thead><tr><th>Setting</th><th>Description</th><th>Benefits</th><th>Considerations</th></tr></thead><tbody><tr><td><strong>Enabled</strong></td><td>Cases run simultaneously</td><td>Faster runs</td><td>Needs resources; cases must be independent</td></tr><tr><td><strong>Disabled</strong></td><td>Cases run sequentially</td><td>Easier debugging, deterministic order</td><td>Longer total time</td></tr></tbody></table>
+<p><strong>Enable</strong> when cases are independent and resources suffice.<br>
+<strong>Disable</strong> when cases depend on shared state/resources or order matters.</p>
 <hr>
 <div class="step-block"><div class="step-text"><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-5-add-test-cases">Step 5: Add Test Cases<a href="#step-5-add-test-cases" class="hash-link" aria-label="Direct link to Step 5: Add Test Cases" title="Direct link to Step 5: Add Test Cases" translate="no">​</a></h3><p>Click <strong>+ Add Test Cases</strong> to select them for the suite.</p><p><strong>Add Test Cases Dialog Features:</strong></p><ul>
 <li class="">Search functionality to find specific test cases</li>
