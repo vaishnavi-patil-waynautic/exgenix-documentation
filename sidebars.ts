@@ -76,6 +76,16 @@ const sidebars: SidebarsConfig = {
     'test-action-unit',
     {
       type: 'category',
+      label: 'AI QA Agent',
+      link: { type: 'doc', id: 'ai-qa-agent' }, // parent doc
+      items: [
+      'ai-qa-agent/usecase1',
+      'ai-qa-agent/usecase2',
+      'ai-qa-agent/usecase3',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Sample Test Scenario',
       link: { type: 'doc', id: 'sample_test_scenario' }, // parent doc
       items: [
@@ -83,6 +93,7 @@ const sidebars: SidebarsConfig = {
       'sample-test-scenario/scenario_2',
       ],
     },
+    
     
     'contact-us',
 

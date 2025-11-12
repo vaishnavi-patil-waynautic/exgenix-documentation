@@ -65,7 +65,7 @@ The AI engine automatically classifies all generated test cases into **Positive*
     
     1. **Upload Document(s)** – Accepts `.pdf`, `.docx`, `.txt`, or scanned content
     2. **Contextual Prompting** – Specify functional focus or behavior, e.g.,
-       - *"Generate test cases for margin shortfall scenarios from this BRD."*
+    *"Generate test cases for margin shortfall scenarios from this BRD."*
     3. **AI Analysis** – System interprets use cases, data dependencies, and workflows
     4. **Generate Test Cases** – AI converts each logical step into actionable QA test cases
     
@@ -155,7 +155,5 @@ Auto-sync with Jira/ADO for complete traceability throughout the testing lifecyc
 ### Speed & Precision
 - **Hundreds of scenarios generated in minutes**
 - Powered by domain-trained AI models
-- Understands exchange and trading workflows
-- Continuously learns from feedback
  
 ---

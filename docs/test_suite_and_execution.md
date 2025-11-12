@@ -28,7 +28,7 @@ hide_table_of_contents: true
 
 ## Overview
 
-The **Test Suite & Execution** module lets you organize, schedule, and run your test cases with full control over sequencing, parallelism, and reporting. It supports on-demand and scheduled runs, real-time monitoring, and automatic report generation for every execution.
+The **Test Suite & Execution** module lets you organize, schedule, and run your test cases with full control over sequencing, parallelism, and reporting. It supports on-demand and scheduled runs, real-time monitoring, and automatic report generation for every execution.The format below mirrors the structure used in the API Configuration guide for consistency across Exgenix docs.
 
 ### Key Capabilities
 - **Test Organization:** Group related test cases into suites
@@ -47,9 +47,12 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
     The execution module follows a hierarchical structure:
     
     **Test Execution Collection**  
-    └── **Test Suite**  
-        └── **Test Case**  
-            └── **Test Steps**
+
+    - └── **Test Suite**  
+
+        - └── **Test Case**  
+
+            - └── **Test Steps**
     
     This three-tier structure provides logical organization and efficient execution management.
   </div>
@@ -83,20 +86,7 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
     
     Collections help you organize test suites logically, making it easier to manage large test repositories.
   </div>
-</div>
 
----
-
-<div class="step-block">
-  <div class="step-text">
-    ### Create Collection Dialog
-    
-    The collection creation dialog allows you to:
-    - Enter a descriptive name
-    - Add a detailed description. Define the purpose and scope
-    
-    Choose meaningful names that reflect the test organization strategy.
-  </div>
   <div class="step-image">
     <h4 class="image-title">Create Collection</h4>
     <img src="/exgenix-documentation/img/test_suite_and_execution/1.png" alt="Create Test Execution Collection" />
@@ -114,6 +104,7 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
     
     1. Go to **Execution → [Collection Name]**
     2. Click **+ Create Test Suite**
+
     
     ### Step 2: Configure Basic Information
     
@@ -125,7 +116,6 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
   </div>
 </div>
 
----
 
 ### Step 3: Configure Schedule
 
@@ -138,7 +128,6 @@ Suites can run **On Demand** or be **Scheduled**.
 
 For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, and recurrence.
 
----
 
 <div class="step-block">
   <div class="step-text">
@@ -159,24 +148,6 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
   </div>
 </div>
 
----
-
-<div class="step-block">
-  <div class="step-text">
-    ### Configuration Example
-    
-    The complete test suite configuration screen allows you to:
-    - Set the suite name and description
-    - Choose execution schedule (On Demand or Scheduled)
-    - Enable/disable parallel execution
-    - Configure execution parameters
-    
-    All settings can be modified later if requirements change.
-  </div>
-  
-</div>
-
----
 
 <div class="step-block">
   <div class="step-text">
@@ -199,19 +170,6 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
   </div>
 </div>
 
----
-
-<div class="step-block">
-  <div class="step-text">
-    ### Selected Test Cases Display
-    
-    You can:
-    - Add more test cases
-    - Remove individual test cases
-    - Reorder test cases (for sequential execution)
-    - Configure individual test case settings
-  </div>
-</div>
 
 ---
 
@@ -239,7 +197,11 @@ After suite creation, the panel shows:
 
 ## Executing Test Suites
 
-### On-Demand Execution
+
+
+<div class="step-block">
+  <div class="step-text">
+    ### On-Demand Execution
 
 **From Suite View**
 1. Open the suite
@@ -248,14 +210,6 @@ After suite creation, the panel shows:
 **From Collection View**
 1. Open the execution collection
 2. Click the execute icon for the suite
-
-<div class="step-block">
-  <div class="step-text">
-    The execution interface provides:
-    - One-click execution from multiple entry points
-    - Pre-execution validation
-    - Immediate feedback on execution start
-    - Automatic navigation to monitoring view
   </div>
   <div class="step-image">
     <h4 class="image-title">Execute Suite</h4>
@@ -266,7 +220,7 @@ After suite creation, the panel shows:
 
 ---
 
-### Execution Process
+## Execution Process
 
 **Step 1: Initialization**
 - Validate test cases, datasheets, and API configs
@@ -317,16 +271,12 @@ After suite creation, the panel shows:
     
     **Suite Level**
     - Total / completed / failed / remaining cases
-    - Overall progress percentage
     - Estimated time remaining (ETA)
-    - Current execution phase
     
     **Test Case Level**
     - Current step being executed
     - Steps completed vs remaining
     - Per-step pass/fail status
-    - Detailed error messages
-    - Request/response logs
     
     ### Execution Controls
     - **Pause**: Temporarily halt execution
@@ -398,7 +348,6 @@ After suite creation, the panel shows:
   </div>
 </div>
 
----
 
 <div class="step-block">
   <div class="step-text">
@@ -419,7 +368,6 @@ After suite creation, the panel shows:
   </div>
 </div>
 
----
 
 <div class="step-block">
   <div class="step-text">
@@ -437,37 +385,6 @@ After suite creation, the panel shows:
   </div>
 </div>
 
----
-
-<div class="step-block">
-  <div class="step-text">
-    **Response Logs Continued**
-    
-    Response logs show:
-    - Full response payloads
-    - Validation results
-    - Expected vs actual comparisons
-    - Field-level discrepancies
-    - Performance metrics
-  </div>
-</div>
-
----
-
-<div class="step-block">
-  <div class="step-text">
-    **Detailed Field-Level Logs**
-    
-    Deep dive into message contents:
-    - Individual field values
-    - Data type validation
-    - Format compliance
-    - Business rule validation
-    - Custom assertions
-  </div>
-</div>
-
----
 
 <div class="step-block">
   <div class="step-text">
@@ -483,8 +400,6 @@ After suite creation, the panel shows:
   </div>
 </div>
 
----
-
 <div class="step-block">
   <div class="step-text">
     **Timeline Details View**
@@ -496,15 +411,20 @@ After suite creation, the panel shows:
     - Parallel execution threads
     - Critical path analysis
     
-    **Report Export**
+    
+  </div>
+
+</div>
+
+---
+
+### **Report Export**
     
     Reports can be exported in multiple formats:
     - **PDF**: For sharing and documentation
     - **Excel**: For data analysis
     - **JSON**: For integration with other tools
     - **HTML**: For web publishing
-  </div>
-</div>
 
 ---
 
@@ -688,70 +608,23 @@ Changes to test suites affect all future executions but do not impact historical
 - **Archive**: Keep recent 30 days active; archive 90 days; delete per retention policy
 
 ---
-
 ## Troubleshooting
+### 1. Suite Won’t Execute
+Causes: No test cases, invalid configs, missing datasheets, connectivity.  
+Fix: Add cases; validate each case; ensure datasheets exist; verify connectivity.
 
-### Suite Won't Execute
+### 2. Parallel Execution Failures
+Causes: Resource contention, shared data, infra limits.  
+Fix: Reduce concurrency; ensure independence; re-allocate resources.
 
-**Causes:**
-- No test cases added
-- Invalid configurations
-- Missing datasheets
-- Connectivity issues
+### 3. Scheduled Execution Not Running
+Causes: Misconfigured schedule, maintenance, permissions.  
+Fix: Recheck schedule; verify system status; confirm permissions; view logs.
 
-**Fix:**
-- Add at least one test case
-- Validate each test case configuration
-- Ensure all datasheets exist and are populated
-- Verify server connectivity
+### 4. Reports Not Generated
+Causes: Interrupted run, storage limits, generation error.  
+Fix: Let runs complete; free storage; contact support if persistent.
 
----
-
-### Parallel Execution Failures
-
-**Causes:**
-- Resource contention
-- Shared data conflicts
-- Infrastructure limits
-- Session interference
-
-**Fix:**
-- Reduce concurrency level
-- Ensure test case independence
-- Allocate additional resources
-- Use separate sessions per case
-
----
-
-### Scheduled Execution Not Running
-
-**Causes:**
-- Misconfigured schedule
-- System maintenance window
-- Permission issues
-- Service unavailability
-
-**Fix:**
-- Double-check schedule configuration
-- Verify system status
-- Confirm user permissions
-- Review execution logs
-
----
-
-### Reports Not Generated
-
-**Causes:**
-- Execution interrupted
-- Storage limits reached
-- Report generation error
-- System timeout
-
-**Fix:**
-- Ensure executions complete fully
-- Free up storage space
-- Review error logs
-- Contact support if persistent
 
 ---
 
@@ -774,6 +647,5 @@ The **Test Suite & Execution** module provides:
 - Monitor in real time and review reports regularly
 - Maintain execution history for insights and quality trends
 
-This module forms the operational core of test execution in Exgenix, providing comprehensive control over test orchestration and reporting.
 
 ---
