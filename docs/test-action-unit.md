@@ -130,7 +130,7 @@ Each Test Action Unit consists of:
 <div class="step-block">
   <div class="step-text">
     
-    5. Provide the following details:
+    Provide the following details:
     
     **Action Type (Required)**
     - Select **API Test Action Unit**

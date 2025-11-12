@@ -36,7 +36,9 @@ The API Configuration module is the foundation of Exgenix's test automation fram
 The API Configuration module follows a three-tier hierarchical structure:
 
 📂 **Collections**  
+
     └── ⚙️ **API Configurations**  
+    
         └── 📊 **Datasheets**
 
 | Component | Purpose |
