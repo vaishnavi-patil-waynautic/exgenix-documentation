@@ -744,3 +744,67 @@ a.header-anchor svg {
   font-size: 0.9rem !important;
   opacity: 0.85;
 }
+
+
+/* // new lines */
+
+.generatedIndexPage_vN6x{
+  padding: 0;
+  margin: 0;
+}
+
+.docMainContainer_TBSr {
+  padding: 0 1rem !important;
+}
+
+/* Remove the large left margin/padding in docs pages */
+.docMainContainer_TBSr,
+.container.padding-top--md.padding-bottom--lg {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Optional: shrink container max width so content aligns better */
+.docMainContainer_TBSr .container {
+  max-width: 100% !important;
+}
+.docMainContainer_TBSr,
+.docMainContainer_TBSr > .container,
+.generatedIndexPage_vN6x {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+
+/* Apply small left padding to generated index pages */
+.generatedIndexPage_vN6x {
+  padding-left: 20px !important;   /* adjust this value */
+}
+
+
+/* REMOVE all padding & margin from doc content column */
+.col.docItemCol_VOVn {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+
+.col.docItemCol_VOVn {
+  padding-left: 20px !important;
+}
+
+.title_kItE { 
+  font-size: 1.8rem !important;
+  margin-bottom: 0 !important;
+ }
+
+.generatedIndexPage_vN6x header {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.generatedIndexPage_vN6x header p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+

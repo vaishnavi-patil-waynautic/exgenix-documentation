@@ -183,7 +183,7 @@ export default function VideosPage() {
       <div style={{ display: "flex", maxWidth: "1200px", margin: "auto", padding: "2rem" }}>
         {/* Sidebar */}
         <div style={{ width: "250px", borderRight: "1px solid #ddd", paddingRight: "1rem" }}>
-          <h3>Videos</h3>
+          <h3>Video References</h3>
           <ul style={{ listStyle: "none", padding: 0 }}>
             {videos.map((v) => (
               <li key={v.id} style={{ marginBottom: "1rem" }}>

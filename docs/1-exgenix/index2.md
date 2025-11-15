@@ -2,7 +2,7 @@
 id: exgenix
 title: Exgenix — AI-Powered QA Governance
 sidebar_label: Exgenix - Introduction
-slug: /exgenix
+slug: /exgenix1
 ---
 
 # Exgenix: AI-Powered QA Governance for Stock Exchange Ecosystem

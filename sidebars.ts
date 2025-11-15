@@ -55,7 +55,16 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Exgenix',
-      link: { type: 'doc', id: 'exgenix/exgenix' }, // parent doc
+      collapsible: true,
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: 'AI-Powered QA Governance for Stock Exchange Ecosystem',
+        
+        slug: '/exgenix'
+      },
+      description: 'The Exgenix platform revolutionizes QA for stock exchanges by integrating AI-driven test case generation, no-code automation, and comprehensive governance. Explore how Exgenix enhances test coverage, traceability, and efficiency across exchange systems.',
+      // link: { type: 'doc', id: 'exgenix/exgenix' }, // parent doc
       items: [
         'exgenix/executive-overview',
         'exgenix/qa-transformation-vision',
@@ -67,9 +76,63 @@ const sidebars: SidebarsConfig = {
       ],
     },
 
-    // ✅ Keep your existing docs as they are
-    'quick-start-guide',
-    'ai-powered-testcase-generation',
+    {
+      type: 'category',
+      label: 'Trial Access',
+      collapsible: true,
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: 'Trial Access',
+        description: 'Get started with Exgenix through our Exgenix Trial. Explore core features, no-code automation, and AI-driven QA governance in a simulated exchange environment.',
+        slug: '/trial-access'
+      },
+      items: [
+        'dbg-trial/intro',
+        'dbg-trial/purpose',
+        'dbg-trial/governance-engine',
+        'dbg-trial/no-code-automation',
+        'dbg-trial/ai-qa-governance',
+        'dbg-trial/what-to-expect',
+        'dbg-trial/security',
+        'dbg-trial/timeline',
+        'dbg-trial/post-trial',
+        'dbg-trial/commitment',
+      ],
+    },
+
+    {
+  type: 'category',
+  label: 'Quick Started Guide',
+  link: {
+    type: 'generated-index',
+    title: 'Exgenix Quick Start Guide (Trial Access)',
+    description: 'Welcome to the Exgenix + AI QA Agent ecosystem! This Quick Start Guide provides your access details, project references, and navigation steps to help you start exploring the product immediately.',
+    slug: '/quick-start-guide'
+  },
+  items: [
+    'quick-start-guide/access_credentials',
+      'quick-start-guide/trial_project_details',
+      'quick-start-guide/recommended_first_steps',
+  ],
+},
+    {
+      type: 'category',
+      label: 'AI Powered Testcase Generation',
+      link: {
+        type: 'generated-index',
+        title: 'AI-Powered Test Case Generation',
+        description: 'Generate Testcase with use of AI from various sources like BRD, API Specs or User Stories.',
+        slug: '/ai-powered-testcase-generation'
+      },
+      items: [
+        'ai-powered-testcase-generation/overview',
+        'ai-powered-testcase-generation/category1',
+        'ai-powered-testcase-generation/category2',
+        'ai-powered-testcase-generation/category3',
+        'ai-powered-testcase-generation/key-highlight',
+      ],
+    },
     'api-configuration',
     'test-action-unit',
     'testcase',
@@ -77,10 +140,13 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Sample Test Scenario',
-      link: { type: 'doc', id: 'sample_test_scenario' }, // parent doc
+      link: {
+        type: "generated-index",
+        description: "This section contains multiple test scenarios.",
+      },
       items: [
-      'sample-test-scenario/scenario_1',
-      'sample-test-scenario/scenario_2',
+        "sample-test-scenario/scenario_1",
+        "sample-test-scenario/scenario_2",
       ],
     },
     {

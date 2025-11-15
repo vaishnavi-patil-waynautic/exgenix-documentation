@@ -9,6 +9,10 @@ slug: /sample-test-scenario/scenario-2
 
 # Scenario 2: Complete Trade Flow Test Case Design
 
+A complete example showing how to build and validate a full order lifecycle test
+
+---
+
 ## Table of Contents
 - [Overview](#overview)
 - [Business Objective](#business-objective)

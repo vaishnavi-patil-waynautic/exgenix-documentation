@@ -10,6 +10,8 @@ slug: /sample-test-scenario/scenario-1
 
 # Scenario 1: Order placement
 
+An illustration of turning an ETI API spec into an automated Exgenix test.
+
 ---
 
 ## Table of Contents

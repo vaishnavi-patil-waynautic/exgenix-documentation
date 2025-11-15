@@ -89,7 +89,7 @@ scripts: [
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/videos', label: 'Videos', position: 'left'},
+        {to: '/videos', label: 'Video References', position: 'left'},
         {
           href: 'https://app.exgenix.waynautic.com/',
           label: 'Exgenix Platform',
@@ -113,7 +113,7 @@ scripts: [
               to: '/docs/quick-start-guide',
             },
             {
-              label: 'Videos',
+              label: 'Video References',
               to: '/videos',
             },
           ],
