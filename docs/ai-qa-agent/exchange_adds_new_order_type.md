@@ -32,6 +32,6 @@ slug: /ai-qa-agent/usecase1
 
 ---
 
-## Outcome
+> ## Outcome
+> Feature tested in **2 hours** versus **2 days** manually.
 
-- Feature tested in **2 hours** versus **2 days** manually.

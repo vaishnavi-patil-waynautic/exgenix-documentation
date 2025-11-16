@@ -33,6 +33,5 @@ slug: /ai-qa-agent/usecase2
 
 ---
 
-## Outcome
-
-- **Complete impact analysis in minutes**, ensuring **no coverage gaps**.
+> ## Outcome
+> **Complete impact analysis in minutes**, ensuring **no coverage gaps**.

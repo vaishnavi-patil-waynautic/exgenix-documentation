@@ -1,4 +1,4 @@
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
 // // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -56,10 +56,8 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Exgenix',
       link: {
-        type: 'generated-index',
-        title: 'AI-Powered QA Governance for Stock Exchange Ecosystem',
-        
-        slug: '/exgenix'
+        type: 'doc',
+        id: 'exgenix/exgenix'
       },
       description: 'The Exgenix platform revolutionizes QA for stock exchanges by integrating AI-driven test case generation, no-code automation, and comprehensive governance. Explore how Exgenix enhances test coverage, traceability, and efficiency across exchange systems.',
       // link: { type: 'doc', id: 'exgenix/exgenix' }, // parent doc
@@ -77,11 +75,15 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Trial Access',
+      // link: {
+      //   type: 'generated-index',
+      //   title: 'Trial Access',
+      //   description: 'Get started with Exgenix through our Exgenix Trial. Explore core features, no-code automation, and AI-driven QA governance in a simulated exchange environment.',
+      //   slug: '/trial-access'
+      // },
       link: {
-        type: 'generated-index',
-        title: 'Trial Access',
-        description: 'Get started with Exgenix through our Exgenix Trial. Explore core features, no-code automation, and AI-driven QA governance in a simulated exchange environment.',
-        slug: '/trial-access'
+        type: 'doc',
+        id: 'dbg-trial/dbg-trial', // points to docs/dbg-trial/index.md
       },
       items: [
         'dbg-trial/intro',
@@ -98,28 +100,30 @@ const sidebars: SidebarsConfig = {
     },
 
     {
-  type: 'category',
-  label: 'Quick Started Guide',
-  link: {
-    type: 'generated-index',
-    title: 'Exgenix Quick Start Guide (Trial Access)',
-    description: 'Welcome to the Exgenix + AI QA Agent ecosystem! This Quick Start Guide provides your access details, project references, and navigation steps to help you start exploring the product immediately.',
-    slug: '/quick-start-guide'
-  },
-  items: [
-    'quick-start-guide/access_credentials',
-      'quick-start-guide/trial_project_details',
-      'quick-start-guide/recommended_first_steps',
-  ],
-},
+      type: 'category',
+      label: 'Quick Started Guide',
+      link: {
+        type: 'doc',
+        id: 'quick-start-guide/quick-start-guide', // points to quick-start-guide/index.md
+      },
+      // link: {
+      //   type: 'generated-index',
+      //   title: 'Exgenix Quick Start Guide (Trial Access)',
+      //   description: 'Welcome to the Exgenix + AI QA Agent ecosystem! This Quick Start Guide provides your access details, project references, and navigation steps to help you start exploring the product immediately.',
+      //   slug: '/quick-start-guide'
+      // },
+      items: [
+        'quick-start-guide/access_credentials',
+        'quick-start-guide/trial_project_details',
+        'quick-start-guide/recommended_first_steps',
+      ],
+    },
     {
       type: 'category',
       label: 'AI Powered Testcase Generation',
       link: {
-        type: 'generated-index',
-        title: 'AI-Powered Test Case Generation',
-        description: 'Generate Testcase with use of AI from various sources like BRD, API Specs or User Stories.',
-        slug: '/ai-powered-testcase-generation'
+        type: 'doc',              // Link directly to index.md
+        id: 'ai-powered-testcase-generation/ai-powered-testcase-generation', // your folder's index.md
       },
       items: [
         'ai-powered-testcase-generation/overview',
@@ -129,39 +133,87 @@ const sidebars: SidebarsConfig = {
         'ai-powered-testcase-generation/key-highlight',
       ],
     },
-    'api-configuration',
+    // {
+    //   type: 'category',
+    //   label: 'AI Powered Testcase Generation',
+    //   link: {
+    //     type: 'generated-index',
+    //     title: 'AI-Powered Test Case Generation',
+    //     description: 'Generate Testcase with use of AI from various sources like BRD, API Specs or User Stories.',
+    //     slug: '/ai-powered-testcase-generation'
+    //   },
+    //   items: [
+    //     'ai-powered-testcase-generation/overview',
+    //     'ai-powered-testcase-generation/category1',
+    //     'ai-powered-testcase-generation/category2',
+    //     'ai-powered-testcase-generation/category3',
+    //     'ai-powered-testcase-generation/key-highlight',
+    //   ],
+    // },
+
+    {
+      type: 'category',
+      label: 'API Configuration',
+      link: { type: 'doc', id: 'api-configuration/index' },
+      items: [
+        'api-configuration/overview',
+        'api-configuration/module-structure',
+        'api-configuration/collections',
+        'api-configuration/api-configuration',
+        'api-configuration/datasheets',
+        'api-configuration/advanced-features',
+        'api-configuration/best-practices',
+        'api-configuration/troubleshooting',
+        'api-configuration/summary',
+      ],
+    },
+    // 'api-configuration',
     'test-action-unit',
     'testcase',
     'test_suite_and_execution',
+    // {
+    //   type: 'category',
+    //   label: 'Sample Test Scenario',
+    //   link: {
+    //     type: "generated-index",
+    //     description: "This section contains multiple test scenarios.",
+    //   },
+    //   items: [
+    //     "sample-test-scenario/scenario_1",
+    //     "sample-test-scenario/scenario_2",
+    //   ],
+    // },
+
     {
       type: 'category',
       label: 'Sample Test Scenario',
       link: {
-        type: "generated-index",
-        description: "This section contains multiple test scenarios.",
+        type: 'doc',             // Direct link to index.md
+        id: 'sample-test-scenario/sample-test-scenario',
       },
       items: [
-        "sample-test-scenario/scenario_1",
-        "sample-test-scenario/scenario_2",
+        'sample-test-scenario/scenario_1',
+        'sample-test-scenario/scenario_2',
       ],
     },
+
     {
       type: 'category',
       label: 'AI QA Agent',
       link: { type: 'doc', id: 'ai-qa-agent' }, // parent doc
       items: [
-      'ai-qa-agent/usecase1',
-      'ai-qa-agent/usecase2',
-      'ai-qa-agent/usecase3',
+        'ai-qa-agent/usecase1',
+        'ai-qa-agent/usecase2',
+        'ai-qa-agent/usecase3',
       ],
     },
-    
-    
-    
+
+
+
     'contact-us',
 
     // ✅ Add Exgenix as a nested category here
-    
+
   ],
 };
 

@@ -47,7 +47,10 @@ The AI QA Agent connects directly to JIRA/ADO, eliminating manual effort in requ
 - **Real-World Example**: Surveillance use case monitoring unusual trading patterns demonstrated in the video
 - **Instant Access**: Requirements appear in the agent interface immediately after sync
 
+:::info
 **Business Impact**: Eliminates data entry errors and reduces requirement import time from hours to seconds.
+
+:::
 
 ---
 
@@ -60,7 +63,10 @@ Domain-trained AI models generate comprehensive test cases automatically:
 - **Instant Results**: Complete test cases generated in seconds, not hours or days
 - **Intelligent Analysis**: AI understands exchange-specific workflows and business logic
 
+:::info
 **Business Impact**: Reduces test case design effort by 80%, enabling QA teams to focus on execution rather than documentation.
+
+:::
 
 ---
 
@@ -72,7 +78,10 @@ Each generated test case includes:
 - **Tailored Test Data**: Exchange-specific data aligned with trading workflows
 - **Comprehensive Coverage**: Positive, negative, and edge case scenarios
 
+:::info
 **Business Impact**: Ensures consistent test quality and complete coverage across all functional areas.
+
+:::
 
 ---
 
@@ -84,7 +93,10 @@ QA teams maintain full control with flexible review options:
 - **Feedback Loop:** Every decision trains the AI model for continuous improvement.  
 - **Accuracy Enhancement:** AI learns from team preferences and domain expertise over time.
 
+:::info
 **Business Impact:** Balances automation with human expertise, ensuring quality while maintaining team oversight.
+
+:::
 
 ---
 
@@ -97,7 +109,10 @@ AI-generated test cases are not black-box outputs:
 - **Special Conditions:** Adapt test data for edge cases and unique scenarios.  
 - **Living Assets:** Test cases evolve with domain expertise and changing requirements.  
 
+:::info
 **Business Impact:** Ensures AI-generated content aligns with organizational standards and domain-specific needs.
+
+:::
 
 ---
 
@@ -111,12 +126,17 @@ Structured test case organization by exchange components:
   - Clearing and Settlement  
   - Surveillance  
 
+:::note
 **Benefits:**  
 - **Instant Visibility**: Quick navigation across all modules.  
 - **Business Context**: Every test case anchored to the right functional domain.  
-- **Modular Organization**: Clear separation of concerns.  
+- **Modular Organization**: Clear separation of concerns. 
+:::  
 
+:::info
 **Business Impact:** Improves test discoverability and ensures comprehensive module coverage.
+
+:::
 
 ---
 
@@ -128,7 +148,11 @@ Full bidirectional traceability throughout the QA lifecycle:
 - **Intelligent Adaptation:** AI determines whether to create new test cases, modify existing steps, or retire outdated tests.  
 - **Zero Manual Effort:** QA teams always have appropriate coverage without manual intervention.  
 
+
+:::info
 **Business Impact:** Ensures requirements changes never result in coverage gaps, reducing regression risk by 70%.
+:::
+
 
 ---
 
@@ -142,7 +166,11 @@ Comprehensive defect tracking and impact assessment:
 - **Release Notes Integration:** Connect defects to release notes and change requests.  
 - **Impact Visibility:** See how each change, defect, or requirement affects the entire QA ecosystem.  
 
+
+:::info
 **Business Impact:** Reduces defect analysis time by 60% and provides instant impact assessment for release decisions.
+:::
+
 
 ---
 
@@ -177,7 +205,11 @@ Real-time, role-specific insights through natural language queries:
 - **Query:** "Summarize overall QA status for the current release in two lines and list all high-risk modules with low test coverage"  
   **AI Response:** "Current release has 85% test coverage with 12 open defects. High-risk modules with low coverage include: Risk Management Module, Settlement Engine, and Surveillance System."
 
+
+:::info
 **Business Impact:**  Democratizes QA insights across all stakeholders, enabling data-driven decision-making at every level.
+:::
+
 
 ---
 
@@ -211,18 +243,18 @@ The AI QA Agent integrated with **Exgenix** delivers:
 
 ## Integration Ecosystem
 
-**Requirements Management:**  
+> **Requirements Management:**  
 - JIRA: Automatic requirement sync and bidirectional updates  
 - Azure DevOps (ADO): User story integration and test case mapping  
 
-**Test Automation:**  
+> **Test Automation:**  
 - Exgenix: Native integration for automated test execution and reporting  
 
-**Release Management:**  
+> **Release Management:**  
 - Release Notes: Link test cases to specific releases  
 - Change Requests: Track impact of changes on test coverage  
 
-**Historical Data:**  
+> **Historical Data:**  
 - Defect History: Import and analyze historical defects with reported dates  
 - Trend Analysis: Long-term quality and coverage trends
 
@@ -245,51 +277,51 @@ The AI QA Agent integrated with **Exgenix** delivers:
 
 The **AI QA Agent** provides a comprehensive, end-to-end workflow from requirements to release.
 
-### **Step 1: Requirements Sync**
+> ### **Step 1: Requirements Sync**
 - Connect to **JIRA** or **Azure DevOps (ADO)**  
 - Automatically sync requirements  
 - No manual data entry required  
 
-### **Step 2: AI Test Generation**
+> ### **Step 2: AI Test Generation**
 - Select one or more requirements  
 - AI analyzes and generates detailed test cases  
 - Creates **positive**, **negative**, and **edge** scenarios  
 
-### **Step 3: Review & Approval**
+> ### **Step 3: Review & Approval**
 - QA team reviews all generated test cases  
 - Accept or reject individual tests or the entire suite  
 - AI learns from decisions for continuous improvement  
 
 
-### **Step 4: Edit & Customize**
+> ### **Step 4: Edit & Customize**
 - Fully editable AI-generated test cases  
 - Add, remove, or modify test steps and data  
 - Create **hybrid manual-automated** test flows  
 
 
-### **Step 5: Organize & Map**
+> ### **Step 5: Organize & Map**
 - Organize test cases into a **hierarchical folder structure**  
 - Map to functional modules (e.g., **Gateway**, **Matching Engine**, **Risk Management**)  
 - Link requirements to test cases for **end-to-end traceability**  
 
 
-### **Step 6: Maintain Traceability**
+> ### **Step 6: Maintain Traceability**
 - **Bidirectional links:** Requirements ↔ Test Cases  
 - **Defect linkage:** Test Cases ↔ Defects  
 - Automatic updates when requirements or tests change  
 
 
-### **Step 7: Defect Tracking**
+> ### **Step 7: Defect Tracking**
 - Map defects directly to test cases  
 - Trace defects back to original requirements  
 - Import and analyze **historical defect data** for pattern detection  
 
-### **Step 8: Conversational Insights**
+> ### **Step 8: Conversational Insights**
 - Ask questions in **natural language**  
 - Receive **role-specific, data-backed responses**  
 - Get **actionable recommendations** for next steps  
 
-### **Step 9: Release Readiness**
+> ### **Step 9: Release Readiness**
 - Automated **coverage analysis**  
 - **Risk assessment** by module  
 - AI-powered **Go/No-Go** decision  
@@ -303,32 +335,52 @@ The **AI QA Agent** employs advanced machine learning continuously improve:
 
 
 ### **Learning Mechanisms**
-**Acceptance/Rejection Feedback:** 
-- Every test case review trains the model.  
-- Understands team preferences and standards
-- Improves accuracy for future generations
+#
+<div class="collapsible-card-div">
 
+  <details class="green-collapsible">
+    <summary><strong>Acceptance/Rejection Feedback</strong></summary>
+    <ul>
+      <li>Every test case review trains the model.</li>
+      <li>Understands team preferences and standards.</li>
+      <li>Improves accuracy for future generations.</li>
+    </ul>
+  </details>
 
-**Usage Patterns**
-- Analyzes which **test structures and strategies** are most effective.  
-- Learns **domain-specific terminology** used by QA teams and analysts.  
-- Adapts to **organizational conventions** 
+  <details class="green-collapsible">
+    <summary><strong>Usage Patterns</strong></summary>
+    <ul>
+      <li>Analyzes which <strong>test structures and strategies</strong> are most effective.</li>
+      <li>Learns <strong>domain-specific terminology</strong> used by QA teams and analysts.</li>
+      <li>Adapts to <strong>organizational conventions</strong>.</li>
+    </ul>
+  </details>
 
+  <details class="green-collapsible">
+    <summary><strong>Defect Correlation</strong></summary>
+    <ul>
+      <li>Identifies <strong>patterns in recurring defects</strong> across modules.</li>
+      <li>Suggests <strong>additional test scenarios</strong> for high-risk or failure-prone areas.</li>
+      <li>Predicts <strong>potential failure points</strong> before they occur in production.</li>
+    </ul>
+  </details>
 
-**Defect Correlation**
-- Identifies **patterns in recurring defects** across modules.  
-- Suggests **additional test scenarios** for high-risk or failure-prone areas.  
-- Predicts **potential failure points** before they occur in production.  
+  <details class="green-collapsible">
+    <summary><strong>Query Response Optimization</strong></summary>
+    <ul>
+      <li>Learns from <strong>natural language interactions</strong> over time.</li>
+      <li>Continuously improves <strong>response accuracy and contextual understanding</strong>.</li>
+      <li>Personalizes <strong>QA insights and recommendations</strong> for each user role.</li>
+    </ul>
+  </details>
 
+</div>
 
-**Query Response Optimization**
-- Learns from **natural language interactions** over time.  
-- Continuously improves **response accuracy and contextual understanding**.  
-- Personalizes **QA insights and recommendations** for each user role.  
 
 
 ---
 
+:::success
 ## Success Metrics
 
 Organizations using AI QA Agent report:
@@ -340,11 +392,14 @@ Organizations using AI QA Agent report:
 - **50% improvement** in test coverage  
 - **90% reduction** in manual documentation effort
 
+:::
+
 ---
 
 ## Technical Capabilities
-
+#
 The **AI QA Agent** leverages domain-specific intelligence and multi-source data integration to deliver a highly adaptive and context-aware QA ecosystem.
+
 
 
 ### **AI Model Features**
@@ -373,20 +428,20 @@ The **AI QA Agent** leverages domain-specific intelligence and multi-source data
 
 ## Getting Started
 
-**Initial Setup:**  
+> **Initial Setup:**  
 - Connect JIRA/ADO instance  
 - Configure user roles and permissions  
 - Import existing requirements (optional)  
 - Train team on conversational interface  
 
-**First Test Generation:**  
+> **First Test Generation:**  
 - Select a requirement in JIRA  
 - Sync to AI QA Agent  
 - Generate test cases  
 - Review and accept generated tests
 - Organize into folder structure  
 
-**Ongoing Usage:**  
+> **Ongoing Usage:**  
 - Regular requirement syncs  
 - Continuous test generation  
 - QA team feedback improves AI accuracy

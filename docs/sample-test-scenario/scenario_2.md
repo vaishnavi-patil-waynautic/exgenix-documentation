@@ -7,6 +7,15 @@ sidebar_label: Trade
 slug: /sample-test-scenario/scenario-2
 description: 'A complete example showing how to build and validate a full order lifecycle test'
 ---
+import {
+  FeatureCard,
+  FeatureGrid,
+  StatusBadge,
+  InfoBox,
+  StepIndicator,
+  QuickLinks
+} from '@site/src/components/DocumentationComponents';
+import ExampleBlock from '@site/src/components/ExampleBlock'
 
 # Scenario 2: Complete Trade Flow Test Case Design
 
@@ -59,7 +68,7 @@ This scenario simulates a real-world exchange workflow where a BUY order and a S
 
 
 ---
-
+:::info
 ## Business Objective
 
 Validate the end-to-end workflow to ensure:
@@ -71,6 +80,8 @@ Validate the end-to-end workflow to ensure:
 - Accurate capture of trade identifiers  
 - Clean session termination 
 
+:::
+
 ---
 
 ## Prerequisites
@@ -79,7 +90,7 @@ Validate the end-to-end workflow to ensure:
 
 <div class="step-block">
   <div class="step-text">
-    **Login Tau** | Establish session & authenticate 
+    > **Login Tau** | Establish session & authenticate 
   </div>
 
   <div class="step-image">
@@ -92,7 +103,7 @@ Validate the end-to-end workflow to ensure:
 
 <div class="step-block">
   <div class="step-text">
-    **Logout Tau** | Clean session termination
+    > **Logout Tau** | Clean session termination
   </div>
 
   <div class="step-image">
@@ -107,7 +118,7 @@ Validate the end-to-end workflow to ensure:
 ## Phase 1: Plan the Test Flow
 
 ### Workflow Diagram
-
+#
 
 ```
 ```text
@@ -141,9 +152,10 @@ Validate the end-to-end workflow to ensure:
     ✓ Trade Cycle Complete
 
 ```
+---
 
 ### Key Variables in Flow
-
+#
 | **Variable**        | **Description**                                               |
 |---------------------|---------------------------------------------------------------|
 | `session_id`        | Captured during the **login** process.                       |
@@ -159,11 +171,28 @@ Validate the end-to-end workflow to ensure:
 
 ## Phase 2: Prepare Datasheets
 
-### Step 2.1: Login datasheets
+> ### Step 1: Login datasheets
 
 <div class="step-block">
   <div class="step-text">
-    <h4>2.1.1: Socket Connection Datasheet</h4>
+    <h4>1.1: Socket Connection Datasheet</h4>
+    <h4>1.2: Session Logon Request Datasheet</h4>
+    <h4>1.3: Session Logon Response Datasheet</h4>
+    <h4>1.4: User Logon Request Datasheet</h4>
+    <h4>1.5: User Logon Response Datasheet</h4>
+
+
+    ---
+    #
+    > ### Step 2: BUY Order Response Datasheet
+
+    ---
+    #
+    > ### Step 3: SELL Order Request Datasheet
+
+    ---
+    #
+    > ### Step 4: Immediate Execution Response Datasheet
   </div>
   <div class="step-image">
     <h4 class="image-title">Socket Connection Configuration</h4>
@@ -172,64 +201,10 @@ Validate the end-to-end workflow to ensure:
   </div>
 </div>
 
-<div class="step-block">
-  <div class="step-text">
-    <h4>2.1.2: Session Logon Request Datasheet</h4>
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Session Logon Request</h4>
-    <img src="/exgenix-documentation/img/scenario_2/4.png" alt="Session Logon Request Datasheet" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
-</div>
-
-**2.1.3: Session Logon Response Datasheet**
-
-<div class="step-block">
-  <div class="step-text">
-    <h4>2.1.4: User Logon Request Datasheet</h4>
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">User Logon Request</h4>
-    <img src="/exgenix-documentation/img/scenario_2/5.png" alt="User Logon Request Datasheet" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
-</div>
-
-<div class="step-block">
-  <div class="step-text">
-    <h4>2.1.5: User Logon Response Datasheet</h4>
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">User Logon Response</h4>
-    <img src="/exgenix-documentation/img/scenario_2/6.png" alt="User Logon Response Datasheet" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
-</div>
 
 ---
 
-### Step 2.1: BUY Order Request Datasheet
-Refer login sequence datasheet.
-
----
-
-### Step 2.2: BUY Order Response Datasheet
-Refer login sequence datasheet.
-
----
-
-### Step 2.3: SELL Order Request Datasheet
-Refer login sequence datasheet.
-
----
-
-### Step 2.4: Immediate Execution Response Datasheet
-Refer login sequence datasheet.
-
----
-
-## 6. Phase 3: Create the Test Case
+## Phase 3: Create the Test Case
 
 
 <div class="step-block">
@@ -252,7 +227,7 @@ Refer login sequence datasheet.
 
 ---
 
-## 7. Phase 4: Review Test Case Configuration
+## Phase 4: Review Test Case Configuration
 
 ### Final Test Case Structure
 ```
@@ -276,13 +251,13 @@ Step 8: Logout Tau
 
 ---
 
-## 8. Phase 5: Execute and Validate
+## Phase 5: Execute and Validate
 
 Same execution steps—output will reflect BUY > SELL > TRADE.
 
 ---
 
-## 9. Phase 6: Optional Enhancements
+## Phase 6: Optional Enhancements
 
 Now includes:
 
@@ -294,22 +269,46 @@ Now includes:
 
 ---
 
-## 10. Verification & Best Practices
+:::tip
+
+## Verification & Best Practices
 
 Updated to focus on trade matching rather than cancellation.
+:::
+
+
 
 ---
 
-## 11. Key Learnings
+## Key Learnings 
 
-- Multi-order sequence generation
-- Trade confirmation handling
-- Consistent session continuity
-- Complex multi-step variable propagation
+<FeatureGrid>
+  <FeatureCard
+    icon="repeat"
+    title="Multi-order sequence generation"
+    color="#2563eb"
+  />
+  <FeatureCard
+    icon="check-circle"
+    title="Trade confirmation handling"
+    color="#10b981"
+  />
+  <FeatureCard
+    icon="users"
+    title="Consistent session continuity"
+    color="#f59e0b"
+  />
+  <FeatureCard
+    icon="code-branch"
+    title="Complex multi-step variable propagation"
+    color="#8b5cf6"
+  />
+</FeatureGrid>
+
 
 ---
 
-## 12. Manual vs Automated
+## Manual vs Automated
 
 **Manual trade matching testing takes ~120 minutes**
 
@@ -317,7 +316,8 @@ Updated to focus on trade matching rather than cancellation.
 
 ---
 
-## 13. Expanding the Test Suite
+:::tip
+## Expanding the Test Suite
 
 Add scenarios like:
 
@@ -325,10 +325,12 @@ Add scenarios like:
 - Partial fills leading to multiple confirmations
 - Cross-symbol trades
 - High-frequency trade bursts
+:::
+
 
 ---
 
-## 14. Summary
+## Summary
 
 This updated Scenario 2 showcases:
 

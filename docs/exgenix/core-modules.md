@@ -1,0 +1,97 @@
+---
+id: core-modules
+title: Core Modules
+sidebar_label: Core Modules
+slug: /exgenix/core-modules
+hide_table_of_contents: true
+description : 'API Configuration | Test Data Configuration | Test Configuration | Execution| Reports '
+---
+
+import {
+  FeatureCard,
+  FeatureGrid,
+  StatusBadge,
+  InfoBox,
+  StepIndicator,
+  QuickLinks
+} from '@site/src/components/DocumentationComponents';
+import ExampleBlock from '@site/src/components/ExampleBlock'
+
+# Core Modules
+
+---
+
+<FeatureGrid>
+
+  <FeatureCard
+    icon="settings"
+    title="API Configuration"
+    description="Define and manage FIX, ETI, Custom Binary, or custom APIs using templates. Configure endpoints, authentication, and headers; organize APIs into collections; and attach parameter files or functions for dynamic testing."
+    color="#2563eb"
+  />
+
+  <FeatureCard
+    icon="database"
+    title="Test Data Configuration"
+    description="Create and manage reusable datasets. Auto-generate test data, map datasheets to APIs, and maintain consistency across all test runs."
+    color="#10b981"
+  />
+
+  <FeatureCard
+    icon="flow"
+    title="Test Configuration"
+    description="Design flexible workflow logic with API sequencing, loops, waits, dependencies, and reusable components across suites."
+    color="#f59e0b"
+  />
+
+  <FeatureCard
+    icon="play-circle"
+    title="Execution"
+    description="Execute tests individually or in batches across environments with real-time progress tracking and monitoring."
+    color="#8b5cf6"
+  />
+
+  <FeatureCard
+    icon="bar-chart"
+    title="Reports"
+    description="Gain end-to-end visibility with request–response traceability, coverage metrics, historical trends, and defect insights."
+    color="#ec4899"
+  />
+
+</FeatureGrid>
+
+
+<!-- 
+1. **API Configuration**
+Define and manage FIX / ETI/Custom Binary API or custom APIs with reusable templates.
+- Configure endpoints, authentication, and headers
+- Organize APIs into collections
+- Link parameter files and functions  for dynamic testing
+
+
+2. **Test Data Configuration**
+Centralized control of reusable and dynamic datasets.
+- Create or auto-generate test data
+- Map datasets to APIs
+- Maintain consistency across runs
+
+
+3. **Test Configuration**
+Design realistic workflows with complete flexibility.
+- Sequence APIs for test flows
+- Add loops, waits, and dependencies
+- Reuse configurations across suites
+
+
+4. **Execution**
+Seamless test execution and real-time monitoring.
+- Run single or batch suites
+- Execute across multiple environments
+- Track progress live
+
+
+5. **Reports**
+Comprehensive QA visibility and governance.
+- Request/response traceability
+- Coverage and defect metrics
+ -->

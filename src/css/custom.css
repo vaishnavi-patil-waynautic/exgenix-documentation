@@ -965,3 +965,54 @@ body {
 .generatedIndexPage_vN6x {
   overflow-x: hidden;
 }
+
+
+/* src/css/custom.css */
+.table-of-contents {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-left: 0;
+}
+
+.table-of-contents li {
+  margin-bottom: 0.5rem;
+}
+
+.table-of-contents a {
+  color: #1a1a1a; /* dark gray */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.table-of-contents a:hover {
+  color: #0070f3; /* subtle highlight */
+  text-decoration: underline;
+}
+
+.table-of-contents .active {
+  font-weight: bold;
+  color: #0070f3;
+}
+
+/* src/css/custom.css */
+.theme-doc-toc {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.theme-doc-toc a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.theme-doc-toc a:hover {
+  color: #0070f3;
+}
+
+.theme-doc-toc .active {
+  font-weight: bold;
+  color: #0070f3;
+}
+

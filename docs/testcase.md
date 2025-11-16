@@ -3,6 +3,15 @@ title: Test Case & Configuration
 sidebar_position: 6
 hide_table_of_contents: true
 ---
+import {
+  FeatureCard,
+  FeatureGrid,
+  StatusBadge,
+  InfoBox,
+  StepIndicator,
+  QuickLinks
+} from '@site/src/components/DocumentationComponents';
+import ExampleBlock  from '@site/src/components/ExampleBlock';
 
 # Test Case & Configuration Module – User Guide
 
@@ -31,15 +40,50 @@ hide_table_of_contents: true
 
 The **Test Case & Configuration** module is where you design and orchestrate complete test execution flows in Exgenix. It enables you to sequence API calls, incorporate Test Action Units, manage test data, configure session behavior, and define execution patterns to create comprehensive test scenarios.
 
-### Key Capabilities
-
-- **Flow Design** – Create sequential or iterative test workflows
-- **Session Management** – Configure single or multiple session executions
-- **Data Handling** – Control how test data is consumed from datasheets
-- **Timing Control** – Add wait times between steps
-- **Error Handling** – Define behavior on step failures
-- **Reusability** – Leverage Test Action Units and API configurations
-- **Flexibility** – Mix and match components to create any test scenario
+<FeatureGrid>
+  <FeatureCard
+    icon="flow"
+    title="Flow Design"
+    description="Create sequential or iterative test workflows for precise automation control"
+    color="#2563eb"
+  />
+  <FeatureCard
+    icon="server"
+    title="Session Management"
+    description="Configure single or multiple session executions to simulate real scenarios"
+    color="#10b981"
+  />
+  <FeatureCard
+    icon="database"
+    title="Data Handling"
+    description="Control how test data is consumed from datasheets for dynamic testing"
+    color="#f59e0b"
+  />
+  <FeatureCard
+    icon="clock"
+    title="Timing Control"
+    description="Add wait times or delays between steps for accurate test sequencing"
+    color="#8b5cf6"
+  />
+  <FeatureCard
+    icon="alert-circle"
+    title="Error Handling"
+    description="Define step failure behavior to ensure predictable and robust test execution"
+    color="#ec4899"
+  />
+  <FeatureCard
+    icon="package"
+    title="Reusability"
+    description="Leverage Test Action Units and API configurations for modular testing"
+    color="#14b8a6"
+  />
+  <FeatureCard
+    icon="shuffle"
+    title="Flexibility"
+    description="Mix and match components to create any test scenario efficiently"
+    color="#f87171"
+  />
+</FeatureGrid>
 
 ---
 
@@ -52,9 +96,9 @@ The Test Case & Configuration module follows a clear hierarchy:
 
 | Component | Purpose |
 |-----------|---------|
-| **Collections** | Group related test cases for organization and collaboration |
-| **Test Cases** | Define end-to-end, executable test flows |
-| **Steps** | Ordered actions within a test case (TAUs or individual APIs) |
+| **Collections** | `Group` related test cases for organization and collaboration |
+| **Test Cases** | Define end-to-end, `executable test flows` |
+| **Steps** | `Ordered actions` within a test case (`TAU`s or `individual API`s) |
 
   </div>
 </div>
@@ -62,7 +106,7 @@ The Test Case & Configuration module follows a clear hierarchy:
 ---
 
 ## Test Cases
-
+#
 A **Test Case** represents a complete, executable test scenario that validates specific functionality. Each test case consists of:
 
 1. **Identification** – Name and description
@@ -71,50 +115,54 @@ A **Test Case** represents a complete, executable test scenario that validates s
 4. **Execution Settings** – Session type, patterns, timing
 5. **Error Handling** – Response to failures
 
-### Test Case Structure (Example)
+<ExampleBlock title="Test Case Structure (Example)">
 
-<div class="step-block">
-  <div class="step-text">
+<div className="step-block">
+    <div className="step-text">
+      <p>A typical test case includes:</p>
 
-A typical test case includes:
-- Login/Authentication steps
-- Business logic operations (Orders, Modifications, Cancellations)
-- Response validations
-- Cleanup/Logout steps
+      <ul>
+            <li>Login/Authentication steps</li>
+            <li>Business logic operations (Orders, Modifications, Cancellations)</li>
+            <li>Response validations</li>
+            <li>Cleanup/Logout steps</li>
+        </ul>
 
-Each step can be either:
+          <p>Each step can be either:</p>
 
-<ul>
-  <li>**Test Action Unit** (pre-configured group of APIs)</li>
-  <li>**Individual API** (single request or response)</li>
-</ul>
+          <ul>
+            <li><strong>Test Action Unit</strong> (pre-configured group of APIs)</li>
+            <li><strong>Individual API</strong> (single request or response)</li>
+          </ul>
 
+      </div>
 
+    <div className="step-image">
+        <h4 className="image-title">Test Case Structure Example</h4>
+        <img
+          src="/exgenix-documentation/img/testcase/example.png"
+          alt="Example Test Case Structure"
+          style={{
+            width: "100%",
+            maxWidth: "500px",
+            borderRadius: "8px",
+            border: "1px solid #c3eccc",
+          }}
+        />
+        <p className="image-caption">🖱️ Click to expand image</p>
+      </div>
   </div>
+</ExampleBlock>
 
-  <div class="step-image">
-    <h4 class="image-title">Test Case Structure Example</h4>
-    <img src="/exgenix-documentation/img/testcase/example.png" alt="Example Test Case Structure" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
-</div>
+<p>The test case view provides a comprehensive overview of all configured steps, including:</p>
 
-<div class="step-block">
-  <div class="step-text">
-
-The test case view provides a comprehensive overview of all configured steps, including:
-
-<ul>
-      <li>Step sequence and numbering</li>
-      <li>Step type (TAU or individual API)</li>
-      <li>Associated datasheets</li>
-      <li>Execution patterns</li>
-      <li>Error handling configuration</li>
-    </ul>
-
-  </div>
-</div>
-
+  <ul>
+    <li>Step sequence and numbering</li>
+    <li>Step type (TAU or individual API)</li>
+    <li>Associated datasheets</li>
+    <li>Execution patterns</li>
+    <li>Error handling configuration</li>
+  </ul>
 ---
 
 ## Creating a Test Case
@@ -174,8 +222,8 @@ The test case view provides a comprehensive overview of all configured steps, in
 ### Step 3: Add Test Steps
 
 You can add two step types:
-
-#### Type 1: Test Action Unit
+#
+> #### Type 1: Test Action Unit
 
 Reusable component containing multiple APIs configured together.
 
@@ -204,15 +252,15 @@ Reusable component containing multiple APIs configured together.
 
 <div class="step-block">
   <div class="step-text">
-      #### Type 2: Individual API Configuration
+      > #### Type 2: Individual API Configuration
 
       Single API call as a test step.
 
       **Configuration:**
       1. Click **+ Add Step**
-      2. Select **Type**: TCP_IP_REQUEST or TCP_IP_RESPONSE
+      2. Select **Type**: TCP_IP_REQUEST or TCP_IP_RESPONSE or Socket_Connection
       3. Choose the API configuration from dropdown
-      4. Configure settings (see Step Settings)
+      4. Configure settings
    </div>
 
 
@@ -227,17 +275,21 @@ Reusable component containing multiple APIs configured together.
 ---
 
 ### Step 4: Configure Step Settings
-
-#### Step Settings
+#
+> #### Step Settings
 
 For each step, configure the following:
 
-#### Description
+--- 
+
+> #### Description
 
 - Brief explanation of what this step does
 - Example: "Submit new order with limit price"
 
-#### Session
+---
+
+> #### Session
 
 <div class="step-block">
   <div class="step-text">
@@ -267,12 +319,16 @@ For each step, configure the following:
     </tbody>
   </table>
 
+  :::note
   <p><strong>Configuration Notes:</strong></p>
   <ul>
     <li>Enter a session identifier (e.g., <code>session1</code>, <code>session2</code>)</li>
     <li>Steps with the same identifier share session context</li>
     <li>Captured variables (session IDs, tokens) are shared within a session</li>
   </ul>
+  :::
+
+  
 </div>
 
 
@@ -283,16 +339,19 @@ For each step, configure the following:
   </div>
 </div>
 
-#### Wait Time (seconds)
+---
+
+> #### Wait Time (seconds)
 
 <div class="step-block">
   <div class="step-text">
   <p>Delay before executing this step.</p>
+  #
 
-  <p><strong>Use Cases:</strong></p>
+  > <p><strong>Use Cases:</strong></p>
   <ul>
-    <li><strong>0 seconds</strong> – Immediate execution</li>
-    <li><strong>1–5 seconds</strong> – Short processing delays</li>
+     <li><strong>0 seconds</strong> – Immediate execution</li>
+     <li><strong>1–5 seconds</strong> – Short processing delays</li>
     <li><strong>5+ seconds</strong> – Asynchronous operations / market data updates</li>
   </ul>
 </div>
@@ -301,14 +360,14 @@ For each step, configure the following:
 
 ---
 
-### Datasheet Selection
+> #### Datasheet Selection
 
 <div class="step-block">
   <div class="step-text">
 
 Associate a datasheet with the step.
 
-**For Individual API Steps:**
+ **For Individual API Steps:**
 1. Open the datasheet dropdown
 2. Select an available datasheet for that API
 3. Datasheet values populate fields at runtime
@@ -342,7 +401,7 @@ Associate a datasheet with the step.
 
 ---
 
-### Pattern (Datasheet Row Usage)
+> #### Pattern (Datasheet Row Usage)
 
 <div class="step-block">
 
@@ -360,19 +419,18 @@ Associate a datasheet with the step.
     <tbody>
       <tr>
         <td><strong>SAME_ROW</strong></td>
-        <td>Uses the same row for all iterations</td>
+        <td>Uses the `same row` for all iterations</td>
         <td>Retry logic, idempotency testing, consistent data</td>
       </tr>
       <tr>
         <td><strong>NEXT_ROW</strong></td>
-        <td>Advances to next row per iteration</td>
+        <td>Advances to `next row` per iteration</td>
         <td>Varied data, multi-scenario, load testing</td>
       </tr>
     </tbody>
   </table>
 
-  <p><strong>Iteration Examples:</strong></p>
-
+<ExampleBlock title="Iteration Examples">
   <p><strong>NEXT_ROW (3 iterations):</strong></p>
   <ul>
     <li>Iteration 1 → Row 1</li>
@@ -384,6 +442,7 @@ Associate a datasheet with the step.
   <ul>
     <li>Iterations 1–3 → Row 1</li>
   </ul>
+</ExampleBlock>
 </div>
 
 
@@ -395,7 +454,7 @@ Associate a datasheet with the step.
 </div>
 ---
 
-### Row No. (Starting Row)
+> #### Row No. (Starting Row)
 
 <div class="step-block">
   <div class="step-text">
@@ -407,20 +466,21 @@ Associate a datasheet with the step.
     <li><strong>Row 2+</strong> – Skip to a specific row</li>
   </ul>
 
-  <p><strong>Examples:</strong></p>
+  <ExampleBlock title="Examples">
   <ul>
     <li>Start at Row 1: Uses base configuration</li>
-    <li>Start at Row 3: Skips first two rows, useful for specific test scenarios</li>
+    <li>Start at Row 3: Skips the first two rows, useful for specific test scenarios</li>
   </ul>
+</ExampleBlock>
+
 </div>
 </div>
 ---
 
-### On Error (Error Handling)
+> #### On Error (Error Handling)
 
 <div class="step-block">
   <div class="step-text">
-  <strong>On Error Behavior</strong>
   <p>Defines what happens when a step fails.</p>
   <table>
     <thead>
@@ -433,28 +493,32 @@ Associate a datasheet with the step.
     <tbody>
       <tr>
         <td><strong>Continue</strong></td>
-        <td>Log error; proceed to next step</td>
+        <td>`Log error`; proceed to `next` step</td>
         <td>Non-critical steps</td>
       </tr>
       <tr>
         <td><strong>Abort</strong></td>
-        <td>Stop execution immediately</td>
+        <td>`Stop` execution immediately</td>
         <td>Critical failures</td>
       </tr>
       <tr>
         <td><strong>Retry</strong></td>
-        <td>Retry failed step (configurable)</td>
+        <td>`Retry` failed step (configurable)</td>
         <td>Transient/network issues</td>
       </tr>
     </tbody>
   </table>
 
+  :::tip
   <strong>Best Practices:</strong>
   <ul>
     <li>Use <strong>Abort</strong> for critical steps: Login, Authentication, Order Acceptance</li>
     <li>Use <strong>Continue</strong> for optional operations: Notifications, Non-critical subscriptions</li>
     <li>Use <strong>Retry</strong> for network-dependent operations: Connection establishment, External API calls</li>
   </ul>
+  :::
+
+  
 </div>
 
 
@@ -468,13 +532,15 @@ Associate a datasheet with the step.
 ---
 
 ## Advanced Features
-
-### Adding Loops
+#
+### 1. Adding Loops
 
 <div class="step-block">
   <div class="step-text">
   <strong>Loop Steps</strong>
-  <p>Loops let you repeat a section of your test case multiple times.</p>
+<p>Loops let you repeat a section of your test case multiple times.</p>
+
+---
 
   <strong>Configuration:</strong>
   <ol>
@@ -483,13 +549,15 @@ Associate a datasheet with the step.
     <li>Add steps within the loop and configure properties</li>
   </ol>
 
+---
+
   <strong>Loop Properties:</strong>
   <ul>
     <li><strong>Loop Pattern</strong> – NEXT_ROW / SAME_ROW</li>
     <li><strong>Iterations</strong> – Fixed count or dynamic (e.g., datasheet size)</li>
   </ul>
 
-  <strong>Example: Multiple Order Placement</strong>
+  <ExampleBlock title="Example: Multiple Order Placement">
   <p><em>Loop Configuration:</em></p>
   <ul>
     <li>Pattern: NEXT_ROW</li>
@@ -502,7 +570,9 @@ Associate a datasheet with the step.
     <li>New Order Response (Step 3)</li>
   </ol>
 
-  <p><em>Result:</em> Places 10 different orders using rows 1-10 from the datasheet.</p>
+  <p><em>Result:</em> Places 10 different orders using rows 1–10 from the datasheet.</p>
+</ExampleBlock>
+
 </div>
 
 
@@ -515,7 +585,7 @@ Associate a datasheet with the step.
 
 ---
 
-### Session Management Patterns
+### 2. Session Management Patterns
 
 **Pattern 1: Single Session for Entire Test**
 
@@ -530,7 +600,7 @@ Step 3 (Order Response): session1
 Step 4 (Logout): session1
 ```
 
-**Use Case:** Standard workflow where all operations belong to one user session
+> **Use Case:** Standard workflow where all operations belong to one user session
 
   </div>
 
@@ -554,7 +624,7 @@ Step 3 (User A Order): session1
 Step 4 (User B Order): session2
 ```
 
-**Use Case:** Multi-user scenarios, parallel user testing
+> **Use Case:** Multi-user scenarios, parallel user testing
 
   </div>
 
@@ -577,7 +647,7 @@ Iteration 2: session_${iteration_2}
 Iteration 3: session_${iteration_3}
 ```
 
-**Use Case:** Session lifecycle testing, load testing with isolated sessions
+> **Use Case:** Session lifecycle testing, load testing with isolated sessions
 
   </div>
 
@@ -590,8 +660,8 @@ Iteration 3: session_${iteration_3}
 
 ---
 
-### Datasheet Row Configuration Strategies
-
+### 3. Datasheet Row Configuration Strategies
+#
 **Strategy 1: Incremental Row Usage**
 
 <div class="step-block">
@@ -605,7 +675,7 @@ Step 3: Row 1, Pattern: NEXT_ROW
 
 Each step advances to the next row in its datasheet.
 
-**Use Case:** Testing with varied data across steps
+> **Use Case:** Testing with varied data across steps
 
   </div>
 
@@ -629,7 +699,7 @@ Step 3: Row 1, Pattern: SAME_ROW
 
 All steps use the same row throughout execution.
 
-**Use Case:** Idempotency testing, retry scenarios
+> **Use Case:** Idempotency testing, retry scenarios
 
   </div>
 
@@ -653,7 +723,7 @@ Step 3: Row 1, Pattern: NEXT_ROW (Next Request)
 
 Synchronize request-response pairs while advancing requests.
 
-**Use Case:** Request-response validation, maintaining data correlation
+> **Use Case:** Request-response validation, maintaining data correlation
 
   </div>
 
@@ -666,421 +736,372 @@ Synchronize request-response pairs while advancing requests.
 
 ---
 
-## Example Test Case: Complete Trade Flow
 
-<div class="step-block">
-  <div class="step-text">
-
-
-    <strong>Step 1: Login Test Action Unit</strong><br />
-<strong>Step 2: New Order Request</strong><br />
-<strong>Step 3: New Order Response</strong><br />
-<strong>Step 4: Cancel Order Request</strong><br />
-<strong>Step 5: Cancel Order Response</strong><br />
-<strong>Step 6: Logout Test Action Unit</strong><br />
+<ExampleBlock title="Example Test Case: Complete Trade Flow">
+  <div className="step-block" style={{ display: "flex", gap: "20px" }}>
+    
+  <div className="step-text" style={{ flex: 1 }}>
+      <p><strong>Step 1:</strong> Login Test Action Unit</p>
+      <p><strong>Step 2:</strong> New Order Request</p>
+      <p><strong>Step 3:</strong> New Order Response</p>
+      <p><strong>Step 4:</strong> Cancel Order Request</p>
+      <p><strong>Step 5:</strong> Cancel Order Response</p>
+      <p><strong>Step 6:</strong> Logout Test Action Unit</p>
 
 <br />
 
-<strong>Expected Results:</strong>
-<ul>
-  <li>All steps pass successfully</li>
-  <li>Order is placed and cancelled correctly</li>
-  <li>Variables are captured and used accurately</li>
-  <li>Session is maintained throughout</li>
-  <li>Clean logout is completed</li>
-</ul>
+  <p><strong>Expected Results:</strong></p>
+      <ul>
+        <li>All steps pass successfully</li>
+        <li>Order is placed and cancelled correctly</li>
+        <li>Variables are captured and used accurately</li>
+        <li>Session is maintained throughout</li>
+        <li>Clean logout is completed</li>
+      </ul>
+    </div>
 
+<div className="step-image" style={{ flex: "0 0 300px", textAlign: "center" }}>
+      <h4 className="image-title">Trade Flow</h4>
+      <img
+        src="/exgenix-documentation/img/testcase/trade_flow.png"
+        alt="Trade Flow"
+        style={{
+          width: "100%",
+          borderRadius: "8px",
+          border: "1px solid #c3eccc"
+        }}
+      />
+      <p className="image-caption">🖱️ Click to expand image</p>
+    </div>
 
-   </div>
-
-
-  <div class="step-image">
-    <h4 class="image-title">Trade Flow</h4>
-    <img src="/exgenix-documentation/img/testcase/trade_flow.png" alt="Trade Flow" />
-    <p class="image-caption">🖱️ Click to expand image</p>
   </div>
-</div>
+</ExampleBlock>
+
 
 ---
 
 ## Best Practices
 
-<details class="green-collapsible">
-<summary><strong>1. Naming Conventions</strong></summary>
+<div class="collapsible-card-div">
 
-Use descriptive, action-oriented names:
+  <details class="green-collapsible">
+  <summary><strong>1. Naming Conventions</strong></summary>
 
-**Good Examples:**
-- `Trade_PlaceAndCancelOrder`
-- `User_LoginWithInvalidCredentials`
-- `Market_SubscribeToMultipleSymbols`
-- `Risk_ExceedPositionLimit`
+  Use descriptive, action-oriented names:
 
-**Avoid:**
-- `Test1`
-- `MyTest`
-- `TestCase`
-- `Flow`
+  **Good Examples:**
+  - `Trade_PlaceAndCancelOrder`
+  - `User_LoginWithInvalidCredentials`
+  - `Market_SubscribeToMultipleSymbols`
+  - `Risk_ExceedPositionLimit`
 
-</details>
+  **Avoid:**
+  - `Test1`
+  - `MyTest`
+  - `TestCase`
+  - `Flow`
 
-
-<details class="green-collapsible">
-<summary><strong>2. Step Organization</strong></summary>
-
-**Logical Grouping:**
-
-1. **Setup** (Login, connections)  
-2. **Preconditions** (Data setup, subscriptions)  
-3. **Main Actions** (Core test operations)  
-4. **Validations** (Response checks)  
-5. **Cleanup** (Logout, disconnections)
-
-</details>
+  </details>
 
 
-<details class="green-collapsible">
-<summary><strong>3. Error Handling Strategy</strong></summary>
+  <details class="green-collapsible">
+  <summary><strong>2. Step Organization</strong></summary>
 
-**Abort** for critical path:
-- Authentication  
-- Mandatory validations  
-- Order acceptance/rejection  
+  **Logical Grouping:**
 
-**Continue** for optional operations:
-- Notifications  
-- Non-critical subscriptions  
-- Logging operations  
+  1. **Setup** (Login, connections)  
+  2. **Preconditions** (Data setup, subscriptions)  
+  3. **Main Actions** (Core test operations)  
+  4. **Validations** (Response checks)  
+  5. **Cleanup** (Logout, disconnections)
 
-**Retry** for transient issues:
-- Network timeouts  
-- Temporary unavailability  
-- External service calls  
-
-</details>
+  </details>
 
 
-<details class="green-collapsible">
-<summary><strong>4. Datasheet Management</strong></summary>
+  <details class="green-collapsible">
+  <summary><strong>3. Error Handling Strategy</strong></summary>
 
-- **Data Independence** – Each test case should have its own data  
-- **Data Reusability** – Use base row inheritance; override minimally  
-- **Data Clarity** – Use meaningful values; document expected outcomes  
+  **Abort** for critical path:
+  - Authentication  
+  - Mandatory validations  
+  - Order acceptance/rejection  
 
-</details>
+  **Continue** for optional operations:
+  - Notifications  
+  - Non-critical subscriptions  
+  - Logging operations  
 
+  **Retry** for transient issues:
+  - Network timeouts  
+  - Temporary unavailability  
+  - External service calls  
 
-<details class="green-collapsible">
-<summary><strong>Session Design Patterns (Selection Guide)</strong></summary>
-
-| Scenario | Session Type | Pattern | Rationale |
-|----------|-------------|---------|-----------|
-| Single user workflow | Continuous | SAME_ROW | Stable, consistent context |
-| Multi-user testing | Different per user | NEXT_ROW | Isolated sessions |
-| Load testing | Different per iteration | NEXT_ROW | Simulate many users |
-| Idempotency testing | Continuous | SAME_ROW | Same session/data |
-| Session lifecycle | Different per iteration | SAME_ROW | Creation/destruction focus |
-
-</details>
+  </details>
 
 
+  <details class="green-collapsible">
+  <summary><strong>4. Datasheet Management</strong></summary>
+
+  - **Data Independence** – Each test case should have its own data  
+  - **Data Reusability** – Use base row inheritance; override minimally  
+  - **Data Clarity** – Use meaningful values; document expected outcomes  
+
+  </details>
+
+
+  <details class="green-collapsible">
+  <summary><strong>5. Session Design Patterns (Selection Guide)</strong></summary>
+
+  | Scenario | Session Type | Pattern | Rationale |
+  |----------|-------------|---------|-----------|
+  | Single user workflow | Continuous | SAME_ROW | Stable, consistent context |
+  | Multi-user testing | Different per user | NEXT_ROW | Isolated sessions |
+  | Load testing | Different per iteration | NEXT_ROW | Simulate many users |
+  | Idempotency testing | Continuous | SAME_ROW | Same session/data |
+  | Session lifecycle | Different per iteration | SAME_ROW | Creation/destruction focus |
+
+  </details>
+
+</div>
 ---
 
 ## Managing Test Cases
+#
 
-<details class="green-collapsible">
-<summary><strong>Viewing Test Cases</strong></summary>
+<div class="collapsible-card-div">
+  <details class="green-collapsible">
+  <summary><strong>Viewing Test Cases</strong></summary>
 
-1. Navigate to **Test Configuration → Test Case**  
-2. Select a collection  
-3. View all test cases within that collection  
+  1. Navigate to **Test Configuration → Test Case**  
+  2. Select a collection  
+  3. View all test cases within that collection  
 
-**Display Information:**
-- Test case name  
-- Description  
-- Number of steps  
-- Last execution status  
-- Last modified date  
+  **Display Information:**
+  - Test case name  
+  - Description  
+  - Number of steps  
+  - Last execution status  
+  - Last modified date  
 
-</details>
-
-
-<details class="green-collapsible">
-<summary><strong>Editing Test Cases</strong></summary>
-
-1. Click the test case name or **Edit** icon  
-2. Modify step configuration  
-3. Add or remove steps  
-4. Update datasheets  
-5. Click **Update** to save changes  
-
-</details>
+  </details>
 
 
-<details class="green-collapsible">
-<summary><strong>Executing Test Cases</strong></summary>
+  <details class="green-collapsible">
+  <summary><strong>Editing Test Cases</strong></summary>
 
-**Option 1: Direct Execution**  
-- Open the test case → **Execute**
+  1. Click the test case name or **Edit** icon  
+  2. Modify step configuration  
+  3. Add or remove steps  
+  4. Update datasheets  
+  5. Click **Update** to save changes  
 
-**Option 2: Via Test Suite**  
-- Add test case to a test suite → Execute the suite (sequential or parallel)
-
-</details>
-
-
-<details class="green-collapsible">
-<summary><strong>Cloning Test Cases</strong></summary>
-
-1. Open an existing test case  
-2. Modify name/description  
-3. Adjust steps  
-4. **Save as New** test case  
-
-</details>
+  </details>
 
 
+  <details class="green-collapsible">
+  <summary><strong>Executing Test Cases</strong></summary>
+
+  **Option 1: Direct Execution**  
+  - Open the test case → **Execute**
+
+  **Option 2: Via Test Suite**  
+  - Add test case to a test suite → Execute the suite (sequential or parallel)
+
+  </details>
+
+
+  <details class="green-collapsible">
+  <summary><strong>Cloning Test Cases</strong></summary>
+
+  1. Open an existing test case  
+  2. Modify name/description  
+  3. Adjust steps  
+  4. **Save as New** test case  
+
+  </details>
+
+</div>
 ---
 
 ## Common Scenarios
+#
 
-
-<div class="step-block">
-  <div class="step-text">
+<div class="collapsible-card-div">
 
   <details class="green-collapsible">
-  <summary><strong>Authentication Testing</strong></summary>
+    <summary><strong>Authentication Testing</strong></summary>
+
+      <pre>
+      Test Case: User_Authentication
+      ├── Valid Credentials Test
+      ├── Invalid Password Test
+      ├── Locked Account Test
+      └── Session Timeout Test
+      </pre>
+
+  **Configuration:**
+  - Pattern: NEXT_ROW (test different credentials)
+  - On Error: Continue (test all scenarios)
+
+  </details>
+
+    
+  <details class="green-collapsible">
+  <summary><strong>Order Lifecycle</strong></summary>
 
     <pre>
-    Test Case: User_Authentication
-    ├── Valid Credentials Test
-    ├── Invalid Password Test
-    ├── Locked Account Test
-    └── Session Timeout Test
+    Test Case: Order_Complete_Lifecycle
+    ├── Login
+    ├── Place Order
+    ├── Validate Placement
+    ├── Modify Order
+    ├── Validate Modification
+    ├── Cancel Order
+    ├── Validate Cancellation
+    └── Logout
     </pre>
 
-**Configuration:**
-- Pattern: NEXT_ROW (test different credentials)
-- On Error: Continue (test all scenarios)
+    **Configuration:**
+    - Session: session1 (continuous)
+    - Pattern: SAME_ROW (same order throughout)
+    - On Error: Abort (critical flow)
 
-</details>
+  </details>
 
-</div>
-
-<!-- 
-  <div class="step-image">
-    <h4 class="image-title">Authentication Test Case</h4>
-    <img src="/exgenix-documentation/img/testcase/auth-testing.png" alt="Authentication Testing Scenario" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
-</div>
-
-
-<div class="step-block">
-  <div class="step-text">
-
-  
-<details class="green-collapsible">
-<summary><strong>Order Lifecycle</strong></summary>
+    <details class="green-collapsible">
+    <summary><strong>Negative Testing</strong></summary>
 
   <pre>
-  Test Case: Order_Complete_Lifecycle
+  Test Case: Negative_Order_Scenarios
+  ├── Invalid Price
+  ├── Invalid Quantity
+  ├── Invalid Security ID
+  ├── Duplicate Order ID
+  └── Unauthorized User
+  </pre>
+
+  **Configuration:**
+  - Datasheet: DS_negative_nos
+  - Pattern: NEXT_ROW (test each scenario)
+  - On Error: Continue (collect all failures)
+
+  </details>
+
+    <details class="green-collapsible">
+    <summary><strong>Stress Testing</strong></summary>
+
+  <pre>
+  Test Case: Stress_Multiple_Orders
   ├── Login
-  ├── Place Order
-  ├── Validate Placement
-  ├── Modify Order
-  ├── Validate Modification
-  ├── Cancel Order
-  ├── Validate Cancellation
+  ├── Loop (100 iterations)
+  │   ├── Place Order (NEXT_ROW)
+  │   └── Validate Response
   └── Logout
   </pre>
 
   **Configuration:**
-  - Session: session1 (continuous)
-  - Pattern: SAME_ROW (same order throughout)
-  - On Error: Abort (critical flow)
+  - Loop: 100 iterations
+  - Pattern: NEXT_ROW (unique orders)
+  - Session: Different per iteration
+  - Wait Time: 0 seconds (maximum throughput)
 
-</details>
-
-</div>
-
-<!-- 
-  <div class="step-image">
-    <h4 class="image-title">Order Lifecycle Test Case</h4>
-    <img src="/exgenix-documentation/img/testcase/order-lifecycle.png" alt="Order Lifecycle Scenario" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
-</div>
+  </details>
 
 
-<div class="step-block">
-  <div class="step-text">
 
-  <details class="green-collapsible">
-  <summary><strong>Negative Testing</strong></summary>
+    <details class="green-collapsible">
+    <summary><strong>Multi-User Scenario</strong></summary>
 
-<pre>
-Test Case: Negative_Order_Scenarios
-├── Invalid Price
-├── Invalid Quantity
-├── Invalid Security ID
-├── Duplicate Order ID
-└── Unauthorized User
-</pre>
+  <pre>
+  Test Case: Multi_User_Trading
+  ├── User A Login (session1)
+  ├── User B Login (session2)
+  ├── User A Place Order (session1)
+  ├── User B Place Order (session2)
+  ├── User A Cancel Order (session1)
+  ├── User B Cancel Order (session2)
+  ├── User A Logout (session1)
+  └── User B Logout (session2)
+  </pre>
 
-**Configuration:**
-- Datasheet: DS_negative_nos
-- Pattern: NEXT_ROW (test each scenario)
-- On Error: Continue (collect all failures)
+  **Configuration:**
+  - Sessions: session1 and session2
+  - Pattern: NEXT_ROW (different users)
+  - On Error: Abort (per session)
 
-</details>
+  </details>
 
-</div>
-
-<!-- 
-  <div class="step-image">
-    <h4 class="image-title">Negative Testing Scenario</h4>
-    <img src="/exgenix-documentation/img/testcase/negative-testing.png" alt="Negative Testing Configuration" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
-</div>
-
-<div class="step-block">
-  <div class="step-text">
-
-  <details class="green-collapsible">
-  <summary><strong>Stress Testing</strong></summary>
-
-<pre>
-Test Case: Stress_Multiple_Orders
-├── Login
-├── Loop (100 iterations)
-│   ├── Place Order (NEXT_ROW)
-│   └── Validate Response
-└── Logout
-</pre>
-
-**Configuration:**
-- Loop: 100 iterations
-- Pattern: NEXT_ROW (unique orders)
-- Session: Different per iteration
-- Wait Time: 0 seconds (maximum throughput)
-
-</details>
-
-</div>
-
-
-<!-- 
-  <div class="step-image">
-    <h4 class="image-title">Stress Testing Scenario</h4>
-    <img src="/exgenix-documentation/img/testcase/stress-testing.png" alt="Stress Testing Configuration" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
-</div>
-
-<div class="step-block">
-  <div class="step-text">
-
-  <details class="green-collapsible">
-  <summary><strong>Multi-User Scenario</strong></summary>
-
-<pre>
-Test Case: Multi_User_Trading
-├── User A Login (session1)
-├── User B Login (session2)
-├── User A Place Order (session1)
-├── User B Place Order (session2)
-├── User A Cancel Order (session1)
-├── User B Cancel Order (session2)
-├── User A Logout (session1)
-└── User B Logout (session2)
-</pre>
-
-**Configuration:**
-- Sessions: session1 and session2
-- Pattern: NEXT_ROW (different users)
-- On Error: Abort (per session)
-
-</details>
-
-</div>
-
-<!-- 
-  <div class="step-image">
-    <h4 class="image-title">Multi-User Testing Scenario</h4>
-    <img src="/exgenix-documentation/img/testcase/multi-user.png" alt="Multi-User Test Configuration" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div> -->
 </div>
 
 ---
 
 # Troubleshooting
+#
 
-<details class="green-collapsible">
-<summary><strong>1. Step Execution Skipped</strong></summary>
+<div class="collapsible-card-div">
+  <details class="green-collapsible">
+  <summary><strong>1. Step Execution Skipped</strong></summary>
 
-**Causes:**
-- Missing datasheet  
-- Previous step aborted  
-- Invalid session reference  
+  **Causes:**
+  - Missing datasheet  
+  - Previous step aborted  
+  - Invalid session reference  
 
-**Solutions:**
-- Select the correct datasheet  
-- Check status of previous step  
-- Unify session names  
+  **Solutions:**
+  - Select the correct datasheet  
+  - Check status of previous step  
+  - Unify session names  
 
-</details>
-
-
-<details class="green-collapsible">
-<summary><strong>2. Variable Not Found</strong></summary>
-
-**Causes:**
-- Variable not captured  
-- Session mismatch  
-- Typographical error  
-
-**Solutions:**
-- Verify capture syntax  
-- Ensure step uses same session  
-- Check variable name and casing  
-
-</details>
+  </details>
 
 
-<details class="green-collapsible">
-<summary><strong>3. Datasheet Row Mismatch</strong></summary>
+  <details class="green-collapsible">
+  <summary><strong>2. Variable Not Found</strong></summary>
 
-**Causes:**
-- Wrong row pattern  
-- Incorrect starting row  
-- Not enough rows in datasheet  
+  **Causes:**
+  - Variable not captured  
+  - Session mismatch  
+  - Typographical error  
 
-**Solutions:**
-- Review and correct pattern (NEXT_ROW / SAME_ROW)  
-- Adjust starting row  
-- Add more rows to the datasheet  
+  **Solutions:**
+  - Verify capture syntax  
+  - Ensure step uses same session  
+  - Check variable name and casing  
 
-</details>
-
-<details class="green-collapsible">
-<summary><strong>4. Test Action Unit Not Executing</strong></summary>
-
-**Causes:**
-- TAU datasheet not configured  
-- Invalid configurations  
-- Required fields left empty  
-
-**Solutions:**
-- Open Configure and set datasheets  
-- Validate and correct configuration  
-- Populate mandatory data fields  
-
-</details>
+  </details>
 
 
+  <details class="green-collapsible">
+  <summary><strong>3. Datasheet Row Mismatch</strong></summary>
+
+  **Causes:**
+  - Wrong row pattern  
+  - Incorrect starting row  
+  - Not enough rows in datasheet  
+
+  **Solutions:**
+  - Review and correct pattern (NEXT_ROW / SAME_ROW)  
+  - Adjust starting row  
+  - Add more rows to the datasheet  
+
+  </details>
+
+  <details class="green-collapsible">
+  <summary><strong>4. Test Action Unit Not Executing</strong></summary>
+
+  **Causes:**
+  - TAU datasheet not configured  
+  - Invalid configurations  
+  - Required fields left empty  
+
+  **Solutions:**
+  - Open Configure and set datasheets  
+  - Validate and correct configuration  
+  - Populate mandatory data fields  
+
+  </details>
+
+</div>
 ---
 
 ## Summary
@@ -1091,15 +1112,23 @@ The Test Case & Configuration module enables:
 ✓ **Timing Control** – Wait times for synchronization  
 ✓ **Robust Error Handling** – Continue, Abort, or Retry  
 ✓ **Loop Support** – Repeat steps with different data
+#
+
+<div class="takeaway-panel">
+  <div class="panel-header"><strong>Key Takeaways</strong></div>
+  <div class="panel-body">
+    <ul>
+      <li>Design test cases with clear objectives</li>
+      <li>Use Test Action Units for common workflows</li>
+      <li>Configure datasheets carefully for each step</li>
+      <li>Leverage session management for complex scenarios</li>
+      <li>Apply appropriate error handling per step</li>
+      <li>Document test intent in descriptions</li>
+    </ul>
+  </div>
+</div>
+  
+#
+Mastering test case configuration lets you validate complex business workflows with precision and maintainability.
 
 ---
-
-## Key Takeaways
-- Design test cases with clear objectives  
-- Use Test Action Units for common workflows  
-- Configure datasheets carefully for each step  
-- Leverage session management for complex scenarios  
-- Apply appropriate error handling per step  
-- Document test intent in descriptions  
-
-Mastering test case configuration lets you validate complex business workflows with precision and maintainability.

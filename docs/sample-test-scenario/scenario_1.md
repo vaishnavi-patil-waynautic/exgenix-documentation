@@ -7,7 +7,15 @@ sidebar_label: Order placement
 slug: /sample-test-scenario/scenario-1
 desciption: 'An illustration of turning an ETI API spec into an automated Exgenix test.'
 ---
-
+import ExampleBlock  from '@site/src/components/ExampleBlock';
+import {
+  FeatureCard,
+  FeatureGrid,
+  StatusBadge,
+  InfoBox,
+  StepIndicator,
+  QuickLinks
+} from '@site/src/components/DocumentationComponents';
 
 # Scenario 1: Order placement
 
@@ -43,8 +51,8 @@ This shows how quickly ETI trading workflows can be automated using Exgenix with
 
 ---
 
+:::note
 ## Prerequisites
-
 
 Before starting, ensure the following:
 
@@ -55,6 +63,8 @@ Before starting, ensure the following:
 
 
 - Exchange 1 workspace selected
+
+:::
 
 
 ---
@@ -230,22 +240,37 @@ Before starting, ensure the following:
 
 ---
 
-<div class="step-block">
-  <div class="step-text">
-    **Example Row 4 Dynamic Functions:**
-    - `Price: ${random_decimal(100.0, 500.0, 2)}`
-    - `SimpleSecurityID: ${pick_random([12345,12346,12347])}`
-    - `OrderQty: ${random_int(10,1000)}`
-    - `MinQuantity: ${random_numeric(2)}`
-    
-    These functions generate random test data at runtime, ensuring varied test coverage.
+<ExampleBlock title="Example Row 4 Dynamic Functions" backgroundColor="#d1fae5">
+  <div className="step-block">
+    <div className="step-text">
+      <ul>
+        <li><code>Price: ${'{random_decimal(100.0, 500.0, 2)}'}</code></li>
+        <li><code>SimpleSecurityID: ${'{pick_random([12345,12346,12347])}'}</code></li>
+        <li><code>OrderQty: ${'{random_int(10,1000)}'}</code></li>
+        <li><code>MinQuantity: ${'{random_numeric(2)}'}</code></li>
+      </ul>
+      <p>
+        These functions generate random test data at runtime, ensuring varied test coverage.
+      </p>
+    </div>
+
+    <div className="step-image">
+      <h4 className="image-title">Positive Datasheet Values</h4>
+      <img
+        src="/exgenix-documentation/img/scenario_1/9.png"
+        alt="Positive datasheet with values"
+        style={{
+          width: "100%",
+          maxWidth: "500px",
+          borderRadius: "8px",
+          border: "1px solid #c3eccc",
+        }}
+      />
+      <p className="image-caption">🖱️ Click to expand image</p>
+    </div>
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Positive Datasheet Values</h4>
-    <img src="/exgenix-documentation/img/scenario_1/9.png" alt="Positive datasheet with values" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
-</div>
+</ExampleBlock>
+
 
 ---
 
@@ -269,21 +294,36 @@ Before starting, ensure the following:
 
 ---
 
-<div class="step-block">
-  <div class="step-text">
-    **Example Negative Test Cases:**
-    - **Row 1**: `Price=999999`, `OrderQty=100` (Invalid price)
-    - **Row 2**: `OrderQty=0` (Invalid quantity)
-    - **Row 3**: `Side=9` (Invalid side value)
-    
-    Negative test cases validate error handling and system robustness.
+<ExampleBlock title="Example Negative Test Cases" backgroundColor="#fee2e2">
+  <div className="step-block">
+    <div className="step-text">
+      <ul>
+        <li><strong>Row 1:</strong> <code>Price=999999</code>, <code>OrderQty=100</code> (Invalid price)</li>
+        <li><strong>Row 2:</strong> <code>OrderQty=0</code> (Invalid quantity)</li>
+        <li><strong>Row 3:</strong> <code>Side=9</code> (Invalid side value)</li>
+      </ul>
+      <p>
+        Negative test cases validate error handling and system robustness.
+      </p>
+    </div>
+
+    <div className="step-image">
+      <h4 className="image-title">Negative Datasheet Values</h4>
+      <img
+        src="/exgenix-documentation/img/scenario_1/11.png"
+        alt="Negative datasheet with invalid values"
+        style={{
+          width: "100%",
+          maxWidth: "500px",
+          borderRadius: "8px",
+          border: "1px solid #fca5a5",
+        }}
+      />
+      <p className="image-caption">🖱️ Click to expand image</p>
+    </div>
   </div>
-  <div class="step-image">
-    <h4 class="image-title">Negative Datasheet Values</h4>
-    <img src="/exgenix-documentation/img/scenario_1/11.png" alt="Negative datasheet with invalid values" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
-</div>
+</ExampleBlock>
+
 
 ---
 
@@ -464,15 +504,17 @@ Before starting, ensure the following:
     | **Name** | `ETI_NewOrder_Positive` |
     | **Description** | Positive scenario for validating a successful new order flow |
     
+    ---
+
     ### Step 5.2: Add Steps
     
     The test case includes three main steps:
     
-    #### Step 1 - Login
+    > #### Step 1 - Login
 
-    #### Step 2 - New Order Single Request
+    > #### Step 2 - New Order Single Request
     
-    #### Step 3 - New Order Response
+    > #### Step 3 - New Order Response
 
     Fill the details by referring the following screenshot.
   </div>
@@ -531,10 +573,12 @@ Before starting, ensure the following:
 ---
 
 ### Step 6.3: Execute
-
+#
 Click **Execute Suite** → Execution starts immediately
 
 Monitor live progress 
+
+---
 
 ### Step 6.4: View Results
 
@@ -576,19 +620,38 @@ Monitor live progress
 
 ## Key Learnings
 
-### 1. PDF Import Efficiency
-**PDF import removes hours of manual work** 
+<FeatureGrid>
+  <FeatureCard
+    icon="file-arrow-up"
+    title="PDF Import Efficiency"
+    description="PDF import removes hours of manual work."
+    color="#2563eb"
+  />
+  <FeatureCard
+    icon="layers"
+    title="Base Row Inheritance"
+    description="Base Row Inheritance reduces repetitive test data entry."
+    color="#10b981"
+  />
+  <FeatureCard
+    icon="code"
+    title="Dynamic Functions"
+    description="Dynamic Functions generate runtime values automatically."
+    color="#f59e0b"
+  />
+  <FeatureCard
+    icon="link"
+    title="Capture Functions"
+    description="Capture Functions enable dependent API chaining."
+    color="#8b5cf6"
+  />
+  <FeatureCard
+    icon="bolt"
+    title="Rapid Automation"
+    description="End-to-end automation can be completed in minutes."
+    color="#ec4899"
+  />
+</FeatureGrid>
 
-### 2. Base Row Inheritance
-**Base Row Inheritance reduces repetitive test data entry**
-
-### 3. Dynamic Functions
-**Dynamic Functions generate runtime values automatically**
-
-### 4. Capture Functions
-**Capture Functions enable dependent API chaining** 
-
-### 5. Rapid Automation
-**End-to-end automation can be completed in minutes** 
 
 ---

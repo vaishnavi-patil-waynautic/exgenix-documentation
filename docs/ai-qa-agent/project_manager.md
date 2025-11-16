@@ -24,6 +24,5 @@ slug: /ai-qa-agent/usecase3
    - *"Not ready – resolve critical defects first"*  
    - Provides a detailed report highlighting risk areas and impact.
 ---
-## Outcome
-
-- **Data-driven decision** prevents potential production issues.
+> ## Outcome
+> **Data-driven decision** prevents potential production issues.

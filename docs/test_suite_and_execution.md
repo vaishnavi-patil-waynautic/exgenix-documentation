@@ -4,6 +4,16 @@ sidebar_position: 7
 hide_table_of_contents: true
 ---
 
+import {
+  FeatureCard,
+  FeatureGrid,
+  StatusBadge,
+  InfoBox,
+  StepIndicator,
+  QuickLinks
+} from '@site/src/components/DocumentationComponents';
+import ExampleBlock from '@site/src/components/ExampleBlock'
+
 # Test Suite & Execution Module – User Guide
 
 ---
@@ -31,12 +41,52 @@ hide_table_of_contents: true
 The **Test Suite & Execution** module lets you organize, schedule, and run your test cases with full control over sequencing, parallelism, and reporting. It supports on-demand and scheduled runs, real-time monitoring, and automatic report generation for every execution.The format below mirrors the structure used in the [API Configuration](./api-configuration) guide for consistency across Exgenix docs.
 
 ### Key Capabilities
-- **Test Organization:** Group related test cases into suites
-- **Batch Execution:** Run many test cases together
-- **Parallel Execution:** Execute test cases simultaneously
-- **Scheduling:** Automate runs at specific times
-- **Execution Monitoring:** Real-time status tracking
-- **Report Generation:** Detailed, sharable post-execution reports
+<FeatureGrid>
+
+  <FeatureCard
+    icon="folder"
+    title="Test Organization"
+    color="#2563eb"
+    description=" Group related test cases into suites"
+  />
+
+  <FeatureCard
+    icon="play-circle"
+    title="Batch Execution"
+    color="#10b981"
+    description=" Run many test cases together"
+  />
+
+  <FeatureCard
+    icon="cpu"
+    title="Parallel Execution"
+    color="#f59e0b"
+    description=" Execute test cases simultaneously"
+  />
+
+  <FeatureCard
+    icon="calendar"
+    title="Scheduling"
+    color="#8b5cf6"
+    description=" Automate runs at specific times"
+  />
+
+  <FeatureCard
+    icon="monitor"
+    title="Execution Monitoring"
+    color="#ec4899"
+    description=" Real-time status tracking"
+  />
+
+  <FeatureCard
+    icon="bar-chart"
+    title="Report Generation"
+    color="#14b8a6"
+    description=" Detailed, sharable post-execution reports"
+  />
+
+</FeatureGrid>
+
 
 ---
 
@@ -67,18 +117,18 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
 ---
 
 ## Components
-
+#
 | Component | Purpose | Contains |
 |-----------|---------|----------|
-| **Test Execution Collection** | Top-level organizer | Multiple Test Suites |
-| **Test Suite** | Logical grouping of tests | Multiple Test Cases |
-| **Test Case** | Individual test scenario | Multiple Test Steps |
+| **Test Execution Collection** | `Top-level organizer` | Multiple Test Suites |
+| **Test Suite** | `Logical grouping of tests` | Multiple Test Cases |
+| **Test Case** | `Individual test scenario` | Multiple Test Steps |
 
 ---
 
 ## Creating Test Execution Collections
-
-**Purpose:** Organize test suites by project, feature, or test cycle.
+#
+> **Purpose:** Organize test suites by project, feature, or test cycle.
 
 <div class="step-block">
   <div class="step-text">
@@ -102,12 +152,12 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
 
 ---
 
-## Creating Test Suites
+### Creating Test Suites
 
 <div class="step-block">
   <div class="step-text">
 
-    ### Step 1: Navigate to Test Suites
+    > #### Step 1: Navigate to Test Suites
     
     1. Go to **Execution → [Collection Name]**
     2. Click **+ Create Test Suite**
@@ -123,7 +173,7 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
 </div>
 
 ---
-### Step 2: Configure Basic Information
+> #### Step 2: Configure Basic Information
     
     **Name** (Required)
     - Meaningful identifier for the suite (e.g., Test Suite Testing, Daily Smoke Tests)
@@ -133,7 +183,7 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
 
 ---
 
-### **Step 3: Configure Schedule**
+> #### **Step 3: Configure Schedule**
 
 
 <div class="step-block">
@@ -142,8 +192,8 @@ Suites can run **On Demand** or be **Scheduled**.
 
 | Option | Description | Use Case |
 |--------|-------------|----------|
-| **On Demand** | Manual execution only | Development, debugging, ad-hoc |
-| **Scheduled** | Automated at specific times | Regression, nightly builds, continuous testing |
+| **On Demand** | `Manual execution only` | Development, debugging, ad-hoc |
+| **Scheduled** | `Automated at specific times` | Regression, nightly builds, continuous testing |
 
 For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, and recurrence.
 
@@ -157,20 +207,20 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
 </div>
 ---
 
-### Step 4: **Configure Parallel Execution**
+> #### Step 4: **Configure Parallel Execution**
     
     | Setting | Description | Benefits | Considerations |
     |---------|-------------|----------|----------------|
-    | **Enabled** | Cases run simultaneously | Faster runs | Needs resources; cases must be independent |
-    | **Disabled** | Cases run sequentially | Easier debugging, deterministic order | Longer total time |
+    | **Enabled** | Cases run `simultaneously` | Faster runs | Needs resources; cases must be independent |
+    | **Disabled** | Cases run `sequentially` | Easier debugging, deterministic order | Longer total time |
     
-    **Enable** when cases are independent and resources suffice.  
-    **Disable** when cases depend on shared state/resources or order matters.
+    > **Enable** when cases are independent and resources suffice.  
+    > **Disable** when cases depend on shared state/resources or order matters.
 
 ---
 <div class="step-block">
   <div class="step-text">
-    ### Step 5: Add Test Cases
+    > #### Step 5: Add Test Cases
     
     Click **+ Add Test Cases** to select them for the suite.
     
@@ -196,21 +246,36 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
 
 After suite creation, the panel shows:
 
-**📅 Schedule**
-- Displays execution schedule type (On Demand/Scheduled)
-- Shows configured frequency and timing
+<FeatureGrid>
+  <FeatureCard
+    icon="calendar"
+    title="Schedule"
+    description="Displays the execution schedule type (On Demand or Scheduled), including configured frequency and timing."
+    color="#2563eb"
+  />
 
-**🕐 Last Run**
-- Timestamp of most recent execution
-- Quick access to last execution report
+  <FeatureCard
+    icon="clock"
+    title="Last Run"
+    description="Shows the timestamp of the most recent execution, with quick access to the last execution report."
+    color="#10b981"
+  />
 
-**👤 Created By**
-- User who created the suite
-- Creation timestamp
+  <FeatureCard
+    icon="user"
+    title="Created By"
+    description="Identifies the user who created the suite along with the creation timestamp."
+    color="#f59e0b"
+  />
 
-**⚡ Parallel Execution**
-- Current parallel execution status (Enabled/Disabled)
-- Configuration details
+  <FeatureCard
+    icon="zap"
+    title="Parallel Execution"
+    description="Indicates whether parallel execution is enabled or disabled, with full configuration details."
+    color="#ec4899"
+  />
+</FeatureGrid>
+
 
 ---
 
@@ -221,12 +286,12 @@ After suite creation, the panel shows:
 <div class="step-block">
   <div class="step-text">
     ### On-Demand Execution
-
-**From Suite View**
+#
+> **From Suite View**
 1. Open the suite
 2. Click **Execute Suite** (green, top-right)
 
-**From Collection View**
+> **From Collection View**
 1. Open the execution collection
 2. Click the execute icon for the suite
   </div>
@@ -240,14 +305,15 @@ After suite creation, the panel shows:
 ---
 
 ## Execution Process
+#
 
-**Step 1: Initialization**
+> **Step 1: Initialization**
 - Validate test cases, datasheets, and API configs
 - Prepare environment and connections
 
 <div class="step-block">
   <div class="step-text">
-    **Step 2: Execution**
+    > **Step 2: Execution**
     
     The execution phase includes:
     - Sequential or parallel test case execution
@@ -256,12 +322,12 @@ After suite creation, the panel shows:
     - Validation of responses
     - Log generation
     
-    **Step 3: Monitoring**
+    > **Step 3: Monitoring**
     - Real-time status updates
     - Per-case progress tracking
     - Live error detection and logging
     
-    **Step 4: Completion**
+    > **Step 4: Completion**
     - Reports generated automatically
     - Automatic redirect to **Reports** module
     - Results stored for historical analysis
@@ -271,14 +337,14 @@ After suite creation, the panel shows:
 ---
 
 ### Execution Status Indicators
-
+#
 | Icon | Status | Meaning |
 |------|--------|---------|
-| 🟡 | Running | Currently executing |
-| 🟢 | Passed | All steps successful |
-| 🔴 | Failed | One or more steps failed |
-| ⏸️ | Pending | Waiting to execute |
-| ⏭️ | Skipped | Skipped due to prior failure |
+| 🟡 | `Running` | Currently executing |
+| 🟢 | `Passed` | All steps successful |
+| 🔴 | `Failed` | One or more steps failed |
+| ⏸️ | `Pending` | Waiting to execute |
+| ⏭️ | `Skipped` | Skipped due to prior failure |
 
 ---
 
@@ -297,11 +363,15 @@ After suite creation, the panel shows:
     - Steps completed vs remaining
     - Per-step pass/fail status
     
+
+    :::info
     ### Execution Controls
     - **Pause**: Temporarily halt execution
     - **Resume**: Continue paused execution
     - **Abort**: Terminate execution immediately
     - **View Logs**: Access real-time execution logs
+    :::
+    
   </div>
 </div>
 
@@ -331,15 +401,15 @@ After suite creation, the panel shows:
 <div class="step-block">
   <div class="step-text">
     ### Reports List View
-    
+    #
     The reports module displays:
-    - Execution history with timestamps
-    - Suite names and collections
-    - Execution status (Pass/Fail)
-    - Duration of each execution
-    - User who triggered the execution
-    - Quick access to detailed reports
-    - Filter and search capabilities
+    - `Execution history` with timestamps
+    - `Suite names` and `collections`
+    - Execution `status` (Pass/Fail)
+    - `Duration` of each execution
+    - `User` who triggered the execution
+    - Quick access to detailed `reports`
+    - `Filter` and `search` capabilities
   </div>
   <div class="step-image">
     <h4 class="image-title">Reports List</h4>
@@ -354,31 +424,31 @@ After suite creation, the panel shows:
 
 <div class="step-block">
   <div class="step-text">
-    **Summary**
+    **1. Summary**
     
     The report summary provides:
-    - Overall execution status
-    - Total test cases executed
-    - Pass/Fail counts and percentages
-    - Execution duration
-    - Start and end timestamps
-    - Suite configuration details
-    - Environment information
+    - Overall execution `status`
+    - `Total` test cases executed
+    - `Pass/Fail` counts and percentages
+    - Execution `duration`
+    - `Start` and `end` timestamps
+    - Suite `configuration details`
+    - `Environment` information
   </div>
 </div>
 
 
 <div class="step-block">
   <div class="step-text">
-    **Test Case Details**
+    **2. Test Case Details**
     
     Detailed view for each test case includes:
-    - Test case name and description
-    - Individual step results
-    - Pass/Fail status for each step
-    - Execution time per step
-    - Error messages and stack traces
-    - Datasheet values used
+    - `Test case` name and description
+    - Individual `step results`
+    - `Pass/Fail` status for each step
+    - `Execution time` per step
+    - `Error messages` and stack traces
+    - `Datasheet values` used
   </div>
   <div class="step-image">
     <h4 class="image-title">Test Case Details</h4>
@@ -390,15 +460,15 @@ After suite creation, the panel shows:
 
 <div class="step-block">
   <div class="step-text">
-    **Request / Response Logs**
+    **3. Request / Response Logs**
     
     Comprehensive logging includes:
-    - Complete request payloads
-    - Response data received
-    - Message headers and metadata
-    - Timestamps for each interaction
-    - Field-level validation results
-    - Error details and codes
+    - Complete request `payloads`
+    - `Response data` received
+    - Message `headers` and `metadata`
+    - `Timestamps` for each interaction
+    - Field-level `validation results`
+    - `Error` details and codes
     
     These logs are essential for debugging and compliance requirements.
   </div>
@@ -407,26 +477,26 @@ After suite creation, the panel shows:
 
 <div class="step-block">
   <div class="step-text">
-    **Execution Timeline**
+    **4. Execution Timeline**
     
     Visual timeline representation:
-    - Chronological execution flow
-    - Duration for each test case
-    - Parallel execution visualization
-    - Waiting/idle times
-    - Bottleneck identification
-    - Resource utilization patterns
+    - `Chronological` execution flow
+    - `Duration` for each test case
+    - Parallel execution `visualization`
+    - `Waiting/idle` times
+    - `Bottleneck` identification
+    - `Resource utilization` patterns
   </div>
 </div>
 
 <div class="step-block">
   <div class="step-text">
-    **Timeline Details View**
+    **5. Timeline Details View**
     
     The detailed timeline provides:
-    - Step-by-step execution sequence
-    - Time taken for each operation
-    - Dependencies and waiting periods
+    - Step-by-step execution `sequence`
+    - `Time taken` for each operation
+    - `Dependencies` and `waiting periods`
     - Parallel execution threads
     - Critical path analysis
     
@@ -450,66 +520,56 @@ After suite creation, the panel shows:
 ## Scheduled Execution
 
 ### Configuring Schedules
-
+#
 When creating or editing a suite:
 
 1. Set **Schedule** = **Scheduled**
 2. Configure frequency:
 
-<div class="step-block">
-  <div class="step-text">
-    **Daily Schedule**
-    
-    Configure daily execution:
-    - Specific time of day
-    - Timezone settings
-    - Days to run (weekdays, weekends, all)
-    - Notification preferences
-  </div>
-</div>
+<FeatureGrid>
 
----
+  <FeatureCard
+    icon="calendar"
+    title="Daily Schedule"
+    description="Configure daily execution with a specific time of day, timezone settings, selected days (weekdays/weekends/all), and notification preferences."
+    color="#2563eb"
+  />
 
-<div class="step-block">
-  <div class="step-text">
-    **Weekly Schedule**
-    
-    Configure weekly execution:
-    - Select specific days of the week
-    - Set execution time
-    - Configure recurrence pattern
-    - Set notification recipients
-  </div>
-</div>
+  <FeatureCard
+    icon="calendar-days"
+    title="Weekly Schedule"
+    description="Configure weekly execution by selecting specific days of the week, setting execution time, defining recurrence patterns, and managing notification recipients."
+    color="#10b981"
+  />
 
----
+  <FeatureCard
+    icon="calendar-range"
+    title="Monthly Schedule"
+    description="Configure monthly execution by choosing specific date(s) of the month, selecting execution time, handling month-end scenarios, and setting recurring patterns."
+    color="#f59e0b"
+  />
 
-<div class="step-block">
-  <div class="step-text">
-    **Monthly Schedule**
-    
-    Configure monthly execution:
-    - Select specific date(s) of the month
-    - Choose execution time
-    - Handle month-end scenarios
-    - Set up recurring patterns
-  </div>
-</div>
+</FeatureGrid>
+
 
 ---
 
 ### Schedule Management
-
+#
 - **View** scheduled suites: Execution module → filter **Scheduled**
 - **Modify**: Edit suite → update schedule → Save
 - **Disable**: Change to **On Demand** → Save
 
+
+:::info
 ### Notifications
 
 Available notification channels:
 - **Email**: Send results to stakeholders
 - **Webhook**: Integrate with external systems
 - **Dashboard**: Real-time updates in Exgenix
+
+:::
 
 ---
 
@@ -627,137 +687,132 @@ Changes to test suites affect all future executions but do not impact historical
 - **Archive**: Keep recent 30 days active; archive 90 days; delete per retention policy -->
 
 ## Managing Test Suites
+#
+<div class="collapsible-card-div">
 
-<details class="green-collapsible">
-<summary><strong>Editing Test Suites</strong></summary>
+  <details class="green-collapsible">
+  <summary><strong>Editing Test Suites</strong></summary>
 
-1. Open the suite → **Edit** (pencil icon)  
-2. Modify name/description, schedule, parallelism, test cases  
-3. Click **Save** to apply the changes  
+  1. Open the suite → **Edit** (pencil icon)  
+  2. Modify name/description, schedule, parallelism, test cases  
+  3. Click **Save** to apply the changes  
 
-Changes affect **future executions only** and do **not** modify historical reports.
+  Changes affect **future executions only** and do **not** modify historical reports.
 
-</details>
+  </details>
 
----
+  <details class="green-collapsible">
+  <summary><strong>Execution History</strong></summary>
 
-<details class="green-collapsible">
-<summary><strong>Execution History</strong></summary>
+  1. Open the suite → **Execution History**  
+  2. View detailed execution records:
+    - Date and time  
+    - Duration  
+    - Pass/Fail status  
+    - Links to reports  
+    - User who triggered execution  
+    - Environment details  
 
-1. Open the suite → **Execution History**  
-2. View detailed execution records:
-   - Date and time  
-   - Duration  
-   - Pass/Fail status  
-   - Links to reports  
-   - User who triggered execution  
-   - Environment details  
+  Execution history helps analyze **stability trends** and **long-term quality**.
 
-Execution history helps analyze **stability trends** and **long-term quality**.
+  </details>
 
-</details>
+  <details class="green-collapsible">
+  <summary><strong>Deleting Test Suites</strong></summary>
 
----
+  1. Navigate to the execution collection  
+  2. Locate the suite  
+  3. Click **Delete** → Confirm  
 
-<details class="green-collapsible">
-<summary><strong>Deleting Test Suites</strong></summary>
+  ⚠️ **Warning:**  
+  Deleting a suite removes the suite and its history, **but not the test cases**.
 
-1. Navigate to the execution collection  
-2. Locate the suite  
-3. Click **Delete** → Confirm  
+  </details>
 
-⚠️ **Warning:**  
-Deleting a suite removes the suite and its history, **but not the test cases**.
-
-</details>
+</div>
 
 ---
 
 ## Best Practices
+#
+<div class="collapsible-card-div">
 
-<details class="green-collapsible">
-<summary><strong>Suite Organization</strong></summary>
+  <details class="green-collapsible">
+  <summary><strong>Suite Organization</strong></summary>
 
-Organize suites by:
+  Organize suites by:
 
-- **Functionality** (feature area)  
-- **Priority** (Critical, High, Medium, Low)  
-- **Test Type** (Smoke, Regression, Performance)  
-- **Release Cycle** (Sprint, Release, Hotfix)  
-- **Environment** (Dev, QA, Staging, Prod)
+  - **Functionality** (feature area)  
+  - **Priority** (Critical, High, Medium, Low)  
+  - **Test Type** (Smoke, Regression, Performance)  
+  - **Release Cycle** (Sprint, Release, Hotfix)  
+  - **Environment** (Dev, QA, Staging, Prod)
 
-</details>
+  </details>
 
----
+  <details class="green-collapsible">
+  <summary><strong>Example Suite Structure</strong></summary>
 
-<details class="green-collapsible">
-<summary><strong>Example Suite Structure</strong></summary>
+  A clean and scalable structure:
 
-A clean and scalable structure:
+  **📂 Regression_Tests**  
+  - Daily_Smoke_Tests  
+  - Weekly_Full_Regression  
+  - Critical_Path_Tests  
 
-**📂 Regression_Tests**  
-- Daily_Smoke_Tests  
-- Weekly_Full_Regression  
-- Critical_Path_Tests  
+  **📂 Feature_Tests**  
+  - Order_Management  
+  - Market_Data  
+  - Risk_Management  
 
-**📂 Feature_Tests**  
-- Order_Management  
-- Market_Data  
-- Risk_Management  
+  **📂 Performance_Tests**  
+  - Load_Tests  
+  - Stress_Tests  
+  - Endurance_Tests  
 
-**📂 Performance_Tests**  
-- Load_Tests  
-- Stress_Tests  
-- Endurance_Tests  
+  </details>
 
-</details>
+  <details class="green-collapsible">
+  <summary><strong>Parallel Execution Guidelines</strong></summary>
 
----
+  ### Enable when:
+  - Test cases are independent  
+  - No shared data  
+  - Infra supports concurrency  
+  - Faster results needed  
 
-<details class="green-collapsible">
-<summary><strong>Parallel Execution Guidelines</strong></summary>
+  ### Disable when:
+  - Sequential dependencies  
+  - Shared resources/sessions  
+  - Debugging scenarios  
+  - Limited infrastructure  
 
-### Enable when:
-- Test cases are independent  
-- No shared data  
-- Infra supports concurrency  
-- Faster results needed  
-
-### Disable when:
-- Sequential dependencies  
-- Shared resources/sessions  
-- Debugging scenarios  
-- Limited infrastructure  
-
-</details>
-
----
-
-<details class="green-collapsible">
-<summary><strong>Scheduling Strategy</strong></summary>
-
-- **Daily:** Smoke, quick regression, post-deploy verification  
-- **Weekly:** Full regression, performance tests  
-- **On-Demand:** Dev testing, bug verification, pre-production checks  
-
-</details>
-
----
-
-<details class="green-collapsible">
-<summary><strong>Report Management</strong></summary>
-
-- **Review** failures daily  
-- **Analyze** trends weekly  
-- **Track** quality monthly  
-- **Archive Strategy:**  
-  - Keep 30 days active  
-  - Archive 90 days  
-  - Delete older per policy  
-
-</details>
+  </details>
 
 
+  <details class="green-collapsible">
+  <summary><strong>Scheduling Strategy</strong></summary>
+
+  - **Daily:** Smoke, quick regression, post-deploy verification  
+  - **Weekly:** Full regression, performance tests  
+  - **On-Demand:** Dev testing, bug verification, pre-production checks  
+
+  </details>
+
+  <details class="green-collapsible">
+  <summary><strong>Report Management</strong></summary>
+
+  - **Review** failures daily  
+  - **Analyze** trends weekly  
+  - **Track** quality monthly  
+  - **Archive Strategy:**  
+    - Keep 30 days active  
+    - Archive 90 days  
+    - Delete older per policy  
+
+  </details>
+
+</div>
 
 
 
@@ -780,77 +835,74 @@ Causes: Interrupted run, storage limits, generation error.
 Fix: Let runs complete; free storage; contact support if persistent. -->
 
 ## Troubleshooting
+#
 
-<details class="green-collapsible">
-<summary><strong>1. Suite Won’t Execute</strong></summary>
+<div class="collapsible-card-div">
+  <details class="green-collapsible">
+  <summary><strong>1. Suite Won’t Execute</strong></summary>
 
-**Causes:**  
-- No test cases added  
-- Invalid test suite configurations  
-- Missing datasheets  
-- Connectivity issues  
+  **Causes:**  
+  - No test cases added  
+  - Invalid test suite configurations  
+  - Missing datasheets  
+  - Connectivity issues  
 
-**Fix:**  
-- Add at least one test case  
-- Validate each test case configuration  
-- Ensure datasheets exist and are linked  
-- Verify system/network connectivity  
+  **Fix:**  
+  - Add at least one test case  
+  - Validate each test case configuration  
+  - Ensure datasheets exist and are linked  
+  - Verify system/network connectivity  
 
-</details>
+  </details>
 
----
+  <details class="green-collapsible">
+  <summary><strong>2. Parallel Execution Failures</strong></summary>
 
-<details class="green-collapsible">
-<summary><strong>2. Parallel Execution Failures</strong></summary>
+  **Causes:**  
+  - Resource contention  
+  - Shared/locked data  
+  - Infrastructure limitations  
 
-**Causes:**  
-- Resource contention  
-- Shared/locked data  
-- Infrastructure limitations  
+  **Fix:**  
+  - Reduce level of parallelism  
+  - Ensure test cases are fully independent  
+  - Allocate additional resources if needed  
 
-**Fix:**  
-- Reduce level of parallelism  
-- Ensure test cases are fully independent  
-- Allocate additional resources if needed  
+  </details>
 
-</details>
+  <details class="green-collapsible">
+  <summary><strong>3. Scheduled Execution Not Running</strong></summary>
 
----
+  **Causes:**  
+  - Misconfigured schedule  
+  - System maintenance window  
+  - Missing permissions  
+  - Scheduler errors  
 
-<details class="green-collapsible">
-<summary><strong>3. Scheduled Execution Not Running</strong></summary>
+  **Fix:**  
+  - Recheck schedule configuration  
+  - Verify system/service status  
+  - Confirm user or system permissions  
+  - Review scheduler logs for errors  
 
-**Causes:**  
-- Misconfigured schedule  
-- System maintenance window  
-- Missing permissions  
-- Scheduler errors  
+  </details>
 
-**Fix:**  
-- Recheck schedule configuration  
-- Verify system/service status  
-- Confirm user or system permissions  
-- Review scheduler logs for errors  
+  <details class="green-collapsible">
+  <summary><strong>4. Reports Not Generated</strong></summary>
 
-</details>
+  **Causes:**  
+  - Interrupted execution  
+  - Storage limitations  
+  - Report generation error  
 
----
+  **Fix:**  
+  - Allow tests to finish fully  
+  - Free up storage or increase quota  
+  - Contact support if issue persists  
 
-<details class="green-collapsible">
-<summary><strong>4. Reports Not Generated</strong></summary>
+  </details>
 
-**Causes:**  
-- Interrupted execution  
-- Storage limitations  
-- Report generation error  
-
-**Fix:**  
-- Allow tests to finish fully  
-- Free up storage or increase quota  
-- Contact support if issue persists  
-
-</details>
-
+</div>
 ---
 
 ## Summary
@@ -864,13 +916,16 @@ The **Test Suite & Execution** module provides:
 ✓ **Detailed Reporting** – Sharable, exportable results  
 ✓ **Execution History** – Trend analysis over time  
 
-### Key Takeaways
-
-- Organize suites by function, priority, or cadence
-- Use parallel execution for independent cases
-- Schedule critical and recurring runs
-- Monitor in real time and review reports regularly
-- Maintain execution history for insights and quality trends
+<div class="takeaway-panel">
+  <div class="panel-header"><strong>Key Takeaways</strong></div>
+  <div class="panel-body">
+        - Organize suites by function, priority, or cadence
+        - Use parallel execution for independent cases
+        - Schedule critical and recurring runs
+        - Monitor in real time and review reports regularly
+        - Maintain execution history for insights and quality trends
+  </div>
+</div>
 
 
 ---
