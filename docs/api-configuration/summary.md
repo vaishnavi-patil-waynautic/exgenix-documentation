@@ -1,6 +1,6 @@
 ---
 hide_table_of_contents: true
-slug: /summary
+slug: /api-configuration/summary
 id: summary
 title: 'Summary'
 sidebar_label: Summary

@@ -11,5 +11,5 @@ This section contains multiple test scenarios that demonstrate practical usage o
 
 ## Table of Contents
 
-- [Scenario 1](./scenario_1)
-- [Scenario 2](./scenario_2)
+- [Scenario 1](./sample-test-scenario/scenario-1)
+- [Scenario 2](./sample-test-scenario/scenario-2)

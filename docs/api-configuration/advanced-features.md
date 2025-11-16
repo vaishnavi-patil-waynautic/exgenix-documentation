@@ -3,6 +3,7 @@ id: advanced-features
 title: 'Advanced Features'
 hide_table_of_contents: true
 sidebar_label: Advanced Features
+slug: /api-configuration/advanced-features
 ---
 
 <!-- ### Reference Groups

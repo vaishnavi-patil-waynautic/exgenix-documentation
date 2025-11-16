@@ -1,6 +1,6 @@
 ---
 id: api-configuration
-slug: api-configuration
+slug: /api-configuration/api-configuration
 title: 'API Configurations'
 hide_table_of_contents: true
 sidebar_label: API Configurations

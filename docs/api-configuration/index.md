@@ -19,14 +19,14 @@ import ExampleBlock  from '@site/src/components/ExampleBlock';
 ---
 
 ## Table of Contents
-- [Overview](./overview)
-- [Module Structure](./module-structure)
-- [Collections](./collections)
-- [API Configurations](./.s-details)
-- [Datasheets](./datasheets)
-- [Advanced Features](./advanced-features)
-- [Best Practices](./best-practices)
-- [Troubleshooting](./troubleshooting)
-- [Summary](./summary)
+- [Overview](/docs/api-configuration/overview)
+- [Module Structure](/docs/api-configuration/module-structure)
+- [Collections](/docs/api-configuration/collections)
+- [API Configurations](/docs/api-configuration/api-configuration)
+- [Datasheets](/docs/api-configuration/datasheets)
+- [Advanced Features](/docs/api-configuration/advanced-features)
+- [Best Practices](/docs/api-configuration/best-practices)
+- [Troubleshooting](/docs/api-configuration/troubleshooting)
+- [Summary](/docs/api-configuration/summary)
 
 ---

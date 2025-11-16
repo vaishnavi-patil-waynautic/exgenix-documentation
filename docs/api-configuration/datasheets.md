@@ -1,6 +1,6 @@
 ---
 hide_table_of_contents: true
-slug: /datasheets
+slug: /api-configuration/datasheets
 id: datasheets
 title: 'Datasheets'
 sidebar_label: Datasheets

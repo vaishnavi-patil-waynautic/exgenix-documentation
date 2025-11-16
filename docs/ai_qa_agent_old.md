@@ -1,10 +1,10 @@
 ---
-id: ai-qa-agent
+id: ai-qa-agent-old
 title: Waynautic AI QA Agent – User Guide
 sidebar_position: 8
 hide_table_of_contents: true
 sidebar_label: AI QA Agent
-slug: /ai-qa-agent
+slug: /ai-qa-agent-old
 ---
 
 # AI QA Agent - Governance & Insight Engine

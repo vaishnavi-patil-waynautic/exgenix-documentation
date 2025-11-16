@@ -167,10 +167,84 @@ const sidebars: SidebarsConfig = {
         'api-configuration/summary',
       ],
     },
+
+    {
+  type: 'category',
+  label: 'Test Action Unit',
+  link: {
+    type: 'doc',
+    id: 'test-action-unit/test-action-unit',   // Your index.md for this section
+  },
+  items: [
+    'test-action-unit/overview',
+    'test-action-unit/what-is-tau',
+    'test-action-unit/structure',
+    'test-action-unit/creating-tau',
+    'test-action-unit/example',
+    'test-action-unit/datasheet-configuration',
+    'test-action-unit/using-tau',
+    'test-action-unit/common-patterns',
+    'test-action-unit/best-practices',
+    'test-action-unit/managing-tau',
+    'test-action-unit/advanced-features',
+    'test-action-unit/troubleshooting',
+    'test-action-unit/summary',
+  ],
+},
+
+{
+  type: 'category',
+  label: 'Test Case Configuration',
+  link: {
+    type: 'doc',
+    id: 'test-case-configuration/test-case-configuration',   // points to index.md
+  },
+  items: [
+    'test-case-configuration/overview',
+    'test-case-configuration/module-structure',
+    'test-case-configuration/test-cases',
+    'test-case-configuration/creating-test-case',
+    'test-case-configuration/step-settings',
+    'test-case-configuration/advanced-features',
+    'test-case-configuration/best-practices',
+    'test-case-configuration/managing-test-cases',
+    'test-case-configuration/common-scenarios',
+    'test-case-configuration/troubleshooting',
+    'test-case-configuration/summary',
+  ],
+},
+{
+  type: 'category',
+  label: 'Test Suite Execution',
+  link: {
+    type: 'doc',
+    id: 'test-suite-execution/test-suite-execution',   // points to index.md
+  },
+  items: [
+    'test-suite-execution/overview',
+    'test-suite-execution/module-structure',
+    'test-suite-execution/components',
+    'test-suite-execution/creating-collections',
+    'test-suite-execution/creating-test-suites',
+    'test-suite-execution/information-panel',
+    'test-suite-execution/executing-suites',
+    'test-suite-execution/execution-monitoring',
+    'test-suite-execution/reports',
+    'test-suite-execution/scheduled-execution',
+    'test-suite-execution/managing-suites',
+    'test-suite-execution/best-practices',
+    'test-suite-execution/troubleshooting',
+    'test-suite-execution/summary',
+  ],
+},
+
+
+
+
     // 'api-configuration',
-    'test-action-unit',
-    'testcase',
-    'test_suite_and_execution',
+    // 'test-action-unit',
+    // 'testcase',
+    // 'test_suite_and_execution',
     // {
     //   type: 'category',
     //   label: 'Sample Test Scenario',
@@ -197,17 +271,42 @@ const sidebars: SidebarsConfig = {
       ],
     },
 
+    // {
+    //   type: 'category',
+    //   label: 'AI QA Agent',
+    //   link: { type: 'doc', id: 'ai-qa-agent' }, // parent doc
+    //   items: [
+    //     'ai-qa-agent/usecase1',
+    //     'ai-qa-agent/usecase2',
+    //     'ai-qa-agent/usecase3',
+    //   ],
+    // },
+
     {
-      type: 'category',
-      label: 'AI QA Agent',
-      link: { type: 'doc', id: 'ai-qa-agent' }, // parent doc
-      items: [
+  type: 'category',
+  label: 'AI QA Agent',
+  link: {
+    type: 'doc',
+    id: 'ai-qa-agent/ai-qa-agent',   // Your index page
+  },
+  items: [
+    'ai-qa-agent/overview',
+    'ai-qa-agent/key-features',
+    'ai-qa-agent/qa-governance-benefits',
+    'ai-qa-agent/value-propositions',
+    'ai-qa-agent/integration-ecosystem',
+    'ai-qa-agent/target-audience',
+    'ai-qa-agent/complete-workflow',
+    'ai-qa-agent/continuous-learning',
+    'ai-qa-agent/success-metrics',
+    'ai-qa-agent/technical-capabilities',
+    'ai-qa-agent/security-compliance',
+    'ai-qa-agent/getting-started',
         'ai-qa-agent/usecase1',
         'ai-qa-agent/usecase2',
         'ai-qa-agent/usecase3',
-      ],
-    },
-
+  ],
+},
 
 
     'contact-us',

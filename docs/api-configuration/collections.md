@@ -1,6 +1,6 @@
 ---
 hide_table_of_contents: true
-slug: api-configuration/collections
+slug: /api-configuration/collections
 id: collections
 title: 'Collections'
 sidebar_label: Collections

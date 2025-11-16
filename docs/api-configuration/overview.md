@@ -1,6 +1,6 @@
 ---
 hide_table_of_contents: true
-slug: /overview
+slug: /api-configuration/overview
 id: overview
 title: 'Overview'
 sidebar_label: Overview

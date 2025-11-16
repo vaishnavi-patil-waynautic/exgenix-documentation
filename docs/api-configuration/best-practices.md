@@ -1,6 +1,6 @@
 ---
 hide_table_of_contents: true
-slug: api-configuration/best-practices
+slug: /api-configuration/best-practices
 id: best-practices
 title: 'Best Practices'
 sidebar_label: Best Practices

@@ -1,6 +1,6 @@
 ---
 hide_table_of_contents: true
-slug: /troubleshooting
+slug: /api-configuration/troubleshooting
 id: troubleshooting
 title: 'Troubleshooting'
 sidebar_label: Troubleshooting

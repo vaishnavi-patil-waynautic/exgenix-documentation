@@ -1,6 +1,6 @@
 ---
 hide_table_of_contents: true
-slug: /module-structure
+slug: /api-configuration/module-structure
 id: module-structure
 title: 'Module Structure'
 sidebar_label: Module Structure
