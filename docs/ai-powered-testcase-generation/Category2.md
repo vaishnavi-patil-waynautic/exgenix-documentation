@@ -10,6 +10,8 @@ slug: /ai-powered-testcase-generation/category2
 
 # Category 2: From Business Requirement Documents (BRD) and Impact Assessment Reports
 
+---
+
 <div class="step-block">
   <div class="step-text">
     AI models extract **functional and business-level test scenarios** directly from text-based or semi-structured documents like BRDs, FSDs, or impact reports.

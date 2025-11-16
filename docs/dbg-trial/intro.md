@@ -1,4 +1,9 @@
+---
+hide_table_of_contents: true
+---
 # Trial Access – Scope
+
+---
 
 We are delighted to welcome the DBG QA team to explore **Exgenix** — our flagship AI-driven QA governance platform built specifically for Stock Exchange ecosystems.
 

@@ -3,9 +3,13 @@ id: executive-overview
 title: Executive Overview
 sidebar_label: Executive Overview
 slug: /exgenix/executive-overview
+hide_table_of_contents: true
+description: 'Exgenix : AI-driven QA governance platform that also provides Test automation & Performance engineering capabilities designed to meet the comprehensive testing needs'
 ---
 
 # Executive Overview
+
+---
 
 **Exgenix**, developed by **Waynautic Technologies**, is an AI-driven QA governance platform that also provides Test automation & Performance engineering capabilities designed to meet the comprehensive testing needs of **stock exchanges, trading institutions, and brokerage firms.**
 

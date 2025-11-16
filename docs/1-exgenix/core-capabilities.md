@@ -3,9 +3,13 @@ id: core-capabilities
 title: Core Capabilities
 sidebar_label: Core Capabilities
 slug: /exgenix/core-capabilities
+hide_table_of_contents: true
+description : 'AI Test Case Generation & AI QA Governance Module'
 ---
 
 # Core Capabilities
+
+---
 
 ## 🔗 AI Test Case Generation
 Generate:

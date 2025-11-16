@@ -3,9 +3,13 @@ id: core-modules
 title: Core Modules
 sidebar_label: Core Modules
 slug: /exgenix/core-modules
+hide_table_of_contents: true
+description : 'API Configuration | Test Data Configuration | Test Configuration | Execution| Reports '
 ---
 
 # Core Modules
+
+---
 
 1. **API Configuration**
 Define and manage FIX / ETI/Custom Binary API or custom APIs with reusable templates.

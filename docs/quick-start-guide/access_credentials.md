@@ -10,6 +10,8 @@ slug: /quick-start-guide/access_credentials
 
 # Access Credentials
 
+---
+
 | Platform | Access Link | Username | Password | Notes |
 |-----------|--------------|-----------|-----------|-------|
 | **Exgenix Platform** | https://exgenix.waynautic.cloud | `<your_user>` | `<your_password>` | Preloaded with **critical APIs and collections** |

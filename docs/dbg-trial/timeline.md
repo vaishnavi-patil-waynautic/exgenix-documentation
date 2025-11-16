@@ -1,4 +1,9 @@
+---
+hide_table_of_contents: true
+---
 # Timeline & Access Details
+
+---
 
 - The environment will be accessible through dedicated **user credentials** for up to two DBG team members.
 

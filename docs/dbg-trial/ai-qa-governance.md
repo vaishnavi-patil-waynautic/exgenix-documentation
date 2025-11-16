@@ -1,4 +1,10 @@
+---
+hide_table_of_contents: true
+---
+
 # AI-Powered Test Case Generation & Governance
+
+---
 
 **“AI that thinks like a QA lead — not a script.”**
 

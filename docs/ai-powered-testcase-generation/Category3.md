@@ -10,6 +10,8 @@ slug: /ai-powered-testcase-generation/category3
 
 # Category 3: From User Stories Integrated via ADO or Jira
 
+---
+
 <div class="step-block">
   <div class="step-text">
     Exgenix connects directly to **Azure DevOps (ADO)** and **Jira** to fetch user stories and automatically generate test cases based on requirement narratives.

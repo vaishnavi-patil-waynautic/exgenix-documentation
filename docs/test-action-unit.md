@@ -343,7 +343,7 @@ Risk checks → Balance → Instrument validation → Price band checks
 Connection → Subscription → Snapshot → Confirmation
 
 ---
-
+<!-- 
 ## Best Practices
 
 ### Design Principles
@@ -455,7 +455,206 @@ Configured at test case level:
 
 **Resolve by:**
 - Re-saving the unit
-- Fixing validation errors
+- Fixing validation errors -->
+
+
+### 📘 Best Practices
+
+<details class="green-collapsible">
+  <summary> Design Principles</summary>
+
+- ✓ **Single responsibility:** Each unit should have one clear purpose  
+- ✓ **High cohesion:** All steps should be closely related  
+- ✓ **Independence:** Units should not depend on external state  
+- ✓ **Include validations:** Validate responses within the unit  
+
+</details>
+
+
+<details class="green-collapsible">
+  <summary> Naming Conventions</summary>
+
+**Format:**  
+`<Action>_<Component>_Tau`
+
+**Examples:**  
+- `Login_User_Tau`  
+- `Logout_Session_Tau`  
+- `Subscribe_MarketData_Tau`
+
+</details>
+
+
+<details class="green-collapsible">
+  <summary> Documentation Guidelines</summary>
+
+Document the following for every Test Action Unit:
+
+- Purpose  
+- Prerequisites  
+- Steps included  
+- Expected outcomes  
+- Captured variables  
+
+</details>
+
+
+<details class="green-collapsible">
+  <summary> Datasheet Organization</summary>
+
+### **Consolidated Datasheet**
+- One sheet for the entire unit  
+- Simple to manage  
+- Best for straightforward flows  
+
+### **Separate Datasheets**
+- One per step (for complex flows)  
+- Better flexibility  
+- Supports variations in data  
+
+</details>
+
+
+<details class="green-collapsible">
+  <summary>🛠️ Maintenance Strategy</summary>
+
+- Track dependencies  
+- Apply version control  
+- Review units periodically  
+- Test units independently  
+
+</details>
+
+---
+
+##  Managing Test Action Units
+
+<details class="green-collapsible">
+  <summary> Viewing Units</summary>
+
+Navigate to:  
+**Test Configuration → Test Action Unit**
+
+Each unit displays:
+
+- Name  
+- Description  
+- Steps count  
+- Last modified  
+- Actions  
+
+</details>
+
+
+<details class="green-collapsible">
+  <summary> Editing Units</summary>
+
+You can update:
+
+- Name  
+- Description  
+- Steps  
+- Datasheets  
+
+⚠️ **Changes apply to all test cases using this unit.**
+
+</details>
+
+
+<details class="green-collapsible">
+  <summary> Deleting Units</summary>
+
+- Units **cannot** be deleted if used in a test case  
+- Remove references from all test cases first  
+
+</details>
+
+<details class="green-collapsible">
+  <summary> Cloning Units</summary>
+
+Useful when:
+
+- Creating slight variations  
+- Reusing structure with new data  
+
+</details>
+
+---
+##  Advanced Features
+
+<details class="green-collapsible">
+  <summary> Conditional Execution</summary>
+
+Achieved using:
+
+- Multiple units for alternate paths  
+- Datasheets with conditional values  
+
+</details>
+
+
+<details class="green-collapsible">
+  <summary> Error Handling</summary>
+
+Configured at **Test Case** level:
+
+- **Continue:** Proceed to next step  
+- **Abort:** Stop execution  
+- **Retry:** Re-attempt failed step  
+
+</details>
+
+
+<details class="green-collapsible">
+  <summary> Session Management</summary>
+
+Options:
+
+- **Continuous session:** Same connection reused  
+- **New session per iteration:** Fresh connection each cycle  
+
+Choose based on test requirements.
+
+</details>
+
+---
+
+##  Troubleshooting
+
+<details class="green-collapsible">
+  <summary> Steps Not Executing</summary>
+
+Check:
+
+- Missing datasheets  
+- Invalid API configurations  
+- Connection issues  
+
+</details>
+
+
+<details class="green-collapsible">
+  <summary> Variable Capture Issues</summary>
+
+Check:
+
+- Syntax errors  
+- Incorrect validation rules  
+- Wrong datasheet mappings  
+
+</details>
+
+
+<details class="green-collapsible">
+  <summary> Cannot Add Unit to Test Case</summary>
+
+Fix by:
+
+- Re-saving the Test Action Unit  
+- Resolving validation errors  
+
+</details>
+
 
 ---
 

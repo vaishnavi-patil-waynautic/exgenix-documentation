@@ -55,8 +55,6 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Exgenix',
-      collapsible: true,
-      collapsed: false,
       link: {
         type: 'generated-index',
         title: 'AI-Powered QA Governance for Stock Exchange Ecosystem',
@@ -79,8 +77,6 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Trial Access',
-      collapsible: true,
-      collapsed: false,
       link: {
         type: 'generated-index',
         title: 'Trial Access',

@@ -1,4 +1,9 @@
+---
+hide_table_of_contents: true
+---
 # QA Governance Engine for Stock Exchanges
+
+---
 
 **“From APIs to Clearing — One Governance View.”**
 

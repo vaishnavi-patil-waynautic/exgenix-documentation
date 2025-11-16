@@ -1,4 +1,9 @@
+---
+hide_table_of_contents: true
+---
 # Next Steps After the Trial
+
+---
 
 The Waynautic team can assist with:
 

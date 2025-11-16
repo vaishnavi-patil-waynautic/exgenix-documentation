@@ -1,4 +1,9 @@
+---
+hide_table_of_contents: true
+---
 # Purpose of the Trial
+
+---
 
 The objective of this trial is to help the DBG QA team experience:
 

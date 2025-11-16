@@ -10,6 +10,8 @@ slug: /ai-powered-testcase-generation/key-highlight
 
 # Key Highlights
 
+---
+
 ### Unified Coverage
 Generate test cases from API specs, BRDs, and user stories within one platform.
 

@@ -223,14 +223,15 @@ body {
   width: 100% !important;
 }
 
-.generatedIndexPage_vN6x .row {
+/* .generatedIndexPage_vN6x .row {
   justify-content: flex-start !important;
   gap: 1.5rem;
-}
+} */
 
 .generatedIndexPage_vN6x .col {
-  flex: 1 1 45% !important;
-  max-width: 100% !important;
+  /* flex: 1 1 45% !important; */
+  flex: 0 0 calc(50% - 0.75rem);
+  /* max-width: 100% !important; */
 }
 
 .step-block {
@@ -333,12 +334,6 @@ body {
   to { opacity: 1; }
 }
 
-@media screen and (max-width: 1200px) {
-  .generatedIndexPage_vN6x .col {
-    flex: 1 1 48% !important;
-    max-width: 48% !important;
-  }
-}
 
 @media screen and (max-width: 960px) {
   .theme-doc-sidebar-container {
@@ -374,7 +369,8 @@ body {
   }
 
   .generatedIndexPage_vN6x .col {
-    flex: 1 1 100% !important;
+    /* flex: 1 1 100% !important; */
+    flex: 0 0 calc(50% - 0.75rem);
     max-width: 100% !important;
   }
 }
@@ -400,12 +396,6 @@ body {
   .step-image img {
     max-width: 100%;
   }
-}
-
-.docMainContainer_TBSr .container {
-  max-width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
 }
 
 .docItemCol_VOVn {
@@ -449,13 +439,13 @@ article {
   margin: 0 !important;
 }
 
-.docMainContainer_TBSr .row {
+/* .docMainContainer_TBSr .row {
   display: block !important;
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   gap: 0 !important;
-}
+} */
 
 .docItemCol_VOVn {
   width: 100% !important;
@@ -494,20 +484,14 @@ article {
   box-sizing: border-box;
 }
 
-.docMainContainer_TBSr .container {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
 
-.docMainContainer_TBSr .row {
+/* .docMainContainer_TBSr .row {
   display: block !important;
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   gap: 0 !important;
-}
+} */
 
 .col.docItemCol_VOVn {
   width: 100% !important;
@@ -538,28 +522,14 @@ article {
   }
 }
 
-.docMainContainer_TBSr {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box;
-}
 
-.docMainContainer_TBSr .container {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.docMainContainer_TBSr .row {
+/* .docMainContainer_TBSr .row {
   display: block !important;
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   gap: 0 !important;
-}
+} */
 
 .col.docItemCol_VOVn {
   width: 100% !important;
@@ -601,8 +571,7 @@ article {
 }
 
 .generatedIndexPage_vN6x .row {
-  display: flex !important;
-  flex-wrap: wrap !important;
+  display: grid !important;
   justify-content: flex-start !important;
   gap: 2rem !important;
   margin: 0 auto !important;
@@ -610,25 +579,25 @@ article {
   max-width: 100% !important;
 }
 
-.generatedIndexPage_vN6x .docCardListItem_W1sv {
+/* .generatedIndexPage_vN6x .docCardListItem_W1sv {
   flex: 1 1 calc(50% - 2rem) !important;
   box-sizing: border-box;
-}
+} */
 
 .generatedIndexPage_vN6x header {
   margin-top: 2rem;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .generatedIndexPage_vN6x .docCardListItem_W1sv {
     flex: 1 1 100% !important;
   }
-}
+} */
 
 .docMainContainer_TBSr {
   width: 100%;
   max-width: 100%;
-  padding: 0 10rem;
+  /* padding: 0 10rem; */
   box-sizing: border-box;
 }
 
@@ -641,11 +610,11 @@ article {
   gap: 1.5rem;
 }
 
-.generatedIndexPage_vN6x .row {
+/* .generatedIndexPage_vN6x .row {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-}
+} */
 
 .generatedIndexPage_vN6x .card {
   flex: 1 1 calc(50% - 1.5rem);
@@ -665,29 +634,31 @@ article {
   box-sizing: border-box;
 }
 
-.generatedIndexPage_vN6x .row {
+/* .generatedIndexPage_vN6x .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 1.5rem;
   margin: 0 !important;
-}
+} */
 
 .generatedIndexPage_vN6x .col {
-  flex: 1 1 calc(50% - 1.5rem);
+  /* flex: 1 1 calc(50% - 1.5rem);
+  flex: 0 0 calc(50% - 0.75rem);
   max-width: calc(50% - 1.5rem);
   box-sizing: border-box;
-}
+} */
 
 @media (max-width: 768px) {
   .generatedIndexPage_vN6x {
     padding: 0 2rem !important;
   }
 
-  .generatedIndexPage_vN6x .col {
-    flex: 1 1 100%;
+  /* .generatedIndexPage_vN6x .col {
+    /* flex: 1 1 100%; */
+    flex: 0 0 calc(50% - 0.75rem);
     max-width: 100%;
-  }
+  } */
 
   .step-block {
     flex-direction: column;
@@ -727,11 +698,6 @@ a.header-anchor svg {
   visibility: visible !important;
 }
 
-.docMainContainer_TBSr,
-.docMainContainer_TBSr .container {
-  padding: 0 0.7rem !important;
-  margin: 0 !important;
-}
 
 .footer__bottom {
   margin-top: 1.5rem !important;
@@ -753,15 +719,12 @@ a.header-anchor svg {
   margin: 0;
 }
 
-.docMainContainer_TBSr {
-  padding: 0 1rem !important;
-}
 
 /* Remove the large left margin/padding in docs pages */
-.docMainContainer_TBSr,
+
 .container.padding-top--md.padding-bottom--lg {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* Optional: shrink container max width so content aligns better */
@@ -771,36 +734,33 @@ a.header-anchor svg {
 .docMainContainer_TBSr,
 .docMainContainer_TBSr > .container,
 .generatedIndexPage_vN6x {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 
-/* Apply small left padding to generated index pages */
-.generatedIndexPage_vN6x {
-  padding-left: 20px !important;   /* adjust this value */
-}
+
 
 
 /* REMOVE all padding & margin from doc content column */
 .col.docItemCol_VOVn {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 
 .col.docItemCol_VOVn {
-  padding-left: 20px !important;
+  padding: 20px !important;
 }
 
 .title_kItE { 
   font-size: 1.8rem !important;
-  margin-bottom: 0 !important;
+  margin: 0 !important;
  }
 
 .generatedIndexPage_vN6x header {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .generatedIndexPage_vN6x header p {
@@ -808,3 +768,205 @@ a.header-anchor svg {
   padding: 0 !important;
 }
 
+.green-collapsible {
+  background: #e8f7ef;
+  border-left: 4px solid #2ecc71;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  max-width: 10px;
+}
+
+.green-collapsible summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #1b7f52;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+
+.green-collapsible summary:hover {
+  color: #145c3a;
+}
+
+.collapsible-card-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* exactly 2 cards per row */
+  gap: 1.5rem;                           /* space between cards */
+  margin-bottom: 2rem;
+}
+
+.collapsible-card-div > details {
+  width: 100%;       /* fill the grid cell */
+  box-sizing: border-box;
+}
+
+/* Optional: stack on small screens */
+@media (max-width: 600px) {
+  .collapsible-card-div {
+    grid-template-columns: 1fr; /* single column */
+  }
+}
+
+
+
+
+
+/* @media screen and (max-width: 1200px) {
+  .generatedIndexPage_vN6x .col {
+    flex: 0 0 calc(50% - 0.75rem) !important;
+    max-width: calc(50% - 0.75rem) !important;
+    min-width: calc(50% - 0.75rem) !important;
+  }
+} */
+
+
+/* .docCardListItem_W1sv,
+.col.col--6 {
+  width: calc(50% - 1rem) !important;
+  max-width: calc(50% - 1rem) !important;
+} */
+
+
+.docMainContainer_TBSr {
+  width: 100% !important;
+  display: flex !important;
+  flex-grow: 1 !important;
+}
+
+.generatedIndexPage_vN6x {
+  width: 100% !important;
+  display: flex !important;
+  flex-grow: 1 !important;
+}
+
+.docItemCol_VOVn {
+    max-width: 100% !important;
+    display: flex !important;
+  flex-grow: 1 !important;
+}
+
+.takeaway-panel {
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.panel-header {
+  background: #f2f2f2;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+.panel-body {
+  padding: 1rem;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Optimistic+Text&display=swap');
+
+html, body, * {
+  font-family: 'Optimistic Text', -apple-system, ui-sans-serif, system-ui, sans-serif, 
+               Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important;
+}
+
+
+.docCardListItem_W1sv.col.col--6 {
+  width: calc(50% - 1rem); /* adjust for gap */
+  flex: 0 0 auto;           /* don't grow/shrink */
+}
+
+/* Target the row containing the cards */
+section.row {
+  display: grid !important;               /* force grid layout */
+  grid-template-columns: repeat(2, 1fr) !important; /* 2 cards per row */
+  gap: 2rem !important;                   /* spacing between cards */
+  width: 100% !important;                 /* ensure full width */
+  max-width: 100% !important;
+}
+
+/* Ensure each card fills its grid cell */
+section.row article.docCardListItem_W1sv {
+  width: 100% !important; /* let grid manage the width */
+  margin: 0 !important;   /* remove any interfering margins */
+}
+
+.generatedIndexPage_vN6x {
+  padding: 1rem; /* not 0 */
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section.row article.docCardListItem_W1sv {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.docCardListItem_W1sv {
+  max-width: 10px !important;
+}
+
+
+/* Add this CSS to fix the 2-column card layout */
+
+/* Add this CSS to fix the 2-column card layout */
+
+/* Reset the generatedIndexPage container */
+.generatedIndexPage_vN6x {
+  width: 100% !important;
+  max-width: 1400px !important;
+  padding: 2rem !important;
+  margin: 0 0 !important;
+  box-sizing: border-box;
+}
+
+/* Force the section.row to use CSS Grid with exactly 2 columns */
+.generatedIndexPage_vN6x section.row {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 2rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Ensure each card fills its grid cell properly */
+.generatedIndexPage_vN6x article.docCardListItem_W1sv {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Reset the col classes that might interfere */
+.generatedIndexPage_vN6x .col--6 {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: none !important;
+}
+
+/* Ensure cards don't overflow */
+.generatedIndexPage_vN6x .card {
+  width: 100% !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Responsive: Stack to 1 column on smaller screens */
+@media (max-width: 768px) {
+  .generatedIndexPage_vN6x section.row {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Prevent horizontal overflow on body */
+body {
+  overflow-x: hidden;
+}
+
+.generatedIndexPage_vN6x {
+  overflow-x: hidden;
+}

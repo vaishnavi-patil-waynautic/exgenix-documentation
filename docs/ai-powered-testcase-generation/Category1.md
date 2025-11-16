@@ -9,6 +9,8 @@ slug: /ai-powered-testcase-generation/category1
 
 # Category 1: From FIX / ETI/Custom Binary API Definitions
 
+---
+
 <div class="step-block">
   <div class="step-text">
     Use Exgenix to automatically generate test cases directly from API definitions such as **FIX / ETI/Custom Binary API** or **ETI (Enhanced Trading Interface)** specifications.

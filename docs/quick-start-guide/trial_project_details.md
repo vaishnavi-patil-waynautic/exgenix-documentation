@@ -9,6 +9,8 @@ slug: /quick-start-guide/trial_project_details
 
 # Trial Project Details
 
+---
+
 <div style={{ width: "100%", margin: "20px 0" }}>
   <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
     <thead style={{ backgroundColor: "#f8f9fa" }}>
@@ -21,36 +23,36 @@ slug: /quick-start-guide/trial_project_details
     <tbody>
       <tr>
         <td style={{ padding: "10px", border: "1px solid #ddd" }} rowSpan="3">
-          Exgenix
+          `Exgenix`
         </td>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>API configuration</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`API configuration`</td>
         <td style={{ padding: "10px", border: "1px solid #ddd" }} rowSpan="3">
           Covers end-to-end exchange workflow (Order Entry → Trade → Clearing)
         </td>
       </tr>
       <tr>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Test configuration</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`Test configuration`</td>
       </tr>
       <tr>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Execution</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`Execution`</td>
       </tr>
       <tr>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>AI QA Agent</td>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Project_Trial</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`AI QA Agent`</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`Project_Trial`</td>
         <td style={{ padding: "10px", border: "1px solid #ddd" }}>
           Enables QA traceability and insights for different modules and features
         </td>
       </tr>
       <tr>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Jira</td>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Project_Trial</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`Jira`</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`Project_Trial`</td>
         <td style={{ padding: "10px", border: "1px solid #ddd" }}>
           Contains User Stories and Acceptance Criteria linked to Exgenix tests
         </td>
       </tr>
       <tr>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>ADO</td>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>Project_Trial</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`ADO`</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`Project_Trial`</td>
         <td style={{ padding: "10px", border: "1px solid #ddd" }}>
           Contains User Stories and Acceptance Criteria linked to Exgenix tests
         </td>
