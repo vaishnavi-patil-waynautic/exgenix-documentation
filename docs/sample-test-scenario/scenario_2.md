@@ -5,6 +5,7 @@ hide_table_of_contents: true
 id: scenario_2
 sidebar_label: Trade
 slug: /sample-test-scenario/scenario-2
+description: 'A complete example showing how to build and validate a full order lifecycle test'
 ---
 
 # Scenario 2: Complete Trade Flow Test Case Design

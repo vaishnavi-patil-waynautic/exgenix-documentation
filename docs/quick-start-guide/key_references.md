@@ -5,6 +5,7 @@ sidebar_position: 3
 hide_table_of_contents: true
 sidebar_label: Recommended First Steps
 slug: /quick-start-guide/recommended_first_steps
+description : 'Key References'
 ---
 
 # Recommended First Steps

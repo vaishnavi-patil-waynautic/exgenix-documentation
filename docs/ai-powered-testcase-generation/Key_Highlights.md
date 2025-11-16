@@ -5,6 +5,7 @@ sidebar_position: 5
 hide_table_of_contents: true
 sidebar_label: Key Highlights
 slug: /ai-powered-testcase-generation/key-highlight
+description: 'Unified Coverage | Full Lifecycle Integration | Configurable Outputs | Speed & Precision'
 ---
 
 

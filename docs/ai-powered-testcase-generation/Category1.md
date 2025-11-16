@@ -5,6 +5,7 @@ sidebar_position: 2
 hide_table_of_contents: true
 sidebar_label: Category 1 - From FIX / ETI/Custom Binary API Definitions
 slug: /ai-powered-testcase-generation/category1
+description: 'Automatically generate test cases directly from API definitions'
 ---
 
 # Category 1: From FIX / ETI/Custom Binary API Definitions

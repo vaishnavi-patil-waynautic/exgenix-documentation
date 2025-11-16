@@ -5,6 +5,7 @@ sidebar_position: 2
 hide_table_of_contents: true
 sidebar_label: Order placement
 slug: /sample-test-scenario/scenario-1
+desciption: 'An illustration of turning an ETI API spec into an automated Exgenix test.'
 ---
 
 

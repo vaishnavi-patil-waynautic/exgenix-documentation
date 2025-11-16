@@ -5,6 +5,7 @@ sidebar_position: 1
 hide_table_of_contents: true
 sidebar_label: Access Credentials
 slug: /quick-start-guide/access_credentials
+description : 'For exgenix | AI QA Agent | JIRA | ADO'
 ---
 
 

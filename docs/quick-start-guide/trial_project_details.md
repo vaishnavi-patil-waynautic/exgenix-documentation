@@ -5,6 +5,7 @@ sidebar_position: 2
 hide_table_of_contents: true
 sidebar_label: Trial Project Details
 slug: /quick-start-guide/trial_project_details
+description: 'Get started with trial project'
 ---
 
 # Trial Project Details

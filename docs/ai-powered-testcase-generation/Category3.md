@@ -5,6 +5,7 @@ sidebar_position: 4
 hide_table_of_contents: true
 sidebar_label: Category 3 - From User Stories Integrated via ADO or Jira
 slug: /ai-powered-testcase-generation/category3
+description: 'Connect directly to **Azure DevOps (ADO)** and **Jira** to fetch user stories and automatically generate test cases'
 ---
 
 

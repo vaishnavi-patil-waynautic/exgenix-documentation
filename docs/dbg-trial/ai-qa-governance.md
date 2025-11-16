@@ -1,5 +1,6 @@
 ---
 hide_table_of_contents: true
+description: 'AI that thinks like a QA lead — not a script'
 ---
 
 # AI-Powered Test Case Generation & Governance

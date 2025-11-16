@@ -5,6 +5,7 @@ sidebar_position: 3
 hide_table_of_contents: true
 sidebar_label: Category 2 - From Business Requirement Documents (BRD) and Impact Assessment Reports
 slug: /ai-powered-testcase-generation/category2
+description: 'Extract functional and business-level test scenarios directly from text-based or semi-structured documents'
 ---
 
 

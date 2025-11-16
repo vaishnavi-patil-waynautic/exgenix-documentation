@@ -642,7 +642,7 @@ article {
   margin: 0 !important;
 } */
 
-.generatedIndexPage_vN6x .col {
+/* .generatedIndexPage_vN6x .col { */
   /* flex: 1 1 calc(50% - 1.5rem);
   flex: 0 0 calc(50% - 0.75rem);
   max-width: calc(50% - 1.5rem);
@@ -656,9 +656,9 @@ article {
 
   /* .generatedIndexPage_vN6x .col {
     /* flex: 1 1 100%; */
-    flex: 0 0 calc(50% - 0.75rem);
+    /* flex: 0 0 calc(50% - 0.75rem);
     max-width: 100%;
-  } */
+  } */ 
 
   .step-block {
     flex-direction: column;
@@ -902,11 +902,6 @@ section.row article.docCardListItem_W1sv {
   width: 100% !important;
   margin: 0 !important;
 }
-
-.docCardListItem_W1sv {
-  max-width: 10px !important;
-}
-
 
 /* Add this CSS to fix the 2-column card layout */
 
