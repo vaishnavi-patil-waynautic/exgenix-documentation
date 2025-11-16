@@ -40,7 +40,7 @@ description: 'Automatically generate test cases directly from API definitions'
     - **Negative:** Missing tag or invalid data type
     - **Boundary:** Price or quantity at edge of configured range
     
-    📎 *Output can be exported as Excel or imported directly into API configurations for execution.*
+    📎 *Output can be exported as Excel or imported directly into [API configurations](./api-configuration) for execution.*
   </div>
   <div class="step-image">
     <h4 class="image-title">Generated Testcases</h4>

@@ -13,7 +13,7 @@ import ExampleBlock  from '@site/src/components/ExampleBlock';
 <div class="step-block">
   <div class="step-text">
 
-  API Configuration consists of **three guided steps** that walk you through the complete setup process.
+  [API Configuration](./api-configuration) consists of **three guided steps** that walk you through the complete setup process.
 
     ### Step 1: Basic Info
     
@@ -28,7 +28,7 @@ import ExampleBlock  from '@site/src/components/ExampleBlock';
        - **Custom_Data_Type**: Messages outside standard FIX / ETI/Custom Binary API
     - **Name** (Required)
       - Meaningful identifier (e.g., "New Order Single")
-    - **Unique ID**
+    - **Template ID**
       - Identifier mapped from exchange specifications
     - **Description**
       - Purpose, notes, and usage details

@@ -1,7 +1,3 @@
-# Website
-
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
-
 ## Installation
 
 ```bash
@@ -20,11 +16,12 @@ This command starts a local development server and opens up a browser window. Mo
 
 ```bash
 npm run build
+npm run serve
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Deployment
+## Deployment after pushing the code
 
 Using SSH:
 
@@ -32,11 +29,18 @@ Using SSH:
 npm run deploy
 ```
 
-Not using SSH:
+## Structure
 
-```bash
-GIT_USER=<Your GitHub user
-name> yarn deploy
-```
+- docs 
+Has all the documents i.e. `.md` files which has content
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- sidebar.js 
+Manage content in sidebar
+
+- src/pages/videos/index.js
+Video page
+
+- src/styles/custom.css
+All the styling
+
+

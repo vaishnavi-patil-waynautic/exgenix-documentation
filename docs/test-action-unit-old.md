@@ -314,7 +314,7 @@ When adding a Test Action Unit inside a test case, you must configure the datash
     
     | Column | Description |
     |--------|-------------|
-    | **API Name** | API configuration included in the unit |
+    | **API Name** | [API configuration](./api-configuration) included in the unit |
     | **Collection** | API's parent collection |
     | **Datasheet** | Choose datasheet for this step |
     | **Row No.** | Starting row to be used |

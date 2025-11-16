@@ -269,3 +269,218 @@ After configuring your datasheets:
 3. Your new configuration is now available in the selected collection  
 
 ---
+
+ <div class="container">
+      
+  ## Built-in Functions Reference
+    Concise guide to variables, sequences, randoms, math, strings, dates,
+    expressions, regex, patterns, and tips.
+
+  
+
+
+  <h4 id="quick-ref"><a class="anchor" href="#quick-ref">Quick Reference Guide</a></h4>
+
+#
+
+  <h4 id="variable-ops"><a class="anchor" href="#variable-ops">Variable Operations</a></h4>
+      <pre><code>
+      
+  `${variable_name}`                    - Get variable value
+         `${set(name, value)}`                - Set variable to value
+         `${capture(name)}`                   - Capture response value into variable
+         `${validate_or_capture(name)}`       - Validate against variable or capture if not exists
+         
+  </code></pre>
+
+  <h4 id="sequences"><a class="anchor" href="#sequences">Sequences (Auto-increment)</a></h4>
+      <pre><code>
+      
+  `${sequence(order_id)}`              - Returns: 1, 2, 3, 4...
+         `${sequence(msg_id, start=100)}`     - Returns: 100, 101, 102...
+         `${sequence(order, prefix="ORD")}`   - Returns: ORD001, ORD002, ORD003...
+         `${sequence(trans, suffix="_TX")}`   - Returns: 001_TX, 002_TX, 003_TX...
+         `${sequence(batch, increment=5)}`    - Returns: 5, 10, 15, 20...
+         `${sequence_reset(order_id)}`        - Reset sequence to start
+         `${sequence_current(order_id)}`      - Get current value without incrementing
+         
+  </code></pre>
+
+  <h4 id="random-values"><a class="anchor" href="#random-values">Random Values</a></h4>
+      <pre><code>
+      
+  `${random_int(1000, 9999)}`          - Random integer between 1000-9999
+           `${random_decimal(10.0, 99.9, 2)}`   - Random decimal with 2 decimal places
+           `${random_string(8)}`                - Random alphanumeric: "kJ8mN2pQ"
+           `${random_alpha(6)}`                 - Random letters: "ABcdEF"
+           `${random_numeric(4)}`               - Random digits: "7392"
+           `${uuid()}`                          - UUID: "a7b2c9d4-e5f6-4789-b123-456789abcdef"
+           `${uuid_short()}`                    - Short UUID: "a7b2c9d4"
+           `${pick_random(["BUY", "SELL"]) } `    - Random selection from list
+           
+  </code></pre>
+
+  <h4 id="math"><a class="anchor" href="#math">Math Operations</a></h4>
+      <pre><code>
+
+  `${add(100, 25)}`                     - Addition: 125
+         `${subtract(100, 25)}`               - Subtraction: 75
+         `${multiply(10, 5)}`                 - Multiplication: 50
+         `${divide(100, 4)}`                  - Division: 25
+         `${round(3.14159, 2)}`               - Round to decimals: 3.14
+         `${min(5, 2, 8)}`                    - Minimum: 2
+         `${max(5, 2, 8)}`                    - Maximum: 8
+         
+  </code></pre>
+
+  <h4 id="strings"><a class="anchor" href="#strings">String Operations</a></h4>
+      <pre><code>
+      
+   `${concat("USER_", "123")}`          - Join strings: "USER_123"
+         `${upper("hello")}`                  - Uppercase: "HELLO"
+         `${lower("HELLO")}`                  - Lowercase: "hello"
+         `${substring("ABCDEF", 2, 3)}`       - Extract substring: "CDE"
+         `${left("ABCDEF", 3)}`               - Left characters: "ABC"
+         `${right("ABCDEF", 3)}`              - Right characters: "DEF"
+         `${replace("hello world", "world", "there")}`- Replace: "hello there"
+         `${pad_left("42", 5, "0")}`          - Left pad: "00042"
+         `${trim("  hello  ")}`               - Remove whitespace: "hello"
+         `${length("hello")}`                 - String length: 5
+         
+</code></pre>
+
+<h4 id="datetime"><a class="anchor" href="#datetime">Date/Time</a></h4>
+      <pre><code>
+
+`${now()}`                           - Current ISO timestamp: "2025-01-15T14:30:45"
+`${now("YYYY-MM-DD")}`               - Formatted date: "2025-01-15"
+ `${now("HH:mm:ss")}`                 - Formatted time: "14:30:45"
+ `${now("YYYYMMDD")}`                 - Compact date: "20250115"
+  `${timestamp()}`                     - Unix timestamp: "1736951445"
+`${timestamp_millis()}`              - Unix timestamp (ms): "1736951445000"
+
+</code></pre>
+
+<h4 id="expressions"><a class="anchor" href="#expressions">Expressions</a></h4>
+  <pre><code>
+  
+  `${expr("100 > 50")}`                                   - Boolean: true
+       `${expr("${price} > 100 ? 'HIGH' : 'LOW'")}`           - Conditional: "HIGH" or "LOW"
+       `${expr("'VIP' if ${score} > 90 else 'REGULAR'")}`     - Python conditional
+       `${expr("${price} * ${quantity} + ${fee}")}`           - Math calculation
+       `${expr("${active} and ${verified}")}`                 - Logical AND
+       `${expr("${symbol} in ['AAPL', 'MSFT', 'GOOGL']")}`   - Check membership
+       
+  </code></pre>
+
+  <h4 id="regex"><a class="anchor" href="#regex">Regular Expressions</a></h4>
+      <pre><code>
+      
+  `${regex_match("ABC123", "[A-Z]+[0-9]+")}`              - Check pattern match: true/false
+        `${rege x_capture("ID:12345", "ID:([0-9]+)", 1)}`        - Extract group: "12345"
+        
+  </code></pre>
+
+  ---
+
+  <h2 id="common"><a class="anchor" href="#common">Common Usage Patterns</a></h2>
+
+# 
+<h4>Test Data Request</h4>
+      <pre><code>
+BodyLen,TemplateID,SessionID,OrderID,Symbol,Quantity,Price
+56,10020,`${session_id}`,`${sequence(order_id, prefix="ORD")}`,AAPL,`${random_int(10, 100)}`,`${random_decimal(140.0, 160.0, 2)}`
+
+</code></pre>
+
+  <h4>Response Validation</h4>
+      <pre><code>BodyLen,TemplateID,SessionID,OrderID,Status,ExecutionID
+56,10021,`${session_id}`,`${validate_or_capture(order_id)}`,SUCCESS,`${capture(exec_id)}`</code></pre>
+
+  <h4 id="special"><a class="anchor" href="#special">Special Validation Values</a></h4>
+      <ul class="list-tight">
+        <li>Empty string <code class="inline">""</code> – Skip validation</li>
+        <li><code class="inline">#EMPTY#</code> – Validate field is empty</li>
+        <li><code class="inline">`${capture(var)}`</code> – Only capture, no validation</li>
+        <li><code class="inline">`${validate_or_capture(var)}`</code> – Validate if exists, else capture</li>
+      </ul>
+
+  <h4 id="resolution"><a class="anchor" href="#resolution">Variable Resolution Order</a></h4>
+      <ol>
+        <li>Global User Variables (highest priority)</li>
+        <li>Test Case Variables</li>
+        <li>Runtime Variables (lowest priority)</li>
+      </ol>
+
+  ---
+
+ <h2 id="examples"><a class="anchor" href="#examples">Examples</a></h2>
+
+ #
+
+  <h4>Login Flow</h4>
+      <pre><code>
+      
+ #### Login Request
+`UserID testuser`
+  `Password pass123`
+
+ #### Login Response - Capture session
+ `SessionID: ${capture(session_id)}`
+  `Token: ${capture(auth_token)}`
+
+
+  #### Next Request - Use captured session
+  `SessionID: ${session_id}`
+ ` Token: ${auth_token}`
+
+</code>
+</pre> 
+
+   <h4>Order Creation</h4> 
+      <pre><code>
+      
+  #### Create Order Request
+  `OrderID : ${sequence(order_id, prefix="ORD", start=1000)}`
+  `Quantity :  ${random_int(10, 100)}`
+  `Price : ${random_decimal(100.0, 200.0, 2)}`
+
+  #### Order Response - Validate and capture
+  `OrderID: ${validate_or_capture(order_id)}`
+  `ExecutionID: ${capture(exec_id)}`
+
+</code></pre>
+
+  <h4>Dynamic Calculations</h4>
+      <pre><code>
+      
+`Quantity: 100`
+`Price: 50.25`
+`Commission:${expr("100 * 50.25 * 0.001")}`
+`Total: ${expr("100 * 50.25 + 5.025")}`
+`OrderType: ${expr("100 > 50 ? 'BULK' : 'RETAIL'")}`
+
+</code></pre>
+
+   <h2 id="combos"><a class="anchor" href="#combos">Function Combinations</a></h2>
+      <pre><code>
+      
+  `${concat("USER_",${random_string(6)})}`              - USER_kJ8mN2
+          `${concat(${upper("test")}, "_",${sequence(id)})}`    - TEST_1
+          `${expr("${random_int(1, 10)}* 100")}`                - Random hundreds
+          `${now("YYYY-MM-DD")} ${now("HH:mm:ss")}`              - 2025-01-15 14:30:45
+
+</code></pre>
+
+---
+
+  <h2 id="tips"><a class="anchor" href="#tips">Quick Tips</a></h2>
+      <ul class="list-tight">
+        <li>Functions return strings – use <code class="inline">`${expr()}`</code> for numeric operations</li>
+        <li>Each sequence name maintains its own counter</li>
+        <li>Variables persist across test steps within execution</li>
+        <li>Use <code class="inline">`${capture()}`</code> to store values from responses</li>
+        <li>Use <code class="inline">`${validate_or_capture()}`</code> for dynamic validation</li>
+        <li>Combine functions for complex scenarios</li>
+      </ul>
+    </div> 

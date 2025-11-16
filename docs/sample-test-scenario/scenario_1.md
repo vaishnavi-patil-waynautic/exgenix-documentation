@@ -141,7 +141,7 @@ Before starting, ensure the following:
     |------|-------|
     | **Action Type** | `TCP_IP_REQUEST` |
     | **Name** | `New Order Single (short layout)` |
-    | **Unique ID** | `101251` |
+    | **Template ID** | `101251` |
     | **Description** | Submit new limit order for equity instruments using short layout format. Supports limit orders with standard execution instructions. |
     
     Click **Next**.
@@ -380,7 +380,7 @@ Before starting, ensure the following:
     |------|-------|
     | **Action Type** | `TCP_IP_RESPONSE` |
     | **Name** | `New Order Response (Lean Order)` |
-    | **Unique ID** | `10102` |
+    | **Template ID** | `10102` |
     | **Description** | Response for validating order acceptance and execution data |
     
   </div>

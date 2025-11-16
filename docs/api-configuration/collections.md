@@ -22,7 +22,7 @@ Collections act as containers for similar or related API configurations, helping
   <div class="step-text">
     ### Creating a Collection
     
-    1. Navigate to **API Configuration**  
+    1. Navigate to [**API Configuration**](./api-configuration)  
     2. Click **+ Create Collection**  
     3. Fill in the details:  
        - **Name**: Descriptive identifier for the collection  

@@ -102,7 +102,7 @@ Reusable component containing multiple APIs configured together.
       **Configuration:**
       1. Click **+ Add Step**
       2. Select **Type**: TCP_IP_REQUEST or TCP_IP_RESPONSE or Socket_Connection
-      3. Choose the API configuration from dropdown
+      3. Choose the [API configuration](./api-configuration) from dropdown
       4. Configure settings
    </div>
 
