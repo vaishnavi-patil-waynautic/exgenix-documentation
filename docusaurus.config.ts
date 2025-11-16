@@ -21,6 +21,15 @@ const config: Config = {
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
+  // onBrokenMarkdownLinks: 'warn',
+
+  // New format for Docusaurus v2.x
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn', // or 'throw'
+    },
+  },
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
