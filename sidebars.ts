@@ -96,7 +96,6 @@ const sidebars: SidebarsConfig = {
         'dbg-trial/timeline',
         'dbg-trial/post-trial',
         'dbg-trial/commitment',
-        'dbg-trial/trial-access',
       ],
     },
 
