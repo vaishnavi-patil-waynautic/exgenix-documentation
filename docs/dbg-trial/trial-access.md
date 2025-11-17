@@ -11,6 +11,8 @@ import { AlertTriangle, Check } from 'lucide-react';
 ---
 
 ### Unified QA Governance View — Prototype Edition
+
+
 This platform is a prototype environment designed to demonstrate how Exgenix will unify QA governance across every critical subsystem of a stock exchange — from API-level validation to post-trade surveillance.  
 
 The goal of this sandbox is to showcase the intended workflow, visibility, and traceability model, not to represent final production behavior, feature completeness, or performance.

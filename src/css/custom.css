@@ -1015,7 +1015,7 @@ body {
 /* ----------------------------- */
 .menu__list .menu__list .menu__link {
   font-size: 0.95rem;      /* slightly smaller */
-  font-weight: 300;        /* make lighter */
+  font-weight: 500;        /* make lighter */
   padding-top: 6px;        /* spacing */
   padding-bottom: 6px;
   padding-left: 18px;      /* indent */
@@ -1026,7 +1026,7 @@ body {
 /* ----------------------------- */
 .menu__list .menu__list .menu__list .menu__link {
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 500;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 26px;
