@@ -31,14 +31,14 @@ import ExampleBlock from '@site/src/components/ExampleBlock'
   />
 
   <FeatureCard
-    icon="sync"
+    icon="code"
     title="Full Lifecycle Integration"
     color="#10b981"
     description={`• Auto-sync with Jira/ADO for complete traceability throughout the testing lifecycle`}
   />
 
   <FeatureCard
-    icon="file-text"
+    icon="file"
     title="Configurable Outputs"
     color="#f59e0b"
     description={`• Export to Excel for documentation

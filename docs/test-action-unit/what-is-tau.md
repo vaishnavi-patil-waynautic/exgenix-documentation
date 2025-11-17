@@ -12,6 +12,8 @@ import ExampleBlock from '@site/src/components/ExampleBlock'
 
 # What Is a Test Action Unit?
 
+---
+
 A Test Action Unit acts as a container for grouping multiple API-based steps that logically belong together.
 
 <ExampleBlock title="Examples: Common Test Flows">
@@ -23,3 +25,5 @@ A Test Action Unit acts as a container for grouping multiple API-based steps tha
     <li><strong>Order Placement</strong>: Pre-checks → Order submission → Response validation</li>
   </ul>
 </ExampleBlock>
+
+---

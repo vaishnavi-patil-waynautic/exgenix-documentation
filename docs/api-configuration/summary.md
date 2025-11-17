@@ -6,6 +6,9 @@ title: 'Summary'
 sidebar_label: Summary
 ---
 
+
+---
+
 The API Configuration module provides a comprehensive framework for defining FIX / ETI/Custom Binary API protocol-based API endpoints with precision and flexibility. By organizing configurations into collections, defining detailed message structures, and leveraging powerful datasheet capabilities, you can create reusable, maintainable test components that form the foundation of your automated testing strategy.
 
 ---

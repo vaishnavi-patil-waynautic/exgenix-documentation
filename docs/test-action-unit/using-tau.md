@@ -10,11 +10,13 @@ description: 'How to use Test Action Units in test cases'
 
 # Using Test Action Units in Test Cases
 
+---
+
 ## Adding a Test Action Unit
 
 1. Open or create a test case
-2. Click **+ Add Step**
-3. Select **TEST ACTION UNIT** in Type
+2. Click **`+ Add Step`**
+3. Select **`TEST ACTION UNIT`** in Type
 4. Choose the desired unit
 5. Configure datasheets
 
@@ -26,11 +28,11 @@ description: 'How to use Test Action Units in test cases'
     **Before (Manual Steps)**
     
     > Without Test Action Units, test cases require manually adding each individual step:
-    > - Socket Connection
-    > - Session Logon Request
-    > - Session Logon Response
-    > - User Logon Request
-    > - User Logon Response
+    > - `Socket Connection`
+    > - `Session Logon Request`
+    > - `Session Logon Response`
+    > - `User Logon Request`
+    > - `User Logon Response`
     > - Additional test steps...
 
     > This results in lengthy, repetitive test case configurations.
@@ -48,7 +50,7 @@ description: 'How to use Test Action Units in test cases'
     **After (Using Units)**
     
     > With Test Action Units, the same login flow is encapsulated in a single reusable component:
-    > - Login Test Action Unit (contains all login steps)
+    > - `Login Test Action Unit` (contains all login steps)
     > - Additional test steps...
 
     :::info
@@ -68,3 +70,5 @@ description: 'How to use Test Action Units in test cases'
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+---

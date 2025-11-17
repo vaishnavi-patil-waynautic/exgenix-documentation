@@ -11,6 +11,8 @@ description: 'Understanding test cases'
 import ExampleBlock from '@site/src/components/ExampleBlock';
 
 # Test Cases
+
+---
 #
 A **Test Case** represents a complete, executable test scenario that validates specific functionality. Each test case consists of:
 
@@ -68,3 +70,5 @@ A **Test Case** represents a complete, executable test scenario that validates s
     <li>Execution patterns</li>
     <li>Error handling configuration</li>
   </ul>
+
+  ---

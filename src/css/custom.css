@@ -9,7 +9,7 @@
   --ifm-color-primary-lighter: #6C98FA;
   --ifm-color-primary-lightest: #A8C3FD;
   --ifm-background-color: #FFFFFF;
-  --ifm-background-surface-color: #FCFAFA;
+  --ifm-background-surface-color: #fefefe;
   --ifm-toc-border-color: #E5E7EB;
   --ifm-navbar-background-color: #FFFFFF;
   --ifm-sidebar-background-color: #F9FAFB;
@@ -437,15 +437,8 @@ article {
   max-width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
+  
 }
-
-/* .docMainContainer_TBSr .row {
-  display: block !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  gap: 0 !important;
-} */
 
 .docItemCol_VOVn {
   width: 100% !important;
@@ -484,15 +477,6 @@ article {
   box-sizing: border-box;
 }
 
-
-/* .docMainContainer_TBSr .row {
-  display: block !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  gap: 0 !important;
-} */
-
 .col.docItemCol_VOVn {
   width: 100% !important;
   max-width: 100% !important;
@@ -521,15 +505,6 @@ article {
     padding: 0 2rem !important;
   }
 }
-
-
-/* .docMainContainer_TBSr .row {
-  display: block !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  gap: 0 !important;
-} */
 
 .col.docItemCol_VOVn {
   width: 100% !important;
@@ -597,7 +572,7 @@ article {
 .docMainContainer_TBSr {
   width: 100%;
   max-width: 100%;
-  /* padding: 0 10rem; */
+  padding: 0 5rem !important; 
   box-sizing: border-box;
 }
 
@@ -623,7 +598,6 @@ article {
 
 .docMainContainer_TBSr > .container {
   max-width: 100% !important;
-  padding: 0 !important;
 }
 
 .generatedIndexPage_vN6x {
@@ -734,7 +708,6 @@ a.header-anchor svg {
 .docMainContainer_TBSr,
 .docMainContainer_TBSr > .container,
 .generatedIndexPage_vN6x {
-  padding: 0 !important;
   margin: 0 !important;
 }
 
@@ -852,10 +825,13 @@ a.header-anchor svg {
   overflow: hidden;
 }
 .panel-header {
-  background: #f2f2f2;
-  padding: 0.8rem;
+  background: #e6f3fa;
+  padding: 1rem;
   cursor: pointer;
+  font-size: 20px;
+  padding-left: 1.5rem;
 }
+
 .panel-body {
   padding: 1rem;
 }
@@ -1015,4 +991,170 @@ body {
   font-weight: bold;
   color: #0070f3;
 }
+
+
+
+/* ----------------------------- */
+/*  SIDEBAR TOP-LEVEL HEADERS    */
+/* ----------------------------- */
+.menu__list-item{
+  font-size: 1.05rem;      /* increase size */
+  font-weight: 600;        /* keep bold for top level */
+  padding-top: 2px;       /* adjust as needed */
+  padding-bottom: 2px;
+}
+.menu__list-item > .menu__link {
+  font-size: 1.05rem;      /* increase size */
+  font-weight: 600;        /* keep bold for top level */
+  padding-top: 2px;       /* adjust as needed */
+  padding-bottom: 2px;
+}
+
+/* ----------------------------- */
+/*  SIDEBAR CHILD (LEVEL 2) ITEMS */
+/* ----------------------------- */
+.menu__list .menu__list .menu__link {
+  font-size: 0.95rem;      /* slightly smaller */
+  font-weight: 300;        /* make lighter */
+  padding-top: 6px;        /* spacing */
+  padding-bottom: 6px;
+  padding-left: 18px;      /* indent */
+}
+
+/* ----------------------------- */
+/*  SIDEBAR LEVEL 3 ITEMS (OPTIONAL) */
+/* ----------------------------- */
+.menu__list .menu__list .menu__list .menu__link {
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 26px;
+}
+
+/* ----------------------------- */
+/* INLINE CODE (`text`) STYLING  */
+/* ----------------------------- */
+code {
+  font-weight: 700 !important;  /* bold */
+  color: #067216 !important;    /* blue (Tailwind blue-600) */
+  padding: 3px;
+  border-radius: 4px;           
+}
+
+
+/* All sidebar text (links + category labels) */
+.menu__link,
+.menu__caret,
+.menu__link--sublist,
+.menu__list-item {
+  color: #333 !important; /* greyish black */
+}
+
+/* On hover (optional) – slightly darker */
+.menu__link:hover {
+  color: #111 !important;
+}
+
+/* Make all top-level sidebar items always dark */
+.menu__list-item > .menu__link {
+  color: #1a1a1a !important;     
+  /* font-weight: 600 !important;   */
+}
+
+/* Optional: hover even darker */
+.menu__list-item > .menu__link:hover {
+  color: #000 !important;
+}
+
+/* Active child link */
+/* .menu__link--active:not(.menu__link--sublist) {
+  color: #2563eb !important;      
+  font-weight: 600 !important;
+  padding-left: 12px !important;  
+} */
+
+/* Active parent category link */
+.menu__link--sublist.menu__link--active {
+  color: #2563eb !important;   /* blue */
+  font-weight: 700 !important;
+}
+
+.menu__link--sublist {
+  font-weight: 700 !important;
+}
+
+/* Make all markdown/MDX page links bold */
+.markdown a {
+  font-weight: 700 !important;
+}
+
+*{
+  cursor: default;
+}
+
+a{
+  cursor: pointer;
+}
+
+.theme-doc-sidebar-container{
+  cursor: pointer;
+}
+
+/* Hover effect for video cards */
+.video-box:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+  transform: translateY(-3px);
+}
+/* Center the footer content */
+.footer {
+  background-color: #191d34; /* optional */
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Align the main columns side by side */
+.footer__links {
+  display: flex;
+  justify-content: center; /* center the 2 main points */
+  gap: 120px; /* space between main points */
+  flex-wrap: wrap;
+}
+
+/* Each main point column */
+.footer__link-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center horizontally */
+  position: relative; /* needed if adding separators */
+}
+
+/* Main title styling */
+.footer__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1a64f0;
+}
+
+/* Sub-points container: horizontal layout */
+.footer__link-items .footer__link-item {
+  display: inline-block; /* arrange horizontally */
+  margin: 0 12px; /* spacing between sub-points */
+  font-size: 14px;
+}
+
+/* Sub-point links styling */
+.footer__link-item a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.footer__link-item a:hover {
+  color: #1a64f0;
+}
+
+
+
 

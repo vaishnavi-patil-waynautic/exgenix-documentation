@@ -10,7 +10,11 @@ description: 'Security and compliance features'
 
 # Security & Compliance
 
+---
+
 - **Role-Based Access:** Define customizable permissions per user type (QA, Dev, PM, Compliance).  
 - **Audit Trails:** Maintain a complete history of all actions, changes, and approvals.  
 - **Data Privacy:** Enforce secure handling and storage of sensitive trading and customer information.  
 - **Regulatory Compliance:** Built-in support for **financial industry standards**.
+
+---

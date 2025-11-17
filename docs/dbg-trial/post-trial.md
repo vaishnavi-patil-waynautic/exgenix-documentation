@@ -7,6 +7,8 @@ hide_table_of_contents: true
 
 The Waynautic team can assist with:
 
-- Extending API coverage  
+- **Extending API coverage**  
 - **Customizing the AI governance framework** to DBG’s internal QA structure.  
 - **Performance and latency simulation** in subsequent phases. 
+
+---

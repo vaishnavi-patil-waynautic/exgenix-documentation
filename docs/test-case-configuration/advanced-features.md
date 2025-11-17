@@ -10,8 +10,10 @@ description: 'Advanced test case features'
 
 import ExampleBlock from '@site/src/components/ExampleBlock';
 
-## Advanced Features
-#
+# Advanced Features
+
+---
+
 ### 1. Adding Loops
 
 <div class="step-block">
@@ -23,7 +25,7 @@ import ExampleBlock from '@site/src/components/ExampleBlock';
 
   <strong>Configuration:</strong>
   <ol>
-    <li>Click <strong>+ Add Loop</strong></li>
+    <li>Click <strong>`+ Add Loop`</strong></li>
     <li>A loop container is added with <strong>Loop Start</strong> and <strong>Loop End</strong></li>
     <li>Add steps within the loop and configure properties</li>
   </ol>
@@ -255,3 +257,5 @@ Synchronize request-response pairs while advancing requests.
 
   </div>
 </ExampleBlock>
+
+---

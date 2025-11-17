@@ -10,6 +10,9 @@ description: 'Step-by-step guide to creating Test Action Units'
 
 # Creating a Test Action Unit
 
+
+---
+
 <div class="step-block">
   <div class="step-text">
     ## Step 1: Navigate to Test Action Units
@@ -31,7 +34,7 @@ description: 'Step-by-step guide to creating Test Action Units'
   <div class="step-text">
     ## Step 2: Create Test Action Unit Collection
 
-    1. Click on **+ Create Collection**
+    1. Click on **`+ Create Collection`**
     
     2. Provide the following details:
     
@@ -47,7 +50,7 @@ description: 'Step-by-step guide to creating Test Action Units'
     > - Steps grouped inside
     > - Any prerequisites
 
-    3. Click **Create**
+    3. Click **`Create`**
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Test Action Unit Collection</h4>
@@ -63,8 +66,8 @@ description: 'Step-by-step guide to creating Test Action Units'
     ## Step 3: Define Basic Information
     
     1. Navigate to newly create collection
-    2. Click on "View" to open it
-    3. Click on "**+ Create Test Action Unit**"
+    2. Click on "`View`" to open it
+    3. Click on "**`+ Create Test Action Unit`**"
   </div>
   <div class="step-image">
     <h4 class="image-title">Test Action Unit Collection</h4>
@@ -105,7 +108,7 @@ description: 'Step-by-step guide to creating Test Action Units'
   <div class="step-text">
     ## Step 4: Add Test Steps
     
-    Once the Test Action Unit is created, you can define its step type and associate it with an API. Click **+ Add Step** to include API configurations.
+    Once the Test Action Unit is created, you can define its step type and associate it with an API. Click **`+ Add Step`** to include API configurations.
 
     You may select:
 
@@ -127,3 +130,5 @@ description: 'Step-by-step guide to creating Test Action Units'
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+---

@@ -19,27 +19,29 @@ import {
 
 # Overview
 
+---
+
 The **Test Suite & Execution** module lets you organize, schedule, and run your test cases with full control over sequencing, parallelism, and reporting. It supports on-demand and scheduled runs, real-time monitoring, and automatic report generation for every execution.The format below mirrors the structure used in the [API Configuration](./api-configuration) guide for consistency across Exgenix docs.
 
 ## Key Capabilities
 <FeatureGrid>
 
   <FeatureCard
-    icon="folder"
+    icon="layers"
     title="Test Organization"
     color="#2563eb"
     description=" Group related test cases into suites"
   />
 
   <FeatureCard
-    icon="play-circle"
+    icon="code"
     title="Batch Execution"
     color="#10b981"
     description=" Run many test cases together"
   />
 
   <FeatureCard
-    icon="cpu"
+    icon="database"
     title="Parallel Execution"
     color="#f59e0b"
     description=" Execute test cases simultaneously"
@@ -53,17 +55,19 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
   />
 
   <FeatureCard
-    icon="monitor"
+    icon="server"
     title="Execution Monitoring"
     color="#ec4899"
     description=" Real-time status tracking"
   />
 
   <FeatureCard
-    icon="bar-chart"
+    icon="file"
     title="Report Generation"
     color="#14b8a6"
     description=" Detailed, sharable post-execution reports"
   />
 
 </FeatureGrid>
+
+---

@@ -15,7 +15,7 @@ description: 'Connect directly to **Azure DevOps (ADO)** and **Jira** to fetch u
 
 <div class="step-block">
   <div class="step-text">
-    Exgenix connects directly to **Azure DevOps (ADO)** and **Jira** to fetch user stories and automatically generate test cases based on requirement narratives.
+    Exgenix connects directly to **`Azure DevOps (ADO)`** and **`Jira`** to fetch user stories and automatically generate test cases based on requirement narratives.
     
   </div>
   <div class="step-image">
@@ -55,7 +55,7 @@ description: 'Connect directly to **Azure DevOps (ADO)** and **Jira** to fetch u
   </div>
   <div class="step-image">
     <h4 class="image-title">Generated Test Cases</h4>
-    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/5.png" alt="AI-generated test cases from user stories" />
+    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/generated_testcases_3.png" alt="AI-generated test cases from user stories" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

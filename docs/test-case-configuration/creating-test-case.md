@@ -10,6 +10,8 @@ description: 'Step-by-step guide to creating test cases'
 
 # Creating a Test Case
 
+---
+
 ## Step 1: Navigate to Test Cases
 
 <div class="step-block">
@@ -19,7 +21,7 @@ description: 'Step-by-step guide to creating test cases'
     <li>Go to <strong>Test Configuration</strong> in the left navigation menu</li>
     <li>Expand and select <strong>Test Case</strong></li>
     <li>Choose a collection or create a new one</li>
-    <li>Click <strong>+ Create Test Case</strong></li>
+    <li>Click <strong>`+ Create Test Case`</strong></li>
   </ol>
 
   </div>
@@ -74,8 +76,8 @@ Reusable component containing multiple APIs configured together.
 <div class="step-block">
   <div class="step-text">
   **Configuration:**
-1. Click **+ Add Step**
-2. Select **Type**: TEST ACTION UNIT
+1. Click **`+ Add Step`**
+2. Select **Type**: `TEST ACTION UNIT`
 3. Choose the Test Action Unit from dropdown
 4. Configure settings (see Step Settings)
 5. Click **Configure** to set datasheets for each API within the unit
@@ -100,8 +102,8 @@ Reusable component containing multiple APIs configured together.
       Single API call as a test step.
 
       **Configuration:**
-      1. Click **+ Add Step**
-      2. Select **Type**: TCP_IP_REQUEST or TCP_IP_RESPONSE or Socket_Connection
+      1. Click **`+ Add Step`**
+      2. Select **Type**: `TCP IP Request` or `TCP IP Response` or `Socket Connection`
       3. Choose the [API configuration](./api-configuration) from dropdown
       4. Configure settings
    </div>
@@ -113,3 +115,5 @@ Reusable component containing multiple APIs configured together.
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+---

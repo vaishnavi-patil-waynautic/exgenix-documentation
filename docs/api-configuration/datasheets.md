@@ -8,15 +8,16 @@ sidebar_label: Datasheets
 
 import ExampleBlock  from '@site/src/components/ExampleBlock';
 
+---
 
 ### What Are Datasheets?
 Datasheets are data tables linked to API configurations where:
-- **Columns** represent FIX / ETI/Custom Binary API fields
+- **Columns** represent `FIX / ETI/Custom Binary API` fields
 - **Rows** represent data sets or test iterations
 
 
 ### Capabilities
-
+#
 
 > **Manage Static Test Data**  
 
@@ -114,10 +115,64 @@ Click **+ Add Row** to create additional test iterations. Each row represents on
 
 ---
 
+
+<div class="step-block">
+  <div class="step-text">
+    ### Importing and Exporting Datasheets
+    ##
+    #### **Exporting Datasheets**
+    1. Click `Export Excel` button
+    2. The current datasheet structure and data are exported to an Excel file
+    
+    > **Use cases:**
+    > - Back up your test data
+    > - Share datasheets with team members
+    > - Edit data offline in Excel
+    > - Create templates for similar configurations
+    
+    #### **Importing Datasheets**
+    1. Click `Import Excel` button
+    2. Select an Excel file from your computer
+    3. Ensure your file meets these requirements:
+          - Same number of columns as the current datasheet
+          - Matching column headers (FIX / ETI/Custom Binary API tag names must match exactly)
+          - Compatible data types in each column
+    4. Exgenix validates the file and imports the data
+          - All existing rows are replaced with imported data
+    
+    > **Use Cases**
+    > - Bulk data entry from external sources  
+    > - Migrating data from other test tools  
+    > - Loading datasets prepared by business analysts  
+    > - Efficiently loading large datasets (100+ rows)  
+  </div>
+  <div class="step-image">
+    <h4 class="image-title">Import/Export Datasheets</h4>
+    <img src="/exgenix-documentation/img/api_config/7.png" alt="Import and Export Excel datasheets" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+</div>
+
+---
+
+:::tip
+**Import Best Practices**
+
+- Always export your current datasheet before importing to create a backup  
+- Validate your Excel data before importing  
+- Use consistent data formats (dates, numbers, strings)  
+- Test with a small import first to verify compatibility  
+:::
+
+
+
+---
+
+
 ### Dynamic Functions
 Use dynamic functions to generate values at runtime. Functions must start with the = symbol.
 
-## **Common Functions**
+### **Common Functions**
 
 | Function | Description | Example |
 |-----------|-------------|----------|
@@ -208,57 +263,115 @@ When a test case executes multiple times, you can control how data is consumed:
 
 ---
 
-<div class="step-block">
-  <div class="step-text">
-    ### Importing and Exporting Datasheets
-    ##
-    #### **Exporting Datasheets**
-    1. Click `Export Excel` button
-    2. The current datasheet structure and data are exported to an Excel file
-    
-    > **Use cases:**
-    > - Back up your test data
-    > - Share datasheets with team members
-    > - Edit data offline in Excel
-    > - Create templates for similar configurations
-    
-    #### **Importing Datasheets**
-    1. Click `Import Excel` button
-    2. Select an Excel file from your computer
-    3. Ensure your file meets these requirements:
-          - Same number of columns as the current datasheet
-          - Matching column headers (FIX / ETI/Custom Binary API tag names must match exactly)
-          - Compatible data types in each column
-    4. Exgenix validates the file and imports the data
-          - All existing rows are replaced with imported data
-    
-    > **Use Cases**
-    > - Bulk data entry from external sources  
-    > - Migrating data from other test tools  
-    > - Loading datasets prepared by business analysts  
-    > - Efficiently loading large datasets (100+ rows)  
-  </div>
-  <div class="step-image">
-    <h4 class="image-title">Import/Export Datasheets</h4>
-    <img src="/exgenix-documentation/img/api_config/7.png" alt="Import and Export Excel datasheets" />
-    <p class="image-caption">🖱️ Click to expand image</p>
-  </div>
-</div>
+## Built-in Functions
+#
+
+### Variable Operations
+
+| Function | Description |
+|----------|-------------|
+| `${variable_name}` | Get variable value |
+| `${set(name, value)}` | Set variable to value |
+| `${capture(name)}` | Capture response value into variable |
+| `${validate_or_capture(name)}` | Validate against variable or capture if not exists |
 
 ---
 
-:::tip
-**Import Best Practices**
+### Sequences (Auto-increment)
 
-- Always export your current datasheet before importing to create a backup  
-- Validate your Excel data before importing  
-- Use consistent data formats (dates, numbers, strings)  
-- Test with a small import first to verify compatibility  
-:::
-
-
+| Function | Description |
+|----------|-------------|
+| `${sequence(order_id)}` | Returns: 1, 2, 3, 4... |
+| `${sequence(msg_id, start=100)}` | Returns: 100, 101, 102... |
+| `${sequence(order, prefix="ORD")}` | Returns: ORD001, ORD002, ORD003... |
+| `${sequence(trans, suffix="_TX")}` | Returns: 001_TX, 002_TX, 003_TX... |
+| `${sequence(batch, increment=5)}` | Returns: 5, 10, 15, 20... |
+| `${sequence_reset(order_id)}` | Reset sequence to start |
+| `${sequence_current(order_id)}` | Get current value without incrementing |
 
 ---
+
+### Random Values
+
+| Function | Description |
+|----------|-------------|
+| `${random_int(1000, 9999)}` | Random integer between 1000-9999 |
+| `${random_decimal(10.0, 99.9, 2)}` | Random decimal with 2 decimal places |
+| `${random_string(8)}` | Random alphanumeric: "kJ8mN2pQ" |
+| `${random_alpha(6)}` | Random letters: "ABcdEF" |
+| `${random_numeric(4)}` | Random digits: "7392" |
+| `${uuid()}` | UUID: "a7b2c9d4-e5f6-4789-b123-456789abcdef" |
+| `${uuid_short()}` | Short UUID: "a7b2c9d4" |
+| `${pick_random(["BUY", "SELL"])}` | Random selection from list |
+
+---
+
+### Math Operations
+
+| Function | Description |
+|----------|-------------|
+| `${add(100, 25)}` | Addition: 125 |
+| `${subtract(100, 25)}` | Subtraction: 75 |
+| `${multiply(10, 5)}` | Multiplication: 50 |
+| `${divide(100, 4)}` | Division: 25 |
+| `${round(3.14159, 2)}` | Round to decimals: 3.14 |
+| `${min(5, 2, 8)}` | Minimum: 2 |
+| `${max(5, 2, 8)}` | Maximum: 8 |
+
+---
+
+### String Operations
+
+| Function | Description |
+|----------|-------------|
+| `${concat("USER_", "123")}` | Join strings: "USER_123" |
+| `${upper("hello")}` | Uppercase: "HELLO" |
+| `${lower("HELLO")}` | Lowercase: "hello" |
+| `${substring("ABCDEF", 2, 3)}` | Extract substring: "CDE" |
+| `${left("ABCDEF", 3)}` | Left characters: "ABC" |
+| `${right("ABCDEF", 3)}` | Right characters: "DEF" |
+| `${replace("hello world", "world", "there")}` | Replace: "hello there" |
+| `${pad_left("42", 5, "0")}` | Left pad: "00042" |
+| `${trim("  hello  ")}` | Remove whitespace: "hello" |
+| `${length("hello")}` | String length: 5 |
+
+---
+
+### Date/Time
+
+| Function | Description |
+|----------|-------------|
+| `${now()}` | Current ISO timestamp: "2025-01-15T14:30:45" |
+| `${now("YYYY-MM-DD")}` | Formatted date: "2025-01-15" |
+| `${now("HH:mm:ss")}` | Formatted time: "14:30:45" |
+| `${now("YYYYMMDD")}` | Compact date: "20250115" |
+| `${timestamp()}` | Unix timestamp: "1736951445" |
+| `${timestamp_millis()}` | Unix timestamp (ms): "1736951445000" |
+
+---
+
+### Expressions
+
+| Function | Description |
+|----------|-------------|
+| `${expr("100 > 50")}` | Boolean: true |
+| `${expr("${price} > 100 ? 'HIGH' : 'LOW'")}` | Conditional: "HIGH" or "LOW" |
+| `${expr("'VIP' if ${score} > 90 else 'REGULAR'")}` | Python conditional |
+| `${expr("${price} * ${quantity} + ${fee}")}` | Math calculation |
+| `${expr("${active} and ${verified}")}` | Logical AND |
+| `${expr("${symbol} in ['AAPL', 'MSFT', 'GOOGL']")}` | Check membership |
+
+---
+
+### Regular Expressions
+
+| Function | Description |
+|----------|-------------|
+| `${regex_match("ABC123", "[A-Z]+[0-9]+")}` | Check pattern match: true/false |
+| `${regex_capture("ID:12345", "ID:([0-9]+)", 1)}` | Extract group: "12345" |
+ 
+
+ ---
 
 ### **Completing API Configuration**
 
@@ -270,207 +383,85 @@ After configuring your datasheets:
 
 ---
 
- <div class="container">
-      
-  ## Built-in Functions Reference
-    Concise guide to variables, sequences, randoms, math, strings, dates,
-    expressions, regex, patterns, and tips.
+## Common Usage Patterns
 
-  
+### Test Data Request
 
+| BodyLen | TemplateID | SessionID | OrderID | Symbol | Quantity | Price |
+|---------|------------|-----------|---------|--------|----------|-------|
+| 56      | 10020      | `${session_id}` | `${sequence(order_id, prefix="ORD")}` | AAPL | `${random_int(10, 100)}` | `${random_decimal(140.0, 160.0, 2)}` |
 
-  <h4 id="quick-ref"><a class="anchor" href="#quick-ref">Quick Reference Guide</a></h4>
+---
 
-#
+### Response Validation
 
-  <h4 id="variable-ops"><a class="anchor" href="#variable-ops">Variable Operations</a></h4>
-      <pre><code>
-      
-  `${variable_name}`                    - Get variable value
-         `${set(name, value)}`                - Set variable to value
-         `${capture(name)}`                   - Capture response value into variable
-         `${validate_or_capture(name)}`       - Validate against variable or capture if not exists
-         
-  </code></pre>
+| BodyLen | TemplateID | SessionID | OrderID | Status | ExecutionID |
+|---------|------------|-----------|---------|--------|-------------|
+| 56      | 10021      | `${session_id}` | `${validate_or_capture(order_id)}` | SUCCESS | `${capture(exec_id)}` |
 
-  <h4 id="sequences"><a class="anchor" href="#sequences">Sequences (Auto-increment)</a></h4>
-      <pre><code>
-      
-  `${sequence(order_id)}`              - Returns: 1, 2, 3, 4...
-         `${sequence(msg_id, start=100)}`     - Returns: 100, 101, 102...
-         `${sequence(order, prefix="ORD")}`   - Returns: ORD001, ORD002, ORD003...
-         `${sequence(trans, suffix="_TX")}`   - Returns: 001_TX, 002_TX, 003_TX...
-         `${sequence(batch, increment=5)}`    - Returns: 5, 10, 15, 20...
-         `${sequence_reset(order_id)}`        - Reset sequence to start
-         `${sequence_current(order_id)}`      - Get current value without incrementing
-         
-  </code></pre>
+---
 
-  <h4 id="random-values"><a class="anchor" href="#random-values">Random Values</a></h4>
-      <pre><code>
-      
-  `${random_int(1000, 9999)}`          - Random integer between 1000-9999
-           `${random_decimal(10.0, 99.9, 2)}`   - Random decimal with 2 decimal places
-           `${random_string(8)}`                - Random alphanumeric: "kJ8mN2pQ"
-           `${random_alpha(6)}`                 - Random letters: "ABcdEF"
-           `${random_numeric(4)}`               - Random digits: "7392"
-           `${uuid()}`                          - UUID: "a7b2c9d4-e5f6-4789-b123-456789abcdef"
-           `${uuid_short()}`                    - Short UUID: "a7b2c9d4"
-           `${pick_random(["BUY", "SELL"]) } `    - Random selection from list
-           
-  </code></pre>
+### Special Validation Values
 
-  <h4 id="math"><a class="anchor" href="#math">Math Operations</a></h4>
-      <pre><code>
+| Value | Meaning |
+|-------|---------|
+| `""` | Empty string – Skip validation |
+| `#EMPTY#` | Validate field is empty |
+| `${capture(var)}` | Only capture, no validation |
+| `${validate_or_capture(var)}` | Validate if exists, else capture |
 
-  `${add(100, 25)}`                     - Addition: 125
-         `${subtract(100, 25)}`               - Subtraction: 75
-         `${multiply(10, 5)}`                 - Multiplication: 50
-         `${divide(100, 4)}`                  - Division: 25
-         `${round(3.14159, 2)}`               - Round to decimals: 3.14
-         `${min(5, 2, 8)}`                    - Minimum: 2
-         `${max(5, 2, 8)}`                    - Maximum: 8
-         
-  </code></pre>
+---
 
-  <h4 id="strings"><a class="anchor" href="#strings">String Operations</a></h4>
-      <pre><code>
-      
-   `${concat("USER_", "123")}`          - Join strings: "USER_123"
-         `${upper("hello")}`                  - Uppercase: "HELLO"
-         `${lower("HELLO")}`                  - Lowercase: "hello"
-         `${substring("ABCDEF", 2, 3)}`       - Extract substring: "CDE"
-         `${left("ABCDEF", 3)}`               - Left characters: "ABC"
-         `${right("ABCDEF", 3)}`              - Right characters: "DEF"
-         `${replace("hello world", "world", "there")}`- Replace: "hello there"
-         `${pad_left("42", 5, "0")}`          - Left pad: "00042"
-         `${trim("  hello  ")}`               - Remove whitespace: "hello"
-         `${length("hello")}`                 - String length: 5
-         
-</code></pre>
+### Variable Resolution Order
 
-<h4 id="datetime"><a class="anchor" href="#datetime">Date/Time</a></h4>
-      <pre><code>
+1. Global User Variables (highest priority)  
+2. Test Case Variables  
+3. Runtime Variables (lowest priority)  
 
-`${now()}`                           - Current ISO timestamp: "2025-01-15T14:30:45"
-`${now("YYYY-MM-DD")}`               - Formatted date: "2025-01-15"
- `${now("HH:mm:ss")}`                 - Formatted time: "14:30:45"
- `${now("YYYYMMDD")}`                 - Compact date: "20250115"
-  `${timestamp()}`                     - Unix timestamp: "1736951445"
-`${timestamp_millis()}`              - Unix timestamp (ms): "1736951445000"
+---
 
-</code></pre>
+## Examples
 
-<h4 id="expressions"><a class="anchor" href="#expressions">Expressions</a></h4>
-  <pre><code>
-  
-  `${expr("100 > 50")}`                                   - Boolean: true
-       `${expr("${price} > 100 ? 'HIGH' : 'LOW'")}`           - Conditional: "HIGH" or "LOW"
-       `${expr("'VIP' if ${score} > 90 else 'REGULAR'")}`     - Python conditional
-       `${expr("${price} * ${quantity} + ${fee}")}`           - Math calculation
-       `${expr("${active} and ${verified}")}`                 - Logical AND
-       `${expr("${symbol} in ['AAPL', 'MSFT', 'GOOGL']")}`   - Check membership
-       
-  </code></pre>
+### Login Flow
 
-  <h4 id="regex"><a class="anchor" href="#regex">Regular Expressions</a></h4>
-      <pre><code>
-      
-  `${regex_match("ABC123", "[A-Z]+[0-9]+")}`              - Check pattern match: true/false
-        `${rege x_capture("ID:12345", "ID:([0-9]+)", 1)}`        - Extract group: "12345"
-        
-  </code></pre>
+| Step | Details |
+|------|--------|
+| Login Request | `UserID testuser`<br/>`Password pass123` |
+| Login Response - Capture session | `SessionID: ${capture(session_id)}`<br/>`Token: ${capture(auth_token)}` |
+| Next Request - Use captured session | `SessionID: ${session_id}`<br/>`Token: ${auth_token}` |
 
-  ---
+---
 
-  <h2 id="common"><a class="anchor" href="#common">Common Usage Patterns</a></h2>
+### Order Creation
 
-# 
-<h4>Test Data Request</h4>
-      <pre><code>
-BodyLen,TemplateID,SessionID,OrderID,Symbol,Quantity,Price
-56,10020,`${session_id}`,`${sequence(order_id, prefix="ORD")}`,AAPL,`${random_int(10, 100)}`,`${random_decimal(140.0, 160.0, 2)}`
+| Step | Details |
+|------|--------|
+| Create Order Request | `OrderID : ${sequence(order_id, prefix="ORD", start=1000)}`<br/>`Quantity : ${random_int(10, 100)}`<br/>`Price : ${random_decimal(100.0, 200.0, 2)}` |
+| Order Response - Validate and capture | `OrderID: ${validate_or_capture(order_id)}`<br/>`ExecutionID: ${capture(exec_id)}` |
 
-</code></pre>
+---
 
-  <h4>Response Validation</h4>
-      <pre><code>BodyLen,TemplateID,SessionID,OrderID,Status,ExecutionID
-56,10021,`${session_id}`,`${validate_or_capture(order_id)}`,SUCCESS,`${capture(exec_id)}`</code></pre>
+### Dynamic Calculations
 
-  <h4 id="special"><a class="anchor" href="#special">Special Validation Values</a></h4>
-      <ul class="list-tight">
-        <li>Empty string <code class="inline">""</code> – Skip validation</li>
-        <li><code class="inline">#EMPTY#</code> – Validate field is empty</li>
-        <li><code class="inline">`${capture(var)}`</code> – Only capture, no validation</li>
-        <li><code class="inline">`${validate_or_capture(var)}`</code> – Validate if exists, else capture</li>
-      </ul>
+| Variable | Calculation |
+|----------|------------|
+| Quantity | 100 |
+| Price | 50.25 |
+| Commission | `${expr("100 * 50.25 * 0.001")}` |
+| Total | `${expr("100 * 50.25 + 5.025")}` |
+| OrderType | `${expr("100 > 50 ? 'BULK' : 'RETAIL'")}` |
 
-  <h4 id="resolution"><a class="anchor" href="#resolution">Variable Resolution Order</a></h4>
-      <ol>
-        <li>Global User Variables (highest priority)</li>
-        <li>Test Case Variables</li>
-        <li>Runtime Variables (lowest priority)</li>
-      </ol>
+---
 
-  ---
+## Function Combinations
 
- <h2 id="examples"><a class="anchor" href="#examples">Examples</a></h2>
+| Function | Result |
+|----------|--------|
+| `${concat("USER_", ${random_string(6)})}` | USER_kJ8mN2 |
+| `${concat(${upper("test")}, "_", ${sequence(id)})}` | TEST_1 |
+| `${expr("${random_int(1, 10)}* 100")}` | Random hundreds |
+| `${now("YYYY-MM-DD")} ${now("HH:mm:ss")}` | 2025-01-15 14:30:45 |
 
- #
-
-  <h4>Login Flow</h4>
-      <pre><code>
-      
- #### Login Request
-`UserID testuser`
-  `Password pass123`
-
- #### Login Response - Capture session
- `SessionID: ${capture(session_id)}`
-  `Token: ${capture(auth_token)}`
-
-
-  #### Next Request - Use captured session
-  `SessionID: ${session_id}`
- ` Token: ${auth_token}`
-
-</code>
-</pre> 
-
-   <h4>Order Creation</h4> 
-      <pre><code>
-      
-  #### Create Order Request
-  `OrderID : ${sequence(order_id, prefix="ORD", start=1000)}`
-  `Quantity :  ${random_int(10, 100)}`
-  `Price : ${random_decimal(100.0, 200.0, 2)}`
-
-  #### Order Response - Validate and capture
-  `OrderID: ${validate_or_capture(order_id)}`
-  `ExecutionID: ${capture(exec_id)}`
-
-</code></pre>
-
-  <h4>Dynamic Calculations</h4>
-      <pre><code>
-      
-`Quantity: 100`
-`Price: 50.25`
-`Commission:${expr("100 * 50.25 * 0.001")}`
-`Total: ${expr("100 * 50.25 + 5.025")}`
-`OrderType: ${expr("100 > 50 ? 'BULK' : 'RETAIL'")}`
-
-</code></pre>
-
-   <h2 id="combos"><a class="anchor" href="#combos">Function Combinations</a></h2>
-      <pre><code>
-      
-  `${concat("USER_",${random_string(6)})}`              - USER_kJ8mN2
-          `${concat(${upper("test")}, "_",${sequence(id)})}`    - TEST_1
-          `${expr("${random_int(1, 10)}* 100")}`                - Random hundreds
-          `${now("YYYY-MM-DD")} ${now("HH:mm:ss")}`              - 2025-01-15 14:30:45
-
-</code></pre>
 
 ---
 
@@ -483,4 +474,4 @@ BodyLen,TemplateID,SessionID,OrderID,Symbol,Quantity,Price
         <li>Use <code class="inline">`${validate_or_capture()}`</code> for dynamic validation</li>
         <li>Combine functions for complex scenarios</li>
       </ul>
-    </div> 
+

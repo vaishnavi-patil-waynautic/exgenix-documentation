@@ -9,6 +9,8 @@ description: 'Summary of Test Case & Configuration module'
 ---
 
 # Summary
+---
+
 The Test Case & Configuration module enables:  
 ✓ **Flexible Step Sequencing** – Mix Test Action Units and individual APIs  
 ✓ **Advanced Session Management** – Single or multiple sessions  
@@ -34,3 +36,5 @@ The Test Case & Configuration module enables:
   
 #
 Mastering test case configuration lets you validate complex business workflows with precision and maintainability.
+
+---

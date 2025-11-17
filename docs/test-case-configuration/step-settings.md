@@ -11,8 +11,7 @@ description: 'Configuring step settings'
 import ExampleBlock from '@site/src/components/ExampleBlock';
 
 # Step Settings
-#
-> ## Step Settings
+
 
 For each step, configure the following:
 
@@ -21,7 +20,7 @@ For each step, configure the following:
 > ## Description
 
 - Brief explanation of what this step does
-- Example: "Submit new order with limit price"
+- Example: "`Submit new order with limit price`"
 
 ---
 
@@ -44,12 +43,12 @@ For each step, configure the following:
     <tbody>
       <tr>
         <td><strong>Continuous (Same Session)</strong></td>
-        <td>All steps use the same session</td>
+        <td>All steps use the `same session`</td>
         <td>Standard workflow where all operations belong to one session</td>
       </tr>
       <tr>
         <td><strong>Different Sessions</strong></td>
-        <td>Each iteration uses a new session</td>
+        <td>Each iteration uses `a new session`</td>
         <td>Session isolation or multi-user scenarios</td>
       </tr>
     </tbody>
@@ -121,7 +120,7 @@ Associate a datasheet with the step.
   <div class="step-text">
 
 **For Test Action Unit Steps:**
-1. Click **Configure**
+1. Click **`Configure`**
 2. A modal lists all APIs within the unit
 3. Select a datasheet and row number for each API
 4. Save configuration
@@ -199,7 +198,7 @@ Associate a datasheet with the step.
   <p><strong>Usage:</strong></p>
   <ul>
     <li><strong>Row 1</strong> – Start at base row</li>
-    <li><strong>Row 2+</strong> – Skip to a specific row</li>
+    <li><strong>Row 2</strong> – Skip to a specific row</li>
   </ul>
 
   <ExampleBlock title="Examples">
@@ -264,3 +263,5 @@ Associate a datasheet with the step.
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+---

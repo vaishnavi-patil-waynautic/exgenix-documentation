@@ -10,6 +10,8 @@ description: 'Best practices for test case configuration'
 
 # Best Practices
 
+---
+
 <div class="collapsible-card-div">
 
   <details class="green-collapsible">

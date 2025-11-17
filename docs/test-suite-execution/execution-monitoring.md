@@ -10,6 +10,7 @@ description: 'Real-time execution monitoring capabilities'
 
 # Execution Monitoring
 
+---
 <div class="step-block">
   <div class="step-text">
     ## Real-Time Progress
@@ -34,3 +35,5 @@ description: 'Real-time execution monitoring capabilities'
     
   </div>
 </div>
+
+---

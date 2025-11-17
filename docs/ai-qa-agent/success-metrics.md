@@ -10,8 +10,9 @@ description: 'Success metrics and organizational outcomes'
 
 # Success Metrics
 
+---
+
 :::success
-## Success Metrics
 
 Organizations using AI QA Agent report:
 
@@ -23,3 +24,5 @@ Organizations using AI QA Agent report:
 - **90% reduction** in manual documentation effort
 
 :::
+
+---

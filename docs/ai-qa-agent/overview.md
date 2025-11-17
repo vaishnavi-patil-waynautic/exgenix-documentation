@@ -10,4 +10,8 @@ description: 'Overview of Waynautic AI QA Agent capabilities'
 
 # Overview
 
+---
+
 Waynautic's AI QA Agent integrates with Exgenix to transform QA governance for stock exchanges, providing intelligent test case generation, comprehensive traceability, and real-time insights across the entire testing lifecycle.
+
+---

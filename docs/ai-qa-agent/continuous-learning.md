@@ -10,6 +10,8 @@ description: 'How the AI QA Agent continuously learns and improves'
 
 # Continuous Learning & Improvement
 
+---
+
 The **AI QA Agent** employs advanced machine learning continuously improve:
 
 
@@ -54,3 +56,5 @@ The **AI QA Agent** employs advanced machine learning continuously improve:
   </details>
 
 </div>
+
+---

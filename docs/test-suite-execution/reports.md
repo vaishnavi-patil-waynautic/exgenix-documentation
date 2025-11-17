@@ -10,12 +10,14 @@ description: 'Understanding test execution reports'
 
 # Reports
 
+---
+
 <div class="step-block">
   <div class="step-text">
-    After completion, you're automatically redirected to **Reports**.
+    After completion, you're automatically redirected to **``Reports``**.
     
     ## Access
-    - **From Execution**: Auto-redirect or **View Report** link
+    - **From Execution**: Auto-redirect or **`View Report`** link
     - **From Reports Module**: Navigate to **Reports** → filter by suite, date, status, user
     
     Reports provide comprehensive execution details and are generated automatically after each run.
@@ -145,3 +147,5 @@ description: 'Understanding test execution reports'
     - **Excel**: For data analysis
     - **JSON**: For integration with other tools
     - **HTML**: For web publishing
+
+    ---

@@ -7,17 +7,47 @@ sidebar_label: Recommended First Steps
 slug: /quick-start-guide/recommended_first_steps
 description : 'Key References'
 ---
+import {Video } from 'lucide-react';
+
 
 # Recommended First Steps
 
+To begin your evaluation smoothly, please follow the steps below:
+
 ---
 
-1. Login to all platforms using the credentials above.  
-2. Review the project in `Jira/ADO` — identify linked test cases and user stories.  
-3. Explore the following resources or sample test scenarios:
-    - `Scenario 1` : [**Order placement**](./sample-test-scenario/scenario-1)
-    - `Scenario 2` : [**Trade**](./sample-test-scenario/scenario-2)
-    - [**AI QA Agent Walkthrough**](./ai-qa-agent) | - 🎥[**AI QA Agent Video**](/videos#qa_agent)
-        - `Use case 1` - [**Exchange Adds New Order Type**](./ai-qa-agent/usecase1)
-        - `Use case 2` - [**New Compliance Rule Affects Risk Calculations**](./ai-qa-agent/usecase2)
-        - `Use case 3` - [**Project Manager Needs Go-Live Approval**](./ai-qa-agent/usecase3)
+## 1️. Access & Login
+
+Use the provided credentials to log in to all relevant platforms and confirm successful access.
+
+---
+
+## 2️. Review Linked Project Assets
+
+Navigate to the assigned project in JIRA / Azure DevOps and:
+
+- Review linked requirements, user stories, and generated test cases  
+- Observe traceability and organization structure  
+
+---
+
+## 3️. Explore Product Video References
+
+We recommend watching the following short video guides to understand workflow, navigation, and capabilities:
+
+| Category | Reference |
+|----------|----------|
+| **Exgenix** | a. `AI Test Case Generation using BRD` — [link](/videos#brd) <br/> b. `AI Test Case Generation using FIX API Definition` — [link](/videos#fix) |
+| **Waynautic AI QA Agent** | [link](/videos#qa_agent) |
+
+---
+
+## 4️. Hands-On With Sample Scenarios
+
+Use the prepared scenarios as a reference to validate platform behavior & expected workflow:
+
+| Scenario | Description | Link |
+|----------|------------|------|
+| `Exgenix Scenario 1` | Order Placement | [link](../sample-test-scenario/scenario-1) |
+| `Exgenix Scenario 2` | Trade Workflow | [link](../sample-test-scenario/scenario-2) |
+| `Quick Start` - QA Governance | Waynautic AI QA Agent | [link](../ai-qa-agent) |

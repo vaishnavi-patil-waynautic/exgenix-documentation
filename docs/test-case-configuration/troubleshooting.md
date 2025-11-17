@@ -10,6 +10,7 @@ description: 'Troubleshooting common issues'
 
 # Troubleshooting
 #
+---
 
 <div class="collapsible-card-div">
   <details class="green-collapsible">

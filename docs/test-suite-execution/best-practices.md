@@ -10,6 +10,7 @@ description: 'Best practices for test suite management'
 
 # Best Practices
 #
+---
 <div class="collapsible-card-div">
 
   <details class="green-collapsible">

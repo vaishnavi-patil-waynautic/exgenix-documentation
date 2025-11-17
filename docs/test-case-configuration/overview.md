@@ -15,11 +15,13 @@ import {
 
 # Overview
 
+---
+
 The **Test Case & Configuration** module is where you design and orchestrate complete test execution flows in Exgenix. It enables you to sequence API calls, incorporate Test Action Units, manage test data, configure session behavior, and define execution patterns to create comprehensive test scenarios.
 
 <FeatureGrid>
   <FeatureCard
-    icon="flow"
+    icon="layers"
     title="Flow Design"
     description="Create sequential or iterative test workflows for precise automation control"
     color="#2563eb"
@@ -43,7 +45,7 @@ The **Test Case & Configuration** module is where you design and orchestrate com
     color="#8b5cf6"
   />
   <FeatureCard
-    icon="alert-circle"
+    icon="code"
     title="Error Handling"
     description="Define step failure behavior to ensure predictable and robust test execution"
     color="#ec4899"
@@ -55,9 +57,11 @@ The **Test Case & Configuration** module is where you design and orchestrate com
     color="#14b8a6"
   />
   <FeatureCard
-    icon="shuffle"
+    icon="file"
     title="Flexibility"
     description="Mix and match components to create any test scenario efficiently"
     color="#f87171"
   />
 </FeatureGrid>
+
+---

@@ -19,3 +19,5 @@ hide_table_of_contents: true
 - [ Core Modules](exgenix/core-modules.md)
 - [ Key Advantages](exgenix/key-advantages.md)
 - [Key Value Propositions](exgenix/value-propositions.md)
+
+---

@@ -6,6 +6,8 @@ title: 'Best Practices'
 sidebar_label: Best Practices
 ---
 
+---
+
 <!-- ### Naming Conventions
 
 #### Collections

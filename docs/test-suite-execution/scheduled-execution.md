@@ -15,6 +15,8 @@ import {
 
 # Scheduled Execution
 
+---
+
 ## Configuring Schedules
 #
 When creating or editing a suite:
@@ -32,14 +34,14 @@ When creating or editing a suite:
   />
 
   <FeatureCard
-    icon="calendar-days"
+    icon="calendar"
     title="Weekly Schedule"
     description="Configure weekly execution by selecting specific days of the week, setting execution time, defining recurrence patterns, and managing notification recipients."
     color="#10b981"
   />
 
   <FeatureCard
-    icon="calendar-range"
+    icon="calendar"
     title="Monthly Schedule"
     description="Configure monthly execution by choosing specific date(s) of the month, selecting execution time, handling month-end scenarios, and setting recurring patterns."
     color="#f59e0b"
@@ -66,3 +68,5 @@ Available notification channels:
 - **Dashboard**: Real-time updates in Exgenix
 
 :::
+
+---

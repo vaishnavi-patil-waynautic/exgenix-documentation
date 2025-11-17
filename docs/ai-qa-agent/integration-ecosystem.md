@@ -10,17 +10,21 @@ description: 'Integration ecosystem and supported platforms'
 
 # Integration Ecosystem
 
+---
+
 > **Requirements Management:**  
-- JIRA: Automatic requirement sync and bidirectional updates  
-- Azure DevOps (ADO): User story integration and test case mapping  
+- `JIRA`: Automatic requirement sync and bidirectional updates  
+- `Azure DevOps (ADO)`: User story integration and test case mapping  
 
 > **Test Automation:**  
-- Exgenix: Native integration for automated test execution and reporting  
+- `Exgenix`: Native integration for automated test execution and reporting  
 
 > **Release Management:**  
-- Release Notes: Link test cases to specific releases  
-- Change Requests: Track impact of changes on test coverage  
+- `Release Notes`: Link test cases to specific releases  
+- `Change Requests`: Track impact of changes on test coverage  
 
 > **Historical Data:**  
-- Defect History: Import and analyze historical defects with reported dates  
-- Trend Analysis: Long-term quality and coverage trends
+- `Defect History`: Import and analyze historical defects with reported dates  
+- `Trend Analysis`: Long-term quality and coverage trends
+
+---

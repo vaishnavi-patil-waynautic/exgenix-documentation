@@ -20,16 +20,17 @@ import ExampleBlock from '@site/src/components/ExampleBlock'
 
 # Test Suite & Execution Module – User Guide
 
+---
+
 The **Test Suite & Execution** module lets you organize, schedule, and run your test cases with full control over sequencing, parallelism, and reporting. It supports on-demand and scheduled runs, real-time monitoring, and automatic report generation for every execution.
 
-## Documentation Structure
 
-This section is organized into the following topics:
+## Table of Contents
+
 
 - [Overview](./test-suite-execution/overview)
 - [Module Structure](./test-suite-execution/module-structure)
 - [Components](./test-suite-execution/components)
-- [Creating Test Execution Collections](./test-suite-execution/creating-collections)
 - [Creating Test Suites](./test-suite-execution/creating-test-suites)
 - [Test Suite Information Panel](./test-suite-execution/information-panel)
 - [Executing Test Suites](./test-suite-execution/executing-suites)
@@ -40,3 +41,7 @@ This section is organized into the following topics:
 - [Best Practices](./test-suite-execution/best-practices)
 - [Troubleshooting](./test-suite-execution/troubleshooting)
 - [Summary](./test-suite-execution/summary)
+
+
+
+---

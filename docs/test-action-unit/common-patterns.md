@@ -10,6 +10,8 @@ description: 'Common patterns for Test Action Units'
 
 # Common Test Action Unit Patterns
 
+---
+
 ## 1. Authentication Flow
 Socket → Session logon + response → User logon + response
 
@@ -21,3 +23,5 @@ Risk checks → Balance → Instrument validation → Price band checks
 
 ## 4. Market Data Subscription
 Connection → Subscription → Snapshot → Confirmation
+
+---

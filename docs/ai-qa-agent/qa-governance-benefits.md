@@ -10,6 +10,8 @@ description: 'Comprehensive QA governance benefits delivered by AI QA Agent'
 
 # Comprehensive QA Governance Benefits
 
+---
+
 The AI QA Agent integrated with **Exgenix** delivers:
 
 - End-to-End Traceability: Requirements → Test Cases → Executions → Defects  
@@ -19,3 +21,5 @@ The AI QA Agent integrated with **Exgenix** delivers:
 - Release Readiness: AI-powered go/no-go recommendations based on objective criteria  
 - Continuous Learning: AI improves with every interaction and decision  
 - Stakeholder Empowerment: Personalized insights for every role
+
+---

@@ -7,6 +7,9 @@ hide_table_of_contents: true
 description: 'Exgenix provides **AI-powered QA coverage** across the full exchange ecosystem'
 ---
 
+import { CheckCircle, Activity, Award } from 'lucide-react';
+
+
 # The Complete QA Transformation Vision
 
 ---
@@ -21,4 +24,6 @@ Exgenix provides **AI-powered QA coverage** across the full exchange ecosystem:
 | **Clearing & Settlement** | `Intelligent back-office validation` through automated test cases and data pipelines. |
 | **Surveillance & Compliance** | `Synthetic data generation` for edge, latency, and regulatory scenarios. |
 
-🧩 **Result:** One unified, AI-powered QA governance platform ensuring **consistency, coverage, and compliance** across all systems.
+> <CheckCircle size={15} color="#019f3dff" />    **Result:** One unified, AI-powered QA governance platform ensuring **consistency, coverage, and compliance** across all systems.
+
+---

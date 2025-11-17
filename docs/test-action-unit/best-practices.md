@@ -10,6 +10,7 @@ description: 'Best practices for Test Action Units'
 
 # Best Practices
 #
+---
 <div class="collapsible-card-div">
   <details class="green-collapsible">
     <summary> Design Principles</summary>

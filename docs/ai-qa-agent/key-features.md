@@ -10,6 +10,8 @@ description: 'Key features of the AI QA Agent'
 
 # Key Features Demonstrated
 
+---
+
 ## 1. Seamless JIRA/ADO Integration
 The AI QA Agent connects directly to JIRA/ADO, eliminating manual effort in requirement management:
 
@@ -172,3 +174,7 @@ Real-time, role-specific insights through natural language queries:
 
 - **Query:** "Are we ready to go live with the current release?"  
   **AI Response:** "Not recommended. There are unresolved defects and incomplete test cases in
+
+
+  
+---

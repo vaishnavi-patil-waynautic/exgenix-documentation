@@ -12,3 +12,4 @@ hide_table_of_contents: true
 | `Simulation`      | Exchange message flows        | Validate realistic New, Modify, Cancel, and Trade API sequences |
 | `AI Generation`   | BRD/API test creation         | Generate structured test cases from uploaded documents or stories |
 
+---

@@ -6,6 +6,8 @@ title: 'Troubleshooting'
 sidebar_label: Troubleshooting
 ---
 
+---
+
 <!-- ### Import Failures
 
 **Problem:** **PDF import doesn't extract fields correctly** 

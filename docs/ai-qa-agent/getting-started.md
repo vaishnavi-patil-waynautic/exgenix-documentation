@@ -10,6 +10,8 @@ description: 'Getting started with AI QA Agent'
 
 # Getting Started
 
+---
+
 > **Initial Setup:**  
 - Connect JIRA/ADO instance  
 - Configure user roles and permissions  
@@ -34,3 +36,5 @@ description: 'Getting started with AI QA Agent'
 
 ## Experience the Future of QA Governance
 The AI QA Agent transforms traditional, manual QA processes into an **intelligent, automated ecosystem** that continuously learns, adapts, and provides actionable insights across every stage of the testing lifecycle.
+
+---

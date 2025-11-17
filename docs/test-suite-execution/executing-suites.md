@@ -10,7 +10,7 @@ description: 'How to execute test suites'
 
 # Executing Test Suites
 
-
+---
 
 <div class="step-block">
   <div class="step-text">
@@ -18,7 +18,7 @@ description: 'How to execute test suites'
 #
 > **From Suite View**
 1. Open the suite
-2. Click **Execute Suite** (green, top-right)
+2. Click **`Execute Suite`** (green, top-right)
 
 > **From Collection View**
 1. Open the execution collection
@@ -74,3 +74,5 @@ description: 'How to execute test suites'
 | 🔴 | `Failed` | One or more steps failed |
 | ⏸️ | `Pending` | Waiting to execute |
 | ⏭️ | `Skipped` | Skipped due to prior failure |
+
+---

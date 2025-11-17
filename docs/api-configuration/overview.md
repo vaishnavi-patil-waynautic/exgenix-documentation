@@ -15,7 +15,11 @@ import {
   QuickLinks
 } from '@site/src/components/DocumentationComponents';
 
+---
+
 The API Configuration module is the foundation of Exgenix's test automation framework. It enables you to define, configure, and manage **FIX / ETI / Custom Binary API** protocol-based API configurations for your test scenarios. This module supports various connection types and message formats, allowing you to model complex financial messaging systems with precision.
+
+---
 
 ### Key Benefits
 

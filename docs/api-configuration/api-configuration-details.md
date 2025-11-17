@@ -7,13 +7,14 @@ sidebar_label: API Configurations
 ---
 
 import ExampleBlock  from '@site/src/components/ExampleBlock';
+import {Video } from 'lucide-react';
 
-
+---
 
 <div class="step-block">
   <div class="step-text">
 
-  [API Configuration](./api-configuration) consists of **three guided steps** that walk you through the complete setup process.
+  API Configuration consists of **three guided steps** that walk you through the complete setup process.
 
     ### Step 1: Basic Info
     
@@ -22,10 +23,10 @@ import ExampleBlock  from '@site/src/components/ExampleBlock';
     **Required Fields**
     
     - **Action Type** (Required)
-       - **Socket_Connection**: Establish persistent socket connection
-       - **TCP_IP_Request**: Outbound FIX / ETI/Custom Binary API requests (orders, cancel, query)
-       - **TCP_IP_Response**: Expected FIX / ETI/Custom Binary API messages from exchange
-       - **Custom_Data_Type**: Messages outside standard FIX / ETI/Custom Binary API
+       - **Socket Connection**: Establish persistent socket connection
+       - **TCP IP Request**: Outbound FIX / ETI/Custom Binary API requests (orders, cancel, query)
+       - **TCP IP Response**: Expected FIX / ETI/Custom Binary API messages from exchange
+       - **Custom Data Type**: Messages outside standard FIX / ETI/Custom Binary API
     - **Name** (Required)
       - Meaningful identifier (e.g., "New Order Single")
     - **Template ID**
@@ -123,7 +124,7 @@ Before proceeding, verify:
 ### Step 3: Datasheets
 Datasheets store the input values that will be used during test execution.
 
-- 🎥 **Datasheet Configuration** — See: [Datasheet Configuration](/videos#datasheet)
+- <Video size={20} style={{ verticalAlign: 'middle', marginRight: '4px' }} /> **Datasheet Configuration** — See: [Datasheet Configuration](/videos#datasheet)
 
 ---
 

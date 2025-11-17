@@ -7,18 +7,19 @@ sidebar_label: AI QA Agent
 slug: /ai-qa-agent
 description: 'AI-powered QA governance and insight engine for stock exchanges'
 ---
+import {Video } from 'lucide-react';
 
 # AI QA Agent - Governance & Insight Engine
 
 ---
 
-- 🎥 **Waynautic AI QA Agent** — See: [Waynautic AI QA Agent](/videos#qa_agent)
+- <Video size={20} style={{ verticalAlign: 'middle', marginRight: '4px' }} /> **Waynautic AI QA Agent** — See: [Waynautic AI QA Agent](/videos#qa_agent)
 
 ---
 
 Waynautic's AI QA Agent integrates with Exgenix to transform QA governance for stock exchanges, providing intelligent test case generation, comprehensive traceability, and real-time insights across the entire testing lifecycle.
 
-## Documentation Structure
+## Table of Contents
 
 This section is organized into the following topics:
 
@@ -33,7 +34,10 @@ This section is organized into the following topics:
 - [Success Metrics](./ai-qa-agent/success-metrics)
 - [Technical Capabilities](./ai-qa-agent/technical-capabilities)
 - [Security & Compliance](./ai-qa-agent/security-compliance)
-- [Getting Started](./ai-qa-agent/getting-started)
+
+---
+
+<!-- - [Getting Started](./ai-qa-agent/getting-started)
 
 ---
 
@@ -41,4 +45,5 @@ This section is organized into the following topics:
 
 - [Use Case 1: Exchange Adds New Order Type](./ai-qa-agent/usecase1)
 - [Use Case 2: New Compliance Rule Affects Risk Calculations](./ai-qa-agent/usecase2)
-- [Use Case 3: Project Manager Needs Go-Live Approval](./ai-qa-agent/usecase3)
+- [Use Case 3: Project Manager Needs Go-Live Approval](./ai-qa-agent/usecase3) -->
+

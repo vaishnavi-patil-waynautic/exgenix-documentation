@@ -10,6 +10,8 @@ description: 'Example of a Login Test Action Unit'
 
 import ExampleBlock from '@site/src/components/ExampleBlock'
 
+---
+
 <ExampleBlock
   title="Example: Login Test Action Unit"
   image={{
@@ -52,3 +54,5 @@ import ExampleBlock from '@site/src/components/ExampleBlock'
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+---

@@ -31,50 +31,13 @@ import LinkIcon from "@mui/icons-material/Link";
 
 Unlike conventional automation tools, Exgenix extends beyond API automation — it redefines the **entire QA lifecycle** by combining:
 
-> Original 
+>  <Bot size={20} color="#711111ff" /> **AI-powered test generation and reporting**
 
-- 🤖 **AI-powered test generation and reporting**
-- 🔍 **Governance insights**
-- 🔗 **Traceability across every system layer — from Gateway to Clearing & Settlement / Surveillance**
+>  <Search size={20} color="#2f1fdeff"/> **Governance insights**
 
-> React Icons
-- <FaRobot className="text-xl" /> **AI-powered test generation and reporting**
-- <FaSearch className="text-xl" /> **Governance insights**
-- <FaLink className="text-xl" /> **Traceability across every system layer — from Gateway to Clearing & Settlement / Surveillance**
+>  <Link size={20} color="#816204ff" /> **Traceability across every system layer — from Gateway to Clearing & Settlement / Surveillance**
 
-
-> Lucide Icons
-- <Bot size={20} /> **AI-powered test generation and reporting**
-- <Search size={20} /> **Governance insights**
-- <Link size={20} /> **Traceability across every system layer — from Gateway to Clearing & Settlement / Surveillance**
-
-
->Tabler Icons
-
-
-<IconRobot size={20} />
-<IconSearch size={20} />
-<IconLink size={20} />
-
-
-
-
-
->MUI ICONs
-
-
-<SmartToyIcon size={20} />
-<SearchIcon size={20} />
-<LinkIcon size={20} />
-
-#
-
-> Radix Icons
-
-<MagicWandIcon size={20} />
-<MagnifyingGlassIcon size={20} />
-<Link2Icon size={20} />
-
-##
 
 This combination delivers **complete QA lifecycle transformation** and intelligent traceability for critical financial infrastructures.
+
+---

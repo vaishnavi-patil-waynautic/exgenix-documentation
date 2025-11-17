@@ -8,6 +8,8 @@ slug: /ai-powered-testcase-generation
 
 Generate test cases using AI from various sources like BRDs, API Specs, or User Stories.
 
+---
+
 ## Table of Contents
 
 - [Overview](./ai-powered-testcase-generation/overview)
@@ -15,3 +17,6 @@ Generate test cases using AI from various sources like BRDs, API Specs, or User 
 - [Category 2](./ai-powered-testcase-generation/category2)
 - [Category 3](./ai-powered-testcase-generation/category3)
 - [Key Highlights](./ai-powered-testcase-generation/key-highlight)
+
+
+---

@@ -29,15 +29,15 @@ A complete example showing how to build and validate a full order lifecycle test
 - [Prerequisites](#prerequisites)
 - [Phase 1: Plan the Test Flow](#phase-1-plan-the-test-flow)
   - [Workflow Diagram](#workflow-diagram)
-  - [Key Variables](#key-variables)
+  - [Key Variables](#key-variables-in-flow)
 - [Phase 2: Prepare Datasheets](#phase-2-prepare-datasheets)
 - [Phase 3: Create the Test Case](#phase-3-create-the-test-case)
 - [Phase 4: Review Test Case Configuration](#phase-4-review-test-case-configuration)
 - [Phase 5: Execute and Validate](#phase-5-execute-and-validate)
-- [Phase 6: Extend Test Case (Optional Enhancements)](#phase-6-extend-test-case-optional-enhancements)
+- [Phase 6: Optional Enhancements](#phase-6-optional-enhancements)
 - [Verification & Best Practices](#verification--best-practices)
-- [Key Learnings from Scenario 2](#key-learnings-from-scenario-2)
-- [Comparison: Manual vs Exgenix Automation](#comparison-manual-vs-exgenix-automation)
+- [Key Learnings](#key-learnings)
+- [Manual vs Automated](#manual-vs-automated)
 - [Expanding the Test Suite](#expanding-the-test-suite)
 - [Summary](#summary)
 
@@ -284,12 +284,12 @@ Updated to focus on trade matching rather than cancellation.
 
 <FeatureGrid>
   <FeatureCard
-    icon="repeat"
+    icon="layers"
     title="Multi-order sequence generation"
     color="#2563eb"
   />
   <FeatureCard
-    icon="check-circle"
+    icon="code"
     title="Trade confirmation handling"
     color="#10b981"
   />
@@ -299,7 +299,7 @@ Updated to focus on trade matching rather than cancellation.
     color="#f59e0b"
   />
   <FeatureCard
-    icon="code-branch"
+    icon="code"
     title="Complex multi-step variable propagation"
     color="#8b5cf6"
   />

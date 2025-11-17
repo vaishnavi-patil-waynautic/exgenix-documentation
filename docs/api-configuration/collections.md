@@ -6,6 +6,7 @@ title: 'Collections'
 sidebar_label: Collections
 ---
 
+---
 
 ### What Are Collections?
 Collections act as containers for similar or related API configurations, helping you organize your test assets logically.
@@ -42,7 +43,7 @@ Collections act as containers for similar or related API configurations, helping
 Each collection displays:
 - Collection name
 - Description
-- Count of API configurations (e.g., "9 API Configs")
-- Action buttons: **Edit | Delete | View**
+- Count of API configurations (e.g., "`9 API Configs`")
+- Action buttons: **`Edit` | `Delete` | `View`**
 
 ---

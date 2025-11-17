@@ -15,6 +15,8 @@ import {
 
 # Test Suite Information Panel
 
+---
+
 After suite creation, the panel shows:
 
 <FeatureGrid>
@@ -33,7 +35,7 @@ After suite creation, the panel shows:
   />
 
   <FeatureCard
-    icon="user"
+    icon="file"
     title="Created By"
     description="Identifies the user who created the suite along with the creation timestamp."
     color="#f59e0b"
@@ -46,3 +48,5 @@ After suite creation, the panel shows:
     color="#ec4899"
   />
 </FeatureGrid>
+
+---

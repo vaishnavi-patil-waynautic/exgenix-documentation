@@ -22,11 +22,14 @@ import ExampleBlock from '@site/src/components/ExampleBlock'
 
 # Test Action Unit – User Guide
 
+---
+
 Test Action Units are reusable, modular components within Exgenix that encapsulate a sequence of related test steps into a single logical unit. They streamline test case design by grouping common operations that are reused across multiple workflows.
 
-## Documentation Structure
+---
 
-This section is organized into the following topics:
+## Table of Contents
+
 
 - [Overview](./test-action-unit/overview)
 - [What Is a Test Action Unit](./test-action-unit/what-is-tau)
@@ -41,3 +44,5 @@ This section is organized into the following topics:
 - [Advanced Features](./test-action-unit/advanced-features)
 - [Troubleshooting](./test-action-unit/troubleshooting)
 - [Summary](./test-action-unit/summary)
+
+---

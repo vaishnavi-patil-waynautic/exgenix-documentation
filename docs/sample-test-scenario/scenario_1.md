@@ -139,7 +139,7 @@ Before starting, ensure the following:
     
     | Field | Value |
     |------|-------|
-    | **Action Type** | `TCP_IP_REQUEST` |
+    | **Action Type** | `TCP IP Request` |
     | **Name** | `New Order Single (short layout)` |
     | **Template ID** | `101251` |
     | **Description** | Submit new limit order for equity instruments using short layout format. Supports limit orders with standard execution instructions. |
@@ -378,7 +378,7 @@ Before starting, ensure the following:
     
     | Field | Value |
     |------|-------|
-    | **Action Type** | `TCP_IP_RESPONSE` |
+    | **Action Type** | `TCP IP Response` |
     | **Name** | `New Order Response (Lean Order)` |
     | **Template ID** | `10102` |
     | **Description** | Response for validating order acceptance and execution data |
@@ -622,7 +622,7 @@ Monitor live progress
 
 <FeatureGrid>
   <FeatureCard
-    icon="file-arrow-up"
+    icon="file"
     title="PDF Import Efficiency"
     description="PDF import removes hours of manual work."
     color="#2563eb"
@@ -640,13 +640,13 @@ Monitor live progress
     color="#f59e0b"
   />
   <FeatureCard
-    icon="link"
+    icon="package"
     title="Capture Functions"
     description="Capture Functions enable dependent API chaining."
     color="#8b5cf6"
   />
   <FeatureCard
-    icon="bolt"
+    icon="server"
     title="Rapid Automation"
     description="End-to-end automation can be completed in minutes."
     color="#ec4899"

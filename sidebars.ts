@@ -96,12 +96,13 @@ const sidebars: SidebarsConfig = {
         'dbg-trial/timeline',
         'dbg-trial/post-trial',
         'dbg-trial/commitment',
+        'dbg-trial/trial-access',
       ],
     },
 
     {
       type: 'category',
-      label: 'Quick Started Guide',
+      label: 'Quick Start Guide',
       link: {
         type: 'doc',
         id: 'quick-start-guide/quick-start-guide', // points to quick-start-guide/index.md
@@ -178,7 +179,7 @@ const sidebars: SidebarsConfig = {
   items: [
     'test-action-unit/overview',
     'test-action-unit/what-is-tau',
-    'test-action-unit/structure',
+    'test-action-unit/module-structure',
     'test-action-unit/creating-tau',
     'test-action-unit/example',
     'test-action-unit/datasheet-configuration',
@@ -223,8 +224,7 @@ const sidebars: SidebarsConfig = {
   items: [
     'test-suite-execution/overview',
     'test-suite-execution/module-structure',
-    'test-suite-execution/components',
-    'test-suite-execution/creating-collections',
+    // 'test-suite-execution/creating-collections',
     'test-suite-execution/creating-test-suites',
     'test-suite-execution/information-panel',
     'test-suite-execution/executing-suites',
@@ -301,10 +301,10 @@ const sidebars: SidebarsConfig = {
     'ai-qa-agent/success-metrics',
     'ai-qa-agent/technical-capabilities',
     'ai-qa-agent/security-compliance',
-    'ai-qa-agent/getting-started',
-        'ai-qa-agent/usecase1',
-        'ai-qa-agent/usecase2',
-        'ai-qa-agent/usecase3',
+    // 'ai-qa-agent/getting-started',
+    //     'ai-qa-agent/usecase1',
+    //     'ai-qa-agent/usecase2',
+    //     'ai-qa-agent/usecase3',
   ],
 },
 

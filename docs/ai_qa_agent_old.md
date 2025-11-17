@@ -7,11 +7,13 @@ sidebar_label: AI QA Agent
 slug: /ai-qa-agent-old
 ---
 
+import {Video } from 'lucide-react';
+
 # AI QA Agent - Governance & Insight Engine
 
 ---
 
-- 🎥 **Waynautic AI QA Agent** — See: [Waynautic AI QA Agent](/videos#qa_agent)
+- <Video size={20} style={{ verticalAlign: 'middle', marginRight: '4px' }} /> **Waynautic AI QA Agent** — See: [Waynautic AI QA Agent](/videos#qa_agent)
 
 ---
 

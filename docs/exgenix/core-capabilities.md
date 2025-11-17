@@ -6,12 +6,13 @@ slug: /exgenix/core-capabilities
 hide_table_of_contents: true
 description : 'AI Test Case Generation & AI QA Governance Module'
 ---
+import { Link, Settings, Zap } from 'lucide-react'; 
 
 # Core Capabilities
 
 ---
 
-## 🔗 AI Test Case Generation
+## <Link size={20} color="#1a64f0" /> AI Test Case Generation
 Generate:
 - Positive, negative, and boundary test cases  
 - From FIX / ETI / Custom Binary API definitions, business requirements, and impact assessment documents  
@@ -21,13 +22,12 @@ Leverage **domain-trained AI models** for **capital market** and **trading** env
 
 ---
 
-## ⚙️ AI QA Governance Module *(Prototype Stage)*
+## <Settings size={20} color="#666" /> AI QA Governance Module *(Prototype Stage)*
 - End-to-end visibility across **requirements → test cases → executions → defects**
 - **AI-driven traceability graph** and **coverage heat maps**
-- **AI QA Agent (Governance & Insight Engine)** for predictive insights on release readiness and regression impact
-- Conversational “**Ask Me Anything**” interface for QA insights
+- **AI QA Agent (Governance & Insight Engine)** for predictive insights on release readiness and regression impact. Conversational “**Ask Me Anything**” interface for QA insights
 
-💡 **Example:**  
+<Zap size={20} color="#ffc107" /> **Example:**  
 >  A QA lead can simply ask —
  “Show me all failure scenarios linked to Order Gateway in Build #214” — and the AI QA Agent will generate insights instantly.
 

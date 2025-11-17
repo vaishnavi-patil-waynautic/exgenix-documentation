@@ -9,6 +9,29 @@ description: 'Step-by-step guide to creating test suites'
 ---
 
 # Creating Test Suites
+---
+
+<div class="step-block">
+  <div class="step-text">
+    ## Create Collection
+    
+    1. Navigate to **Execution** in the left menu
+    2. Click **`+ Create Collection`**
+    3. Provide:
+       - **Name**: Descriptive identifier (e.g., `TEST_EXECUTION`, `Regression_Suite`)
+       - **Description**: Purpose and scope
+    
+    Collections help you organize test suites logically, making it easier to manage large test repositories.
+  </div>
+
+  <div class="step-image">
+    <h4 class="image-title">Create Collection</h4>
+    <img src="/exgenix-documentation/img/test_suite_and_execution/1.png" alt="Create Test Execution Collection" />
+    <p class="image-caption">🖱️ Click to expand image</p>
+  </div>
+</div>
+
+---
 
 <div class="step-block">
   <div class="step-text">
@@ -16,7 +39,7 @@ description: 'Step-by-step guide to creating test suites'
     > ## Step 1: Navigate to Test Suites
     
     1. Go to **Execution → [Collection Name]**
-    2. Click **+ Create Test Suite**
+    2. Click **`+ Create Test Suite`**
 
   
   </div>
@@ -44,7 +67,7 @@ description: 'Step-by-step guide to creating test suites'
 
 <div class="step-block">
   <div class="step-text">
-Suites can run **On Demand** or be **Scheduled**.
+Suites can run **`On Demand`** or be **`Scheduled`**.
 
 | Option | Description | Use Case |
 |--------|-------------|----------|
@@ -70,15 +93,15 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
     | **Enabled** | Cases run `simultaneously` | Faster runs | Needs resources; cases must be independent |
     | **Disabled** | Cases run `sequentially` | Easier debugging, deterministic order | Longer total time |
     
-    > **Enable** when cases are independent and resources suffice.  
-    > **Disable** when cases depend on shared state/resources or order matters.
+    > **`Enable`** when cases are independent and resources suffice.  
+    > **`Disable`** when cases depend on shared state/resources or order matters.
 
 ---
 <div class="step-block">
   <div class="step-text">
       > ## Step 5: Add Test Cases
     
-    Click **+ Add Test Cases** to select them for the suite.
+    Click **`+ Add Test Cases`** to select them for the suite.
     
     **Add Test Cases Dialog Features:**
     - Search functionality to find specific test cases
@@ -94,3 +117,5 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+---

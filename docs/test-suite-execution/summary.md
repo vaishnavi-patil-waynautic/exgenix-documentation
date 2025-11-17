@@ -10,6 +10,8 @@ description: 'Summary of Test Suite & Execution module'
 
 # Summary
 
+---
+
 The **Test Suite & Execution** module provides:
 
 ✓ **Organized Test Collections** – Logical grouping of suites  
@@ -29,3 +31,5 @@ The **Test Suite & Execution** module provides:
         - Maintain execution history for insights and quality trends
   </div>
 </div>
+
+---

@@ -10,6 +10,8 @@ description: 'Configuring datasheets for Test Action Units'
 
 # Configuring Datasheets for Test Action Units
 
+---
+
 When adding a Test Action Unit inside a test case, you must configure the datasheet mapping for each internal step.
 
 <div class="step-block">
@@ -18,7 +20,7 @@ When adding a Test Action Unit inside a test case, you must configure the datash
     
     1. Open the test case
     2. Select the Test Action Unit step
-    3. Click **Configure**
+    3. Click **`Configure`**
     4. A dialog displays all steps inside the unit
     
     > ## Configuration Modal
@@ -48,3 +50,5 @@ When adding a Test Action Unit inside a test case, you must configure the datash
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+---

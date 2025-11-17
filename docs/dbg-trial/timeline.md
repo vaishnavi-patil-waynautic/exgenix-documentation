@@ -5,17 +5,18 @@ hide_table_of_contents: true
 
 ---
 
-- The environment will be accessible through dedicated **user credentials** for up to two DBG team members.
+A secure evaluation environment has been provisioned for up to two DBG team members, accessible via dedicated **login credentials**.
 
-- Access duration: **17 Nov – 28 Nov**
+- Access duration: **`2 weeks`**
 
-- A structured sample project (“DBG Trial”) has been preloaded with the following modules:
+- A pre-configured sample project is included, containing:
 
 
-- Gateway  
-- Matching Engine  
-- Risk  
-- Clearing & Settlement  
-- Surveillance  
+   - **Demo requirements synced from a mock backlog**
+   - **AI-generated test cases**
+   - **ETI API configurations**
+   - **End-to-end execution scenarios with simulated API responses** 
 
-Each module includes demo requirements, test cases, and simulated API responses, illustrating how Exgenix unifies test governance and automation in a real-world exchange setup.
+This setup is designed to demonstrate how Exgenix consolidates test governance, automation, and traceability in a realistic stock-exchange-aligned workflow.
+
+---

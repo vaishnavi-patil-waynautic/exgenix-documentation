@@ -12,12 +12,13 @@ import {
   QuickLinks
 } from '@site/src/components/DocumentationComponents';
 import ExampleBlock  from '@site/src/components/ExampleBlock';
+import {Video } from 'lucide-react';
 
 # Test Case & Configuration Module – User Guide
 
 ---
 
-- 🎥 **Test Case Configuration** — See: [Test Case Configuration](/videos#testcase)
+- <Video size={20} style={{ verticalAlign: 'middle', marginRight: '4px' }} /> **Test Case Configuration** — See: [Test Case Configuration](/videos#testcase)
 
 ---
 
@@ -258,7 +259,7 @@ Reusable component containing multiple APIs configured together.
 
       **Configuration:**
       1. Click **+ Add Step**
-      2. Select **Type**: TCP_IP_REQUEST or TCP_IP_RESPONSE or Socket_Connection
+      2. Select **Type**: TCP IP REQUEST or TCP IP RESPONSE or Socket Connection
       3. Choose the [API configuration](./api-configuration) from dropdown
       4. Configure settings
    </div>
