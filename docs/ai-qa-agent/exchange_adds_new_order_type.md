@@ -3,9 +3,10 @@ id: usecase1
 title: 'Usecase 1'
 sidebar_position: 1
 hide_table_of_contents: true
-sidebar_label: Exchange Adds New Order Type
+sidebar_label: 'Usecase 1: Exchange Adds New Order Type'
 slug: /ai-qa-agent/usecase1
 ---
+import ExampleBlock  from '@site/src/components/ExampleBlock';
 
 # Usecase:  Exchange Adds New Order Type
 
@@ -32,6 +33,9 @@ slug: /ai-qa-agent/usecase1
 
 ---
 
+<ExampleBlock title="">
+
 > ## Outcome
 > Feature tested in **2 hours** versus **2 days** manually.
 
+</ExampleBlock>

@@ -3,9 +3,10 @@ id: usecase2
 title: 'Usecase 2'
 sidebar_position: 2
 hide_table_of_contents: true
-sidebar_label: New Compliance Rule Affects Risk Calculations
+sidebar_label: 'Usecase 2: New Compliance Rule Affects Risk Calculations'
 slug: /ai-qa-agent/usecase2
 ---
+import ExampleBlock  from '@site/src/components/ExampleBlock';
 
 # Usecase:  New Compliance Rule Affects Risk Calculations
 
@@ -32,6 +33,7 @@ slug: /ai-qa-agent/usecase2
    - Regression suite updated automatically to reflect changes.
 
 ---
-
+<ExampleBlock title="">
 > ## Outcome
 > **Complete impact analysis in minutes**, ensuring **no coverage gaps**.
+</ExampleBlock>

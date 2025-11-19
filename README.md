@@ -12,10 +12,16 @@ npm run start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Build
+## Creating Build
 
 ```bash
 npm run build
+
+```
+
+to host the build on local - 
+
+```bash 
 npm run serve
 ```
 

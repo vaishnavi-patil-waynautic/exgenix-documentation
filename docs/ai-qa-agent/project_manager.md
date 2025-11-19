@@ -3,9 +3,10 @@ id: usecase3
 title: 'Usecase 3'
 sidebar_position: 3
 hide_table_of_contents: true
-sidebar_label: Project Manager Needs Go-Live Approval
+sidebar_label: 'Usecase 3: Project Manager Needs Go-Live Approval'
 slug: /ai-qa-agent/usecase3
 ---
+import ExampleBlock  from '@site/src/components/ExampleBlock';
 
 # Usecase:  Project Manager Needs Go-Live Approval
 
@@ -24,5 +25,8 @@ slug: /ai-qa-agent/usecase3
    - *"Not ready – resolve critical defects first"*  
    - Provides a detailed report highlighting risk areas and impact.
 ---
+
+<ExampleBlock title="">
 > ## Outcome
 > **Data-driven decision** prevents potential production issues.
+</ExampleBlock>
