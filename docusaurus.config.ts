@@ -73,7 +73,10 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+              require.resolve('./src/css/custom.css'),
+              require.resolve('./src/css/search.css'),
+            ],
         },
   },
     ],
@@ -110,14 +113,6 @@ plugins: [
       indexDocs: true,
       indexPages: true,
       searchResultLimits: 7,
-
-      iconTitle: svg(FileText),
-    iconHeading: svg(Heading),
-    iconContent: svg(AlignLeft),
-    iconAction: svg(ArrowLeftCircle),
-    iconNoResults: svg(SearchX),
-    iconTreeInter: svg(CornerDownRight),
-    iconTreeLast: svg(CornerDownRight),
     }
   ]
 ],

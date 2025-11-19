@@ -1,0 +1,31 @@
+/* Search container */
+.searchBarContainer_node_modules-easyops-cn-docusaurus-search-local {
+  position: relative;
+}
+
+/* Search button icon (left icon) */
+.searchBarContainer_node_modules-easyops-cn-docusaurus-search-local .searchIcon {
+  width: 20px;
+  height: 20px;
+  background: no-repeat center;
+  background-size: 20px;
+  border: none;
+  cursor: pointer;
+
+  /* Lucide Search Icon */
+  mask: url("https://unpkg.com/lucide-static/icons/search.svg") center/contain no-repeat;
+  background-color: var(--ifm-color-primary);
+}
+
+/* Clear button icon (X icon) */
+.searchBarContainer_node_modules-easyops-cn-docusaurus-search-local .clearButton {
+  width: 18px;
+  height: 18px;
+  background: no-repeat center;
+  background-size: 18px;
+  border: none;
+
+  /* Lucide X Icon */
+  mask: url("https://unpkg.com/lucide-static/icons/x.svg") center/contain no-repeat;
+  background-color: var(--ifm-color-primary);
+}

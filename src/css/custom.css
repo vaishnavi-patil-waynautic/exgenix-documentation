@@ -1155,8 +1155,10 @@ a{
   color: #1a64f0;
 }
 
-.navbar__search {
+.navbar__search  {
   position: absolute !important;
+  top: 0px !important;
+  margin-top: 1rem !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
   margin-bottom: 10px !important;
@@ -1170,6 +1172,5 @@ a{
   padding-bottom: 4px !important;
   margin-bottom: 10px !important;
 }
-
 
 

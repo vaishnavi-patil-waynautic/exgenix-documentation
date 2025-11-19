@@ -17,6 +17,6 @@ description : 'For exgenix | AI QA Agent | JIRA | ADO'
 |-----------|--------------|-----------|-----------|-------|
 | **Exgenix Platform** | https://exgenix.waynautic.cloud | `testuser1@yahoo.com` and `testuser2@yahoo.com` | `Waynautic@2025` | Preloaded with **critical APIs and collections** |
 | **AI QA Agent** | https://aiqaagent.waynautic.cloud | `testuser1@yahoo.com` | `Test@123` |Preloaded with **Exchange QA Project** |
-| **JIRA** | https://dbg-trial.atlassian.net | `testuserwaynautic@yahoo.com` | `Waynautic@2025` | Integrated with **Exgenix test traceability** |
-| **ADO** | https://dbg-trial.atlassian.net | `testuserwaynautic@yahoo.com` | `< Get Code from Yahoo mail to sign in >` | Integrated with **Exgenix test traceability** |
+| **JIRA** | https://id.atlassian.com/login | `testuserwaynautic@yahoo.com` | `Waynautic@2025` | Integrated with **Exgenix test traceability** |
+| **ADO** | https://azure.microsoft.com/en-us/products/devops | `testuserwaynautic@yahoo.com` | `< Get Code from Yahoo mail to sign in >` | Integrated with **Exgenix test traceability** |
 | **Yahool Mail** | https://mail.yahoo.com | `testuserwaynautic@yahoo.com` | `Waynautic@2025` | Email access for notifications |
