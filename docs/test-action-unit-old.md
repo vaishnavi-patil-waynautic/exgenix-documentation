@@ -120,7 +120,7 @@ Each Test Action Unit consists of:
   </div>
   <div class="step-image">
     <h4 class="image-title">Navigate to Test Action Units</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/test_action_unit.png" alt="Navigate to Test Action Unit section" />
+    <img src="/img/test_action_unit/test_action_unit.png" alt="Navigate to Test Action Unit section" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -151,7 +151,7 @@ Each Test Action Unit consists of:
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Test Action Unit Collection</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/create_collection.png" alt="Create Test Action Unit Collection" />
+    <img src="/img/test_action_unit/create_collection.png" alt="Create Test Action Unit Collection" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -168,7 +168,7 @@ Each Test Action Unit consists of:
   </div>
   <div class="step-image">
     <h4 class="image-title">Test Action Unit Collection</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/tau_collection.png" alt="Test Action Unit Collection" />
+    <img src="/img/test_action_unit/tau_collection.png" alt="Test Action Unit Collection" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -194,7 +194,7 @@ Each Test Action Unit consists of:
   </div>
   <div class="step-image">
     <h4 class="image-title">Define Basic Information</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/main_tab.png" alt="Test Action Unit Basic Information" />
+    <img src="/img/test_action_unit/main_tab.png" alt="Test Action Unit Basic Information" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -223,7 +223,7 @@ Each Test Action Unit consists of:
   </div>
   <div class="step-image">
     <h4 class="image-title">Add Test Steps</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/add_step.png" alt="Adding test steps to Test Action Unit" />
+    <img src="/img/test_action_unit/add_step.png" alt="Adding test steps to Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -247,7 +247,7 @@ Each step is configured with the appropriate data sheets and validation rules to
 
   <div class="step-image">
     <h4 class="image-title">Login Test Action Unit</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/login_tau.png" alt="Login Test Action Unit" />
+    <img src="/img/test_action_unit/login_tau.png" alt="Login Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div> -->
@@ -256,7 +256,7 @@ Each step is configured with the appropriate data sheets and validation rules to
   title="Example: Login Test Action Unit"
   image={{
     title: "Login Test Action Unit",
-    src: "/exgenix-documentation/img/test_action_unit/login_tau.png",
+    src: "/img/test_action_unit/login_tau.png",
     alt: "Login Test Action Unit"
   }}
   caption="🖱️ Click to expand image"
@@ -290,7 +290,7 @@ Each step is configured with the appropriate data sheets and validation rules to
   </div>
   <div class="step-image">
     <h4 class="image-title">Step Configuration View</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/step_added.png" alt="Test Action Unit step configuration" />
+    <img src="/img/test_action_unit/step_added.png" alt="Test Action Unit step configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -333,7 +333,7 @@ When adding a Test Action Unit inside a test case, you must configure the datash
   </div>
   <div class="step-image">
     <h4 class="image-title">Datasheet Configuration Modal</h4>
-    <img src="/exgenix-documentation/img/testcase/datasheet_selection.png" alt="Configuring datasheets for Test Action Unit" />
+    <img src="/img/testcase/datasheet_selection.png" alt="Configuring datasheets for Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -369,7 +369,7 @@ When adding a Test Action Unit inside a test case, you must configure the datash
   </div>
   <div class="step-image">
     <h4 class="image-title">Before Using Test Action Units</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/before_tau.png" alt="Test case before using Test Action Units" />
+    <img src="/img/test_action_unit/before_tau.png" alt="Test case before using Test Action Units" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -396,7 +396,7 @@ When adding a Test Action Unit inside a test case, you must configure the datash
   </div>
   <div class="step-image">
     <h4 class="image-title">After Using Test Action Units</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/after_tau.png" alt="Test case after using Test Action Units" />
+    <img src="/img/test_action_unit/after_tau.png" alt="Test case after using Test Action Units" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

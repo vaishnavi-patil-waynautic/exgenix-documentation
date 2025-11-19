@@ -34,7 +34,7 @@ Access the platform and navigate to the governance workspace.
 </div>
 <div class="step-image">
 <h4 class="image-title">Login Page</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/1.png" alt="Login Page" />
+<img src="/img/ai-qa-agent/1.png" alt="Login Page" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -52,7 +52,7 @@ Access the platform and navigate to the governance workspace.
 </div>
 <div class="step-image">
 <h4 class="image-title">QA Governance Dashboard</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/2.png" alt="QA Governance Dashboard" />
+<img src="/img/ai-qa-agent/2.png" alt="QA Governance Dashboard" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -83,7 +83,7 @@ Organize the test repository aligned with business or functional hierarchy.
 </div>
 <div class="step-image">
 <h4 class="image-title">Folder creation UI</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/3.png" alt="Folder creation UI" />
+<img src="/img/ai-qa-agent/3.png" alt="Folder creation UI" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -103,7 +103,7 @@ Organize the test repository aligned with business or functional hierarchy.
 </div>
 <div class="step-image">
 <h4 class="image-title">Create folder or subfolder</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/4.png" alt="Create folder or subfolder" />
+<img src="/img/ai-qa-agent/4.png" alt="Create folder or subfolder" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -129,7 +129,7 @@ Fetch latest requirements from **Jira / Azure DevOps (ADO)** to begin test gener
 </div>
 <div class="step-image">
 <h4 class="image-title">Requirements tab navigation</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/5.png" alt="Requirements tab navigation" />
+<img src="/img/ai-qa-agent/5.png" alt="Requirements tab navigation" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -150,7 +150,7 @@ Fetch latest requirements from **Jira / Azure DevOps (ADO)** to begin test gener
 </div>
 <div class="step-image">
 <h4 class="image-title">Sync button highlighted</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/6.png" alt="Sync button highlighted" />
+<img src="/img/ai-qa-agent/6.png" alt="Sync button highlighted" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -175,7 +175,7 @@ Generate intelligent manual-style test cases using AI.
 </div>
 <div class="step-image">
 <h4 class="image-title">Test case Generate button</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/7.png" alt="Test case Generate button" />
+<img src="/img/ai-qa-agent/7.png" alt="Test case Generate button" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -193,7 +193,7 @@ Generate intelligent manual-style test cases using AI.
 </div>
 <div class="step-image">
 <h4 class="image-title">Select requirements and generate</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/8.png" alt="Select requirements and generate" />
+<img src="/img/ai-qa-agent/8.png" alt="Select requirements and generate" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -207,8 +207,8 @@ Generate intelligent manual-style test cases using AI.
 
 </div>
 <div class="step-image">
-<h4 class="image-title">Go to test cases</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/9.png" alt="Go to test cases" />
+<h4 class="image-title"> Go to test cases </h4>
+<img src="/img/ai-qa-agent/9.png" alt="Go to test cases" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -222,8 +222,8 @@ Generated test cases list
 
 </div>
 <div class="step-image">
-<h4 class="image-title"><strong>Generated test cases list</strong></h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/10.png" alt="Generated test cases list" />
+<h4 class="image-title">Generated test cases list</h4>
+<img src="/img/ai-qa-agent/10.png" alt="Generated test cases list" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -246,7 +246,7 @@ Approve, reject, or edit tests for better refinement.
 </div>
 <div class="step-image">
 <h4 class="image-title">Select test cases</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/11.png" alt="Select test cases" />
+<img src="/img/ai-qa-agent/11.png" alt="Select test cases" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -264,7 +264,7 @@ Approve, reject, or edit tests for better refinement.
 </div>
 <div class="step-image">
 <h4 class="image-title">Accept or Reject Test Case</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/12.png" alt="Accept or Reject Test Case" />
+<img src="/img/ai-qa-agent/12.png" alt="Accept or Reject Test Case" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -285,7 +285,7 @@ Approve, reject, or edit tests for better refinement.
 </div>
 <div class="step-image">
 <h4 class="image-title">Approval/Rejection UI</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/13.png" alt="Approval/Rejection UI" />
+<img src="/img/ai-qa-agent/13.png" alt="Approval/Rejection UI" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -312,7 +312,7 @@ Place approved test cases in the correct functional module folder.
 </div>
 <div class="step-image">
 <h4 class="image-title">Unmapped test case view</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/14.png" alt="Unmapped test case view" />
+<img src="/img/ai-qa-agent/14.png" alt="Unmapped test case view" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -333,7 +333,7 @@ Place approved test cases in the correct functional module folder.
 </div>
 <div class="step-image">
 <h4 class="image-title">Drag test cases to folder</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/15.png" alt="Drag test cases to folder" />
+<img src="/img/ai-qa-agent/15.png" alt="Drag test cases to folder" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -353,7 +353,7 @@ Preserve automated traceability across the lifecycle.
 </div>
 <div class="step-image">
 <h4 class="image-title">Test case tab</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/16.png" alt="Test case tab" />
+<img src="/img/ai-qa-agent/16.png" alt="Test case tab" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -375,7 +375,7 @@ Preserve automated traceability across the lifecycle.
 </div>
 <div class="step-image">
 <h4 class="image-title">Select test case</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/17.png" alt="Select test case" />
+<img src="/img/ai-qa-agent/17.png" alt="Select test case" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -390,7 +390,7 @@ Click on Relationship tab and click on Plus Sign as high lighted
 </div>
 <div class="step-image">
 <h4 class="image-title">Relationship tab</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/18.png" alt="Relationship tab" />
+<img src="/img/ai-qa-agent/18.png" alt="Relationship tab" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -405,7 +405,7 @@ Select the requirement to one by one to be linked and click Submit
 </div>
 <div class="step-image">
 <h4 class="image-title">Link requirement</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/19.png" alt="Link requirement" />
+<img src="/img/ai-qa-agent/19.png" alt="Link requirement" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -420,7 +420,7 @@ Click on Update Button as highlighted
 </div>
 <div class="step-image">
 <h4 class="image-title">Update Button</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/20.png" alt="Update Button" />
+<img src="/img/ai-qa-agent/20.png" alt="Update Button" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -439,7 +439,7 @@ Connect execution results and defects with requirement lineage.
 </div>
 <div class="step-image">
 <h4 class="image-title">Defect Tab</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/21.png" alt="Defect Tab" />
+<img src="/img/ai-qa-agent/21.png" alt="Defect Tab" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -455,7 +455,7 @@ Connect execution results and defects with requirement lineage.
 </div>
 <div class="step-image">
 <h4 class="image-title">Create or select defect</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/22.png" alt="Create or select defect" />
+<img src="/img/ai-qa-agent/22.png" alt="Create or select defect" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -470,7 +470,7 @@ Click on Relationship tab and click on Plus Sign as high lighted
 </div>
 <div class="step-image">
 <h4 class="image-title">Defect Relationship tab</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/23.png" alt="Defect Relationship tab" />
+<img src="/img/ai-qa-agent/23.png" alt="Defect Relationship tab" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -485,7 +485,7 @@ Select the requirement to one by one to be linked and click Submit
 </div>
 <div class="step-image">
 <h4 class="image-title">Link defect to requirement</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/24.png" alt="Link defect to requirement" />
+<img src="/img/ai-qa-agent/24.png" alt="Link defect to requirement" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
@@ -500,7 +500,7 @@ Click on Update Button as highlighted
 </div>
 <div class="step-image">
 <h4 class="image-title">Update defect</h4>
-<img src="/exgenix-documentation/img/ai-qa-agent/25.png" alt="Update defect" />
+<img src="/img/ai-qa-agent/25.png" alt="Update defect" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>

@@ -26,7 +26,7 @@ description: 'How to execute test suites'
   </div>
   <div class="step-image">
     <h4 class="image-title">Execute Suite</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/4.png" alt="Execute Test Suite" />
+    <img src="/img/test_suite_and_execution/4.png" alt="Execute Test Suite" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

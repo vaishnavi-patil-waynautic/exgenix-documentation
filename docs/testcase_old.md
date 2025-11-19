@@ -141,7 +141,7 @@ A **Test Case** represents a complete, executable test scenario that validates s
     <div className="step-image">
         <h4 className="image-title">Test Case Structure Example</h4>
         <img
-          src="/exgenix-documentation/img/testcase/example.png"
+          src="/img/testcase/example.png"
           alt="Example Test Case Structure"
           style={{
             width: "100%",
@@ -184,7 +184,7 @@ A **Test Case** represents a complete, executable test scenario that validates s
 
    <div class="step-image">
     <h4 class="image-title">Navigate To Test Cases</h4>
-    <img src="/exgenix-documentation/img/testcase/testcase.png" alt="Navigate To Test Cases" />
+    <img src="/img/testcase/testcase.png" alt="Navigate To Test Cases" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 
@@ -213,7 +213,7 @@ A **Test Case** represents a complete, executable test scenario that validates s
 
   <div class="step-image">
     <h4 class="image-title">Test Case Basic Information</h4>
-    <img src="/exgenix-documentation/img/testcase/main_tab.png" alt="Test Case Name and Description" />
+    <img src="/img/testcase/main_tab.png" alt="Test Case Name and Description" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -242,7 +242,7 @@ Reusable component containing multiple APIs configured together.
 
   <div class="step-image">
     <h4 class="image-title">Action Type Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/type.png" alt="Action Type Configuration" />
+    <img src="/img/testcase/type.png" alt="Action Type Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -267,7 +267,7 @@ Reusable component containing multiple APIs configured together.
 
   <div class="step-image">
     <h4 class="image-title">Action Type Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/add_step_normal.png" alt="Step Type Configuration" />
+    <img src="/img/testcase/add_step_normal.png" alt="Step Type Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -335,7 +335,7 @@ For each step, configure the following:
 
   <div class="step-image">
     <h4 class="image-title">Session Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/session.png" alt="Configure Session Identifier" />
+    <img src="/img/testcase/session.png" alt="Configure Session Identifier" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -377,7 +377,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Datasheet Configuration Modal</h4>
-    <img src="/exgenix-documentation/img/testcase/datasheet.png" alt="Configure Datasheets for Test Action Unit" />
+    <img src="/img/testcase/datasheet.png" alt="Configure Datasheets for Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -395,7 +395,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Datasheet Configuration Modal</h4>
-    <img src="/exgenix-documentation/img/testcase/datasheet_selection.png" alt="Configure Datasheets for Test Action Unit" />
+    <img src="/img/testcase/datasheet_selection.png" alt="Configure Datasheets for Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -449,7 +449,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Pattern Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/pattern.png" alt="NEXT_ROW Pattern Example" />
+    <img src="/img/testcase/pattern.png" alt="NEXT_ROW Pattern Example" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -525,7 +525,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Error Handling Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/on_error.png" alt="Configure On Error Behavior" />
+    <img src="/img/testcase/on_error.png" alt="Configure On Error Behavior" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -579,7 +579,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Loop Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/add_loop.png" alt="Configure Loop for Repeated Execution" />
+    <img src="/img/testcase/add_loop.png" alt="Configure Loop for Repeated Execution" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -607,7 +607,7 @@ Step 4 (Logout): session1
 
   <!-- <div class="step-image">
     <h4 class="image-title">Single Session Pattern</h4>
-    <img src="/exgenix-documentation/img/testcase/single-session.png" alt="Single Session Configuration" />
+    <img src="/img/testcase/single-session.png" alt="Single Session Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -631,7 +631,7 @@ Step 4 (User B Order): session2
 
   <!-- <div class="step-image">
     <h4 class="image-title">Multiple Sessions Pattern</h4>
-    <img src="/exgenix-documentation/img/testcase/multiple-sessions.png" alt="Multiple Session Configuration" />
+    <img src="/img/testcase/multiple-sessions.png" alt="Multiple Session Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -654,7 +654,7 @@ Iteration 3: session_${iteration_3}
 
   <!-- <div class="step-image">
     <h4 class="image-title">Session Per Iteration Pattern</h4>
-    <img src="/exgenix-documentation/img/testcase/session-per-iteration.png" alt="Session Per Iteration Configuration" />
+    <img src="/img/testcase/session-per-iteration.png" alt="Session Per Iteration Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -682,7 +682,7 @@ Each step advances to the next row in its datasheet.
 
   <!-- <div class="step-image">
     <h4 class="image-title">Incremental Row Strategy</h4>
-    <img src="/exgenix-documentation/img/testcase/incremental-rows.png" alt="Incremental Row Usage Strategy" />
+    <img src="/img/testcase/incremental-rows.png" alt="Incremental Row Usage Strategy" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -706,7 +706,7 @@ All steps use the same row throughout execution.
 
   <!-- <div class="step-image">
     <h4 class="image-title">Consistent Row Strategy</h4>
-    <img src="/exgenix-documentation/img/testcase/consistent-rows.png" alt="Consistent Row Usage Strategy" />
+    <img src="/img/testcase/consistent-rows.png" alt="Consistent Row Usage Strategy" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -730,7 +730,7 @@ Synchronize request-response pairs while advancing requests.
 
   <!-- <div class="step-image">
     <h4 class="image-title">Datasheet Synchronization Strategy</h4>
-    <img src="/exgenix-documentation/img/testcase/datasheet-sync.png" alt="Synchronized Datasheet Strategy" />
+    <img src="/img/testcase/datasheet-sync.png" alt="Synchronized Datasheet Strategy" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -764,7 +764,7 @@ Synchronize request-response pairs while advancing requests.
 <div className="step-image" style={{ flex: "0 0 300px", textAlign: "center" }}>
       <h4 className="image-title">Trade Flow</h4>
       <img
-        src="/exgenix-documentation/img/testcase/trade_flow.png"
+        src="/img/testcase/trade_flow.png"
         alt="Trade Flow"
         style={{
           width: "100%",

@@ -26,7 +26,7 @@ description: 'Step-by-step guide to creating test suites'
 
   <div class="step-image">
     <h4 class="image-title">Create Collection</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/1.png" alt="Create Test Execution Collection" />
+    <img src="/img/test_suite_and_execution/1.png" alt="Create Test Execution Collection" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -46,7 +46,7 @@ description: 'Step-by-step guide to creating test suites'
 
   <div class="step-image">
     <h4 class="image-title">Test Collection View</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/test_collection.png" alt="Open Test Collection" />
+    <img src="/img/test_suite_and_execution/test_collection.png" alt="Open Test Collection" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -80,7 +80,7 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
   </div>
   <div class="step-image">
     <h4 class="image-title">Parallel Execution Configuration</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/2.png" alt="Configure Parallel Execution" />
+    <img src="/img/test_suite_and_execution/2.png" alt="Configure Parallel Execution" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -113,7 +113,7 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
   </div>
   <div class="step-image">
     <h4 class="image-title">Add Test Cases Dialog</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/3.png" alt="Add Test Cases to Suite" />
+    <img src="/img/test_suite_and_execution/3.png" alt="Add Test Cases to Suite" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

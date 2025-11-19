@@ -39,7 +39,7 @@ description: 'How to use Test Action Units in test cases'
   </div>
   <div class="step-image">
     <h4 class="image-title">Before Using Test Action Units</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/before_tau.png" alt="Test case before using Test Action Units" />
+    <img src="/img/test_action_unit/before_tau.png" alt="Test case before using Test Action Units" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -66,7 +66,7 @@ description: 'How to use Test Action Units in test cases'
   </div>
   <div class="step-image">
     <h4 class="image-title">After Using Test Action Units</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/after_tau.png" alt="Test case after using Test Action Units" />
+    <img src="/img/test_action_unit/after_tau.png" alt="Test case after using Test Action Units" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

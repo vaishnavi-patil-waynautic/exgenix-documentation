@@ -36,7 +36,7 @@ import {Video } from 'lucide-react';
   </div>
   <div class="step-image">
     <h4 class="image-title">Basic Info Configuration</h4>
-    <img src="/exgenix-documentation/img/api_config/2.png" alt="API Configuration Basic Info Step" />
+    <img src="/img/api_config/2.png" alt="API Configuration Basic Info Step" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -82,7 +82,7 @@ import {Video } from 'lucide-react';
   </div>
   <div class="step-image">
     <h4 class="image-title">Import from PDF</h4>
-    <img src="/exgenix-documentation/img/api_config/4.png" alt="Import Configuration from PDF Specification" />
+    <img src="/img/api_config/4.png" alt="Import Configuration from PDF Specification" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -113,7 +113,7 @@ Before proceeding, verify:
   </div>
   <div class="step-image">
     <h4 class="image-title">Imported Configuration</h4>
-    <img src="/exgenix-documentation/img/api_config/configuration_page.png" alt="Import Configuration from PDF Specification" />
+    <img src="/img/api_config/configuration_page.png" alt="Import Configuration from PDF Specification" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

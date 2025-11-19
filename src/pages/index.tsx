@@ -170,7 +170,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/quick-start-guide/"
           >
-            <Rocket size={20} style={{ marginRight: 8 }} />
+            <Rocket size={20} color='#c07805ff' style={{ marginRight: 10, paddingTop: 5, alignItems: 'center' }} />
             Quick Start Guide
           </Link>
         </div>
@@ -184,10 +184,15 @@ function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
+
           {/* Feature 1 */}
           <div className="col col--4">
             <div className="text--center">
-              <Landmark size={34} className="margin-bottom--md" />
+              <Landmark
+                size={34}
+                className="margin-bottom--md"
+                color="#4F46E5"   // Indigo (Governance)
+              />
               <h3>QA Governance Engine for Stock Exchanges</h3>
               <p>
                 <em>“From APIs to Clearing — One Governance View.”</em><br />
@@ -201,7 +206,11 @@ function HomepageFeatures() {
           {/* Feature 2 */}
           <div className="col col--4">
             <div className="text--center">
-              <Puzzle size={34} className="margin-bottom--md" />
+              <Puzzle
+                size={34}
+                className="margin-bottom--md"
+                color="#0EA5E9"   // Sky Blue (No-code / flexibility)
+              />
               <h3>True No-Code Automation for Complex Trading Protocols</h3>
               <p>
                 <em>“Empower QA teams to automate without coding.”</em><br />
@@ -215,7 +224,11 @@ function HomepageFeatures() {
           {/* Feature 3 */}
           <div className="col col--4">
             <div className="text--center">
-              <BrainCircuit size={34} className="margin-bottom--md" />
+              <BrainCircuit
+                size={34}
+                className="margin-bottom--md"
+                color="#F59E0B"   // Amber (AI intelligence)
+              />
               <h3>AI-Powered Test Case Generation & Governance</h3>
               <p>
                 <em>“AI that thinks like a QA lead — not a script.”</em><br />
@@ -225,9 +238,11 @@ function HomepageFeatures() {
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
+
   );
 }
 

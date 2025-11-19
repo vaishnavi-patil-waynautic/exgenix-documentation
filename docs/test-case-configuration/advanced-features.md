@@ -59,7 +59,7 @@ import ExampleBlock from '@site/src/components/ExampleBlock';
 
   <div class="step-image">
     <h4 class="image-title">Loop Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/add_loop.png" alt="Configure Loop for Repeated Execution" />
+    <img src="/img/testcase/add_loop.png" alt="Configure Loop for Repeated Execution" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -87,7 +87,7 @@ Step 4 (Logout): session1
 
   <!-- <div class="step-image">
     <h4 class="image-title">Single Session Pattern</h4>
-    <img src="/exgenix-documentation/img/testcase/single-session.png" alt="Single Session Configuration" />
+    <img src="/img/testcase/single-session.png" alt="Single Session Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -111,7 +111,7 @@ Step 4 (User B Order): session2
 
   <!-- <div class="step-image">
     <h4 class="image-title">Multiple Sessions Pattern</h4>
-    <img src="/exgenix-documentation/img/testcase/multiple-sessions.png" alt="Multiple Session Configuration" />
+    <img src="/img/testcase/multiple-sessions.png" alt="Multiple Session Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -134,7 +134,7 @@ Iteration 3: session_${iteration_3}
 
   <!-- <div class="step-image">
     <h4 class="image-title">Session Per Iteration Pattern</h4>
-    <img src="/exgenix-documentation/img/testcase/session-per-iteration.png" alt="Session Per Iteration Configuration" />
+    <img src="/img/testcase/session-per-iteration.png" alt="Session Per Iteration Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -162,7 +162,7 @@ Each step advances to the next row in its datasheet.
 
   <!-- <div class="step-image">
     <h4 class="image-title">Incremental Row Strategy</h4>
-    <img src="/exgenix-documentation/img/testcase/incremental-rows.png" alt="Incremental Row Usage Strategy" />
+    <img src="/img/testcase/incremental-rows.png" alt="Incremental Row Usage Strategy" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -186,7 +186,7 @@ All steps use the same row throughout execution.
 
   <!-- <div class="step-image">
     <h4 class="image-title">Consistent Row Strategy</h4>
-    <img src="/exgenix-documentation/img/testcase/consistent-rows.png" alt="Consistent Row Usage Strategy" />
+    <img src="/img/testcase/consistent-rows.png" alt="Consistent Row Usage Strategy" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -210,7 +210,7 @@ Synchronize request-response pairs while advancing requests.
 
   <!-- <div class="step-image">
     <h4 class="image-title">Datasheet Synchronization Strategy</h4>
-    <img src="/exgenix-documentation/img/testcase/datasheet-sync.png" alt="Synchronized Datasheet Strategy" />
+    <img src="/img/testcase/datasheet-sync.png" alt="Synchronized Datasheet Strategy" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div> -->
 </div>
@@ -244,7 +244,7 @@ Synchronize request-response pairs while advancing requests.
 <div className="step-image" style={{ flex: "0 0 300px", textAlign: "center" }}>
       <h4 className="image-title">Trade Flow</h4>
       <img
-        src="/exgenix-documentation/img/testcase/trade_flow.png"
+        src="/img/testcase/trade_flow.png"
         alt="Trade Flow"
         style={{
           width: "100%",

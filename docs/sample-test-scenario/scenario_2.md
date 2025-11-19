@@ -95,7 +95,7 @@ Validate the end-to-end workflow to ensure:
 
   <div class="step-image">
     <h4 class="image-title">Login Test Action Unit</h4>
-    <img src="/exgenix-documentation/img/scenario_2/login_tau.png" alt="Login Test Action Unit" />
+    <img src="/img/scenario_2/login_tau.png" alt="Login Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -108,7 +108,7 @@ Validate the end-to-end workflow to ensure:
 
   <div class="step-image">
     <h4 class="image-title">Logout Test Action Unit</h4>
-    <img src="/exgenix-documentation/img/scenario_2/logout_tau.png" alt="Logout Test Action Unit" />
+    <img src="/img/scenario_2/logout_tau.png" alt="Logout Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -196,7 +196,7 @@ Validate the end-to-end workflow to ensure:
   </div>
   <div class="step-image">
     <h4 class="image-title">Socket Connection Configuration</h4>
-    <img src="/exgenix-documentation/img/scenario_2/3.png" alt="Socket Connection Datasheet" />
+    <img src="/img/scenario_2/3.png" alt="Socket Connection Datasheet" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -220,7 +220,7 @@ Validate the end-to-end workflow to ensure:
   </div>
   <div class="step-image">
     <h4 class="image-title">Test Case Configuration</h4>
-    <img src="/exgenix-documentation/img/scenario_2/7.png" alt="Test Case Creation Steps" />
+    <img src="/img/scenario_2/7.png" alt="Test Case Creation Steps" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

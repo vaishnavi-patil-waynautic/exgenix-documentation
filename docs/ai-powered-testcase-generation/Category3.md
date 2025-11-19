@@ -7,6 +7,7 @@ sidebar_label: Category 3 - From User Stories Integrated via ADO or Jira
 slug: /ai-powered-testcase-generation/category3
 description: 'Connect directly to **Azure DevOps (ADO)** and **Jira** to fetch user stories and automatically generate test cases'
 ---
+import ExampleBlock from '@site/src/components/ExampleBlock'
 
 
 # Category 3: From User Stories Integrated via ADO or Jira
@@ -20,7 +21,7 @@ description: 'Connect directly to **Azure DevOps (ADO)** and **Jira** to fetch u
   </div>
   <div class="step-image">
     <h4 class="image-title">Connect to ADO/Jira</h4>
-    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/3.png" alt="Connect to ADO or Jira for user stories" />
+    <img src="/img/ai_powered_testcase_generation/3.png" alt="Connect to ADO or Jira for user stories" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -37,11 +38,13 @@ description: 'Connect directly to **Azure DevOps (ADO)** and **Jira** to fetch u
   </div>
   <div class="step-image">
     <h4 class="image-title">Select User Stories</h4>
-    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/4.png" alt="Select user stories from ADO/Jira" />
+    <img src="/img/ai_powered_testcase_generation/4.png" alt="Select user stories from ADO/Jira" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 
+
+<ExampleBlock title="Example Ouput">
 
 <div class="step-block">
   <div class="step-text">
@@ -55,9 +58,11 @@ description: 'Connect directly to **Azure DevOps (ADO)** and **Jira** to fetch u
   </div>
   <div class="step-image">
     <h4 class="image-title">Generated Test Cases</h4>
-    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/generated_testcases_3.png" alt="AI-generated test cases from user stories" />
+    <img src="/img/ai_powered_testcase_generation/generated_testcases_3.png" alt="AI-generated test cases from user stories" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+</ExampleBlock>
 
 ---

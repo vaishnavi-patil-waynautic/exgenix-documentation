@@ -69,7 +69,7 @@ For each step, configure the following:
 
   <div class="step-image">
     <h4 class="image-title">Session Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/session.png" alt="Configure Session Identifier" />
+    <img src="/img/testcase/session.png" alt="Configure Session Identifier" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -111,7 +111,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Datasheet Configuration Modal</h4>
-    <img src="/exgenix-documentation/img/testcase/datasheet.png" alt="Configure Datasheets for Test Action Unit" />
+    <img src="/img/testcase/datasheet.png" alt="Configure Datasheets for Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -129,7 +129,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Datasheet Configuration Modal</h4>
-    <img src="/exgenix-documentation/img/testcase/datasheet_selection.png" alt="Configure Datasheets for Test Action Unit" />
+    <img src="/img/testcase/datasheet_selection.png" alt="Configure Datasheets for Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -183,7 +183,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Pattern Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/pattern.png" alt="NEXT_ROW Pattern Example" />
+    <img src="/img/testcase/pattern.png" alt="NEXT_ROW Pattern Example" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -259,7 +259,7 @@ Associate a datasheet with the step.
 
   <div class="step-image">
     <h4 class="image-title">Error Handling Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/on_error.png" alt="Configure On Error Behavior" />
+    <img src="/img/testcase/on_error.png" alt="Configure On Error Behavior" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

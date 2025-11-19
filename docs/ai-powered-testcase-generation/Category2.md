@@ -7,7 +7,7 @@ sidebar_label: Category 2 - From Business Requirement Documents (BRD) and Impact
 slug: /ai-powered-testcase-generation/category2
 description: 'Extract functional and business-level test scenarios directly from text-based or semi-structured documents'
 ---
-
+import ExampleBlock from '@site/src/components/ExampleBlock'
 
 # Category 2: From Business Requirement Documents (BRD) and Impact Assessment Reports
 
@@ -28,10 +28,12 @@ description: 'Extract functional and business-level test scenarios directly from
   </div>
   <div class="step-image">
     <h4 class="image-title">AI Test Generation from BRD</h4>
-    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/brd_extraction.png" alt="Generate test cases from Business Requirement Documents" />
+    <img src="/img/ai_powered_testcase_generation/brd_extraction.png" alt="Generate test cases from Business Requirement Documents" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+<ExampleBlock title="Example Ouput">
 
 <div class="step-block">
   <div class="step-text">
@@ -45,9 +47,11 @@ description: 'Extract functional and business-level test scenarios directly from
   </div>
   <div class="step-image">
     <h4 class="image-title">Generated Testcases</h4>
-    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/generated_testcases_2.png" alt="Output Example" />
+    <img src="/img/ai_powered_testcase_generation/generated_testcases_2.png" alt="Output Example" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+</ExampleBlock>
 
 ---

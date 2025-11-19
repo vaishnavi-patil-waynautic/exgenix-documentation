@@ -41,7 +41,7 @@ import { Layers, Settings, Database } from 'lucide-react';
 
   <div class="step-image">
     <h4 class="image-title">Test Execution</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/test_execution.png" alt="Test Execution" />
+    <img src="/img/test_suite_and_execution/test_execution.png" alt="Test Execution" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

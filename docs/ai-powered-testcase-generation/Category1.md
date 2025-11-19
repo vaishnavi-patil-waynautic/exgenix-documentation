@@ -7,6 +7,7 @@ sidebar_label: Category 1 - From FIX / ETI/Custom Binary API Definitions
 slug: /ai-powered-testcase-generation/category1
 description: 'Automatically generate test cases directly from API definitions'
 ---
+import ExampleBlock from '@site/src/components/ExampleBlock'
 
 # Category 1: From FIX / ETI/Custom Binary API Definitions
 
@@ -26,15 +27,16 @@ description: 'Automatically generate test cases directly from API definitions'
   </div>
   <div class="step-image">
     <h4 class="image-title">AI Test Generation from API Definitions</h4>
-    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/1.png" alt="Generate test cases from FIX/ETI API definitions" />
+    <img src="/img/ai_powered_testcase_generation/1.png" alt="Generate test cases from FIX/ETI API definitions" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
 
+<ExampleBlock title="Example Ouput">
+
 <div class="step-block">
   <div class="step-text">
     
-    ### Output Example:
     
     - **Positive:** Valid order message with all mandatory fields
     - **Negative:** Missing tag or invalid data type
@@ -44,9 +46,11 @@ description: 'Automatically generate test cases directly from API definitions'
   </div>
   <div class="step-image">
     <h4 class="image-title">Generated Testcases</h4>
-    <img src="/exgenix-documentation/img/ai_powered_testcase_generation/generated_testcases.png" alt="Output Example" />
+    <img src="/img/ai_powered_testcase_generation/generated_testcases.png" alt="Output Example" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
+
+</ExampleBlock>
 
 ---

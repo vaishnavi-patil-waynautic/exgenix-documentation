@@ -16,7 +16,7 @@ import ExampleBlock from '@site/src/components/ExampleBlock'
   title="Example: Login Test Action Unit"
   image={{
     title: "Login Test Action Unit",
-    src: "/exgenix-documentation/img/test_action_unit/login_tau.png",
+    src: "/img/test_action_unit/login_tau.png",
     alt: "Login Test Action Unit"
   }}
   caption="🖱️ Click to expand image"
@@ -50,7 +50,7 @@ import ExampleBlock from '@site/src/components/ExampleBlock'
   </div>
   <div class="step-image">
     <h4 class="image-title">Step Configuration View</h4>
-    <img src="/exgenix-documentation/img/test_action_unit/step_added.png" alt="Test Action Unit step configuration" />
+    <img src="/img/test_action_unit/step_added.png" alt="Test Action Unit step configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

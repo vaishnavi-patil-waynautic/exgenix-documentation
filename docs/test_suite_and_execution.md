@@ -110,7 +110,7 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
 
   <div class="step-image">
     <h4 class="image-title">Test Execution</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/test_execution.png" alt="Test Execution" />
+    <img src="/img/test_suite_and_execution/test_execution.png" alt="Test Execution" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -146,7 +146,7 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
 
   <div class="step-image">
     <h4 class="image-title">Create Collection</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/1.png" alt="Create Test Execution Collection" />
+    <img src="/img/test_suite_and_execution/1.png" alt="Create Test Execution Collection" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -168,7 +168,7 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
 
   <div class="step-image">
     <h4 class="image-title">Test Collection View</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/test_collection.png" alt="Open Test Collection" />
+    <img src="/img/test_suite_and_execution/test_collection.png" alt="Open Test Collection" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -202,7 +202,7 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
   </div>
   <div class="step-image">
     <h4 class="image-title">Parallel Execution Configuration</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/2.png" alt="Configure Parallel Execution" />
+    <img src="/img/test_suite_and_execution/2.png" alt="Configure Parallel Execution" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -235,7 +235,7 @@ For **Scheduled** runs, set frequency (Daily/Weekly/Monthly), specific times, an
   </div>
   <div class="step-image">
     <h4 class="image-title">Add Test Cases Dialog</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/3.png" alt="Add Test Cases to Suite" />
+    <img src="/img/test_suite_and_execution/3.png" alt="Add Test Cases to Suite" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -298,7 +298,7 @@ After suite creation, the panel shows:
   </div>
   <div class="step-image">
     <h4 class="image-title">Execute Suite</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/4.png" alt="Execute Test Suite" />
+    <img src="/img/test_suite_and_execution/4.png" alt="Execute Test Suite" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -392,7 +392,7 @@ After suite creation, the panel shows:
   </div>
   <div class="step-image">
     <h4 class="image-title">Reports Dashboard</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/5.png" alt="Test Execution Reports Dashboard" />
+    <img src="/img/test_suite_and_execution/5.png" alt="Test Execution Reports Dashboard" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -414,7 +414,7 @@ After suite creation, the panel shows:
   </div>
   <div class="step-image">
     <h4 class="image-title">Reports List</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/6.png" alt="List of Execution Reports" />
+    <img src="/img/test_suite_and_execution/6.png" alt="List of Execution Reports" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -453,7 +453,7 @@ After suite creation, the panel shows:
   </div>
   <div class="step-image">
     <h4 class="image-title">Test Case Details</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/7.png" alt="Detailed Test Case Results" />
+    <img src="/img/test_suite_and_execution/7.png" alt="Detailed Test Case Results" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

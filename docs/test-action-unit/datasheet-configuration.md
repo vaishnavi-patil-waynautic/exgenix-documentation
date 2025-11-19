@@ -46,7 +46,7 @@ When adding a Test Action Unit inside a test case, you must configure the datash
   </div>
   <div class="step-image">
     <h4 class="image-title">Datasheet Configuration Modal</h4>
-    <img src="/exgenix-documentation/img/testcase/datasheet_selection.png" alt="Configuring datasheets for Test Action Unit" />
+    <img src="/img/testcase/datasheet_selection.png" alt="Configuring datasheets for Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

@@ -83,7 +83,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Navigate to API Configuration</h4>
-    <img src="/exgenix-documentation/img/scenario_1/1.png" alt="Navigate to API Configuration module" />
+    <img src="/img/scenario_1/1.png" alt="Navigate to API Configuration module" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -104,7 +104,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Create API Collection</h4>
-    <img src="/exgenix-documentation/img/scenario_1/2.png" alt="Create ETI Trading APIs Collection" />
+    <img src="/img/scenario_1/2.png" alt="Create ETI Trading APIs Collection" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -124,7 +124,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">API Configuration List</h4>
-    <img src="/exgenix-documentation/img/scenario_1/3.png" alt="API Configuration List View" />
+    <img src="/img/scenario_1/3.png" alt="API Configuration List View" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -148,7 +148,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Basic Info Configuration</h4>
-    <img src="/exgenix-documentation/img/scenario_1/4.png" alt="New Order Single Basic Info" />
+    <img src="/img/scenario_1/4.png" alt="New Order Single Basic Info" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -170,7 +170,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">PDF Import Configuration</h4>
-    <img src="/exgenix-documentation/img/scenario_1/5.png" alt="Import New Order Single from PDF" />
+    <img src="/img/scenario_1/5.png" alt="Import New Order Single from PDF" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -192,7 +192,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Extracted API Fields - Part 1</h4>
-    <img src="/exgenix-documentation/img/scenario_1/6.png" alt="Auto-extracted API fields from PDF" />
+    <img src="/img/scenario_1/6.png" alt="Auto-extracted API fields from PDF" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -207,7 +207,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Extracted API Fields - Part 2</h4>
-    <img src="/exgenix-documentation/img/scenario_1/7.png" alt="Complete extracted fields view" />
+    <img src="/img/scenario_1/7.png" alt="Complete extracted fields view" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -233,7 +233,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Positive Datasheet</h4>
-    <img src="/exgenix-documentation/img/scenario_1/8.png" alt="Create positive test datasheet" />
+    <img src="/img/scenario_1/8.png" alt="Create positive test datasheet" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -257,7 +257,7 @@ Before starting, ensure the following:
     <div className="step-image">
       <h4 className="image-title">Positive Datasheet Values</h4>
       <img
-        src="/exgenix-documentation/img/scenario_1/9.png"
+        src="/img/scenario_1/9.png"
         alt="Positive datasheet with values"
         style={{
           width: "100%",
@@ -287,7 +287,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Negative Datasheet</h4>
-    <img src="/exgenix-documentation/img/scenario_1/10.png" alt="Create negative test datasheet" />
+    <img src="/img/scenario_1/10.png" alt="Create negative test datasheet" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -310,7 +310,7 @@ Before starting, ensure the following:
     <div className="step-image">
       <h4 className="image-title">Negative Datasheet Values</h4>
       <img
-        src="/exgenix-documentation/img/scenario_1/11.png"
+        src="/img/scenario_1/11.png"
         alt="Negative datasheet with invalid values"
         style={{
           width: "100%",
@@ -340,7 +340,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Edge Case Datasheet</h4>
-    <img src="/exgenix-documentation/img/scenario_1/12.png" alt="Create edge case datasheet" />
+    <img src="/img/scenario_1/12.png" alt="Create edge case datasheet" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -361,7 +361,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Completed API Configuration</h4>
-    <img src="/exgenix-documentation/img/scenario_1/13.png" alt="Completed New Order Single configuration" />
+    <img src="/img/scenario_1/13.png" alt="Completed New Order Single configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -386,7 +386,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Response API Basic Info</h4>
-    <img src="/exgenix-documentation/img/scenario_1/14.png" alt="New Order Response Basic Info" />
+    <img src="/img/scenario_1/14.png" alt="New Order Response Basic Info" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -408,7 +408,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Import Response from PDF</h4>
-    <img src="/exgenix-documentation/img/scenario_1/15.png" alt="Import New Order Response from PDF" />
+    <img src="/img/scenario_1/15.png" alt="Import New Order Response from PDF" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -435,7 +435,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Validation Datasheet</h4>
-    <img src="/exgenix-documentation/img/scenario_1/16.png" alt="Create validation datasheet" />
+    <img src="/img/scenario_1/16.png" alt="Create validation datasheet" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -460,7 +460,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Login Test Action Unit</h4>
-    <img src="/exgenix-documentation/img/scenario_1/17.png" alt="Create Login Test Action Unit" />
+    <img src="/img/scenario_1/17.png" alt="Create Login Test Action Unit" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -484,7 +484,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Login TAU Steps</h4>
-    <img src="/exgenix-documentation/img/scenario_1/18.png" alt="Login TAU with all steps configured" />
+    <img src="/img/scenario_1/18.png" alt="Login TAU with all steps configured" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -520,7 +520,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Test Case</h4>
-    <img src="/exgenix-documentation/img/scenario_1/19.png" alt="Create ETI New Order test case" />
+    <img src="/img/scenario_1/19.png" alt="Create ETI New Order test case" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -545,7 +545,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Test Suite</h4>
-    <img src="/exgenix-documentation/img/scenario_1/20.png" alt="Create ETI Order Validation Suite" />
+    <img src="/img/scenario_1/20.png" alt="Create ETI Order Validation Suite" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -565,7 +565,7 @@ Before starting, ensure the following:
   </div>
   <div class="step-image">
     <h4 class="image-title">Add Test Case to Suite</h4>
-    <img src="/exgenix-documentation/img/scenario_1/21.png" alt="Add test case to suite" />
+    <img src="/img/scenario_1/21.png" alt="Add test case to suite" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -597,7 +597,7 @@ Monitor live progress
   </div>
   <div class="step-image">
     <h4 class="image-title">Execution Report</h4>
-    <img src="/exgenix-documentation/img/scenario_1/22.png" alt="Execution Report" />
+    <img src="/img/scenario_1/22.png" alt="Execution Report" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

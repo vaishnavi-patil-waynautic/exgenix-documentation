@@ -42,7 +42,7 @@ Datasheets are data tables linked to API configurations where:
   </div>
   <div class="step-image">
     <h4 class="image-title">Create Datasheet</h4>
-    <img src="/exgenix-documentation/img/api_config/5.png" alt="Creating a new datasheet" />
+    <img src="/img/api_config/5.png" alt="Creating a new datasheet" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -60,7 +60,7 @@ Datasheets are data tables linked to API configurations where:
   </div>
   <div class="step-image">
     <h4 class="image-title">Datasheet Structure</h4>
-    <img src="/exgenix-documentation/img/api_config/6.png" alt="Datasheet structure with rows and columns" />
+    <img src="/img/api_config/6.png" alt="Datasheet structure with rows and columns" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -148,7 +148,7 @@ Click **+ Add Row** to create additional test iterations. Each row represents on
   </div>
   <div class="step-image">
     <h4 class="image-title">Import/Export Datasheets</h4>
-    <img src="/exgenix-documentation/img/api_config/7.png" alt="Import and Export Excel datasheets" />
+    <img src="/img/api_config/7.png" alt="Import and Export Excel datasheets" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

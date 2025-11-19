@@ -24,7 +24,7 @@ description: 'Understanding test execution reports'
   </div>
   <div class="step-image">
     <h4 class="image-title">Reports Dashboard</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/5.png" alt="Test Execution Reports Dashboard" />
+    <img src="/img/test_suite_and_execution/5.png" alt="Test Execution Reports Dashboard" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -46,7 +46,7 @@ description: 'Understanding test execution reports'
   </div>
   <div class="step-image">
     <h4 class="image-title">Reports List</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/6.png" alt="List of Execution Reports" />
+    <img src="/img/test_suite_and_execution/6.png" alt="List of Execution Reports" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -85,7 +85,7 @@ description: 'Understanding test execution reports'
   </div>
   <div class="step-image">
     <h4 class="image-title">Test Case Details</h4>
-    <img src="/exgenix-documentation/img/test_suite_and_execution/7.png" alt="Detailed Test Case Results" />
+    <img src="/img/test_suite_and_execution/7.png" alt="Detailed Test Case Results" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>

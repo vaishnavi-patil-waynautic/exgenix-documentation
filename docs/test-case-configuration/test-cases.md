@@ -47,7 +47,7 @@ A **Test Case** represents a complete, executable test scenario that validates s
     <div className="step-image">
         <h4 className="image-title">Test Case Structure Example</h4>
         <img
-          src="/exgenix-documentation/img/testcase/example.png"
+          src="/img/testcase/example.png"
           alt="Example Test Case Structure"
           style={{
             width: "100%",

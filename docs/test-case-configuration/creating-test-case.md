@@ -28,7 +28,7 @@ description: 'Step-by-step guide to creating test cases'
 
    <div class="step-image">
     <h4 class="image-title">Navigate To Test Cases</h4>
-    <img src="/exgenix-documentation/img/testcase/testcase.png" alt="Navigate To Test Cases" />
+    <img src="/img/testcase/testcase.png" alt="Navigate To Test Cases" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 
@@ -57,7 +57,7 @@ description: 'Step-by-step guide to creating test cases'
 
   <div class="step-image">
     <h4 class="image-title">Test Case Basic Information</h4>
-    <img src="/exgenix-documentation/img/testcase/main_tab.png" alt="Test Case Name and Description" />
+    <img src="/img/testcase/main_tab.png" alt="Test Case Name and Description" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -86,7 +86,7 @@ Reusable component containing multiple APIs configured together.
 
   <div class="step-image">
     <h4 class="image-title">Action Type Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/type.png" alt="Action Type Configuration" />
+    <img src="/img/testcase/type.png" alt="Action Type Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
@@ -111,7 +111,7 @@ Reusable component containing multiple APIs configured together.
 
   <div class="step-image">
     <h4 class="image-title">Action Type Configuration</h4>
-    <img src="/exgenix-documentation/img/testcase/add_step_normal.png" alt="Step Type Configuration" />
+    <img src="/img/testcase/add_step_normal.png" alt="Step Type Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>
 </div>
