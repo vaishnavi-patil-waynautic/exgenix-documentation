@@ -1155,7 +1155,21 @@ a{
   color: #1a64f0;
 }
 
+.navbar__search {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin-bottom: 10px !important;
+}
 
+.navbar-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;     /* vertically centers it */
+  padding-top: 4px;        /* adjust if still too low */
+  padding-bottom: 4px !important;
+  margin-bottom: 10px !important;
+}
 
 
 

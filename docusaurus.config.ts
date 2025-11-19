@@ -1,6 +1,21 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {
+  FileText,
+  Heading,
+  AlignLeft,
+  ArrowLeftCircle,
+  SearchX,
+  CornerDownRight,
+  
+} from "lucide-static";
+import fs from "fs";
+
+function svg(iconPath) {
+  return fs.readFileSync(iconPath, "utf8");
+}
+
 
 
 const config: Config = {
@@ -93,7 +108,15 @@ plugins: [
       explicitSearchResultPath: true,
       indexDocs: true,
       indexPages: true,
-      searchResultLimits: 20,
+      searchResultLimits: 7,
+
+      iconTitle: svg(FileText),
+    iconHeading: svg(Heading),
+    iconContent: svg(AlignLeft),
+    iconAction: svg(ArrowLeftCircle),
+    iconNoResults: svg(SearchX),
+    iconTreeInter: svg(CornerDownRight),
+    iconTreeLast: svg(CornerDownRight),
     }
   ]
 ],
