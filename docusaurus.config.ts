@@ -81,14 +81,25 @@ plugins: [
     require.resolve("@easyops-cn/docusaurus-search-local"),
     {
       hashed: true,
-      indexPages: true,        // index all pages, not just docs
-      docsRouteBasePath: '/',  // adjust if your docs are under /docs
-      language: ["en"],        // supports multiple languages
+
+      // To show where the search item came from
+      explicitSearchResultPath: true,
+
+      // Relevance-based ranking
+      searchResultLimits: 20,
+      removeDefaultStopWordFilter: false,
+      removeDefaultStemmer: false,
+
+      // Language
+      language: ["en"],
+
+      // Optional
+      indexPages: true,
       highlightSearchTermsOnTargetPage: true,
-      searchContextByPaths: false
     }
   ]
 ],
+
 
 scripts: [
   '/js/imageExpand.js'
