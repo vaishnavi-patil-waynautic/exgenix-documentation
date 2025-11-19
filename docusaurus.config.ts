@@ -12,7 +12,11 @@ import {
 } from "lucide-static";
 import fs from "fs";
 
-
+// Convert lucide-static icon object to SVG string
+const toSvg = (icon: any) =>
+  `<svg xmlns="http://www.w3.org/2000/svg" width="${icon.width}" height="${
+    icon.height
+  }" viewBox="0 0 ${icon.width} ${icon.height}">${icon.body}</svg>`;
 
 
 const config: Config = {
