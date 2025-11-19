@@ -81,24 +81,23 @@ plugins: [
     require.resolve("@easyops-cn/docusaurus-search-local"),
     {
       hashed: true,
+
       language: ["en"],
 
-      // Highlight terms
+      // EXACT PHRASE MATCH MODE
+      removeDefaultStemmer: true,            // full-word, no stemming
+      removeDefaultStopWordFilter: true,     // do not ignore small words
+      searchResultContextMaxLength: 0,       // no fuzzy context expansion
+
       highlightSearchTermsOnTargetPage: true,
-
-      // EXACT PHRASE MATCHING
-      removeDefaultStemmer: true,             // no stemming
-      removeDefaultStopWordFilter: true,      // no stopwords
-      searchResultLimits: 20,
       explicitSearchResultPath: true,
-
-      // Force strict tokenization
-      tokenizerSeparator: /(?=a)b/,           // <-- disables automatic splitting
       indexDocs: true,
       indexPages: true,
+      searchResultLimits: 20,
     }
   ]
 ],
+
 
 
 
@@ -132,7 +131,7 @@ scripts: [
         },
         {
         type: "search",
-        position: "center",
+        position: "right",
         },
       ],
     },
