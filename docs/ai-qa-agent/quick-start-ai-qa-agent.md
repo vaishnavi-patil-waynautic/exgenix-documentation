@@ -9,7 +9,7 @@ slug: /ai-qa-agent/quick-start-guide
 import { Lock, Folder, RefreshCw, Bot, FileText, Link, GitBranch, Bug, MessageSquare, Bookmark, Check, Mouse, FileCog, ClipboardCheck, GitMerge, Search, AlignLeft } from 'lucide-react';
 import ExampleBlock  from '@site/src/components/ExampleBlock';
 
-# Exgenix QA Governance Module - Documentation
+# Exgenix QA Governance - Quick Start Guide
 
 
 ---

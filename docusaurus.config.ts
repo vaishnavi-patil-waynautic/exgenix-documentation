@@ -64,16 +64,30 @@ const config: Config = {
   ],
 
 
-  plugins: [
+//   plugins: [
+//   [
+//     require.resolve('@cmfcmf/docusaurus-search-local'),
+//     {
+//       indexDocs: true,
+//       indexBlog: true,
+//       indexPages: true,
+//       language: 'en',
+//     },
+//   ],
+// ],
+
+plugins: [
   [
-    require.resolve('@cmfcmf/docusaurus-search-local'),
+    require.resolve("@easyops-cn/docusaurus-search-local"),
     {
-      indexDocs: true,
-      indexBlog: true,
-      indexPages: true,
-      language: 'en',
-    },
-  ],
+      hashed: true,
+      indexPages: true,        // index all pages, not just docs
+      docsRouteBasePath: '/',  // adjust if your docs are under /docs
+      language: ["en"],        // supports multiple languages
+      highlightSearchTermsOnTargetPage: true,
+      searchContextByPaths: false
+    }
+  ]
 ],
 
 scripts: [
@@ -103,6 +117,10 @@ scripts: [
           href: 'https://app.exgenix.waynautic.com/',
           label: 'Exgenix Platform',
           position: 'right',
+        },
+        {
+        type: "search",
+        position: "right",
         },
       ],
     },
