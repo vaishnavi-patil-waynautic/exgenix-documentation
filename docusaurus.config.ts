@@ -81,24 +81,25 @@ plugins: [
     require.resolve("@easyops-cn/docusaurus-search-local"),
     {
       hashed: true,
-
-      // To show where the search item came from
-      explicitSearchResultPath: true,
-
-      // Relevance-based ranking
-      searchResultLimits: 20,
-      removeDefaultStopWordFilter: false,
-      removeDefaultStemmer: false,
-
-      // Language
       language: ["en"],
 
-      // Optional
-      indexPages: true,
+      // Highlight terms
       highlightSearchTermsOnTargetPage: true,
+
+      // EXACT PHRASE MATCHING
+      removeDefaultStemmer: true,             // no stemming
+      removeDefaultStopWordFilter: true,      // no stopwords
+      searchResultLimits: 20,
+      explicitSearchResultPath: true,
+
+      // Force strict tokenization
+      tokenizerSeparator: /(?=a)b/,           // <-- disables automatic splitting
+      indexDocs: true,
+      indexPages: true,
     }
   ]
 ],
+
 
 
 scripts: [
@@ -131,7 +132,7 @@ scripts: [
         },
         {
         type: "search",
-        position: "right",
+        position: "center",
         },
       ],
     },
