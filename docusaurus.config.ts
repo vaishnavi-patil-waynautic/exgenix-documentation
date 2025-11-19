@@ -12,9 +12,6 @@ import {
 } from "lucide-static";
 import fs from "fs";
 
-function svg(iconPath) {
-  return fs.readFileSync(iconPath, "utf8");
-}
 
 
 
@@ -28,7 +25,7 @@ const config: Config = {
   },
 
   url: 'https://vaishnavi-patil-waynautic.github.io',
-  baseUrl: '/exgenix-documentation/',
+  baseUrl: '/',
   organizationName: 'vaishnavi-patil-waynautic',
   projectName: 'exgenix-documentation',
   deploymentBranch: 'gh-pages',
