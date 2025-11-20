@@ -9,7 +9,6 @@
 .cache-loader
 
 #large-files
-/static/videos
 /trash
 
 # Misc

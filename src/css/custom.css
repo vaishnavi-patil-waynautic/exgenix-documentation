@@ -1155,7 +1155,7 @@ a{
   color: #1a64f0;
 }
 
-.navbar__search  {
+/* .navbar__search  {
   position: absolute !important;
   top: 0px !important;
   margin-top: 1rem !important;
@@ -1167,10 +1167,10 @@ a{
 .navbar-search {
   display: flex;
   align-items: center;
-  justify-content: center;     /* vertically centers it */
-  padding-top: 4px;        /* adjust if still too low */
+  justify-content: center;     /* vertically centers it 
+  padding-top: 4px;        /* adjust if still too low 
   padding-bottom: 4px !important;
   margin-bottom: 10px !important;
-}
+} */
 
 
