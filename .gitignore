@@ -10,6 +10,7 @@
 
 #large-files
 /trash
+/static/videos.zip
 
 # Misc
 .DS_Store
