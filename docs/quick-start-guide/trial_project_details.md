@@ -22,7 +22,7 @@ description: 'Get started with trial project'
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <!-- <tr>
         <td style={{ padding: "10px", border: "1px solid #ddd" }} rowSpan="3">
           `Exgenix`
         </td>
@@ -36,24 +36,24 @@ description: 'Get started with trial project'
       </tr>
       <tr>
         <td style={{ padding: "10px", border: "1px solid #ddd" }}>`Execution`</td>
-      </tr>
+      </tr> -->
       <tr>
         <td style={{ padding: "10px", border: "1px solid #ddd" }}>`AI QA Agent`</td>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`Project_Trial`</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`DBG Trial Project`</td>
         <td style={{ padding: "10px", border: "1px solid #ddd" }}>
           Enables QA traceability and insights for different modules and features
         </td>
       </tr>
       <tr>
         <td style={{ padding: "10px", border: "1px solid #ddd" }}>`Jira`</td>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`Project_Trial`</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`AI Agent Testing`</td>
         <td style={{ padding: "10px", border: "1px solid #ddd" }}>
           Contains User Stories and Acceptance Criteria linked to Exgenix tests
         </td>
       </tr>
       <tr>
         <td style={{ padding: "10px", border: "1px solid #ddd" }}>`ADO`</td>
-        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`Project_Trial`</td>
+        <td style={{ padding: "10px", border: "1px solid #ddd" }}>`TrialProject`</td>
         <td style={{ padding: "10px", border: "1px solid #ddd" }}>
           Contains User Stories and Acceptance Criteria linked to Exgenix tests
         </td>
