@@ -528,9 +528,6 @@ Access dynamic governance analytics using natural language prompts.
 
 </ExampleBlock>
 
-- Chat/Query Console
-- AI Response Panel
-
 ---
 
 # <AlignLeft /> Final Summary

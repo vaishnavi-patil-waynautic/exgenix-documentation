@@ -1,0 +1,29 @@
+{
+  "index_name": "docs",
+  "start_urls": [
+    "http://localhost:3000/docs/exgenix/exgenix",
+    "http://localhost:3000/docs/exgenix/executive-overview",
+    "http://localhost:3000/docs/exgenix/qa-transformation-vision"
+  ],
+  "selectors": {
+    "lvl0": { "selector": ".navbar__title" },
+    "lvl1": { "selector": ".theme-doc-markdown h1" },
+    "lvl2": { "selector": ".theme-doc-markdown h2" },
+    "lvl3": { "selector": ".theme-doc-markdown h3" },
+    "lvl4": { "selector": ".theme-doc-markdown h4" },
+    "text": { "selector": ".theme-doc-markdown p, .theme-doc-markdown li, .theme-doc-markdown td, .theme-doc-markdown blockquote" }
+  },
+
+  "js_render": true,
+  "typesense_server": {
+    "api_key": "Vs8753PvVrICIYASnnmgG2I4h2UiWt4637Uzjh077bQRs7Qg",
+    "nodes": [
+      {
+        "host": "localhost",
+        "port": 8108,
+        "protocol": "http"
+      }
+    ]
+  }
+}
+

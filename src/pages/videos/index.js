@@ -235,6 +235,7 @@ const videos = [
   { id: "datasheet", title: "Datasheet Configuration", file: "Datasheet.mp4" },
   { id: "testcase", title: "Testcase Configuration", file: "Testcase_creation.mp4" },
   { id: "qa_agent", title: "Waynautic AI QA Agent", file: "Waynautic AI QA Agent - Exgenix.mp4" },
+  { id: "ado_jira", title: "AI Testcase Generation with Azure DevOps and Jira", file: "ADO JIRA.mp4" },
 ];
 
 export default function VideosPage() {
