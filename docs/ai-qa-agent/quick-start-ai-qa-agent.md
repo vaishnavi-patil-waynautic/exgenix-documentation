@@ -546,7 +546,7 @@ Access dynamic governance analytics using natural language prompts.
 </div>
 <div class="step-image">
 <h4 class="image-title">AI Response Panel</h4>
-<img src="/img/ai-qa-agent/27.png" alt="AI Response Panel" />
+<img src="/img/ai-qa-agent/27.jpeg" alt="AI Response Panel" />
 <p class="image-caption">🖱️ Click to expand image</p>
 </div>
 </div>
