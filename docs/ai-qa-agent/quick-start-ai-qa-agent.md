@@ -509,6 +509,9 @@ Click on Update Button as highlighted
 ## <MessageSquare /> Step 9: Conversational AI Insights
 
 
+<div class="step-block">
+<div class="step-text">
+
 ### Objective
 
 Access dynamic governance analytics using natural language prompts.
@@ -519,6 +522,18 @@ Access dynamic governance analytics using natural language prompts.
 - "List all high-risk areas for this release"
 - "Are we ready for production?"
 
+</div>
+<div class="step-image">
+<h4 class="image-title">Chat/Query Console</h4>
+<img src="/img/ai-qa-agent/26.png" alt="Chat/Query Console" />
+<p class="image-caption">🖱️ Click to expand image</p>
+</div>
+</div>
+
+
+<div class="step-block">
+<div class="step-text">
+
 <ExampleBlock title="">
 
 ### System Output
@@ -527,6 +542,19 @@ Access dynamic governance analytics using natural language prompts.
 ✓ Data-backed decisions
 
 </ExampleBlock>
+
+</div>
+<div class="step-image">
+<h4 class="image-title">AI Response Panel</h4>
+<img src="/img/ai-qa-agent/27.png" alt="AI Response Panel" />
+<p class="image-caption">🖱️ Click to expand image</p>
+</div>
+</div>
+
+
+
+
+
 
 ---
 

@@ -265,111 +265,113 @@ When a test case executes multiple times, you can control how data is consumed:
 
 ## Built-in Functions
 #
-
 ### Variable Operations
 
-| Function | Description |
-|----------|-------------|
-| `${variable_name}` | Get variable value |
-| `${set(name, value)}` | Set variable to value |
-| `${capture(name)}` | Capture response value into variable |
-| `${validate_or_capture(name)}` | Validate against variable or capture if not exists |
+| Function | Output | Description |
+|----------|--------|-------------|
+| `${variable_name}` | Variable value | Retrieves the stored value of a variable. `variable_name` = name of the variable |
+| `${set(name, value)}` | Assigned value | Assigns a value to a variable. `name` = variable name; `value` = value to assign |
+| `${capture(name)}` | Captured value | Captures the latest response value into a variable. `name` = variable to store the captured value. Used inside response datasheet to capture values for use in following requests/responses |
+| `${validate_or_capture(name)}` | Validated or captured value | Validates against a variable if it exists, else captures the latest response value. `name` = variable to validate against or capture into. If variable exists, validates against its value; otherwise creates new variable and stores captured value |
 
 ---
 
-### Sequences (Auto-increment)
+### Sequences
 
-| Function | Description |
-|----------|-------------|
-| `${sequence(order_id)}` | Returns: 1, 2, 3, 4... |
-| `${sequence(msg_id, start=100)}` | Returns: 100, 101, 102... |
-| `${sequence(order, prefix="ORD")}` | Returns: ORD001, ORD002, ORD003... |
-| `${sequence(trans, suffix="_TX")}` | Returns: 001_TX, 002_TX, 003_TX... |
-| `${sequence(batch, increment=5)}` | Returns: 5, 10, 15, 20... |
-| `${sequence_reset(order_id)}` | Reset sequence to start |
-| `${sequence_current(order_id)}` | Get current value without incrementing |
+**Note:** For using sequence functions, use in consecutive rows. Example: `${sequence(order_id)}` in first row generates 1, use again in next row for 2, and so on.
+
+| Function | Output | Description |
+|----------|--------|-------------|
+| `${sequence(order_id)}` | 1, 2, 3... | Generates an auto-incrementing number sequence. `order_id` = variable name used to track the sequence |
+| `${sequence(msg_id, start=100)}` | 100, 101, 102... | Starts a sequence at a given number. `msg_id` = sequence variable; `start=100` = initial number |
+| `${sequence(order, prefix="ORD")}` | ORD001... | Adds a prefix to an incrementing sequence. `order` = sequence variable; `prefix` = text added before number |
+| `${sequence(trans, suffix="_TX")}` | 001_TX... | Adds a suffix to an incrementing sequence. `trans` = sequence variable; `suffix` = text added after number |
+| `${sequence(batch, increment=5)}` | 5, 10, 15... | Increments sequence by a custom step. `batch` = sequence variable; `increment=5` = step size |
+| `${sequence_reset(order_id)}` | Reset confirmation | Resets a sequence back to its initial value. `order_id` = sequence variable to reset |
+| `${sequence_current(order_id)}` | Current value | Returns the current sequence number without incrementing. `order_id` = sequence variable whose current value is returned |
 
 ---
 
 ### Random Values
 
-| Function | Description |
-|----------|-------------|
-| `${random_int(1000, 9999)}` | Random integer between 1000-9999 |
-| `${random_decimal(10.0, 99.9, 2)}` | Random decimal with 2 decimal places |
-| `${random_string(8)}` | Random alphanumeric: "kJ8mN2pQ" |
-| `${random_alpha(6)}` | Random letters: "ABcdEF" |
-| `${random_numeric(4)}` | Random digits: "7392" |
-| `${uuid()}` | UUID: "a7b2c9d4-e5f6-4789-b123-456789abcdef" |
-| `${uuid_short()}` | Short UUID: "a7b2c9d4" |
-| `${pick_random(["BUY", "SELL"])}` | Random selection from list |
+| Function | Output | Description |
+|----------|--------|-------------|
+| `${random_int(1000, 9999)}` | Random integer | Generates a random integer in a range. First number = min; second = max |
+| `${random_decimal(10.0, 99.9, 2)}` | Decimal value | Generates a random decimal in a range with defined decimal places. First number = min; second = max; third argument = no of decimal places |
+| `${random_string(8)}` | Alphanumeric string | Generates a random alphanumeric string. `8` = length of the random string |
+| `${random_alpha(6)}` | Alphabetic string | Generates random letters only. `6` = number of alphabetic characters |
+| `${random_numeric(4)}` | Numeric string | Generates random digits. `4` = number of digits |
+| `${uuid()}` | UUID string | Generates a full UUID. No parameters. Example: "a7b2c9d4-e5f6-4789-b123-456789abcdef" |
+| `${uuid_short()}` | Short UUID | Generates an 8-character UUID fragment. No parameters. Example: "a7b2c9d4" |
+| `${pick_random(["BUY","SELL"])}` | One random item | Picks a random value from a list |
 
 ---
 
 ### Math Operations
 
-| Function | Description |
-|----------|-------------|
-| `${add(100, 25)}` | Addition: 125 |
-| `${subtract(100, 25)}` | Subtraction: 75 |
-| `${multiply(10, 5)}` | Multiplication: 50 |
-| `${divide(100, 4)}` | Division: 25 |
-| `${round(3.14159, 2)}` | Round to decimals: 3.14 |
-| `${min(5, 2, 8)}` | Minimum: 2 |
-| `${max(5, 2, 8)}` | Maximum: 8 |
+| Function | Output | Description |
+|----------|--------|-------------|
+| `${add(100, 25)}` | 125 | Adds two numbers |
+| `${subtract(100, 25)}` | 75 | Subtracts one number from another. First number minus second |
+| `${multiply(10, 5)}` | 50 | Multiplies two values |
+| `${divide(100, 4)}` | 25 | Divides first value by second. First number divided by second |
+| `${round(3.14159, 2)}` | 3.14 | Rounds a number to a given precision. Number to round, and number of decimals |
+| `${min(5, 2, 8)}` | 2 | Returns the smallest value. List of values to compare |
+| `${max(5, 2, 8)}` | 8 | Returns the largest value. List of values to compare |
 
 ---
 
 ### String Operations
 
-| Function | Description |
-|----------|-------------|
-| `${concat("USER_", "123")}` | Join strings: "USER_123" |
-| `${upper("hello")}` | Uppercase: "HELLO" |
-| `${lower("HELLO")}` | Lowercase: "hello" |
-| `${substring("ABCDEF", 2, 3)}` | Extract substring: "CDE" |
-| `${left("ABCDEF", 3)}` | Left characters: "ABC" |
-| `${right("ABCDEF", 3)}` | Right characters: "DEF" |
-| `${replace("hello world", "world", "there")}` | Replace: "hello there" |
-| `${pad_left("42", 5, "0")}` | Left pad: "00042" |
-| `${trim("  hello  ")}` | Remove whitespace: "hello" |
-| `${length("hello")}` | String length: 5 |
+| Function | Output | Description |
+|----------|--------|-------------|
+| `${concat("USER_", "123")}` | USER_123 | Joins two or more strings. Strings to join together |
+| `${upper("hello")}` | HELLO | Converts text to uppercase. Text to convert to uppercase |
+| `${lower("HELLO")}` | hello | Converts text to lowercase. Text to convert to lowercase |
+| `${substring("ABCDEF", 2, 3)}` | CDE | Extracts a substring. String, Start index, length |
+| `${left("ABCDEF", 3)}` | ABC | Extracts leftmost characters. String, No of characters to extract from left |
+| `${right("ABCDEF", 3)}` | DEF | Extracts rightmost characters. String, No of characters to extract from right |
+| `${replace("hello world", "world", "there")}` | hello there | Replaces text inside a string. Original text, target text, replacement text |
+| `${pad_left("42", 5, "0")}` | 00042 | Pads a value to a fixed width. Value, total length, pad character |
+| `${trim("  hello  ")}` | hello | Removes surrounding spaces. Text to strip whitespace |
+| `${length("hello")}` | 5 | Returns character count. Text to measure |
 
 ---
 
 ### Date/Time
 
-| Function | Description |
-|----------|-------------|
-| `${now()}` | Current ISO timestamp: "2025-01-15T14:30:45" |
-| `${now("YYYY-MM-DD")}` | Formatted date: "2025-01-15" |
-| `${now("HH:mm:ss")}` | Formatted time: "14:30:45" |
-| `${now("YYYYMMDD")}` | Compact date: "20250115" |
-| `${timestamp()}` | Unix timestamp: "1736951445" |
-| `${timestamp_millis()}` | Unix timestamp (ms): "1736951445000" |
+| Function | Output | Description |
+|----------|--------|-------------|
+| `${now()}` | ISO timestamp | Returns current timestamp. No parameters. Example: "2025-01-15T14:30:45" |
+| `${now("YYYY-MM-DD")}` | Formatted date | Returns formatted date. Format string describing output format. User can switch places of year, month and date as per required format (e.g., MM-YYYY-DD). Example: "2025-01-15" |
+| `${now("HH:mm:ss")}` | Time string | Returns formatted time. Format string for time. User can switch places as required format. Example: "14:30:45" |
+| `${now("YYYYMMDD")}` | Compact date | Returns date without separators. Compact format. User can switch places of year, month and date as required format but all characters used should be Capital only. Example: "20250115" |
+| `${timestamp()}` | Unix seconds | Returns Unix timestamp in seconds. No parameters. Example: 1736951445 |
+| `${timestamp_millis()}` | Unix milliseconds | Returns Unix timestamp in milliseconds. No parameters. Example: 1736951445000 |
 
 ---
 
 ### Expressions
 
-| Function | Description |
-|----------|-------------|
-| `${expr("100 > 50")}` | Boolean: true |
-| `${expr("${price} > 100 ? 'HIGH' : 'LOW'")}` | Conditional: "HIGH" or "LOW" |
-| `${expr("'VIP' if ${score} > 90 else 'REGULAR'")}` | Python conditional |
-| `${expr("${price} * ${quantity} + ${fee}")}` | Math calculation |
-| `${expr("${active} and ${verified}")}` | Logical AND |
-| `${expr("${symbol} in ['AAPL', 'MSFT', 'GOOGL']")}` | Check membership |
+**Note:** Expressions can be nested. Example: If user wants to perform AND operation between two expressions: `${expr("${expr('100 > 50')} and ${expr('VIP' if ${Quantity} < 90 else 0)")}`
+
+| Function | Output | Description |
+|----------|--------|-------------|
+| `${expr("100 > 50")}` | true | Evaluates a boolean expression. Expression string to evaluate |
+| `${expr("'VIP' if ${score} > 90 else 'REGULAR'")}` | VIP/REGULAR | Evaluates a condition. User can define any text value instead of VIP/REGULAR |
+| `${expr("${price} * ${quantity} + ${fee}")}` | Numeric result | Performs arithmetic with variables. Math expression using variables. User can give numbers directly or can pass variables |
+| `${expr("${active} and ${verified}")}` | true/false | Evaluates boolean logic. If `active` variable contains any value, function considers it as true; if it has 0 then considers it as false. User should provide string values in single inverted commas. Example: `${expr("'VIP' and 'REGULAR'")}` |
+| `${expr("${active} or ${verified}")}` | true/false | Evaluates boolean logic. If variable contains any value, function considers it as true; if it has 0 then considers it as false. User should provide string values in single inverted commas. Example: `${expr("'VIP' or 'REGULAR'")}` |
+| `${expr("${symbol} in ['AAPL','MSFT','GOOGL']")}` | true/false | Checks if value exists in a list. Membership check. User can provide value as variable or as a string in single inverted commas. Example: `${expr("${symbol} in ['AAPL','MSFT','GOOGL']")}` or `${expr("'AAPL' in ['AAPL','MSFT','GOOGL']")}` |
 
 ---
 
 ### Regular Expressions
 
-| Function | Description |
-|----------|-------------|
-| `${regex_match("ABC123", "[A-Z]+[0-9]+")}` | Check pattern match: true/false |
-| `${regex_capture("ID:12345", "ID:([0-9]+)", 1)}` | Extract group: "12345" |
- 
+| Function | Output | Description |
+|----------|--------|-------------|
+| `${regex_match("ABC123", "[A-Z]+[0-9]+")}` | true/false | Tests a pattern against text. Input string, regex pattern |
+| `${regex_capture("ID:12345", "ID:([0-9]+)", 1)}` or `${regex_capture(${name}, "ID:([0-9]+)", 1)}` | 12345 | Extracts a specific group from text. Input string (can be passed as a variable), regex pattern, capture group number (if pattern matches with multiple, which group user wants to capture). Used inside response datasheet to capture values for use in following requests/responses. Example: if value captured and stored in variable called "name", in following requests/responses, it can be used as `${name}` |
 
  ---
 
