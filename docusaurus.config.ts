@@ -133,7 +133,7 @@ scripts: [
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/videos', label: 'Video References', position: 'left'},
+        // {to: '/videos', label: 'Video References', position: 'left'},
         {
           href: 'https://app.exgenix.waynautic.com/',
           label: 'Exgenix Platform',
@@ -153,17 +153,17 @@ scripts: [
           title: 'Documentation',
           items: [
             {
-              label: 'Introduction',
-              to: '/docs/introduction',
+              label: 'Exgenix Trial Access',
+              to: '/docs/dbg-trial',
             },
-            {
-              label: 'Getting Started',
-              to: '/docs/quick-start-guide',
-            },
-            {
-              label: 'Video References',
-              to: '/videos',
-            },
+            // {
+            //   label: 'Getting Started',
+            //   to: '/docs/quick-start-guide',
+            // },
+            // {
+            //   label: 'Video References',
+            //   to: '/videos',
+            // },
           ],
         },
         {
@@ -173,10 +173,10 @@ scripts: [
               label: 'Home',
               to: '/',
             },
-            {
-              label: 'Contact Us',
-              to: '/docs/contact-us',
-            },
+            // {
+            //   label: 'Contact Us',
+            //   to: '/docs/contact-us',
+            // },
             {
               label: 'Exgenix Platform',
               href: 'https://app.exgenix.waynautic.com/',

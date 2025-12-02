@@ -7,6 +7,7 @@ id: dbg-trial
 
 # Exgenix Trial Access
 
+
 Get started with Exgenix through our Exgenix Trial. Explore core features, no-code automation, and AI-driven QA governance in a simulated exchange environment.
 
 ---
@@ -23,5 +24,6 @@ Get started with Exgenix through our Exgenix Trial. Explore core features, no-co
 - [Timeline](dbg-trial/timeline)
 - [Post-Trial](dbg-trial/post-trial)
 - [Commitment](dbg-trial/commitment)
+- [Simulator Functions](dbg-trial/simulator-functions)
 
 ---

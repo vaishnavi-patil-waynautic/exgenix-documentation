@@ -1,0 +1,90 @@
+---
+title: Simulator functions
+hide_table_of_contents: true
+sidebar_label: Simulator functions
+---
+import { Download } from "lucide-react";
+
+# Simulator Functions
+
+---
+
+#####
+
+<a
+  href="/simulator-functions.xlsx"
+  download
+  style={{
+    display: "inline-block",
+    textDecoration: "none",
+  }}
+>
+  <div
+    style={{
+      display: "flex",
+      alignItems: "center",   
+      justifyContent: "center",   
+      gap: "8px",
+      padding: "10px 20px",
+      background: "#0b74ff",
+      color: "white",
+      borderRadius: "6px",
+      fontWeight: 600,
+      fontSize: "14px",
+      lineHeight: "20px",
+      userSelect: "none",
+      cursor: "pointer"
+    }}
+  >
+    <Download size={18} style = {{cursor: "pointer"}}/>
+    <span  style = {{cursor: "pointer"}}>Download Simulator Functions</span>
+  </div>
+</a>
+
+###
+
+
+| ID | API/Flow | Type | Title/Objective | Input/Steps |
+|----|----------|------|-----------------|-------------|
+| 1 | `User Logon` | Positive | Valid user login after session established | User logon with valid username/password or entitlement |
+| 2 | `New Order Single` | Positive | IOC that matches multiple levels partially | NewOrder IOC buy sweeping book levels |
+| 3 | `New Order Single` | Negative | Order outside price band | NewOrder with Price beyond band - price band `0<=price<=10000` for limit orders |
+| 4 | `New Order Single` | Boundary | MinFillQty prevents match | NewOrder with MinQty larger than available at price levels |
+| 5 | `New Order Single` | Boundary | Order exceeding quantity limits | NewOrder with Qty or Notional above permitted caps. Quantity limit is 1 to 100. |
+| 6 | `Replace Order` | Positive | Valid replace increasing price | Replace Order with new higger Price |
+| 7 | `Replace Order` | Negative | Replace non-existent order | Replace order with invalid Order ID/Client Order ID |
+| 8 | `Cancel Order` | Negative | Cancel already cancelled/filled order | Cancel order when the existing order is not present |
+| 9 | `Cancel Order` | Positive | Cancel resting order after partial fill | Cancel remaining after partial trade |
+| 10 | `Trade` | Positive | Immediate match between buy and sell | Trade scenario |
+| 11 | `Trade` | Negative | Trade that would violate SMP (self-match) | Orders from same session ID |
+| 12 | `Trade` | Boundary | Partial fills across multiple levels | Large incoming order fills across multiple contra orders |
+| 13 | `Race Condition` | Boundary | Cancle and replace of same order | Test the race condition between Cancel and Replace of same order ID |
+| 14 | `New -> Replace -> Cancel` | Positive | Standard lifecycle: new -> partial trade -> replace -> cancel | Sequence: NEW -> TRADE -> REPLACE -> CANCEL |
+| 15 | `Session Logon` | Negative | Missing required field: session id | Send LOGON with no 'session' field |
+| 16 | `Session Logon` | Negative | Invalid member id format | LOGON with member='@@@' (bad chars) |
+| 17 | `User Logon` | Negative | Missing username field | Send USER_LOGON with no username |
+| 18 | `User Logon` | Negative | Invalid password format | USER_LOGON with password too short or non-UTF8 |
+| 19 | `New Order Single` | Negative | Missing clOrdId | NEW message without clOrdId |
+| 20 | `New Order Single` | Negative | Duplicate clOrdId (idempotency) | Send NEW with clOrdId='C1' twice |
+| 21 | `New Order Single` | Negative | Missing Side field | NEW without 'side' |
+| 22 | `New Order Single` | Negative | Invalid Side code | Side=3 or 'X' |
+| 23 | `New Order Single` | Negative | Price field missing for LIMIT order | NEW ord_type=Limit but price omitted |
+| 24 | `New Order Single` | Negative | Non-numeric price format | Price='onehundred' |
+| 25 | `New Order Single` | Negative | Price outside allowed band | Price outside price band % of reference |
+| 26 | `New Order Single` | Negative | Quantity zero or negative | Qty=0 or Qty=-10 |
+| 27 | `New Order Single` | Negative | Invalid TIF code | TIF=99 |
+| 28 | `New Order Single` | Negative | MinQty larger than Qty | minQty > order qty |
+| 29 | `New Order Single` | Negative | Instrument (SecurityID) invalid | SecurityID not in instrument master. Security ID range - 1 to 1000 |
+| 30 | `New Order Single` | Boundary | Price at band edge allowed | Price equal to low/high price band . Test with Price as 1 or 10000 |
+| 31 | `New Order Single` | Boundary | Max length field for text fields | Long client text fields exceeding length |
+| 32 | `Replace Order` | Negative | Replace request for filled order | Replace Order ID for already filled order |
+| 33 | `Replace Order` | Negative | Invalid newQty (negative/zero) | Replace with newQty=0 or -5 |
+| 34 | `Cancel Order` | Negative | Missing Order ID in cancel | CANCEL without Order ID |
+| 35 | `Cancel Order` | Negative | Cancel for non-existent order | CANCEL Order iD that is not present |
+| 36 | `Cancel Order` | Negative | Cancel after session closed | Close session then send CANCEL |
+| 37 | `General` | Negative | Unsupported template/version for ETI | Send ETI templateId not supported version |
+| 38 | `Replace Order` | Negative | Replace by unauthorized user/member | Replace message from different session/member than original owner |
+| 39 | `Cancel Order` | Negative | Cancel by unauthorized user/member | Cancel message from different session/member than original owner |
+| 40 | `New Order Single` | Negative | Large message leading to length overflow | Message size > max frame length |
+| 41 | `General` | Negative | Invalid character encoding (non-UTF8 payload) | Send payload with invalid encoding |
+| 42 | `Session Logon` | Positive | LOGON with optional client metadata present | LOGON with session, member, and extra metadata fields |
