@@ -134,11 +134,11 @@ scripts: [
           label: 'Documentation',
         },
         // {to: '/videos', label: 'Video References', position: 'left'},
-        {
-          href: 'https://app.exgenix.waynautic.com/',
-          label: 'Exgenix Platform',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://app.exgenix.waynautic.com/',
+        //   label: 'Exgenix Platform',
+        //   position: 'right',
+        // },
         {
         type: "search",
         position: "right",
@@ -181,10 +181,10 @@ scripts: [
             //   label: 'Contact Us',
             //   to: '/docs/contact-us',
             // },
-            {
-              label: 'Exgenix Platform',
-              href: 'https://app.exgenix.waynautic.com/',
-            },
+            // {
+            //   label: 'Exgenix Platform',
+            //   href: 'https://app.exgenix.waynautic.com/',
+            // },
           ],
         },
       ],

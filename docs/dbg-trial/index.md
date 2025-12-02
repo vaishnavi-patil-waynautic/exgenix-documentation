@@ -14,16 +14,17 @@ Get started with Exgenix through our Exgenix Trial. Explore core features, no-co
 
 ## Table of Contents
 #
-- [Introduction](dbg-trial/intro)
-- [Purpose](dbg-trial/purpose)
-- [Governance View](dbg-trial/governance-engine)
-- [No-Code Automation](dbg-trial/no-code-automation)
-- [AI QA Governance](dbg-trial/ai-qa-governance)
-- [What to Expect](dbg-trial/what-to-expect)
-- [Security](dbg-trial/security)
-- [Timeline](dbg-trial/timeline)
-- [Post-Trial](dbg-trial/post-trial)
-- [Commitment](dbg-trial/commitment)
-- [Simulator Functions](dbg-trial/simulator-functions)
+- [Scope](/docs/dbg-trial/intro)
+- [Purpose](/docs/dbg-trial/purpose)
+- [Governance View](/docs/dbg-trial/governance-engine)
+- [No-Code Automation](/docs/dbg-trial/no-code-automation)
+- [AI Powered Test Case Generation](/docs/dbg-trial/ai-qa-governance)
+- [Simulator Functions](/docs/dbg-trial/simulator-functions)
+- [What to Expect](/docs/dbg-trial/what-to-expect)
+- [Security](/docs/dbg-trial/security)
+- [Timeline](/docs/dbg-trial/timeline)
+- [Post-Trial](/docs/dbg-trial/post-trial)
+- [Commitment](/docs/dbg-trial/commitment)
+
 
 ---
