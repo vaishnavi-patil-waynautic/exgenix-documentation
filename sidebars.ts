@@ -6,6 +6,25 @@ const sidebars: SidebarsConfig = {
 
     {
       type: 'category',
+      label: 'Exgenix',
+      link: {
+        type: 'doc',
+        id: 'exgenix/exgenix'
+      },
+      description: 'The Exgenix platform revolutionizes QA for stock exchanges by integrating AI-driven test case generation, no-code automation, and comprehensive governance. Explore how Exgenix enhances test coverage, traceability, and efficiency across exchange systems.',
+      items: [
+        'exgenix/executive-overview',
+        'exgenix/qa-transformation-vision',
+        'exgenix/core-capabilities',
+        'exgenix/data-creation',
+        'exgenix/core-modules',
+        'exgenix/key-advantages',
+        'exgenix/value-propositions',
+      ],
+    },
+
+    {
+      type: 'category',
       label: 'Trial Access',
       link: {
         type: 'doc',

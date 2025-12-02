@@ -152,6 +152,10 @@ scripts: [
         {
           title: 'Documentation',
           items: [
+             {
+              label: 'Exgenix Overview',
+              to: '/docs/exgenix',
+            },
             {
               label: 'Exgenix Trial Access',
               to: '/docs/dbg-trial',
