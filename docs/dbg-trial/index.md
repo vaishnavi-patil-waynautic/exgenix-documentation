@@ -17,6 +17,8 @@ Get started with Exgenix through our Exgenix Trial. Explore core features, no-co
 - [Purpose](dbg-trial/purpose)
 - [Governance View](dbg-trial/governance-engine)
 - [No-Code Automation](dbg-trial/no-code-automation)
+- [Simulator Functions](dbg-trial/simulator-functions)
+- [Instrument Testing Data](dbg-trial/instrument-testing-data)
 - [AI QA Governance](dbg-trial/ai-qa-governance)
 - [What to Expect](dbg-trial/what-to-expect)
 - [Security](dbg-trial/security)
