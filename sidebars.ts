@@ -12,6 +12,7 @@ const sidebars: SidebarsConfig = {
         id: 'exgenix/exgenix'
       },
       description: 'The Exgenix platform revolutionizes QA for stock exchanges by integrating AI-driven test case generation, no-code automation, and comprehensive governance. Explore how Exgenix enhances test coverage, traceability, and efficiency across exchange systems.',
+      // link: { type: 'doc', id: 'exgenix/exgenix' }, // parent doc
       items: [
         'exgenix/executive-overview',
         'exgenix/qa-transformation-vision',
@@ -28,7 +29,7 @@ const sidebars: SidebarsConfig = {
       label: 'Trial Access',
       link: {
         type: 'doc',
-        id: 'dbg-trial/dbg-trial', 
+        id: 'dbg-trial/dbg-trial', // points to docs/dbg-trial/index.md
       },
       items: [
         'dbg-trial/intro',
@@ -38,13 +39,11 @@ const sidebars: SidebarsConfig = {
         'dbg-trial/simulator-functions',
         `dbg-trial/instrument-testing-data`,
         'dbg-trial/ai-qa-governance',
-        'dbg-trial/simulator-functions',
         'dbg-trial/what-to-expect',
         'dbg-trial/security',
         'dbg-trial/timeline',
         'dbg-trial/post-trial',
         'dbg-trial/commitment',
-        
       ],
     },
 
@@ -219,6 +218,7 @@ const sidebars: SidebarsConfig = {
         'best-practices/test-case-import-functionality',
         'best-practices/test-report-analysis--troubleshooting',
         'best-practices/special-cases',
+        'best-practices/troubleshooting',
       ],
     },
 
