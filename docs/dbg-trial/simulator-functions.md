@@ -9,7 +9,7 @@ hide_table_of_contents: true
 This simulator is a lightweight version designed to help QA teams explore key features.
 For full functionality, integrate Exgenix with an actual exchange environment or the official T7 Simulator provided by Deutsche Börse.
 
-**Simulator does not cover Implied for Multieleg 
+> Simulator does not cover Implied for Multieleg 
 
 
 ---

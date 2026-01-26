@@ -218,6 +218,7 @@ const sidebars: SidebarsConfig = {
         'best-practices/test-case-import-functionality',
         'best-practices/test-report-analysis--troubleshooting',
         'best-practices/special-cases',
+        'best-practices/troubleshooting',
       ],
     },
 

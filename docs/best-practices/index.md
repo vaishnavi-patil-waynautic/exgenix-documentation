@@ -20,6 +20,7 @@ Following these guidelines ensures **consistency, reusability, accuracy, and eas
 - [Test Case Import Functionality](best-practices/test-case-import-functionality)
 - [Test Report Analysis & Troubleshooting](best-practices/test-report-analysis--troubleshooting)
 - [Special Cases](best-practices/special-cases)
+- [Troubleshooting SOP – Simulator](best-practices/troubleshooting)
 
 ---
 
