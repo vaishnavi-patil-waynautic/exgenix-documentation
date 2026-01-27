@@ -4,7 +4,7 @@ title: 'Module Structure'
 sidebar_position: 3
 hide_table_of_contents: true
 sidebar_label: Module Structure
-slug: /test-action-unit/module-structure
+slug: /test-action-unit/structure
 description: 'Test Action Unit structure'
 ---
 import { Layers, Settings, Database } from 'lucide-react';

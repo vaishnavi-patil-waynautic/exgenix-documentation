@@ -30,7 +30,6 @@ The **Test Suite & Execution** module lets you organize, schedule, and run your 
 
 - [Overview](./test-suite-execution/overview)
 - [Module Structure](./test-suite-execution/module-structure)
-- [Components](./test-suite-execution/components)
 - [Creating Test Suites](./test-suite-execution/creating-test-suites)
 - [Test Suite Information Panel](./test-suite-execution/information-panel)
 - [Executing Test Suites](./test-suite-execution/executing-suites)

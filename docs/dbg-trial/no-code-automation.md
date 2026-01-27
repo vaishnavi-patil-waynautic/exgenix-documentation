@@ -11,24 +11,24 @@ The trial includes a simplified no-code automation setup for **T7 ETI v14 APIs**
 
 - `Session Logon / Logout`  
 - `User Logon / Logout ` 
-- `NewOrderSingle`
-- `NewOrderSingle(short layout)`
-- `NewOrderMultiLeg`
-- `NewOrderMultiLeg(short layout)`
-- `NewOrderResponse(StandardOrder)`
-- `NewOrderResponse(LeanOrder)`
-- `ReplaceOrderSingle`
-- `ReplaceOrderSingle(short layout)`
-- `ReplaceOrderMultiLeg`
-- `ReplaceOrderMultiLeg(short layout)`
-- `ReplaceOrderResponse(LeanOrder)`
-- `ReplaceOrderResponse(StandardOrder)`
-- `CancelOrderSingle`
-- `CancelOrderMultiLeg`
-- `CancelOrderResponse(StandardOrder)`
-- `CancelOrderResponse(LeanOrder)`
-- `ImmediateExecutionResponse`
-- `TradeNotification` 
+- `New Order Single`
+- `New Order Single (short layout)`
+- `New Order MultiLeg`
+- `New Order MultiLeg (short layout)`
+- `New Order Response (StandardOrder)`
+- `New Order Response (LeanOrder)`
+- `Replace Order Single`
+- `Replace Order Single (short layout)`
+- `Replace Order MultiLeg`
+- `Replace Order MultiLeg (short layout)`
+- `Replace Order Response (LeanOrder)`
+- `Replace Order Response (StandardOrder)`
+- `Cancel Order Single`
+- `Cancel Order MultiLeg`
+- `Cancel Order Response (StandardOrder)`
+- `Cancel Order Response (LeanOrder)`
+- `Immediate Execution Response`
+- `Trade Notification` 
 
 Users can:
 

@@ -117,9 +117,16 @@ scripts: [
 
   themeConfig: {
     image: 'img/exgenix.png',
+    // colorMode: {
+    //   respectPrefersColorScheme: true,
+    // },
+
     colorMode: {
-      respectPrefersColorScheme: true,
-    },
+  defaultMode: 'light',
+  disableSwitch: true,
+  respectPrefersColorScheme: false,
+},
+
     navbar: {
       title: 'Exgenix',
       logo: {
@@ -173,18 +180,18 @@ scripts: [
         {
           title: 'Company',
           items: [
+            // {
+            //   label: 'Home',
+            //   to: '/',
+            // },
             {
-              label: 'Home',
-              to: '/',
+              label: 'Contact Us',
+              to: '/docs/contact-us',
             },
-            // {
-            //   label: 'Contact Us',
-            //   to: '/docs/contact-us',
-            // },
-            // {
-            //   label: 'Exgenix Platform',
-            //   href: 'https://app.exgenix.waynautic.com/',
-            // },
+            {
+              label: 'Exgenix Platform',
+              href: 'https://app.exgenix.waynautic.com/',
+            },
           ],
         },
       ],

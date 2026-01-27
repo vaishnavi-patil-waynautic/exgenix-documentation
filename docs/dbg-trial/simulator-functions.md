@@ -145,53 +145,53 @@ For full functionality, integrate Exgenix with an actual exchange environment or
 <!-- 
 <tr><td>24</td><td><code>New Order Single</code></td><td>Negative</td><td>Non-numeric price</td><td>Price=one hundred</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr> -->
 
-<tr><td>25</td><td><code>New Order Single</code></td><td>Negative</td><td>Price outside allowed band</td><td>Price outside band %</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>22</td><td><code>New Order Single</code></td><td>Negative</td><td>Price outside allowed band</td><td>Price outside band %</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>26</td><td><code>New Order Single</code></td><td>Negative</td><td>Quantity zero or negative</td><td>Qty=0 or Qty=-10</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>23</td><td><code>New Order Single</code></td><td>Negative</td><td>Quantity zero or negative</td><td>Qty=0 or Qty=-10</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>27</td><td><code>New Order Single</code></td><td>Negative</td><td>Invalid TIF code</td><td>TIF=99</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>24</td><td><code>New Order Single</code></td><td>Negative</td><td>Invalid TIF code</td><td>TIF=99</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>28</td><td><code>New Order Single</code></td><td>Negative</td><td>Invalid SecurityID</td><td>SecurityID not in master</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>25</td><td><code>New Order Single</code></td><td>Negative</td><td>Invalid SecurityID</td><td>SecurityID not in master</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>29</td><td><code>New Order Single</code></td><td>Boundary</td><td>Price at band edge</td><td>Price = 1 or 10000</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>26</td><td><code>New Order Single</code></td><td>Boundary</td><td>Price at band edge</td><td>Price = 1 or 10000</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>30</td><td><code>New Order Single</code></td><td>Negative</td><td>Message length invalid</td><td>Message Length &lt; BodyLen</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>27</td><td><code>New Order Single</code></td><td>Negative</td><td>Message length invalid</td><td>Message Length &lt; BodyLen</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>31</td><td><code>Replace Order</code></td><td>Positive</td><td>Increase price</td><td>Replace with higher price</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>28</td><td><code>Replace Order</code></td><td>Positive</td><td>Increase price</td><td>Replace with higher price</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>32</td><td><code>Replace Order</code></td><td>Negative</td><td>Replace non-existent</td><td>Invalid Order ID</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>29</td><td><code>Replace Order</code></td><td>Negative</td><td>Replace non-existent</td><td>Invalid Order ID</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>33</td><td><code>Replace Order</code></td><td>Negative</td><td>Replace filled order</td><td>Replace filled order</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>30</td><td><code>Replace Order</code></td><td>Negative</td><td>Replace filled order</td><td>Replace filled order</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>34</td><td><code>Replace Order</code></td><td>Negative</td><td>Invalid newQty</td><td>newQty=0 or -5</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>31</td><td><code>Replace Order</code></td><td>Negative</td><td>Invalid newQty</td><td>newQty=0 or -5</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>35</td><td><code>Replace Order</code></td><td>Negative</td><td>Unauthorized replace</td><td>Replace from different session</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>32</td><td><code>Replace Order</code></td><td>Negative</td><td>Unauthorized replace</td><td>Replace from different session</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>36</td><td><code>Cancel Order</code></td><td>Negative</td><td>Cancel filled order</td><td>Cancel non-existing order</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>33</td><td><code>Cancel Order</code></td><td>Negative</td><td>Cancel filled order</td><td>Cancel non-existing order</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>37</td><td><code>Cancel Order</code></td><td>Positive</td><td>Cancel after partial fill</td><td>Cancel remaining qty</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>34</td><td><code>Cancel Order</code></td><td>Positive</td><td>Cancel after partial fill</td><td>Cancel remaining qty</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>38</td><td><code>Cancel Order</code></td><td>Negative</td><td>Missing Order ID</td><td>CANCEL without Order ID</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>35</td><td><code>Cancel Order</code></td><td>Negative</td><td>Missing Order ID</td><td>CANCEL without Order ID</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>39</td><td><code>Cancel Order</code></td><td>Negative</td><td>Cancel non-existent order</td><td>Cancel invalid Order ID</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>36</td><td><code>Cancel Order</code></td><td>Negative</td><td>Cancel non-existent order</td><td>Cancel invalid Order ID</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>40</td><td><code>Cancel Order</code></td><td>Negative</td><td>Cancel after session closed</td><td>Close session then cancel</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>37</td><td><code>Cancel Order</code></td><td>Negative</td><td>Cancel after session closed</td><td>Close session then cancel</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>41</td><td><code>Cancel Order</code></td><td>Negative</td><td>Unauthorized cancel</td><td>Cancel from different session</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>38</td><td><code>Cancel Order</code></td><td>Negative</td><td>Unauthorized cancel</td><td>Cancel from different session</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>42</td><td><code>Trade</code></td><td>Positive</td><td>Immediate match</td><td>Trade scenario</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>39</td><td><code>Trade</code></td><td>Positive</td><td>Immediate match</td><td>Trade scenario</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>43</td><td><code>Trade</code></td><td>Negative</td><td>SMP violation</td><td>Orders from same session</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>40</td><td><code>Trade</code></td><td>Negative</td><td>SMP violation</td><td>Orders from same session</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>44</td><td><code>Trade</code></td><td>Boundary</td><td>Partial fills multi-level</td><td>Large order across book</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>41</td><td><code>Trade</code></td><td>Boundary</td><td>Partial fills multi-level</td><td>Large order across book</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>45</td><td><code>New -> Replace -> Cancel</code></td><td>Positive</td><td>Lifecycle test</td><td>NEW → TRADE → REPLACE → CANCEL</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>42</td><td><code>New -> Replace -> Cancel</code></td><td>Positive</td><td>Lifecycle test</td><td>NEW → TRADE → REPLACE → CANCEL</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>46</td><td><code>Race Condition</code></td><td>Boundary</td><td>Cancel and replace race</td><td>Cancel vs Replace same order</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>43</td><td><code>Race Condition</code></td><td>Boundary</td><td>Cancel and replace race</td><td>Cancel vs Replace same order</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>47</td><td><code>General</code></td><td>Negative</td><td>Unsupported ETI version</td><td>Send unsupported templateId</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>44</td><td><code>General</code></td><td>Negative</td><td>Unsupported ETI version</td><td>Send unsupported templateId</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<tr><td>48</td><td><code>General</code></td><td>Negative</td><td>Invalid character encoding</td><td>Send non-UTF8 payload</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td>45</td><td><code>General</code></td><td>Negative</td><td>Invalid character encoding</td><td>Send non-UTF8 payload</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
 </tbody>
 </table>

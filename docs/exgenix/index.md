@@ -12,12 +12,12 @@ hide_table_of_contents: true
 
 ## Table of Contents
 #
-- [ Executive Overview](exgenix/executive-overview.md)
-- [ The Complete QA Transformation Vision](exgenix/qa-transformation-vision.md)
-- [ Core Capabilities](exgenix/core-capabilities.md)
-- [Accelerated Data Creation](exgenix/data-creation.md)
-- [ Core Modules](exgenix/core-modules.md)
-- [ Key Advantages](exgenix/key-advantages.md)
-- [Key Value Propositions](exgenix/value-propositions.md)
+- [ Executive Overview](exgenix/executive-overview)
+- [ The Complete QA Transformation Vision](exgenix/qa-transformation-vision)
+- [ Core Capabilities](exgenix/core-capabilities)
+- [Accelerated Data Creation](exgenix/data-creation)
+- [ Core Modules](exgenix/core-modules)
+- [ Key Advantages](exgenix/key-advantages)
+- [Key Value Propositions](exgenix/value-propositions)
 
 ---
