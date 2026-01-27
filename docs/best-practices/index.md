@@ -18,9 +18,8 @@ Following these guidelines ensures **consistency, reusability, accuracy, and eas
 - [AI Generated Testcases](best-practices/ai-generated-test-cases)
 - [Datasheet Best Practices](best-practices/datasheet-best-practices)
 - [Test Case Import Functionality](best-practices/test-case-import-functionality)
-- [Test Report Analysis & Troubleshooting](best-practices/test-report-analysis--troubleshooting)
+- [Test Report Analysis & Troubleshooting](best-practices/troubleshooting)
 - [Special Cases](best-practices/special-cases)
-- [Troubleshooting SOP – Simulator](best-practices/troubleshooting)
 
 ---
 

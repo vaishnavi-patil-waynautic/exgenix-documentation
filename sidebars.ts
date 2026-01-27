@@ -216,9 +216,8 @@ const sidebars: SidebarsConfig = {
         'best-practices/ai-generated-test-cases',
         'best-practices/datasheet-best-practices',
         'best-practices/test-case-import-functionality',
-        'best-practices/test-report-analysis--troubleshooting',
-        'best-practices/special-cases',
         'best-practices/troubleshooting',
+        'best-practices/special-cases',
       ],
     },
 
