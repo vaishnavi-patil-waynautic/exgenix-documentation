@@ -49,8 +49,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: undefined, 
+          breadcrumbs: false,
 
+          // ✅ These are VALID in v3
+
+          editUrl: undefined,
         },
         blog: {
           showReadingTime: true,

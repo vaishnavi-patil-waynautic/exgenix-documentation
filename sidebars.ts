@@ -60,6 +60,23 @@ const sidebars: SidebarsConfig = {
         'quick-start-guide/recommended_first_steps',
       ],
     },
+      {
+      type: 'category',
+      label: 'Best Practices',
+      link: {
+        type: 'doc',
+        id: 'best-practices/best-practices'
+      },
+      description: 'Recommended guidelines and best practices for effective usage of Exgenix DBG Simulator, ensuring consistency, accuracy, and smoother troubleshooting.',
+      items: [
+        'best-practices/naming-convention',
+        'best-practices/ai-generated-test-cases',
+        'best-practices/datasheet-best-practices',
+        'best-practices/test-case-import-functionality',
+        'best-practices/troubleshooting',
+        'best-practices/special-cases',
+      ],
+    },
     {
       type: 'category',
       label: 'AI Powered Testcase Generation',
@@ -203,23 +220,7 @@ const sidebars: SidebarsConfig = {
       ],
     },
 
-    {
-      type: 'category',
-      label: 'Best Practices',
-      link: {
-        type: 'doc',
-        id: 'best-practices/best-practices'
-      },
-      description: 'Recommended guidelines and best practices for effective usage of Exgenix DBG Simulator, ensuring consistency, accuracy, and smoother troubleshooting.',
-      items: [
-        'best-practices/naming-convention',
-        'best-practices/ai-generated-test-cases',
-        'best-practices/datasheet-best-practices',
-        'best-practices/test-case-import-functionality',
-        'best-practices/troubleshooting',
-        'best-practices/special-cases',
-      ],
-    },
+  
 
 
 

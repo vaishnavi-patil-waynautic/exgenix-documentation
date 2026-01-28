@@ -1155,5 +1155,26 @@ a{
   color: #1a64f0;
 }
 
+.markdown {
+  overflow-x: hidden;
+}
+
+/* Clamp markdown render area */
+.theme-doc-markdown {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Prevent content column from expanding */
+.docItemCol {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent inner container stretch */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 

@@ -50,4 +50,6 @@ Use the prepared scenarios as a reference to validate platform behavior & expect
 |----------|------------|------|
 | `Exgenix Scenario 1` | Order Placement | [link](../sample-test-scenario/scenario-1) |
 | `Exgenix Scenario 2` | Trade Workflow | [link](../sample-test-scenario/scenario-2) |
+| `Exgenix Scenario 3` | Multileg Trade | [link](../sample-test-scenario/scenario-3) |
+| `Exgenix Scenario 4` | Multicast | [link](../sample-test-scenario/scenario-4) |
 | `Quick Start` - QA Governance | Waynautic AI QA Agent | [link](../ai-qa-agent/quick-start-guide) |

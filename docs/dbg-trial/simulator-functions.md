@@ -1,10 +1,28 @@
 ---
 hide_table_of_contents: true
+sidebar_label: Simulator Functions
 ---
+<style>
+{`
+.main-wrapper {
+  outline: 2px solid red;
+}
+.markdown {
+  overflow-x: hidden;
+}
+
+`}
+</style>
+
+
+import WideScrollableGrid from '@site/src/components/WideScrollableGrid';
+
+
 
 # Simulator Functions
 
 ---
+
 
 This simulator is a lightweight version designed to help QA teams explore key features.
 For full functionality, integrate Exgenix with an actual exchange environment or the official T7 Simulator provided by Deutsche Börse.
@@ -12,73 +30,37 @@ For full functionality, integrate Exgenix with an actual exchange environment or
 > Simulator does not cover Implied for Multieleg 
 
 
+
 ---
+<!-- <WideScrollableGrid /> -->
 
-<!-- | ID | API/Flow | Type | Title/Objective | Input/Steps | OrderSingle Multileg | OrderSingle Multileg Short | OrderSingle Standard | OrderSingle Short |
-|----|----------|------|-----------------|-------------|----------------------|----------------------------|----------------------|-------------------|
-| 1 | `Butterfly Spread - Multileg` | Positive | Full Trade scenario | Place a session 1 buy new request (for e.g. qty 10 and price valid) and then corresponding session 2 sell request (qty 10 and same price valid) | Y | Y | NA | NA |
-| 2 | `Butterfly Spread - Multileg` | Positive | Full Trade scenario | Place a session 1 buy new request (for e.g. qty 10 and valid price) and then corresponding session 2 sell request 1 (qty 5 and same valid price) + session 2 sell request 2 (qty 5 and same valid price) | Y | Y | NA | NA |
-| 3 | `Butterfly Spread - Multileg` | Positive | Partial Trade scenario | Place a session 1 buy new request (for e.g. qty 10 and price valid) and then corresponding session 2 sell request (qty 4 and same price valid) | Y | Y | NA | NA |
-| 4 | `Butterfly Spread - Multileg` | Positive | Standard lifecycle: new -> partial trade -> replace -> cancel | Sequence: NEW -> TRADE -> REPLACE -> CANCEL | Y | Y | NA | NA |
-| 5 | `Butterfly Spread - Multileg` | Positive | Full Trade Trade scenario - Multiple Fill Grps | 1st Test case - fill the order book with order Place 2 session 1 buy request (for e.g. qty 5 and valid price) + 1 more buy request (for e.g. qty 5 and valid price) . 2nd Test cases - session 2 sell request (qty 10 and same valid prices) | Y | Y | NA | NA |
-| 6 | `Calender Spread - Multileg` | Positive | Full Trade scenario | Place a session 1 buy new request (for e.g. qty 10 and price valid) and then corresponding session 2 sell request (qty 10 and same price valid) | Y | Y | NA | NA |
-| 7 | `Calender Spread - Multileg` | Positive | Full Trade scenario | Place a session 1 buy new request (for e.g. qty 10 and valid price) and then corresponding session 2 sell request 1 (qty 5 and same valid price) + session 2 sell request 2 (qty 5 and same valid price) | Y | Y | NA | NA |
-| 8 | `Calender Spread - Multileg` | Positive | Partial Trade scenario | Place a session 1 buy new request (for e.g. qty 10 and price valid) and then corresponding session 2 sell request (qty 4 and same price valid) | Y | Y | NA | NA |
-| 9 | `Calender Spread - Multileg` | Positive | Standard lifecycle: new -> partial trade -> replace -> cancel | Sequence: NEW -> TRADE -> REPLACE -> CANCEL | Y | Y | NA | NA |
-| 10 | `Calender Spread - Multileg` | Positive | Full Trade Trade scenario - Multiple Fill Grps | 1st Test case - fill the order book with order Place 2 session 1 buy request (for e.g. qty 5 and valid price) + 1 more buy request (for e.g. qty 5 and valid price) . 2nd Test cases - session 2 sell request (qty 10 and same valid prices) | Y | Y | NA | NA |
-| 11 | `Session Logon` | Negative | Missing required field: session id | Send LOGON with no 'session' field | Y | Y | Y | Y |
-| 12 | `Session Logon` | Negative | Invalid member id format | LOGON with member='@@@' (bad chars) | Y | Y | Y | Y |
-| 13 | `User Logon` | Positive | Valid user login after session established | User logon with valid username/password or entitlement | Y | Y | Y | Y |
-| 14 | `User Logon` | Negative | Missing username field | Send USER_LOGON with no username | Y | Y | Y | Y |
-| 15 | `User Logon` | Negative | Invalid password format | USER_LOGON with password too short or non-UTF8 | Y | Y | Y | Y |
-| 16 | `New Order Single` | Positive | IOC that matches multiple levels partially | NewOrder IOC buy sweeping book levels | Y | Y | Y | Y |
-| 17 | `New Order Single` | Negative | Order outside price band | NewOrder with Price beyond band - price band `0<=price<=10000` for limit orders | Y | Y | Y | Y |
-| 18 | `New Order Single` | Boundary | Order exceeding quantity limits | NewOrder with Qty or Notional above permitted caps. Quantity limit is 1 to 100. | Y | Y | Y | Y |
-| 19 | `New Order Single` | Negative | Missing clOrdId | NEW message without clOrdId | Y | Y | Y | Y |
-| 20 | `New Order Single` | Negative | Duplicate clOrdId (idempotency) | Send NEW with clOrdId='C1' twice | Y | Y | Y | Y |
-| 21 | `New Order Single` | Negative | Missing Side field | NEW without 'side' | Y | Y | Y | Y |
-| 22 | `New Order Single` | Negative | Invalid Side code | Side=3 or 'X' | Y | Y | Y | Y |
-| 23 | `New Order Single` | Negative | Price field missing for LIMIT order | NEW ord_type=Limit but price omitted | Y | Y | Y | Y |
-| 24 | `New Order Single` | Negative | Non-numeric price format | Price='one hundred' | Y | Y | Y | Y |
-| 25 | `New Order Single` | Negative | Price outside allowed band | Price outside price band % of reference | Y | Y | Y | Y |
-| 26 | `New Order Single` | Negative | Quantity zero or negative | Qty=0 or Qty=-10 | Y | Y | Y | Y |
-| 27 | `New Order Single` | Negative | Invalid TIF code | TIF=99 | Y | Y | Y | Y |
-| 28 | `New Order Single` | Negative | Instrument (SecurityID) invalid | SecurityID not in instrument master. Security ID range - 1 to 1000 | Y | Y | Y | Y |
-| 29 | `New Order Single` | Boundary | Price at band edge allowed | Price equal to low/high price band . Test with Price as 1 or 10000 | Y | Y | Y | Y |
-| 30 | `New Order Single` | Negative | Message lenght is less than BodyLen | Message Lenght < BodyLen | Y | Y | Y | Y |
-| 31 | `Replace Order` | Positive | Valid replace increasing price | Replace Order with new higher Price | Y | Y | Y | Y |
-| 32 | `Replace Order` | Negative | Replace non-existent order | Replace order with invalid Order ID/Client Order ID | Y | Y | Y | Y |
-| 33 | `Replace Order` | Negative | Replace request for filled order | Replace Order ID for already filled order | Y | Y | Y | Y |
-| 34 | `Replace Order` | Negative | Invalid newQty (negative/zero) | Replace with newQty=0 or -5 | Y | Y | Y | Y |
-| 35 | `Replace Order` | Negative | Replace by unauthorized user/member | Replace message from different session/member than original owner | Y | Y | Y | Y |
-| 36 | `Cancel Order` | Negative | Cancel already cancelled/filled order | Cancel order when the existing order is not present | Y | Y | Y | Y |
-| 37 | `Cancel Order` | Positive | Cancel resting order after partial fill | Cancel remaining after partial trade | Y | Y | Y | Y |
-| 38 | `Cancel Order` | Negative | Missing Order ID in cancel | CANCEL without Order ID | Y | Y | Y | Y |
-| 39 | `Cancel Order` | Negative | Cancel for non-existent order | CANCEL Order iD that is not present | Y | Y | Y | Y |
-| 40 | `Cancel Order` | Negative | Cancel after session closed | Close session then send CANCEL | Y | Y | Y | Y |
-| 41 | `Cancel Order` | Negative | Cancel by unauthorized user/member | Cancel message from different session/member than original owner | Y | Y | Y | Y |
-| 42 | `Trade` | Positive | Immediate match between buy and sell | Trade scenario | Y | Y | Y | Y |
-| 43 | `Trade` | Negative | Trade that would violate SMP (self-match) | Orders from same session ID | Y | Y | Y | Y |
-| 44 | `Trade` | Boundary | Partial fills across multiple levels | Large incoming order fills across multiple contra orders | Y | Y | Y | Y |
-| 45 | `New -> Replace -> Cancel` | Positive | Standard lifecycle: new -> partial trade -> replace -> cancel | Sequence: NEW -> TRADE -> REPLACE -> CANCEL | Y | Y | Y | Y |
-| 46 | `Race Condition` | Boundary | Cancel and replace of same order | Test the race condition between Cancel and Replace of same order ID | Y | Y | Y | Y |
-| 47 | `General` | Negative | Unsupported template/version for ETI | Send ETI templateId not supported version | Y | Y | Y | Y |
-| 48 | `General` | Negative | Invalid character encoding (non-UTF8 payload) | Send payload with invalid encoding | Y | Y | Y | Y | -->
+<!-- 
+<div style = {{ maxWidth: "100%" }}>
+
+<WideScrollableGrid />
+
+</div> -->
+
+<!--
+
+<div style={{ minWidth: "900px", tableLayout:"fixed" }}>
+
+<table style={{ minWidth: "1600px", tableLayout: "fixed" }}>
 
 
-
-<table>
 <colgroup>
-  <col style={{ width: "4%" }} />
-  <col style={{ width: "14%" }} />
-  <col style={{ width: "7%" }} />
-  <col style={{ width: "15%" }} />
-  <col style={{ width: "35%" }} />
-  <col style={{ width: "6%" }} />
-  <col style={{ width: "7%" }} />
-  <col style={{ width: "6%" }} />
-  <col style={{ width: "6%" }} />
+  <col style={{ width: "3%" }} />    
+  <col style={{ width: "24%" }} />   
+  <col style={{ width: "6%" }} />  
+  <col style={{ width: "20%" }} />  
+  <col style={{ width: "47%" }} />   
+  <col style={{ width: "3%" }} />
+  <col style={{ width: "3%" }} />
+  <col style={{ width: "2%" }} />
+  <col style={{ width: "2%" }} />
 </colgroup>
+
+
 
 
 <thead>
@@ -134,16 +116,13 @@ For full functionality, integrate Exgenix with an actual exchange environment or
 <tr><td>18</td><td><code>New Order Single</code></td><td>Boundary</td><td>Order exceeding quantity limits</td><td>Qty above permitted caps (1 to 100)</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
 <!-- <tr><td>19</td><td><code>New Order Single</code></td><td>Negative</td><td>Missing clOrdId</td><td>NEW message without clOrdId</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr> -->
-
+<!-- 
 <tr><td>19</td><td><code>New Order Single</code></td><td>Negative</td><td>Duplicate clOrdId</td><td>Send NEW with same clOrdId twice</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
-<!-- <tr><td>21</td><td><code>New Order Single</code></td><td>Negative</td><td>Missing Side field</td><td>NEW without side</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr> -->
 
 <tr><td>20</td><td><code>New Order Single</code></td><td>Negative</td><td>Invalid Side code</td><td>Side=3 or X</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
 <tr><td>21</td><td><code>New Order Single</code></td><td>Negative</td><td>Price missing for LIMIT</td><td>Limit order without price</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
-<!-- 
-<tr><td>24</td><td><code>New Order Single</code></td><td>Negative</td><td>Non-numeric price</td><td>Price=one hundred</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr> -->
 
 <tr><td>22</td><td><code>New Order Single</code></td><td>Negative</td><td>Price outside allowed band</td><td>Price outside band %</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
 
@@ -195,3 +174,229 @@ For full functionality, integrate Exgenix with an actual exchange environment or
 
 </tbody>
 </table>
+
+</div> -->
+
+
+
+
+
+<!-- 
+<div style={{ 
+  width: "90%", 
+  overflowX: "auto", 
+  overflowY: "auto",
+  maxHeight: "calc(100vh - 200px)",
+  border: "1px solid #e0e0e0",
+  borderRadius: "4px"
+}}
+
+<table>
+
+
+<!-- <div
+  style={{
+    width: "100%",
+    overflowX: "auto",
+    overflowY: "auto",
+    maxHeight: "calc(100vh - 200px)",
+    border: "1px solid #e0e0e0",
+    borderRadius: "4px",
+    boxSizing: "border-box"
+  }}
+> -->
+
+<!-- <div
+  style={{
+    width: "100%",
+    maxWidth: "100%",
+    overflowX: "auto",
+    overflowY: "auto",
+    maxHeight: "calc(100vh - 200px)",
+    border: "1px solid #e0e0e0",
+    borderRadius: "4px",
+    boxSizing: "border-box",
+    position: "relative",
+    contain: "layout paint"
+  }}
+>
+
+<table
+  style={{
+    minWidth: "1800px",
+    tableLayout: "fixed",
+    borderCollapse: "collapse"
+  }}
+>
+
+
+
+
+<!-- <table
+  style={{
+    minWidth: "1800px",
+    tableLayout: "fixed",
+    borderCollapse: "collapse"
+  }}
+> -->-
+  <!-- maxHeight: "calc(100vh - 200px)", -->
+  <!-- border: "1px solid #e0e0e0", -->
+
+<div style={{ 
+  width: "100%",
+  overflowX: "auto",
+  overflowY: "auto",
+  borderRadius: "4px"
+}}>
+
+  <!-- <div style={{
+    transform: "scaleX(1.4)",
+    transformOrigin: "left top",
+    width: "fit-content"
+  }}> -->
+
+  <!-- <div> -->
+
+<table style={{ 
+      maxWidth: "1000px",
+      tableLayout: "auto",
+      borderCollapse: "collapse",
+      marginLeft:"2px",
+      marginRight:"2px",
+    }}>
+
+
+<colgroup>
+  <col style={{ width: "5%" }} />      {/* ID */}
+  <col style={{ width: "10%" }} />     {/* API */}
+  <col style={{ width: "15%" }} />      {/* Type */}
+  <col style={{ width: "5%" }} />     {/* Title */} 
+  <col style={{ width: "45%" }} />                          {/* Input/Steps (AUTO EXPAND) */}
+  <col style={{ width: "5%" }} />
+  <col style={{ width: "5%" }} />
+  <col style={{ width: "5%" }} />
+  <col style={{ width: "5%" }} />
+</colgroup>
+
+
+
+
+<thead style={{ 
+  position: "sticky", 
+  top: 0, 
+  backgroundColor: "#f5f5f5",
+  zIndex: 10
+}}>
+<tr>
+  <th style={{ padding: "12px 8px", borderBottom: "2px solid #ddd", textAlign: "left" }}>ID</th>
+  <th style={{ padding: "12px 8px", borderBottom: "2px solid #ddd", textAlign: "left" }}>API/Flow</th>
+  <th style={{ padding: "12px 8px", borderBottom: "2px solid #ddd", textAlign: "left" }}>Type</th>
+  <th style={{ padding: "12px 8px", borderBottom: "2px solid #ddd", textAlign: "left" }}>Title/Objective</th>
+  <th style={{ padding: "12px 8px", borderBottom: "2px solid #ddd", textAlign: "left" }}>Input/Steps</th>
+  <th style={{ padding: "12px 8px", borderBottom: "2px solid #ddd", textAlign: "center",  whiteSpace: "nowrap" }}>OrderSingle Multileg</th>
+  <th style={{ padding: "12px 8px", borderBottom: "2px solid #ddd", textAlign: "center",  whiteSpace: "nowrap" }}>OrderSingle Multileg Short</th>
+  <th style={{ padding: "12px 8px", borderBottom: "2px solid #ddd", textAlign: "center",   whiteSpace: "nowrap",}}>OrderSingle Standard</th>
+  <th style={{ padding: "12px 8px", borderBottom: "2px solid #ddd", textAlign: "center",  whiteSpace: "nowrap", }}>OrderSingle Short</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>1</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Butterfly Spread - Multileg</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Full Trade scenario</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Place a session 1 buy new request (for e.g. qty 10 and price valid) and then corresponding session 2 sell request (qty 10 and same price valid)</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>2</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Butterfly Spread - Multileg</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Full Trade scenario</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Place a session 1 buy new request (for e.g. qty 10 and valid price) and then corresponding session 2 sell request 1 (qty 5 and same valid price) + session 2 sell request 2 (qty 5 and same valid price)</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>3</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Butterfly Spread - Multileg</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Partial Trade scenario</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Place a session 1 buy new request (for e.g. qty 10 and price valid) and then corresponding session 2 sell request (qty 4 and same price valid)</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>4</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Butterfly Spread - Multileg</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Standard lifecycle: new -> partial trade -> replace -> cancel</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Sequence: NEW -> TRADE -> REPLACE -> CANCEL</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>5</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Butterfly Spread - Multileg</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Full Trade scenario - Multiple Fill Grps</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>1st Test case - fill the order book with order Place 2 session 1 buy request (qty 5 valid price) + 1 more buy request (qty 5 valid price). 2nd Test case - session 2 sell request (qty 10 same valid prices)</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>6</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Calender Spread - Multileg</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Full Trade scenario</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Place a session 1 buy new request (qty 10 valid price) and then corresponding session 2 sell request (qty 10 same valid price)</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>7</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Calender Spread - Multileg</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Full Trade scenario</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Place a session 1 buy new request (qty 10 valid price) and then corresponding session 2 sell request 1 (qty 5 same valid price) + session 2 sell request 2 (qty 5 same valid price)</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>8</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Calender Spread - Multileg</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Partial Trade scenario</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Place a session 1 buy new request (qty 10 valid price) and then corresponding session 2 sell request (qty 4 same valid price)</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>9</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Calender Spread - Multileg</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Standard lifecycle: new -> partial trade -> replace -> cancel</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Sequence: NEW -> TRADE -> REPLACE -> CANCEL</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>10</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Calender Spread - Multileg</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Full Trade scenario - Multiple Fill Grps</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>1st Test case - fill order book with 2 session 1 buy requests (qty 5 valid price) + 1 more buy request (qty 5 valid price). 2nd Test case - session 2 sell request (qty 10 same valid prices)</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>NA</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>11</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Session Logon</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Missing required field: session id</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Send LOGON with no 'session' field</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>12</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Session Logon</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Invalid member id format</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>LOGON with member='@@@'</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>13</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>User Logon</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Valid user login after session established</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>User logon with valid username/password</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>14</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>User Logon</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Missing username field</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Send USER_LOGON with no username</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>15</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>User Logon</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Invalid password format</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>USER_LOGON with password too short or non-UTF8</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>16</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>IOC partial multi-level match</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>NewOrder IOC buy sweeping book levels</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>17</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Order outside price band</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>NewOrder with Price beyond band</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>18</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Boundary</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Order exceeding quantity limits</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Qty above permitted caps (1 to 100)</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>19</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Duplicate clOrdId</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Send NEW with same clOrdId twice</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>20</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Invalid Side code</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Side=3 or X</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>21</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Price missing for LIMIT</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Limit order without price</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>22</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Price outside allowed band</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Price outside band %</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>23</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Quantity zero or negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Qty=0 or Qty=-10</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>24</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Invalid TIF code</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>TIF=99</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>25</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Invalid SecurityID</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>SecurityID not in master</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>26</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Boundary</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Price at band edge</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Price = 1 or 10000</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>27</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New Order Single</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Message length invalid</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Message Length &lt; BodyLen</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>28</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Replace Order</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Increase price</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Replace with higher price</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>29</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Replace Order</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Replace non-existent</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Invalid Order ID</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>30</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Replace Order</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Replace filled order</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Replace filled order</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>31</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Replace Order</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Invalid newQty</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>newQty=0 or -5</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>32</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Replace Order</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Unauthorized replace</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Replace from different session</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>33</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Cancel Order</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Cancel filled order</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Cancel non-existing order</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>34</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Cancel Order</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Cancel after partial fill</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Cancel remaining qty</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>35</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Cancel Order</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Missing Order ID</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>CANCEL without Order ID</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>36</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Cancel Order</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Cancel non-existent order</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Cancel invalid Order ID</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>37</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Cancel Order</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Cancel after session closed</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Close session then cancel</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>38</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Cancel Order</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Unauthorized cancel</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Cancel from different session</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>39</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Trade</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Immediate match</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Trade scenario</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>40</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Trade</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>SMP violation</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Orders from same session</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>41</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Trade</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Boundary</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Partial fills multi-level</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Large order across book</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>42</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>New -> Replace -> Cancel</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Positive</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Lifecycle test</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>NEW → TRADE → REPLACE → CANCEL</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>43</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>Race Condition</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Boundary</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Cancel and replace race</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Cancel vs Replace same order</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>44</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>General</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Unsupported ETI version</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Send unsupported templateId</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+<tr><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>45</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}><code>General</code></td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Negative</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Invalid character encoding</td><td style={{ padding: "8px", borderBottom: "1px solid #eee" }}>Send non-UTF8 payload</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td><td style={{ padding: "8px", borderBottom: "1px solid #eee", textAlign: "center" }}>Y</td></tr>
+
+</tbody>
+</table>
+
+<!-- </div> -->
+</div>
+
+
+
