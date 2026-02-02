@@ -110,7 +110,7 @@ Reusable component containing multiple APIs configured together.
 
 
   <div class="step-image">
-    <h4 class="image-title">Action Type Configuration</h4>
+    <h4 class="image-title">Individual API Configuration</h4>
     <img src="/img/testcase/add_step_normal.png" alt="Step Type Configuration" />
     <p class="image-caption">🖱️ Click to expand image</p>
   </div>

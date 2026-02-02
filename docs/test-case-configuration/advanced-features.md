@@ -222,24 +222,36 @@ Synchronize request-response pairs while advancing requests.
   <div className="step-block" style={{ display: "flex", gap: "20px" }}>
     
   <div className="step-text" style={{ flex: 1 }}>
-      <p><strong>Step 1:</strong> Login Test Action Unit</p>
-      <p><strong>Step 2:</strong> New Order Request</p>
-      <p><strong>Step 3:</strong> New Order Response</p>
-      <p><strong>Step 4:</strong> Cancel Order Request</p>
-      <p><strong>Step 5:</strong> Cancel Order Response</p>
-      <p><strong>Step 6:</strong> Logout Test Action Unit</p>
+      <p><strong>Step 1:</strong> Login Test Action Unit (Session:s1)</p>
+<p><strong>Step 2:</strong> Login Test Action Unit (Session:s2)</p>
+
+<p><strong>Step 3:</strong> New Order Request (Session:s1)</p>
+<p><strong>Step 4:</strong> New Order Response (Session:s1)</p>
+
+<p><strong>Step 5:</strong> New Order Request (Session:s2)</p>
+<p><strong>Step 6:</strong> Immediate Execution Response (Session:s2)</p>
+
+<p><strong>Step 7:</strong> Replace Order Request (Session:s1)</p>
+<p><strong>Step 8:</strong> Replace Order Response (Session:s1)</p>
+
+<p><strong>Step 9:</strong> Cancel Order Request (Session:s1)</p>
+<p><strong>Step 10:</strong> Cancel Order Response (Session:s1)</p>
+
+<p><strong>Step 11:</strong> Logout Test Action Unit (Session:s2)</p>
+<p><strong>Step 12:</strong> Logout Test Action Unit (Session:s1)</p>
 
 <br />
 
-  <p><strong>Expected Results:</strong></p>
-      <ul>
-        <li>All steps pass successfully</li>
-        <li>Order is placed and cancelled correctly</li>
-        <li>Variables are captured and used accurately</li>
-        <li>Session is maintained throughout</li>
-        <li>Clean logout is completed</li>
-      </ul>
-    </div>
+<p><strong>Expected Results:</strong></p>
+<ul>
+  <li>All steps pass successfully</li>
+  <li>Order is placed, replaced, and cancelled correctly</li>
+  <li>Variables are captured and used accurately</li>
+  <li>Session is maintained throughout</li>
+  <li>Clean logout is completed</li>
+</ul>
+
+</div>
 
 <div className="step-image" style={{ flex: "0 0 300px", textAlign: "center" }}>
       <h4 className="image-title">Trade Flow</h4>
